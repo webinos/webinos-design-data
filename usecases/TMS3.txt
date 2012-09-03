@@ -1,0 +1,28 @@
+h1. WOS-UC-TA5-006_1: Removal of applications (alternative)
+
+Author: Katrin Jordan
+
+Actors: User, Application
+
+h2. Description
+
+A webinos application is removed via remote action.
+    
+
+h2. Preconditions
+
+An application on a user device is marked to be removed by an authorised entity (e.g. Service provider, User, administrator).  A user is authorised to de-install the application on the target device.
+
+h2. Flow
+
+# User selects an application for removal using a removal application, and provides a reason for the removal.
+# webinos verifies that the user is authorised to remove the application from the target device.
+# webinos sends a deinstallation request to the user's device.
+# The webinos runtime on the device deinstalls the application.
+# webinos acknowledges removal of the application from the target device.
+
+
+h2. Postconditions
+
+Application is no longer available on the users device, but personal data created by the device still remains.
+      

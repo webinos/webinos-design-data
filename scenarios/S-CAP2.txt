@@ -1,0 +1,41 @@
+h1. S-CAP2: Report Disorder
+
+Author: Shamal Faily
+
+h2. Overview
+
+Peter wants to report an act of civil dis-obedience to the police.
+
+h2. Description
+
+It was 2315 and, after a night at the opera with some friends in Frankfurt, Peter was on the tram back to his apartment.  Peter was about to doze off when was stirred by the sound of shouting outside.  The tram had stopped for a few minutes at Luisenplatz; this is fairly common given it's position as an interchange for several tram and bus routes.  Peter looked out of the window towards the square and the source of the disturbance.  An intimidating group of youths with a strong penchant for black clothing and Alsatians was sat at the foot of the statue of Ludo.  Based on the slurring of their speech, their excessive volume, and the several half-empty crates of Schneider-Weisse, it is clear to Peter that everyone in the group was quite drunk.
+
+As he surveyed the scene, a large, shaven-head member of the group stumbled over to the Ludwigsmonument with a spray-paint can.  As the sounds of an impromptu rendition of "Feuer Frei" rang out over Luisenplatz, the youth began spray painting graffiti onto the base of the statue.  While Peter found this wanton act reprehensible, other passers-by in the square were acquiescent.  With no police nearby, no-one wanted to challenge the behaviour of a large, clearly inebriated group of youths with dogs.
+
+Peter decided to act.  He reached into his coat pocket for his phone, and started up "Civic Pride": a Webinos-enabled web-app that allows users to photograph and record evidence of civic disobedience and, using the phone's GPS, sends evidence, as well as the time and location of an event to the police authority nearest to the device.  Peter setup the short-cut on his phone some time ago, but this was the first time he needed to use it.  When the application started and launched the phone's camera, Peter pointed the camera at the youth -- who was still busy tagging the side of the statue -- and prepared his shot.  As the photo was taken, the flash caught the attention of the group, who looked around to see where it might have come from.  
+
+Peter quickly entered "vandal graffiti" into the text field  beside the photo, assigned the event to a "Graffiti" category, and clicked on the Send button.  Meanwhile, the youth had returned to the group, who had now determined that the flash came from Peter's tram.  As the group advanced menacingly towards the tram, a bell sounded and the tram slowly pulled away.  Relieved, Peter returned the phone to his pocket, and hoped that his action had made a difference.
+
+h2. Issues
+
+* The politics of web applications.  Might an EU funded project facilitating civil order applications provide the impetus for a dystopian, Big Brother society?
+
+* When users provide authorisation to web applications at install time, do we expect their expectations to be the same when an application is used?
+
+h2. Benefits
+
+None
+
+h2. Usability breakdown 
+
+| Persona | Peter |
+| Duration | Minutes |
+| Frequency | Monthly or less |
+| Demands | Medium |
+| Goal Conflict | None |
+
+h2. Required Use Cases
+
+* DA1 
+* LC1
+* PS7

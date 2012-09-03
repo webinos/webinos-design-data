@@ -1,0 +1,30 @@
+h1. LC2: Update of applications
+
+Author: Katrin Jordan
+
+Actors: User
+
+h2. Description
+
+A webinos application is updated via remote trigger.
+
+
+h2. Preconditions
+
+A newer version for an application is available (new features, security updates etc.).
+
+
+h2. Flow
+
+# The webinos runtime becomes aware of the availability of an updated application and notifies the user.
+# User confirms the application update.
+# Prior to the application download, the policy manager performs a check if an update is allowed. 
+# The download is triggered
+# The application packaged is downloaded from an application server to the local application repository
+# After the download is completed an integrity and security check is performed.
+# The application package is distributed to the other devices inside the personal zone
+
+h2. Postconditions
+
+Application is updated; 
+The previous, older, version will be deleted. 

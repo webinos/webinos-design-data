@@ -1,0 +1,46 @@
+h1. S-PS3: Privacy Controls and Analytics for Corporations and Small Business
+
+Author: Ajit Jaokar, John Lyle, Shamal Faily, Ivan Flechais, Hans Myrhaug, Ayse Goker
+
+h2. Overview 
+
+webinos compatible analytics and privacy preferences lead to different experiences when passing a department store.
+
+h2. Description
+
+A central London department store wants to attract more customers by launching a retail advertising campaign taking advantage of information about the customers' mobile device to provide a more targeted and relevant campaign to individual customers.  To do this, they have decided to launch the compaign which relies on ads placed within mobile web applications.  If prospective customers are near a Joe Lewis store and running an application with placed advertising then, based on their preferences, they will receive a special offer entitling them to a discount on certain products.  These product discounts will be tailored based on their webinos preferences.  Joe Lewis will run this campaign using a large developer platform whose APIs support webinos.  Support for webinos was important to Joe Lewis when selecting a platform upon which to base their advertising.  Because there is a growing emphasis on consumer privacy, Joe Lewis has made the decision to only use marketing tools that conform to EU data protection regulations; they understand that their selected platform partner conforms to these regulations due to their platform APIs rely on webinos for eliciting privacy sensitive information..
+			    
+Three weeks later, Peter and Gloria are walking past this store on opposite sides of the shop, and in opposite directions.  Peter, who is visiting London for the weekend, receives an alert from his diary app about a special offer on sound-proof headphones, which is fortuitous as he was thinking about buying a set of these only the other day.  Meanwhile, Gloria receives no messages at all because, although the platform deduced that some dietary preferences had been defined for Gloria, her policy was such that she had explicitiy asked this information not to be disclosed.
+
+h2. Issues
+
+* webinos will provide unparalleled amounts of information about users, and provides a basis for monitoring behavior across all the device domains. This is an attractive target for advertisers and analytics companies, and webinos must expect this scenario. To make sure that privacy is maintained, webinos must provide an easy and controllable method for implementing, monitoring, and auditing functionality.
+* Many free applications are driven by advertising and marketing campaigns. This is good for end users, who gain an application and new functionality, but webinos must support the business model of the developers too.
+* webinos APIs co-existing with similar APIs on other platforms.
+
+h2. Benefits
+
+* Advertising, marketing and analytics are considered from a privacy perspective and webinos keeps control in the hands of the users of the devices.
+* webinos caters for a wide variety of business models, including ad-driven applications and services.
+* webinos can enable advertisers to tailor adverts to the right customer and offer discounts on products they have a genuine interest in. This functionality is balanced against the need for users to maintain the confidentiality of their private information and not share too much about themselves.
+* webinos can be used to keep control of important data across multiple devices, despite the new threats posed by mobile and in-car systems.
+
+h2. Usability breakdown
+
+| Persona |  Peter |
+| Duration | Minutes |
+| Frequency | Hourly or more |
+| Demands | Low |
+| Goal Conflict | None |
+
+
+| Persona |  Gloria |
+| Duration | Minutes |
+| Frequency | Hourly or more |
+| Demands | Low |
+| Goal Conflict | Low |
+
+h2. Required Use Cases
+
+* CAP2
+* PS9

@@ -1,0 +1,38 @@
+h1. WOS-UC-TA4-010: Data Synchronization
+
+Author: Christian Fuhrhop
+Review: André Paul
+
+Actors: User, Application
+
+h2. Description
+
+webinos needs to be capable of synchronising data between multiple devices so that applications as well as system components can share data across devices.
+
+h2. Preconditions
+
+Devices taking part in the synchronization are connected to each other so that data exchange (synchronization) is possible.  The user runs an application that makes use of synchronised data, and the application uses webinos APIs to store application data that is subject to synchronisation.
+
+h2. Flow
+
+# The Application updates synchronisable data.
+# webinos synchronises thechanged data with other devices where the same application is installed on.
+# User quit the application.
+# User starts the same application on another device.
+# The Application reads the synchronised data.
+
+h2. Postconditions
+
+The application on the second device continues to work based on the synchronised data.
+
+
+h2. Use Case Map
+
+!Communication_Use_Case_Maps-Map279-Data_Synchronization.png!
+
+h2. Related artifacts
+
+| *Scenarios* | |
+| *Use Cases* | |
+| *Requirements* | |
+

@@ -1,0 +1,48 @@
+h1. WOS-UC-TA4-017: Wake-on-Webinos
+
+Author: Hans Stokking
+Review: André Paul
+
+Actors: User,Application
+
+h2. Description
+
+This usecase is about waking-up other device upon demand, to enable devices to have an energy-saving sleeping mode and still be usable for services.
+
+
+h2. Preconditions
+
+A webinos enabled device is registered as one of an end users devices. Some services that can be used remotely by applications are located on this device.
+
+
+h2. Flow
+
+# The user starts the webinos runtime (note, the webinos runtime could be also automatically started, e.g., after the device was successfully started)
+# The webinos runtime registers itself at a wake-up component as being available and exposes its services to the discovery components.
+# The device goes in idle mode and after a while in sleeping mode, for example a low-energy mode in which it can still be activated over the network (this depends on the device and the native operating system).
+# An application running on another device wants to make use of a service located on the device with the use of service discovery.
+# The RPC mechanism receives this service request.
+# The service discovery determines that this request should be routed to the device.
+# A wake-up component looks up the device status, and finds out that the current status is sleeping / not available.
+# The wake-up component sends a wake-up message via the network to the device (which, for example, can directly be send to the device or through other devices running in the same network as the target device).
+# The device receives the request and activates.
+# The webinos runtime activates, and sends an acknowledgement to state that it is available for service requests.
+# The RPC mechanism forwards the original service request to the target device
+# The remote service request is executed using the desired API.
+
+
+h2. Postconditions
+
+The device is in active mode and available for service requests. If the device cannot be woken up for some reason, the webinos system should proceed as if the device was unavailable in the first place.
+
+h2. Use Case Map
+
+!Communication_Example_Use_Case_Maps-Map2-Wake_on_Webinos.png!
+
+h2. Related artifacts
+
+| *Scenarios* | |
+| *Use Cases* | |
+| *Requirements* | |
+
+

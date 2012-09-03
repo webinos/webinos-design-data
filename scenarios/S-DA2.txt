@@ -1,0 +1,36 @@
+h1. S-DA2: Input Method Dictionary Sharing across Devices
+
+Author: NTUA, IBBT, ISMB, Samsung, Polito
+
+h2. Overview
+
+Have a relaxing trip thanks to smart input methods.
+
+h2. Description
+
+When Georg starts a trip in his car, he is using the webinos Enabled Tweeting application on his mobile to "get-in" his car. This allows the app to retrieve the destination and the estimated time of arrival. The car is equipped by a navigation service, it can accept commands by touching physically the console, through vocal command, and can also accept command from the other enabled webinos  device, like the mobile of Georg (which itself can accept different kind of inputs). The accuracy of these methods benefits from or even depends on populating a dictionary of non-standard words and phrases which each user employs. In this case, all input methods can benefit from the dictionary previously created by Georg using all his webinos enabled device, and shared among all of them.  The Georg's in-car webinos system looks for available dictionary application among its reachable devices. But his webinos-enabled laptop is switched off, and his webinos-enabled TV (at home) has been instructed to not synchronize data when Georg left his house, to save unnecessary bandwidth consumption. Anyway, the smart-phone dictionary is ready and up-to-date.
+So, Georg can pilot the navigation system of the car accurately, and instructs it to posts to Georg’s Twitter account “George is on the way to the Alps, be there in 4 hours” while safely driven, and edit/complete that default phrase with "he's ready for a beautiful week-end"
+
+h2. Issues
+
+* All the input methods working on the user devices would have to use the same dictionary, which means that all the input methods would have to be rewritten for the webinos platform.
+* Devices may be offline when the dictionary is needed, so local synchronized copies of the dictionary will still be required.
+
+h2. Benefits
+
+* Users will have access to their dictionaries from each of their devices. They will need to define a new entry in a dictionary only once, which can happen automatically in most cases and from this time on the new word will be automatically recognizable on all of their devices. Users can choose whatever input method they like at the time, which may vary according to the device and context, without having to teach new words to each input method separately.
+* By capturing anonymized word lists from the Cloud (where permission is granted) the default dictionaries can be frequently updated so that newly popular words do not need to be added by each new user.
+
+
+h2. Usability breakdown 
+
+| Persona |  Georg |
+| Duration | Minutes |
+| Frequency | Hourly or more |
+| Demands | Low |
+| Goal Conflict | None |
+
+h2. Required Use Cases
+* DA4
+* TMS2
+

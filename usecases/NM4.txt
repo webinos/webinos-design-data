@@ -1,0 +1,36 @@
+h1. WOS-UC-TA4-003: Proximity detection of Services
+
+Author: Anders Isberg
+Review: André Paul
+
+Actors: User, Application
+
+h2. Description
+
+A user prefers devices and services which are in physical proximity because they are more likely to relevant than other. 
+
+h2. Preconditions
+
+Discovered service include meta data that describing its physical location.
+
+h2. Flow
+
+# User executes an application that can make use of remote services.
+# Application requests service discovery to use a certain service type in close proximity.
+# webinos tries to discover the service types in question across all available and accessible devices.
+# webinos collects discovered service information and reports this back to the application.
+# Application makes use of the searched services in close proximity.
+
+h2. Postconditions
+
+Application has discovered and make use of services in close physical proximity.
+
+h2. Use Case Map
+
+!Communication_Use_Case_Maps-Map231-Proximity_detection_of_Services.png!
+
+h2. Related artifacts
+
+| *Scenarios* | |
+| *Use Cases* | |
+| *Requirements* | |

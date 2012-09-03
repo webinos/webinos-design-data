@@ -1,0 +1,42 @@
+h1. S-NC3: Background Monitoring Services
+
+Author: Simon Isenberg
+
+h2. Overview
+
+The scenario describes how to use monitoring services in webinos which can notify applications or a user, if a specific event is detected. Furthermore it showcases how applications can use information about the device to adapt the UI to the capabilities provided by the currently used device.
+
+h2. Description
+
+Peter has to visit a business partner on the next business day. His business partner has recently moved to a new office and so he looks up the new address on his smartphone and pushes the address to his in-car navigation system using the webinos travel app. A few moments later a notification pops up on his smartphone from the FuelEconomic app. The app notifies him about the cheapest gas stations along the way. His car does not have enough gas to reach the business partner without stopping at a gas station, so Peter selects one of the suggested stations and pushes its address to his in-car navigation system. On the next morning Peter is guided to the selected gas station by the in-car system and then to his business partner.
+
+In order to suggest appropriate gas stations the FuelEconomic constantly monitors the current position of the vehicle, consumption, range and next destination which is programmed into the in-car navigation system. If the service suggests a relevant gas station, Peter can request guidance to it on his in-car navigation system. The way how notifications are presented to Peter depends on the device he is currently using. When Peter is in his car, a selection menu of available gas stations is displayed on the central display and he can choose from one of the suggested stations. FuelEconomic adapts the layout of the selection list according to the input controls and the screen size of the IVI-system. When Peter transmits a new destination to his in-car navigation system using a different device, FuelEconomic checks the distance to the new destination and determines, if he has enough gas available to reach the destination or if a cheap gas station is along the way. In this case he already gets the information on his smartphone and can plan the trip accordingly.
+
+h2. Issues
+
+* Users can be able traced by such background services. 
+* For in-car scenarios it has to be verified that notifications and applications do not distract the driver. Certain rules and guidelines have to be followed. webinos might need to monitor what an application wants to display on the in-car screen and deny certain actions
+
+h2. Benefits
+
+webinos enables applications to access features from remote devices in a seamless manner. Furthermore, webinos provides the information about devices to adapt the UI to the different device capabilities
+
+h2. Usability breakdown 
+
+| Persona |  Peter |
+| Duration | Minutes |
+| Frequency | Monthly or less |
+| Demands | Medium |
+| Goal Conflict | Low |
+
+
+h2. Required Use Cases
+
+* CAP3 
+* DA2 
+* PS1
+* PS7
+* PS9
+* NC1
+* TMS2
+* CAP1

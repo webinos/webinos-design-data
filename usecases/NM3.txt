@@ -1,0 +1,39 @@
+h1. WOS-UC-TA4-002_3: Start an application triggered by a Published Event
+
+Author: André Paul, based on WOS-UC-TA4-002
+
+Actors: Application,User
+
+h2. Description
+
+webinos allows applications to publish and subscribe to application based events. In addition to this, webinos itself publishes certain events where applications can be registered to. webinos allows a permanent subscription to events so that applications that are not running are automatically started based on the event and afterwards the application can receive the event.
+
+h2. Preconditions
+
+An application subscribes to a wifi connectivity event with the request to be automatically started if it is not already running.
+
+h2. Flow
+
+# User terminates the application.
+# webinos detects that conditions for a specific webinos event for wifi connectivity is met.
+# webinos creates an event that describes the occurred condition.
+# webinos publishes the event.
+# webinos checks which applications have been subscribed to the event in question.
+# webinos starts applications that are registered to the event but that are currently not running.
+# The event is distributed to subscribing applications running on the same or on other, remote, devices, including the application.
+
+h2. Postconditions
+
+The application has been started, is reachable, and has received the published information.
+
+h2. Use Case Map
+
+!Communication_Use_Case_Maps-Map184-Start_an_application_triggered_by_a_Published_Event.png!
+
+h2. Related artifacts
+
+| *Scenarios* | |
+| *Use Cases* | |
+| *Requirements* | |
+
+

@@ -1,0 +1,40 @@
+h1. WOS-UC-TA9-012: Local storage of credentials
+
+Author: John Lyle, Shamal Faily
+
+Actors: User, Application
+
+Category: Policy and Security
+
+h2. Description
+
+Credentials are stored by webinos as part of an application install.
+
+
+h2. Preconditions
+
+A webinos-enabled application is being installed.  The application specification indicates that webinos should store social network credentials.  An app user signs up to a new social network.
+
+h2. Flow
+
+# User installs webinos-enabled social networking application.
+# Application requests social network credentials from the User.
+# User enters social network credentials.
+# Application requests permission to the PZP's policy manager to store social network credentials.
+# User grants blanket permission for webinos to store social network credentials.
+# Application stores social networking credentials within the device's PZP.
+
+
+h2. Postconditions
+
+User's credentials are stored by webinos and do not need to be re-entered whenever he is authenticated to his devices.
+
+h2. Use case map
+
+!LocalStorageOfCredentials.jpg!
+
+h2. Related artifacts
+
+| *Scenarios* | |
+| *Use Cases* | |
+| *Requirements* | |

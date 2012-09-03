@@ -1,0 +1,43 @@
+digraph webinosTraceability {
+ graph [rankdir="TB"];
+ node [shape=rectangle,style="rounded,filled",colorscheme="spectral3",color="1"];
+ edge [arrowhead=vee,];
+
+subgraph cluster_TMS {
+  label = "TMS";
+  "Application data synchronisation" [color=2,scenarios="",usecases="TMS2",backlog=""];
+  "Application data synchronisation management" [color=2,scenarios="S-DA2",usecases="",backlog=""];
+  "Application running state" [color=2,scenarios="",usecases="TMS2",backlog=""];
+  "Application shutdown synchronisation" [scenarios="",usecases="",backlog=""];
+  "Application startup synchronisation" [scenarios="",usecases="",backlog=""];
+  "Data subset application synchronisation" [color=2,scenarios="",usecases="TMS2",backlog=""];
+  "Disable application data synchronisation" [scenarios="",usecases="",backlog=""];
+  "Disable device synchronisation" [color=2,scenarios="S-DA2",usecases="",backlog=""];
+  "Personal device application status registration" [scenarios="",usecases="",backlog=""];
+  "Personal device power status" [scenarios="",usecases="",backlog=""];
+  "Personal device status registration" [scenarios="",usecases="",backlog=""];
+  "Session re-establishment" [color=2,scenarios="",usecases="TMS2",backlog=""];
+  "State and configuration transfer" [color=2,scenarios="",usecases="TMS2",backlog=""];
+  "Synchronisation method" [scenarios="",usecases="",backlog=""];
+  "Time period based application synchronisation" [scenarios="",usecases="",backlog=""];
+ }
+"Session re-establishment" -> "State and configuration transfer" [label="needs"];
+"Device Status API" -> "State and configuration transfer" [label="triggers"];
+"Personal device status registration" -> "Personal device power status" [label="contains"];
+
+"Personal device status registration" -> "Device status discovery" [label="allows"];
+
+ "Device Status API" -> "Personal device power status"  [label="facilitates access to"]
+"Application running state" -> "State and configuration transfer" [label="enables"]; 
+"Application data synchronisation" -> "Synchronisation method" [label="uses"];
+"Disable device synchronisation" -> "Application data synchronisation" [label="controls"];
+"Disable application data synchronisation"-> "Application data synchronisation" [label="controls"];
+"Application data synchronisation management" -> "Application data synchronisation" [label="controls"];
+"Application startup synchronisation" -> "Application data synchronisation" [label="triggers"];
+"Application running state" -> "Personal device application status registration" [label="allows"]
+"Time period based application synchronisation" -> "Application data synchronisation" [label="triggers"];
+"Application shutdown synchronisation" -> "Application data synchronisation" [label="triggers"];
+"Data subset application synchronisation" -> "Application data synchronisation" [label="restricts"];
+"Application running state" -> "Personal device management" [label="relies on"];
+}
+

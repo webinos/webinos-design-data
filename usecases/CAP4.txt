@@ -1,0 +1,31 @@
+h1. WOS-UC-TA3-005_1: Background Execution (alternative)
+
+Author: Andre Paul
+
+Actors: User
+
+h2. Description
+
+Applications can register code to run automatically in the background at startup or at install time.
+
+h2. Preconditions
+
+The Application that wants to execute something in background is running or is being installed.
+
+h2. Flow
+
+# The Application registers for background execution on System start-up.
+# The User turns off the Device
+# The Webinos Runtime shuts down
+# The User turns on the Device
+# The Webinos Runtime starts up
+# After the Webinos runtime boot sequence is completed, It starts up the background code from the application
+# The background code starts up
+
+h2. Postconditions
+
+Code is executed in the background without the need for a running main Application. For the User the background execution is not visible.
+
+h2. Use case map
+
+!BackgroundExecutionAlt.png!

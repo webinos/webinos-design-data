@@ -1,0 +1,38 @@
+h1. WOS-UC-TA1-001: Virtual Device
+
+Author: Andre Paul
+
+Actors: User, Application
+
+h2. Description
+
+webinos allows the applications to use device features available on the user's currently used device or on other remotely available devices (especially mobile, PC, automotive, and home media devices).
+
+
+h2. Preconditions
+
+The user has at two webinos enabled devices, which are known to each other. Both devices are running and are connected so that communication is possible and using services from each other is allowed and permitted.
+
+h2. Flow
+
+# User starts an application on one of his devices.
+# Application needs to use a camera service which is not accessible using local APIs.
+# Application uses a service discovery mechanism to find all camera services available to the user.
+# webinos creates a set of services available to the application and user which meet the discovery criteria.
+# Application receives a number of found services that can be used.
+# Application accesses a discovered service to carry out his desired task.
+
+h2. Postconditions
+
+A camera service available on a remote device can be used by the application.
+
+h2. Use Case Map
+
+!WOS-UC-TA1-001_Virtual_Device.png!
+
+h2. Related artifacts
+
+| *Scenarios* | |
+| *Use Cases* | |
+| *Requirements* | |
+

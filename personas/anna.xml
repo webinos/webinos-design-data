@@ -1,0 +1,213 @@
+<?xml version="1.0"?>
+<!DOCTYPE usability PUBLIC "-//CAIRIS//DTD USABILITY 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/usability.dtd">
+
+
+<usability>
+<persona name="Anna" type="Primary" assumption_persona="TRUE" image="/home/irisuser/webinos/wp2/personas/anna.jpg" >
+  <activities>Anna is in the final year of an undergraduate medical degree. Breathing difficulties, coupled with a very mild form of Cerebral Palsy mean that some of her motor skills are limited and she is prone to bouts of fatigue. Because of her restricted mobility, Anna is dependent on the use of a wheel-chair.
+
+Despite her disability, Anna is keen on socialising, and lives in an adapted halls of residence at her university, so she can get out and meet people.</activities>
+  <attitudes>Although Anna had problems studying with her disabilities in school, her expectations about the accessibility of places, processes, and things have been raised during her time at university. These were raised in line with her desire to be more independent. Her local authority provides her access to a Personal Assistant when she occasionally needs help with shopping or other physically demanding activities, and she finds that many shops and places around university are becoming more accessible. As a result, Anna expects software and systems to be accessible enough for her to use.
+
+As the world around her has become more accessible, Anna has grown to dislike being type-casted because she relies on a wheel-chair. When she can, as much for exercise as anything else, she will try to walk short distances without a wheel-chair. Moreover, as her graduation approaches, she has become increasingly wary of highlighting her disability too greatly. With the current economic crisis, Anna is concerned she might miss out on jobs if her CV or an application form suggests she might be too much of a burden.</attitudes>
+  <aptitudes>Anna's desire for independence has given her a sharp eye for identifying ways that technology can improve her mobility. To reduce her reliance on her Personal Assistant constantly visiting her, she uses her mobile to keep in touch with her if she needs something. She also uses an electric wheelchair to get around, and is on the look out for any technology which might improve her studies and way of life, even if she has to pay for it herself because her local authority will not.
+
+Anna realises, however, that she does not live in a perfect world and needs to forward plan if she does anything which she thinks might be out of the ordinary. If Anna needs to take a bus, she tries to find out if she can take a wheel-chair on it before she ventures out. Anna also tries to find out if new shops are accessible before she first visits them, especially when buying clothes; she does not want to find something she likes only to discover that there is nowhere accessible to try it on.</aptitudes>
+  <motivations>Being disabled, Anna often needs to deal with a lot of bureaucracy to get the care she needs, and would love for some of this to be automated. She is convinced that technology can help her reduce the amount of forms she invariably needs to complete to get her benefits, or the number of people she has to deal with in local government or her university to resolve issues which occasionally crop up.
+
+Despite her self confidence, Anna always needs to think about what happens when things go wrong. Getting wheel-chair problems when out and about can leave her stranded because she struggles when walking more than a short distance.</motivations>
+  <skills>None</skills>
+  <persona_environment name="Identity" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Discovery and Addressing" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Remote Notifications and Messaging" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Policy and Security" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Negotiation and Compatibility" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Lifecycle" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Device and Service Functional Capability" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Transfer and Management of State" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Complete" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+</persona>
+<external_document name="Disabled Students Experiences (Wheelchair user)" version="1" date="January 2011" authors="Various" >
+  <description>http://www.studentroom.co.uk/wiki/Disabled_Student_Experiences</description>
+</external_document>
+<external_document name="e-Learning User Story" version="0.9" date="January 2011" authors="Heiko Desruelle" >
+  <description>Learning assistance for disabled students section</description>
+</external_document>
+<external_document name="Starting Uni In A Wheelchair forum post" version="1" date="February 2010" authors="Shamal Faily" >
+  <description>http://www.thestudentroom.co.uk/showthread.php?p=23934596</description>
+</external_document>
+<external_document name="Access Denied forum post" version="1" date="July 2009" authors="Various" >
+  <description>http://www.thestudentroom.co.uk/showthread.php?p=20297676</description>
+</external_document>
+<external_document name="Social Policies forum post" version="1" date="March 2009" authors="Various" >
+  <description>http://www.thestudentroom.co.uk/showthread.php?p=17667544</description>
+</external_document>
+<external_document name="Disabled Students Society - new icon? forum post" version="1" date="May 2007" authors="Various" >
+  <description>  http://www.thestudentroom.co.uk/showthread.php?p=8763798</description>
+</external_document>
+<external_document name="Personal assistant forum post" version="1" date="October 2009" authors="Various" >
+  <description>http://www.thestudentroom.co.uk/showthread.php?p=21996601</description>
+</external_document>
+<external_document name="Hiring mobility equipment? forum post" version="1" date="April 2009" authors="Various" >
+  <description>http://www.studentroom.co.uk/showthread.php?p=18324611</description>
+</external_document>
+<document_reference name="has breathing difficulties" contributor="Shamal Faily" document="Disabled Students Experiences (Wheelchair user)" >
+  <excerpt>I have been having breathing difficulties which result in shortness of breath after walking a minimum distance.</excerpt>
+</document_reference>
+<document_reference name="suffers fatigue" contributor="Shamal Faily" document="Disabled Students Experiences (Wheelchair user)" >
+  <excerpt>...and fatigue accompanying it.</excerpt>
+</document_reference>
+<document_reference name="struggles to walk" contributor="Shamal Faily" document="Disabled Students Experiences (Wheelchair user)" >
+  <excerpt>... I decided I couldn't cope with struggling to walk round campus, missing numerous lectures and seminars and missing placements as well, so I bought myself a wheelchair.</excerpt>
+</document_reference>
+<document_reference name="limited motor skills" contributor="Shamal Faily" document="e-Learning User Story" >
+  <excerpt>The CP also affects my fine motor skills - I can't write very fast, and I need extra thinking time in exams in order for my brain to get what I should be doing.</excerpt>
+</document_reference>
+<document_reference name="has a mild form for Cerebral Palsy" contributor="Shamal Faily" document="e-Learning User Story" >
+  <excerpt>I have Cerebral Palsy.....The most obvious way it affects my life is in my walking. I can't walk as fast as the average person, and I get tired very easily.</excerpt>
+</document_reference>
+<document_reference name="looking to make friends" contributor="Shamal Faily" document="Starting Uni In A Wheelchair forum post" >
+  <excerpt>I'm also worried about the social side of things.  I didn't have many friends at high school, but I'm hoping to change that.</excerpt>
+</document_reference>
+<document_reference name="lives in adapted halls of residence" contributor="Shamal Faily" document="Starting Uni In A Wheelchair forum post" >
+  <excerpt>I didn't attend freshers week due to my adapted halls not being ready.</excerpt>
+</document_reference>
+<document_reference name="can walk short distances" contributor="Shamal Faily" document="Access Denied forum post" >
+  <excerpt>But I can get out of a chair and walk short distances if necessary...</excerpt>
+</document_reference>
+<document_reference name="wary of highlighting own disability" contributor="Shamal Faily" document="Social Policies forum post" >
+  <excerpt>Haven't been employed for a long time but I'm very wary of actually applying for work (especially in the current economic climate) as a result of my disability.</excerpt>
+</document_reference>
+<document_reference name="dislikes wheelchair stereotypes" contributor="Shamal Faily" document="Disabled Students Society - new icon? forum post" >
+  <excerpt>A wheelchair isn't a disability, a disability is what puts you in the wheelchair.  The whole point of a wheelchair is to make your life easier.  Yes, in relation to 'normal' people it's difficult and awkward, but they give mobility to people who would be unable to move otherwise.  That's not really that hindering at all.</excerpt>
+</document_reference>
+<document_reference name="receives local authority help" contributor="Shamal Faily" document="Disabled Students Experiences (Wheelchair user)" >
+  <excerpt>I also applied for DSA.  About a month after applying for DSA, I received a letter confirming that they'd help, which was quite a relief!</excerpt>
+</document_reference>
+<document_reference name="access to a personal assistant" contributor="Shamal Faily" document="Personal assistant forum post" >
+  <excerpt>For me, as a wheelchair user, I had a personal assistant right through induction week (24/7) but them afterwards that I wanted by own space which they respected....</excerpt>
+</document_reference>
+<document_reference name="finds places are usually accessible" contributor="Shamal Faily" document="Access Denied forum post" >
+  <excerpt>everything is fairly accessible and I can get into the majority of shops with people around me often being fairly considerate and helping if I go shopping etc.</excerpt>
+</document_reference>
+<document_reference name="strives for independence" contributor="Shamal Faily" document="e-Learning User Story" >
+  <excerpt>...disabled students can become more independent in their environment.</excerpt>
+</document_reference>
+<document_reference name="expects accessible course material" contributor="Shamal Faily" document="e-Learning User Story" >
+  <excerpt>Regardless the type of his/her disability, the student expects all course material to be optimally accessible.</excerpt>
+</document_reference>
+<document_reference name="uses acessible public transport" contributor="Shamal Faily" document="Disabled Students Experiences (Wheelchair user)" >
+  <excerpt>... avoid me needing to travel on non-wheelchair accessible buses.</excerpt>
+</document_reference>
+<document_reference name="plans travel in advance" contributor="Shamal Faily" document="Access Denied forum post" >
+  <excerpt>...Trains are even worse, the ramps are ridiciously steep and despite booking assistance in advance....</excerpt>
+</document_reference>
+<document_reference name="looks for accessible shops" contributor="Shamal Faily" document="Access Denied forum post" >
+  <excerpt>I've found lots of shops with steps to get in and no ramps as well though there are some out there that are really helpful (people have volunteered to run around and find things for me in some shops so I can rest)....
+
+..I don't normally try on clothes in shops but had to on Friday as I needed it Satuday morning and the number of shops that didn't have disabled changing rooms was very high, I could get into the room but then couldn't shut the door, so thought about buying the item then going into the disabled toilet to try it on so could take it back if didn't fit, seemed like a lot of polava to be honest though.</excerpt>
+</document_reference>
+<document_reference name="conscious of equipment needed to keep studying" contributor="Shamal Faily" document="Disabled Students Experiences (Wheelchair user)" >
+  <excerpt>... in that  time, they guy managed to work out what sort of equipment might help me out and anything else that might be useful in order for me to keep studying.</excerpt>
+</document_reference>
+<document_reference name="electric wheelchair owner" contributor="Shamal Faily" document="Starting Uni In A Wheelchair forum post" >
+  <excerpt>I'm able to get around with an electric wheelchair.</excerpt>
+</document_reference>
+<document_reference name="uses mobile to get assistance" contributor="Shamal Faily" document="Personal assistant forum post" >
+  <excerpt>For me, as a wheelchair user, I had a personal assistant right through induction week (24/7) but them afterwards that I wanted by own space which they respected (so now I just text if I need anything)</excerpt>
+</document_reference>
+<document_reference name="pays for some of her own equipment" contributor="Shamal Faily" document="Hiring mobility equipment? forum post" >
+  <excerpt>at least in my disabled friend's case is that she pays things out of her own money...</excerpt>
+</document_reference>
+<document_reference name="fills lots of forms" contributor="Shamal Faily" document="Disabled Students Experiences (Wheelchair user)" >
+  <excerpt>...If I had filled in the appropriate forms, I wouldn't have needed to pay....</excerpt>
+</document_reference>
+<document_reference name="deals with many people to resolve issues" contributor="Shamal Faily" document="Disabled Students Experiences (Wheelchair user)" >
+  <excerpt>At university, I had to meet with many different people to discuss what could be done to help.</excerpt>
+</document_reference>
+<document_reference name="gets wheelchair problems" contributor="Shamal Faily" document="Disabled Students Experiences (Wheelchair user)" >
+  <excerpt>I have been battling with the company who supplied my chair as it was no longer holding its charge.</excerpt>
+</document_reference>
+<document_reference name="can get stranded" contributor="Shamal Faily" document="Disabled Students Experiences (Wheelchair user)" >
+  <excerpt>.. as it was no longer holding its charge, resulting in me being stranded on multiple occasions and usable to get to many sessions...</excerpt>
+</document_reference>
+<persona_characteristic persona="Anna" behavioural_variable="Activities" modal_qualifier="Always" >
+  <definition>Disability limits mobility</definition>
+  <grounds type="document" reference="suffers fatigue" />
+  <grounds type="document" reference="struggles to walk" />
+  <grounds type="document" reference="limited motor skills" />
+  <warrant type="document" reference="has breathing difficulties" />
+  <warrant type="document" reference="has a mild form for Cerebral Palsy" />
+</persona_characteristic>
+<persona_characteristic persona="Anna" behavioural_variable="Activities" modal_qualifier="likely" >
+  <definition>Proactively socialises</definition>
+  <grounds type="document" reference="looking to make friends" />
+  <warrant type="document" reference="lives in adapted halls of residence" />
+</persona_characteristic>
+<persona_characteristic persona="Anna" behavioural_variable="Aptitudes" modal_qualifier="usually" >
+  <definition>Forward plans</definition>
+  <grounds type="document" reference="uses acessible public transport" />
+  <grounds type="document" reference="plans travel in advance" />
+  <grounds type="document" reference="looks for accessible shops" />
+</persona_characteristic>
+<persona_characteristic persona="Anna" behavioural_variable="Aptitudes" modal_qualifier="probably" >
+  <definition>Looks for accessibility affordances</definition>
+  <grounds type="document" reference="conscious of equipment needed to keep studying" />
+  <grounds type="document" reference="electric wheelchair owner" />
+  <grounds type="document" reference="uses mobile to get assistance" />
+  <grounds type="document" reference="pays for some of her own equipment" />
+  <warrant type="document" reference="strives for independence" />
+</persona_characteristic>
+<persona_characteristic persona="Anna" behavioural_variable="Attitudes" modal_qualifier="probably" >
+  <definition>Doesn't want to be typecasted</definition>
+  <grounds type="document" reference="can walk short distances" />
+  <grounds type="document" reference="wary of highlighting own disability" />
+  <grounds type="document" reference="dislikes wheelchair stereotypes" />
+</persona_characteristic>
+<persona_characteristic persona="Anna" behavioural_variable="Attitudes" modal_qualifier="usually" >
+  <definition>Expects accessibilty devices and software</definition>
+  <grounds type="document" reference="receives local authority help" />
+  <grounds type="document" reference="access to a personal assistant" />
+  <grounds type="document" reference="finds places are usually accessible" />
+  <grounds type="document" reference="expects accessible course material" />
+  <warrant type="document" reference="strives for independence" />
+</persona_characteristic>
+<persona_characteristic persona="Anna" behavioural_variable="Motivations" modal_qualifier="always" >
+  <definition>Fears getting stuck</definition>
+  <grounds type="document" reference="gets wheelchair problems" />
+  <grounds type="document" reference="can get stranded" />
+  <warrant type="document" reference="struggles to walk" />
+</persona_characteristic>
+<persona_characteristic persona="Anna" behavioural_variable="Motivations" modal_qualifier="probably" >
+  <definition>Wants bureaucracy automated</definition>
+  <grounds type="document" reference="fills lots of forms" />
+  <grounds type="document" reference="deals with many people to resolve issues" />
+</persona_characteristic>
+</usability>

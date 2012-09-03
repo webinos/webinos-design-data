@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!DOCTYPE attack_pattern PUBLIC "-//CAIRIS//DTD ATTACKPATTERN 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/attack_pattern.dtd">
+
+<!-- 
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+
+
+<attack_pattern name="Steal In-Car Data" likelihood="Occasional" severity="Critical"> 
+  <intent>Use an open webinos session for unauthorised transfer of data between devices in different personal zones.</intent> 
+  <motivation goal="confidentiality" value="Medium"> 
+    <description>The attacker can access user session data.</description>
+  </motivation>
+  <motivation goal="accountability" value="High"> 
+    <description>The attacker can access user active session of the service.  If it is a service with a fee, the attack can spend user money.</description>
+  </motivation>
+  <applicability environment="Complete" />
+  <structure attack="Session hijacking" exploit="Automatic login" exploit_obstacle="Malicious personal zone enrolment" /> 
+  <participant name="David">
+    <motive name="Data theft" />
+    <capability name="Resources/Personnel and Time" value="Medium" />
+  </participant>
+  <collaboration>
+    <target name="Personal Data" /> 
+    <exploit name="Browser" />
+  </collaboration>
+  <consequences>Loss of trust in use of in-car systems because of fear of personal data loss.</consequences>
+  <implementation>
+    <description>Justin gives David, the mechanic, his car keys so David can carry out his scheduled MOT.
+David at the moment has not other customers, so he decides to fiddle with the in-car system.
+The computer requires no authentication so he can enter and nose about navigation history. He realizes that the web browser is logged in a music service with fee. He listens to the music waiting for the next motorist coming.
+After listening few songs, he uses his own webinos enabled smartphone to get the Justin's personal zone device list via Justin's PZH. From the list he selects the in-car system. When on the in-car system touch screen appears the confirmation dialog box, he taps on OK and the devices are now connected. David can exit from the car and access Justin's music service form his own smartphone.
+When Justin comes back to the parking, David disconnects the smartphone form the music service and from Justin's personal zone and returns the car to its owner.</description>
+   </implementation>
+  <known_uses>None</known_uses>
+  <related_patterns>None</related_patterns>
+</attack_pattern>

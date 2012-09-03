@@ -1,0 +1,251 @@
+<?xml version="1.0"?>
+<!DOCTYPE architectural_pattern PUBLIC "-//CAIRIS//DTD ARCHITECTURAL PATTERN 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/architectural_pattern.dtd">
+
+<!-- 
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+
+<architectural_pattern name="PZP Enrolment">
+<synopsis>Components associated with enrolling and authenticating PZPs to PZHs</synopsis>
+
+<access_right name="trusted" value="5">
+  <description>None</description>
+  <rationale>None</rationale>
+</access_right>
+<access_right name="authenticated" value="5">
+  <description>None</description>
+  <rationale>None</rationale>
+</access_right>
+
+<privilege name="privileged" value="10">
+  <description>None</description>
+  <rationale>None</rationale>
+</privilege>
+<privilege name="normal" value="1">
+  <description>None</description>
+  <rationale>None</rationale>
+</privilege>
+
+<protocol name="TLS" value="10">
+  <description>None</description>
+  <rationale>None</rationale>
+</protocol>
+<protocol name="PC" value="5">
+  <description>Synchronous procedural call</description>
+  <rationale>None</rationale>
+</protocol>
+
+<surface_type name="JSON" value="10">
+  <description>None</description>
+  <rationale>None</rationale>
+</surface_type>
+<surface_type name="Unconstrained Image" value="1">
+  <description>Image files</description>
+  <rationale>Malformed images might be used a potential attack vector.</rationale>
+</surface_type>
+<surface_type name="Structured Text" value="5">
+  <description>Structured Text</description>
+  <rationale>Should not be left to a client application to validate on its own.</rationale>
+</surface_type>
+
+
+
+
+<asset name="JSON Object" short_code="JSON_OBJT" type="Information" surface_type="JSON" access_right="authenticated">
+  <description>JSON Object</description>
+  <significance>Encapsulates data sent between components within the same node process</significance>
+</asset>
+<asset name="PZP Private Key" short_code="PZP_PRIV_KEY" type="Information" surface_type="JSON" access_right="trusted">
+  <description>Device-held private key</description>
+  <significance>Device-held private key</significance>
+</asset>
+<asset name="Device Authentication Data" short_code="DEV_AUTHN_DATA" type="Information" surface_type="JSON" access_right="trusted">
+  <description>Device authentication Data</description>
+  <significance>Data about device authentication</significance>
+</asset>
+<asset name="TLS Server" short_code="TLSSVR" type="Software" surface_type="Privileged application" access_right="trusted">
+  <description>TLS Server</description>
+  <significance>Responsible for TLS communication between personal zone components</significance>
+</asset>
+<asset name="Web Server" short_code="WEBSVR" type="Software" surface_type="Privileged application" access_right="trusted">
+  <description>Web Server</description>
+  <significance>Provides web interface to PZH provider</significance>
+</asset>
+<asset name="Farm Configuration" short_code="FARMCFG" type="Information" surface_type="JSON" access_right="authenticated">
+  <description>Configuration</description>
+  <significance>Stores connection parameters for PZH Provider TLS server</significance>
+</asset>
+<asset name="PZH Session" short_code="PZHS" type="Information" surface_type="JSON" access_right="authenticated">
+  <description>PZH Session</description>
+  <significance>Session information about a PZH</significance>
+</asset>
+
+<asset name="PZP Configuration" short_code="PZPCFG" type="Information" surface_type="JSON" access_right="authenticated">
+  <description>PZP Configuration</description>
+  <significance>Stores certificates and CRLs</significance>
+</asset>
+<asset name="WebSocket Server" short_code="WEBSSVR" type="Software" surface_type="Privileged application" access_right="trusted">
+  <description>WebSocket Server</description>
+  <significance>Responsible for communication between personal zone components</significance>
+</asset>
+<asset name="Message Handler" short_code="MSGH" type="Software" surface_type="Privileged application" access_right="trusted">
+  <description>Message Handler</description>
+  <significance>Handles JSON-RPC requests</significance>
+</asset>
+
+<asset name="Certificate" short_code="CERT" type="Information" surface_type="Structured Text" access_right="authenticated">
+  <description>X.509 Certificate</description>
+  <significance>TLS relies on PZP and PZH certificates</significance>
+</asset>
+<asset name="PZP CA Certificate" short_code="PZPCA" type="Information" surface_type="Structured Text" access_right="authenticated">
+  <description>PZP CA Certificate</description>
+  <significance>PZP CA Certificate</significance>
+</asset>
+<asset name="PZH Master Certificate" short_code="PZHMA" type="Information" surface_type="Structured Text" access_right="authenticated">
+  <description>PZH Master Certificate</description>
+  <significance>PZH Master Certificate</significance>
+</asset>
+<asset name="Session" short_code="SESS" type="Information" surface_type="JSON" access_right="authenticated">
+  <description>Transport session</description>
+  <significance>Used for transferring messages between applications and services.</significance>
+</asset>
+<asset name="Certificate Signing Request" short_code="CSR" type="Information" surface_type="Structured Text" access_right="trusted">
+  <description>A message sent from an applicant to a certificate authority in order to apply for a digital identity certificate.</description>
+  <significance>Sent to PZH for signing</significance>
+</asset>
+<asset name="Enrollment Token" short_code="ER" type="Information" surface_type="Structured Text" access_right="authenticated">
+  <description>Token generated by PZH in order that a PZP can be enrolled into a personal zone.</description>
+  <significance>Access to the token provides a means for unauthorised devices to be enroled into a personal zone.</significance>
+</asset>
+<asset name="QR Module" short_code="QR" type="Software" surface_type="Privileged application" access_right="trusted">
+  <description>Code module that creates an enrollment token.</description>
+  <significance>Creates enrollment enrollment token.</significance>
+</asset>
+
+<goal name="PZP token">
+  <definition>A token generated by the personal zone's hub shall be presented by the PZP when enrolling a device to the personal zone.</definition>
+  <rationale></rationale>
+</goal>
+<goal name="Personal zone CA">
+  <definition>The personal zone hub shall be the certificate authority for a personal zone.</definition>
+  <rationale></rationale>
+</goal>
+<goal name="CA certificate signing">
+  <definition>The personal zone's CA certificate shall be signed by the service provider who owns the infrastructure the PZH is running on.</definition>
+  <rationale>PZHs have no agency, so are unable to do this themselves.</rationale>
+</goal>
+<goal name="Device CA">
+  <definition>The personal zone proxy shall be the certificate authority for a device enrolled in a personal zone.</definition>
+  <rationale></rationale>
+</goal>
+
+<goal name="Message non-repudiation">
+  <definition>Event messages shall be non-repudiable.</definition>
+  <rationale>Message 'from' fields are filled in by the PZP, which is able to authenticate the source of each message.</rationale>
+</goal>
+<goal name="PZP message authenticity">
+  <definition>PZPs shall authenticate the origin of messages they send.</definition>
+  <rationale>PZPs add the 'from' field to messages based on the sender who has been authenticated through the webinos PKI.</rationale>
+</goal>
+<goal name="Installed app communication verification">
+  <definition>Installed applications shall verify communication to webinos applications.</definition>
+  <rationale>Applications could read the 'from' field of the received event and attest it.</rationale>
+</goal>
+<goal name="Installed app message non-repudiation">
+  <definition>Installed applications shall verify the authenticity of event message origin.</definition>
+  <rationale>We can rely on the Events API read-only 'from' field that is written only by the PZP.</rationale>
+</goal>
+<goal name="Installed app postMessage non-repudiation">
+  <definition>Installed applications shall disallow postMessages from unrecognised origins.</definition>
+  <rationale>Origins can be verified on messaging.</rationale>
+</goal>
+
+
+<component name="PZH Provider">
+  <description>PZH Provider</description>
+  <interface name="connect" type="provided" access_right="trusted" privilege="normal" />
+  <structure head_asset="TLS Server" head_adornment="Association" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="Farm Configuration" />
+  <structure head_asset="Web Server" head_adornment="Association" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="Farm Configuration" />
+</component>
+
+<component name="Keystore Manager">
+  <description>Keystore Manager</description>
+  <interface name="get" type="provided" access_right="trusted" privilege="normal" />
+  <structure head_asset="PZP Private Key" head_adornment="Association" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="Certificate Signing Request" />
+</component>
+
+<component name="PZH Session Handler">
+  <description>PZH Session Handler</description>
+  <interface name="registeredServices" type="required" access_right="authenticated" privilege="normal" />
+  <interface name="addNewPZPCert" type="provided" access_right="trusted" privilege="normal" />
+  <component_goal name="Personal zone CA" />
+  <component_goal name="CA certificate signing" />
+  <component_goal_association goal_name="Personal zone CA" ref_type="and" subgoal_name="CA certificate signing">
+    <rationale>None</rationale>
+  </component_goal_association>
+</component>
+
+<component name="Discovery Manager">
+  <description>Discovery Manager</description>
+  <interface name="getRegisteredServices" type="provided" access_right="authenticated" privilege="normal" />
+</component>
+
+<component name="PZP Session Handler">
+  <description>Responsible for the creation of sessions, loading sessions during reconnections, and loading user preferences</description>
+  <interface name="addNewPZPCert" type="required" access_right="trusted" privilege="normal" />
+  <interface name="createCertificateRequest" type="required" access_right="trusted" privilege="privileged" />
+  <interface name="getKey" type="required" access_right="trusted" privilege="normal" />
+  <interface name="connect" type="required" access_right="trusted" privilege="normal" />
+  <interface name="getRegisteredService" type="required" access_right="authenticated" privilege="normal" />
+  <interface name="registerServices" type="provided" access_right="authenticated" privilege="normal" />
+  <structure head_asset="WebSocket Server" head_adornment="Association" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="PZP Configuration" />
+  <structure head_asset="TLS Server" head_adornment="Association" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="PZP Configuration" />
+  <structure head_asset="Message Handler" head_adornment="Association" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="PZP Configuration" />
+  <structure head_asset="Certificate" head_adornment="Inheritance" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="PZP CA Certificate" />
+  <structure head_asset="TLS Server" head_adornment="Aggregation" head_nav="1" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="PZP CA Certificate" />
+  <structure head_asset="Certificate Signing Request" head_adornment="Aggregation" head_nav="1" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="Enrollment Token" />
+  <structure head_asset="TLS Server" head_adornment="Association" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1..a" tail_nav="1" tail_adornment="Association" tail_asset="PZP CA Certificate" />
+  <structure head_asset="TLS Server" head_adornment="Association" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1..a" tail_nav="1" tail_adornment="Association" tail_asset="Certificate Signing Request" />
+  <component_goal name="PZP token" />
+  <component_goal name="Device CA" />
+  <component_goal name="Message non-repudiation" />
+  <component_goal name="PZP message authenticity" />
+  <component_goal name="Installed app communication verification" />
+  <component_goal name="Installed app message non-repudiation" />
+  <component_goal name="Installed app postMessage non-repudiation" />
+  <component_goal_association goal_name="Message non-repudiation" ref_type="and" subgoal_name="PZP message authenticity"/>
+  <component_goal_association goal_name="Message non-repudiation" ref_type="and" subgoal_name="Installed app message non-repudiation"/>
+  <component_goal_association goal_name="Message non-repudiation" ref_type="and" subgoal_name="Installed app postMessage non-repudiation"/>
+  <component_goal_association goal_name="PZP message authenticity" ref_type="and" subgoal_name="Installed app communication verification"/>
+  <component_goal_association goal_name="Device CA" ref_type="and" subgoal_name="Personal zone CA"/>
+</component>
+
+<component name="Certificate Manager">
+  <description>Generates certificates for PZPs before device enrolement.</description>
+  <interface name="createCertificateRequest" type="provided" access_right="trusted" privilege="privileged" />
+  <structure head_asset="TLS Server" head_adornment="Association" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1..a" tail_nav="1" tail_adornment="Association" tail_asset="Certificate Signing Request" />
+  <structure head_asset="PZP CA Certificate" head_adornment="Association" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="Certificate Signing Request" />
+</component>
+
+<connector name="createCSR" from_component="PZP Session Handler" from_role="request-createCSR" from_interface="createCertificateRequest" to_component="Certificate Manager" to_interface="createCertificateRequest" to_role="provide-createCSR" protocol="TLS" access_right="authenticated" asset_name="Certificate"/>
+<connector name="addPZPCert" from_component="PZP Session Handler" from_role="request-addPZPCert" from_interface="addNewPZPCert" to_component="PZH Session Handler" to_interface="addNewPZPCert" to_role="provide-addPZPCert" protocol="TLS" access_right="authenticated" asset_name="Certificate Signing Request"/>
+<connector name="registeredservices" from_component="PZP Session Handler" from_role="request-allservices" from_interface="getRegisteredServices" to_component="Discovery Manager" to_interface="getRegisteredServices" to_role="provide-registeredservices" protocol="JSON-RPC" access_right="authenticated" asset_name="JSON Object"/>
+<connector name="remoteservices" from_component="PZP Session Handler" from_role="send-remoteservices" from_interface="registerServices" to_component="PZH Session Handler" to_interface="registeredServices" to_role="recv-remoteservices" protocol="JSON-RPC" access_right="authenticated" asset_name="JSON Object"/>
+<connector name="keyservices" from_component="PZP Session Handler" from_role="request-keyservices" from_interface="getKey" to_component="Keystore Manager" to_interface="get" to_role="provide-keyservices" protocol="PC" access_right="trusted" asset_name="PZP Private Key"/>
+<connector name="pzpconnect" from_component="PZP Session Handler" from_role="request-pzpconnect" from_interface="connect" to_component="PZH Provider" to_interface="connect" to_role="provide-pzpconnect" protocol="TLS" access_right="trusted" asset_name="Device Authentication Data"/>
+</architectural_pattern>

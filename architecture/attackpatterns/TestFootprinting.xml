@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<!DOCTYPE attack_pattern PUBLIC "-//CAIRIS//DTD ATTACKPATTERN 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/attack_pattern.dtd">
+
+<!-- 
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+
+
+<attack_pattern name="Test footprinting" likelihood="Occasional" severity="Critical"> 
+  <obstacle name="Ambiguous resource spec" category="Vulnerability">
+    <definition>Resource specification is ambiguous</definition>
+  </obstacle>
+  <obstacle name="Misspecified resource" category="Vulnerability">
+    <definition>Resource is misspecified.</definition>
+  </obstacle>
+  <obstacle name="Overrestricted resource" category="Vulnerability">
+    <definition>Resource is overly restricted compared to its specification.</definition>
+  </obstacle>
+  <obstacle name="Unrestricted resource" category="Vulnerability">
+    <definition>Resource contains no restrictions.</definition>
+  </obstacle>
+  <obstacle name="Unspecified resource" category="Vulnerability">
+    <definition>Resource is unspecified.</definition>
+  </obstacle>
+  <obstacle name="Ambiguous request specification" category="Vulnerability">
+    <definition>Request specification is ambiguous.</definition>
+    <concern name="Access Request" />
+  </obstacle>
+  <obstacle name="Anonymous data usage" category="Vulnerability">
+    <definition>Users do not specify how they will use data they are requesting.</definition>
+    <concern name="Access Request" />
+    <responsibility name="Developer of webinos Apps" />
+  </obstacle>
+  <obstacle name="Non-mandated request" category="Vulnerability">
+    <definition>Request is non-mandated.</definition>
+    <concern name="Access Request" />
+  </obstacle>
+  <obstacle name="Misspecified usage request" category="Vulnerability">
+    <definition>Usage request is misspecified.</definition>
+    <concern name="Access Request" />
+  </obstacle>
+  <obstacle name="Superfluous installation data" category="Vulnerability">
+    <definition>webinos application installation contains superfluous data and code.</definition>
+    <concern name="Configuration Document" />
+  </obstacle>
+  <obstacle name="Test API enabled" category="Vulnerability">
+    <definition>Test API is enabled in operating environment.</definition>
+    <responsibility name="Developer of webinos Platform" />
+    <probability value="0.2">
+      <rationale>While the project currently lacks any way of systematically checking, the number of potential test APIs are quite small.</rationale>
+    </probability>
+  </obstacle>
+  <obstacle name="Test configuration enabled" category="Vulnerability">
+    <definition>Test and sample configuration data is enabled in the operating environment.</definition>
+    <responsibility name="Developer of webinos Platform" />
+    <probability value="0.5">
+      <rationale></rationale>
+    </probability>
+  </obstacle>
+  <obstacle name="Unrestricted request specification" category="Vulnerability">
+    <definition>User agent grants access to all network resources.</definition>
+    <responsibility name="Developer of webinos Platform" />
+    <probability value="0.7">
+      <rationale>Thought to be likely given that user agents rely on blacklists rather than whitelists.</rationale>
+    </probability>
+  </obstacle>
+  <intent></intent> 
+  <motivation goal="accountability" value="High"> 
+    <description>Ethan looks for test code which provides unauthorised resource access</description>
+  </motivation>
+  <applicability environment="Complete" />
+  <structure attack="Locate and Exploit Test APIs" attack_obstacle="Test API enabled" exploit="Allocation of Resources without Limits or Throttling" exploit_obstacle="Unrestricted request specification" /> 
+  <participant name="Ethan">
+    <motive name="Data theft" />
+    <capability name="Technology" value="Medium" />
+    <capability name="Software" value="Medium" />
+    <capability name="Knowledge/Methods" value="Medium" />
+  </participant>
+  <collaboration>
+    <target name="Application Data" /> 
+    <exploit name="Access Request" />
+  </collaboration>
+  <consequences>Email spam premortem</consequences>
+  <implementation>
+    <description>Ethan finds apps with superflous test code which allows him to exploit test data in runtime.</description>
+    <obstacle_association obstacle_name="Ambiguous resource spec" ref_type="or" subobstacle_name="Misspecified resource" >
+      <rationale>Ambiguity means resource misspecified.</rationale>
+    </obstacle_association>
+    <obstacle_association obstacle_name="Misspecified resource" ref_type="or" subobstacle_name="Overrestricted resource" >
+      <rationale></rationale>
+    </obstacle_association>
+    <obstacle_association obstacle_name="Misspecified resource" ref_type="or" subobstacle_name="Unrestricted resource" >
+      <rationale>None</rationale>
+    </obstacle_association>
+    <obstacle_association obstacle_name="Ambiguous resource spec" ref_type="or" subobstacle_name="Unspecified resource" >
+      <rationale>None</rationale>
+    </obstacle_association>
+    <obstacle_association obstacle_name="Anonymous data usage" ref_type="or" subobstacle_name="Non-mandated request" >
+      <rationale>None</rationale>
+    </obstacle_association>
+    <obstacle_association obstacle_name="Misspecified usage request" ref_type="or" subobstacle_name="Ambiguous resource spec" >
+      <rationale>Lack of knowledge about how to deal with usage request means that usage request is misspecified.</rationale>
+    </obstacle_association>
+    <obstacle_association obstacle_name="Misspecified usage request" ref_type="or" subobstacle_name="Ambiguous request specification">
+      <rationale>Lack of knowledge means user misspecifies request details.</rationale>
+    </obstacle_association>
+    <obstacle_association obstacle_name="Anonymous data usage" ref_type="or" subobstacle_name="Misspecified usage request" >
+      <rationale>None</rationale>
+    </obstacle_association>
+    <obstacle_association obstacle_name="Superfluous installation data" ref_type="or" subobstacle_name="Test API enabled" >
+      <rationale>webinos installations include unnecessary test APIs</rationale>
+    </obstacle_association>
+    <obstacle_association obstacle_name="Superfluous installation data" ref_type="or" subobstacle_name="Test configuration enabled" >
+      <rationale>None</rationale>
+    </obstacle_association>
+    <obstacle_association obstacle_name="Misspecified usage request" ref_type="or" subobstacle_name="Unrestricted request specification" >
+      <rationale>None</rationale>
+    </obstacle_association>
+  </implementation>
+  <known_uses>None</known_uses>
+  <related_patterns>None</related_patterns>
+</attack_pattern>

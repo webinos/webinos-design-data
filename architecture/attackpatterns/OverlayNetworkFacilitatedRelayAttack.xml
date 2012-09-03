@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<!DOCTYPE attack_pattern PUBLIC "-//CAIRIS//DTD ATTACKPATTERN 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/attack_pattern.dtd">
+
+<!-- 
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+
+
+<attack_pattern name="Overlay network facilitated relay attack" likelihood="Remote" severity="Critical"> 
+
+  <obstacle name="Unauthorised NFC payment request" category="Accountability_Threat">
+    <definition>A request is received for an NFC payment from an unauthorised device.</definition>
+  </obstacle>
+  <obstacle name="Malicious personal zone enrolment" category="Accountability_Threat">
+    <definition>A device is enroled into a personal zone without the knowledge of the device owner.</definition>
+  </obstacle>
+  <obstacle name="Malicious NDEF tag" category="Integrity_Threat">
+    <definition>An NFC tag contains NDEF message encapsulating malicious code.</definition>
+    <concern name="NFC Message" />
+  </obstacle>
+  <obstacle name="Malicious code evaluated" category="Vulnerability">
+    <definition>Event handler evaluates malicious JSON content.</definition>
+    <concern name="JSON-RPC Handler" />
+  </obstacle>
+  <obstacle name="Spoof message origin" category="Integrity_Threat">
+    <definition>Messages sent from a source leech device to a destination device have the leeched device as an origin.</definition>
+    <concern name="NFC Message" />
+  </obstacle>
+  <obstacle name="Automate personal zone enrolment" category="Accountability_Threat">
+    <definition>A device is enroled into a personal zone without the use of an out-of-band channel.</definition>
+  </obstacle>
+  <obstacle name="Disable valid personal zone proxy" category="Accountability_Threat">
+    <definition>A valid device personal zone proxy is disabled</definition>
+  </obstacle>
+  <obstacle name="Run multiple personal zone proxies" category="Accountability_Threat">
+    <definition>Valid and malicious personal zone proxies run on a single device.</definition>
+  </obstacle>
+  <obstacle name="Overwrite valid PZP Configuration" category="Integrity_Threat">
+    <definition>Overwrite valid PZP Configuration file.</definition>
+    <concern name="PZP Configuration" />
+  </obstacle>
+  <obstacle name="Overwrite valid authentication data" category="Integrity_Threat">
+    <definition>Overwrite valid authentication data.</definition>
+    <concern name="PZP Private Key" />
+    <concern name="Device Authentication Data" />
+    <concern name="PZP CA Certificate" />
+  </obstacle>
+  <obstacle name="Revoke device from valid personal zone" category="Accountability_Threat">
+    <definition>Revoke device from valid personal zone</definition>
+    <concern name="PZH Session" />
+  </obstacle>
+
+  <intent>Exploit webinos overlay network to commit fraud.</intent> 
+  <motivation goal="confidentiality" value="Medium"> 
+    <description>David is interested in obtaining confidential information available to the webinos runtime.</description>
+  </motivation>
+  <motivation goal="accountability" value="High"> 
+    <description>David relies on seamless convergence and a lack of traceability to carry out his attack.</description>
+  </motivation>
+  <applicability environment="Complete" />
+  <structure attack="NFC replay attack" attack_obstacle="Malicious personal zone enrolment" exploit="System data trust" exploit_obstacle="Spoof message origin" /> 
+  <participant name="David">
+    <motive name="Fraud" />
+    <capability name="Knowledge/Books and Manuals" value="Low" />
+    <capability name="Resources/Facilities" value="Low" />
+  </participant>
+  <collaboration>
+    <target name="Device API" /> 
+    <target name="Privacy Preferences" />
+    <exploit name="Device API" />
+    <exploit name="Analytics Data" />
+  </collaboration>
+  <consequences>BBC reports a new type of "skimming" attack that also attracts the attention of security researchers that use it as an example of why Payment APIs aren't a good idea.</consequences>
+  <implementation>
+    <description>As Alice was walking away from the bar with her drinks, she narrowly avoided dropping one of her glasses as man brushed past her. "Sorry", he mumbled as he walked briskly towards the toilets.
+
+David devised a new scam which took advantage of the recent take-off of NFC based mobile payment, and the new webinos platform that could link different apps and devices together. The scam involved dropping a leech mobile phone into someone's bag which contained a webinos enabled NFC phone. The leech would attempt to get the victim's phone to join his personal zone which, David estimated, would not be too difficult. Once in place, David could then purchase things via NFC, while webinos routed the request to the victim's NFC reader via the personal zone overlay network. David tinkered around with different devices, settings, and applications, and was quite surprised at how easy this scam appeared to be. Consequently, he would need to make the most use of this exploit quickly before other people got in on the act.
+
+David's plan was to find somewhere where there would be lots of young but unsuspecting people who might not notice something being put into their bags. David decided a nightclub on a Friday night would be a good bet. As David entered the club at shortly after midnight, he noticed a large group of people mingling near the bar. As he approached, he noticed a large women trying to carry multiple drinks with a hand-bag slung around her shoulder. Confidently, with his leech device in hand, David walked towards this woman.</description>
+ 
+    <obstacle_association obstacle_name="Unauthorised NFC payment request" ref_type="and" subobstacle_name="Malicious personal zone enrolment" >
+      <rationale></rationale>
+    </obstacle_association>
+    <obstacle_association obstacle_name="Unauthorised NFC payment request" ref_type="and" subobstacle_name="Spoof message origin" >
+      <rationale></rationale>
+    </obstacle_association>
+    <obstacle_association obstacle_name="Malicious personal zone enrolment" ref_type="and" subobstacle_name="Malicious NDEF tag" >
+      <rationale></rationale>
+    </obstacle_association>
+    <obstacle_association obstacle_name="Malicious personal zone enrolment" ref_type="and" subobstacle_name="Malicious code evaluated" >
+      <rationale></rationale>
+    </obstacle_association>
+    <obstacle_association obstacle_name="Malicious personal zone enrolment" ref_type="and" subobstacle_name="Automate personal zone enrolment" >
+      <rationale>Removing additional factor of automation negates need to user intervention in the enrolment process.</rationale>
+    </obstacle_association>
+    <obstacle_association obstacle_name="Automate personal zone enrolment" ref_type="or" subobstacle_name="Disable valid personal zone proxy" >
+      <rationale>Do not want user to realise their device's webinos software has been compromised.</rationale>
+    </obstacle_association>
+    <obstacle_association obstacle_name="Malicious personal zone enrolment" ref_type="or" subobstacle_name="Run multiple personal zone proxies" >
+      <rationale></rationale>
+    </obstacle_association>
+    <obstacle_association obstacle_name="Disable valid personal zone proxy" ref_type="and" subobstacle_name="Overwrite valid PZP Configuration" >
+      <rationale></rationale>
+    </obstacle_association>
+    <obstacle_association obstacle_name="Disable valid personal zone proxy" ref_type="and" subobstacle_name="Overwrite valid authentication data" >
+      <rationale></rationale>
+    </obstacle_association>
+    <obstacle_association obstacle_name="Disable valid personal zone proxy" ref_type="and" subobstacle_name="Revoke device from valid personal zone" >
+      <rationale></rationale>
+    </obstacle_association>
+  </implementation>
+  <known_uses>None</known_uses>
+  <related_patterns>None</related_patterns>
+</attack_pattern>

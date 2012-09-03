@@ -1,0 +1,52 @@
+digraph webinosTraceability {
+  graph [rankdir="TB"];
+  node [shape=rectangle,style="rounded"];
+  edge [arrowhead=vee,];
+
+  subgraph cluster_LC {
+    label=LC;
+
+    "Application API" [scenarios="",usecases="",backlog=""];
+    "Application maintenance" [color=2,scenarios="",usecases="LC1,LC2,LC3,DA4,TMS3,PS10",backlog=""];
+    "Application meta-data" [scenarios="",usecases="",backlog=""];
+    "Application-like extension packaging" [scenarios="",usecases="",backlog=""];
+    "Contact details" [color=2,usecases="LC1",backlog=""];
+    "Deferred install" [scenarios="",usecases="",backlog=""];
+    "Development tools" [scenarios="",usecases="",backlog=""];
+    "Device personal data uninstall" [scenarios="",usecases="TMS3",backlog=""];
+    "Digital signature" [scenarios="",usecases="",backlog=""];
+    "Distribution and usage conditions" [scenarios="",usecases="",backlog=""];
+    "Human-readable version" [color=2,scenarios="",usecases="LC1",backlog=""];
+    "Installed application data" [scenarios="",usecases="",backlog=""];
+    "Maintenance authorisation" [scenarios="",usecases="TMS3",backlog=""];
+    "Meta-data inspection" [scenarios="",usecases="",backlog=""];
+    "Multi-device install" [color=2,scenarios="",usecases="LC1,LC2",backlog=""];
+    "Network download transfer" [scenarios="",usecases="",backlog=""];
+    "Platform-specific extension binding" [scenarios="",usecases="",backlog=""];
+    "Standard-like extension" [scenarios="",usecases="",backlog=""];
+    "Version name" [scenarios="",usecases="",backlog=""];
+    "Installation initialisation" [color=2,scenarios="",usecases="",backlog="CS-96"];
+    "Unbinding initialisation" [color=2,scenarios="",usecases="",backlog="CS-96"];
+  }
+  "Maintenance authorisation" -> "Application maintenance" [label="allows"];
+  "Deferred install" -> "Network download transfer" [label="uses"];
+  "Deferred install" -> "Multi-device install" [label="relies on"];
+  "Application maintenance" -> "Installed application data" [label="installs"];
+  "Development tools" -> "Installed application data" [label="leverages"];
+  "Application-like extension packaging" -> "Installed application data" [label="similar to"];
+  "Digital signature" -> "Installed application data" [label="signs"];
+  "Installed application data" -> "Application meta-data" [label="associated"];
+  "Installed application data" -> "Distribution and usage conditions" [label="includes"];
+  "Installed application data" -> "Version name" [label="includes"];
+  "Installed application data" -> "Application API" [label="specifies"];
+  "Installed application data" -> "Contact details" [label="specifies"];
+  "Version name" -> "Human-readable version" [label="should be"];
+  "Development tools" -> "Digital signature" [label="creates"];
+  "Meta-data inspection" -> "Application meta-data" [label="reads"];
+  "Meta-data inspection" -> "Human-readable version" [label="reads"];
+  "Application maintenance" -> "New installation notification" [label="creates"];
+  "Deferred install" -> "Application maintenance" [label="part of"];
+  "Application maintenance" -> "Application data policy" [label="subject to"];
+  "Installation initialisation" -> "Default policy" [label="creates"];
+  "Unbinding initialisation" -> "Default policy" [label="creates"];
+}

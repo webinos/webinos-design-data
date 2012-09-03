@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<!DOCTYPE attack_pattern PUBLIC "-//CAIRIS//DTD ATTACKPATTERN 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/attack_pattern.dtd">
+
+<!-- 
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+
+
+<attack_pattern name="PZH Pharming" likelihood="Occasional" severity="Critical"> 
+ 
+       
+
+  <obstacle name="PZH Credentials stolen" category="Vulnerability">
+    <definition>The user types their PZH administration page credentials into an attacker's webpage</definition>
+  </obstacle>       
+  
+  <obstacle name="PZH Admin page spoofed by attacker" category="Vulnerability">
+    <definition>The user's PZH admin page is impersonated by another webpage</definition>
+  </obstacle>       
+       
+  <obstacle name="User clicks on link within application" category="Vulnerability">
+    <definition>A malicious application offers a link to the user's PZH admin page, which is in fact directed to a malicious webpage hosted by the attacker.</definition>
+  </obstacle>       
+  
+  <obstacle name="User does not check PZH admin URL" category="Vulnerability">
+    <definition>The user does not check that the PZH admin page URL is what it should be</definition>
+    <responsibility name="User" />
+    <probability value="0.5">
+      <rationale>People are notoriously bad at checking the URL bar</rationale>
+    </probability>
+  </obstacle>         
+  
+  <obstacle name="PZH Admin URL not well known" category="Vulnerability">
+    <definition>The user does not know the correct URL</definition>
+    <responsibility name="Developer of webinos Platform" />    
+  </obstacle>           
+  
+  <obstacle name="PZH Admin URL too complicated" category="Vulnerability">
+    <definition>The PZH admin URL is complicated and easy to misread</definition>
+    <responsibility name="Developer of webinos Platform" />    
+    <probability value="0.1">
+      <rationale>URLS are hard to read</rationale>
+    </probability>    
+  </obstacle>             
+
+  <obstacle name="PZH Admin URL displayed without prominence" category="Vulnerability">
+    <definition>The PZH admin URL bar is not visible or easy to miss</definition>
+    <responsibility name="Developer of webinos Platform" />
+    <probability value="0.5">
+      <rationale>People are notoriously bad at checking the URL bar</rationale>
+    </probability>        
+  </obstacle>               
+       
+ 
+  <intent>Ethan wants to steal user account details for personal zones in order to create a botnet of webinos devices</intent> 
+  <motivation goal="confidentiality" value="High"> 
+    <description>Ethan intercepts confidential user credentials</description>
+  </motivation>
+  <applicability environment="Complete" />
+  <structure attack="Pharming" attack_obstacle="PZH Admin page spoofed by attacker" exploit="UI Misrepresentation of Critical Information" exploit_obstacle="User does not check PZH admin URL" /> 
+  <participant name="Ethan">
+    <motive name="Money" />
+    <capability name="Technology" value="Low" />
+    <capability name="Software" value="Low" />
+    <capability name="Knowledge/Methods" value="Low" />
+  </participant>
+  <collaboration>
+    <target name="Identity Provider" /> 
+    <exploit name="Personal Zone Administration Console" />
+  </collaboration>
+  <consequences>User's online account could be disabled, the user could be locked-out temporarily, their friends or families could lose money.  They could lose face and reputation as a result of the account hijack.  Their devices could be misused to launch further attacks on other people and institutions.</consequences>
+  <implementation>
+    <description>Ethan creates a web application which offers a link to the user's PZH administration console.  This link actually directs them to a spoofed version of their page, featuring a MITM attack on the credentials they would enter into their identity provider's webpage.</description>
+    
+    <obstacle_association obstacle_name="PZH Credentials stolen" ref_type="or" subobstacle_name="PZH Admin page spoofed by attacker" >
+      <rationale></rationale>
+    </obstacle_association>  
+    
+    <obstacle_association obstacle_name="PZH Admin page spoofed by attacker" ref_type="and" subobstacle_name="User clicks on link within application" >
+      <rationale></rationale>
+    </obstacle_association>  
+    
+    <obstacle_association obstacle_name="PZH Admin page spoofed by attacker" ref_type="and" subobstacle_name="User does not check PZH admin URL" >
+      <rationale></rationale>
+    </obstacle_association>      
+    
+    <obstacle_association obstacle_name="User does not check PZH admin URL" ref_type="or" subobstacle_name="PZH Admin URL not well known" >
+      <rationale></rationale>
+    </obstacle_association>          
+    
+    <obstacle_association obstacle_name="User does not check PZH admin URL" ref_type="or" subobstacle_name="PZH Admin URL too complicated" >
+      <rationale></rationale>
+    </obstacle_association>          
+    
+    <obstacle_association obstacle_name="User does not check PZH admin URL" ref_type="or" subobstacle_name="PZH Admin URL displayed without prominence" >
+      <rationale></rationale>
+    </obstacle_association>              
+    
+    
+  </implementation>
+  <known_uses>None</known_uses>
+  <related_patterns>Identity theft with webinos messaging</related_patterns>
+</attack_pattern>

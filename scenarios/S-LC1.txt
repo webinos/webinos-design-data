@@ -1,0 +1,50 @@
+h1. S-LC1: Designing Policy-aware webinos Applications
+
+Author: Ajit Jaokar, John Lyle, Shamal Faily, Ivan Flechais, Hans Myrhaug, Ayse Goker
+
+h2. Overview 
+
+Unlike the web apps he usually develops, Jimmy has a number of additional considerations when developing for webinos.
+
+h2. Description
+
+This story is described from the perspective of an application developer who is writing and supporting a webinos application with privacy and security concerns that require policy management.
+
+Jimmy is developing a webinos application to support the social network site Twitter, and wants to develop a user interface than the website, including bigger input fields, location-­-based services and offline features such as local storage of tweets.  Jimmy starts looking at the webinos API and, while the UI development seems straightforward, location-based function involve making an access-control request to the underlying system, and handing access denied requests.  Jimmy designs his application to handle these access denied responses gracefully.
+
+After developing an initial tablet-based prototype with resources he has access to, and making note of what resources his application needs, he checks his application against a set of sample end-user privacy policies.  These samples are representative of real policies and, by developing with these in mind, Jimmy can predict when calls might require approval by end-users.  In two cases, Jimmy notices that privacy policies request more detail about why access to a piece of personal information – stored in the user’s profile – has been requested by his application.  He decides to modify the application such that the user’s date of birth is not collected, and a better rationale is provided for why location data is needed.
+
+Before installing the updated prototype to an Android handset, Jimmy tweaks the installation settings for the reasons that the application needs, and the reasons why they are needed.  During the installation itself, the installer provides an explanation for the resources that need access, and whether or not this conflicts with the end-user privacy policy that Jimmy is currently working with.  After installing the app, Jimmy tests that the application still continues to provide what he considers a satisfactory user experience.
+
+As the application design becomes more apparent, Jimmy decides to use webinos' analytics feature to find out more about the services used by the customer, and where they live.  After experimenting with the webinos context module, the policies that control it, integration with other analytics APIs, and the impact that privacy policies might have on all of this, Jimmy decides that collecting analytical information is easier said than done.  Consequently, he decides to think more carefully about what data he needs to collect, and how to collect this would impacting runtime performance or the expectations of his end-users.
+
+
+h2. Issues
+
+* Recent web services have a record of encroaching on the privacy expectations of customers. This can affect the trust that users have in a system or an infrastructure.
+* Developers are not always given the tools to work with user privacy requirements, and end up making applications which require access to as much data as possible, purely to simplify the development process.
+* Users have their own opinions of what data usage is acceptable. Applications currently dictate the terms in which they are used rather than negotiating data disclosure versus functionality offered.
+* Application developers want their program to be used, and want to take advantage of device features. However, they also do not want to scare potential users, and therefore need to request only the capabilities that their applications need to have access to. Should these still be unacceptable, it is better to provide limited access than none at all. This will encourage users to be more adventurous and adopt new applications.
+
+h2. Benefits
+
+* All access to private user data is mediated and may be controlled by the user.
+* Developers are obliged to be transparent: to provide more detail about why a piece of data is required as well as how it will be used. This encourages the development of applications which respect user privacy and security, as applications with poor excuses are less likely to be trusted.
+* Companies developing applications can do so against known security and privacy policies, so they can improve the user experience and avoid endless pop-­-ups and requests for access permissions.
+* Developers are encouraged to design applications to make use of as little personal data as possible.
+
+h2. Usability breakdown
+
+| Persona |  Jimmy |
+| Duration | Hours or longer |
+| Frequency | Daily - Weekly |
+| Demands | Low |
+| Goal Conflict | Low |
+
+h2. Required Use Cases
+
+* CAP2
+* LC1
+* PS7
+* PS8
+* PS9

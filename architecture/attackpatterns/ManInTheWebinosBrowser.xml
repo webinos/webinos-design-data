@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<!DOCTYPE attack_pattern PUBLIC "-//CAIRIS//DTD ATTACKPATTERN 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/attack_pattern.dtd">
+
+<!-- 
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+
+
+<attack_pattern name="Man In The webinos Browser" likelihood="Occasional" severity="Critical"> 
+ 
+       
+
+  <obstacle name="Application data intercepted" category="Vulnerability">
+    <definition>Application data from webinos widgets is intercepted in the widget renderer</definition>
+  </obstacle>       
+  <obstacle name="Application data readable" category="Vulnerability">
+    <definition>Application data from webinos widgets is readable outside of the widget renderer</definition>
+  </obstacle>       
+  <obstacle name="Malicious plugin is running" category="Vulnerability">
+    <definition>Malware in the form of a malicious widget renderer plugin is running</definition>
+  </obstacle>       
+  <obstacle name="Malicious plugin not detected" category="Vulnerability">
+    <definition>Malware plugin not detected.</definition>
+  </obstacle>       
+  <obstacle name="Malicious plugin installed" category="Vulnerability">
+    <definition>The user installs (or suffers from a driveby download) a malicious plugin</definition>
+    <concern name="Rendering Engine" />
+    <responsibility name="User" /> 
+    <probability value="0.3">
+      <rationale>Installing malware is incredibly likely</rationale>
+    </probability>       
+  </obstacle>       
+  <obstacle name="Widget renderer supports extensions" category="Vulnerability">
+    <definition>The widget renderer supports plugins or extensions</definition>
+    <concern name="Rendering Engine" />
+    <responsibility name="Developer of webinos Platform" /> 
+  </obstacle>         
+ 
+  <intent>Ethan wants to steal application data, either to find credit card details, account details or to sell-on to advertisers or spammers</intent> 
+  <motivation goal="confidentiality" value="High"> 
+    <description>Ethan intercepts confidential application data</description>
+  </motivation>
+  <applicability environment="Complete" />
+  <structure attack="Man-in-the-browser attack" attack_obstacle="Application data intercepted" exploit="Inclusion of Functionality from Untrusted Control Sphere" exploit_obstacle="Widget renderer supports extensions" /> 
+  <participant name="Ethan">
+    <motive name="Data theft" />
+    <capability name="Technology" value="Medium" />
+    <capability name="Software" value="Medium" />
+    <capability name="Knowledge/Methods" value="Medium" />
+  </participant>
+  <collaboration>
+    <target name="Application Data" /> 
+    <exploit name="Rendering Engine" />
+  </collaboration>
+  <consequences>Users have a loss of personal data or (potentially) important data about their bank accounts.  Loss of privacy and online security.  Ethan could sell data to someone who is looking to blackmail users.</consequences>
+  <implementation>
+    <description>Ethan develops a browser plugin which allows him to intercept all messages between the webinos widget renderer and the PZP, giving him access to application data.</description>
+    
+     <obstacle_association obstacle_name="Application data intercepted" ref_type="or" subobstacle_name="Malicious plugin is running" >
+      <rationale></rationale>
+    </obstacle_association>         
+     <obstacle_association obstacle_name="Application data intercepted" ref_type="or" subobstacle_name="Application data readable" >
+      <rationale></rationale>
+    </obstacle_association>         
+    <obstacle_association obstacle_name="Malicious plugin is running" ref_type="and" subobstacle_name="Malicious plugin installed" >
+      <rationale></rationale>
+    </obstacle_association>           
+    <obstacle_association obstacle_name="Malicious plugin is running" ref_type="and" subobstacle_name="Widget renderer supports extensions" >
+      <rationale></rationale>
+    </obstacle_association>           
+    <obstacle_association obstacle_name="Malicious plugin installed" ref_type="and" subobstacle_name="Malicious plugin not detected" >
+      <rationale></rationale>
+    </obstacle_association>               
+    
+  </implementation>
+  <known_uses>None</known_uses>
+  <related_patterns>None</related_patterns>
+</attack_pattern>

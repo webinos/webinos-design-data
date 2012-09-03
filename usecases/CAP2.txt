@@ -1,0 +1,36 @@
+h1. WOS-UC-TA2-001: User Profile
+
+Author: Andre Paul
+
+Actors: User, Application
+
+h2. Description
+
+An application wants to access a user's profile. This comprises information such as personal data such as gender, age, home address and e-Mail address.
+
+h2. Preconditions
+
+The user has entered his profile info which is stored in his Personal Zone.
+
+h2. Flow
+
+# An Application requires information about the User, it requests the webinos runtime to grant access to this information.
+# The Webinos Runtime checks the PZP if access should be granted.
+# The PZP checks the users policies if the application should be given access and returns this information to the application
+# The application requests the needed profile information to the Webinos Runtime.
+# The Webinos Runtime requests this information to the PZP.
+# The PZP returns the info to the application.
+
+h2. Postconditions
+
+Profile data related to the User is available to the requesting application.
+
+h2. Use Case Map
+
+!user1.png!
+
+h2. Related artifacts
+
+| *Scenarios* | |
+| *Use Cases* | |
+| *Requirements* | |

@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE attack_pattern PUBLIC "-//CAIRIS//DTD ATTACKPATTERN 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/attack_pattern.dtd">
+
+<!-- 
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+
+
+<attack_pattern name="Control cloud-based PZH" likelihood="Remote" severity="Marginal"> 
+  <intent>Circumvent cloud-based PZH defences</intent> 
+  <motivation goal="integrity" value="Medium"> 
+    <description>Harold wants to show how the mechanisms surrounding the PZH can give him access to the PZH</description>
+  </motivation>
+  <motivation goal="accountability" value="Medium"> 
+    <description>Harold wants to demonstrate that neither cloud providers nor webinos' capabilities cannot spot AuthN/AuthZ controls being circumvented.</description>
+  </motivation>
+  <applicability environment="Complete" />
+  <structure attack="Man in the Middle Attack" attack_obstacle="Application data intercepted" exploit="Cloud hosted PZH" /> 
+  <participant name="Harold">
+    <motive name="Headlines/press" />
+    <capability name="Software" value="High" />
+    <capability name="Knowledge/Methods" value="High" />
+  </participant>
+  <collaboration>
+    <target name="Node Instance" /> 
+    <exploit name="Virtual Machine" />
+  </collaboration>
+  <consequences>Defcon presentation about vulnerabilities in cloud-hosted web apps uses webinos as an example.</consequences>
+  <implementation>
+    <description>Harold is preparing a workshop presentation on how easy it still is to exploit the migration process of virtual machines. In readiness for this, he decide to monitor the traffic at a cloud service provider which he knows uses insecure network paths to maximise throughout between its site. Harold decides to track one particular VM site transfer and, using his exploit tools, Harold is able to manipulate the in-memory object code of sshd.
+
+When the transfer is complete, Harold is able to ssh to the VM as root and look around the VM. While examining the available processes, Harold notices a disproportionate amount of resources being used by a process called node. Curious, Harold begins examining this process in more detail with a view to talking about one of his 'owned' applications in his workshop talk.</description>
+  </implementation>
+  <known_uses>None</known_uses>
+  <related_patterns>None</related_patterns>
+</attack_pattern>

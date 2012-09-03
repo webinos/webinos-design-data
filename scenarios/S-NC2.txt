@@ -1,0 +1,37 @@
+h1. S-NC2: Learning Assistance for Disabled Students
+
+Author: Heiko Desruelle, Shamal Faily
+
+h2. Overview 
+
+A bad start to the day turns out for the better for Anna thanks to webinos.
+
+h2. Description
+
+It's Friday morning 7AM and time for Anna to get up to go to class. As Anna lifts herself out of bed, she realizes she's having one of her bad days. She has immense difficulty breathing and every physical effort is exhausting. She has been having these kind of seizures her entire life, and by now she knows that the only remedy is to take a day off and sit it out. Anna hates it when she has to skip classes. Although she has lots of friends that wouldn't mind lending her their notes, she prefers to be independent from others. However, the last time she tried to ignore her condition she ended up in hospital for three days. So she decides to get back in bed and use her laptop to access the university's online learning platform instead. It is an old laptop, but it has a custom-made keyboard with extra-large buttons to improve accessibility.
+
+The university recently extended its learning environment to support webinos-enabled devices. As she browses through the available course material, she can't help wondering what all the webinos fuss is about, because she doesn't notice any changes. However, after selecting today's presentation she gets an unexpected notification. It states that nearby devices have been found which are better suited to render the requested content. Surprised, though intrigued, Anna accepts the suggestion to access the presentation from an alternative device. Within a blink of a second, her television set is automatically woken from it energy-saving mode and a few moments later the first slide is showing up on its screen. "Great", she thinks, "how do I navigate this thing?". Because of her limited motor skills, especially at this time of the morning, she isn't too keen on using the television's remote control. But her disappointment does not last long. When Anna turns back to her laptop, she notices its keyboard can be used to control the presentation on the television set.
+
+h2. Issues
+
+This scenario emphasises the need for automated adaptability processes, driven by the user context and device context. Learning applications that support a variety of disabilities require a fine-grained knowledge of the end user in his environment.
+
+h2. Benefits
+
+webinos enabled learning applications can provide high quality user experience, regardless of the disabilities that students might have. Learning applications can handle this type of variability and accommodate end users with an optimized experience.
+
+h2. Usability breakdown 
+
+| Persona |  Anna |
+| Duration | Minutes |
+| Frequency | Monthly or less |
+| Demands | Medium |
+| Goal Conflict | Low |
+
+h2. Required Use Cases
+
+* NC1
+* CAP2
+* CAP5
+* DA5
+

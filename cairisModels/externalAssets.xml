@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<!DOCTYPE template_assets PUBLIC "-//CAIRIS//DTD ASSETS 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/template_assets.dtd">
+
+<!-- These are externally visible assets or interfaces that both webinos and external agents interact with.  Based on data from D2.8 -->
+
+<template_assets>
+
+  <access_right name="Undefined" value="10">
+    <description>Access rights undefined.</description>
+    <rationale>Access rights undefined.</rationale>
+  </access_right>
+
+  <surface_type name="Undefined" value="10">
+    <description>Access rights undefined.</description>
+    <rationale>Access rights undefined.</rationale>
+  </surface_type>
+
+  <asset name="Application" short_code="APP" type="Software" access_right="Undefined" surface_type="Undefined">
+    <description>Packaged application and resources</description>
+    <significance>Vulnerable resources and ill-defined application policies can compromise data and devices associated with an application.</significance>
+    <security_property property="confidentiality" value="Medium">
+      <rationale>A danger that resources and keys might get ripped off.  From a developer's perspective, Confidentiality is more important than Integrity.</rationale>
+    </security_property>
+    <security_property property="accountability" value="Medium">
+      <rationale>Spoofing authority could lead to unauthorised changes to a package.</rationale>
+    </security_property>
+  </asset>
+
+    <asset name="Personal Zone Administration Console" short_code="PZHAdmin" type="Systems" access_right="Undefined" surface_type="Undefined">
+      <description>The web interface used to control the personal zone.  </description>
+      <significance>Used to authenticate significant actions in the personal zone, such as revoking and adding devices and connecting to other users.</significance>
+      <critical_rationale></critical_rationale>
+      <security_property property="availability" value="Medium">
+        <rationale>Losing access to the PZH Admin console would result in many features being offline, as well as preventing users from responding to attacks or revoking malicious devices</rationale>
+      </security_property>
+      <security_property property="accountability" value="High">
+        <rationale>Because the administration console can be used to add and remove webinos devices and alter policies, accountability of who performed the actions is important.</rationale>
+      </security_property>
+    </asset>
+
+  <asset name="Analytics Data" short_code="AN_DATA" type="Information" access_right="Undefined" surface_type="Undefined">
+    <description>Analytics Data collected by webinos and made available to other applications.</description>
+    <significance>If not properly controlled, analytics data could be disclosed or tampered with by unauthorised subjects.</significance>
+    <security_property property="confidentiality" value="Low">
+      <rationale>The analytics data is shielded by the PZP, this only stores the data.</rationale>
+    </security_property>
+    <security_property property="integrity" value="Medium">
+      <rationale>The offered analytics data needs to be accurate, otherwise developers will find ways of working around it.</rationale>
+    </security_property>
+    <security_property property="anonymity" value="Medium">
+      <rationale>Analytics data has to be linkable to a certain user.  Analytics data also needs to be available at the cost of privacy.</rationale>
+    </security_property>
+  </asset>
+
+  <asset name="Event" short_code="EV" type="Information" access_right="Undefined" surface_type="Undefined">
+    <description>An object incorporating messaging attributes and additional webinos specific payload data and meta-data</description>
+    <significance>Event messaging attributes are potentially spoofable.  Vulnerabilities intrinsic to the underlying technology, e.g. XMPP, JSON, also weaken webinos events.</significance>
+    <security_property property="integrity" value="Medium">
+      <rationale>Tampering with the contents of event data could lead to the circumvention of other security controls.</rationale>
+    </security_property>
+    <security_property property="availability" value="Low">
+      <rationale>Loss of event data leads to gradual degradation of webinos services and any applications depending on these events.</rationale>
+    </security_property>
+    <security_property property="confidentiality" value="Medium">
+      <rationale>Events should only be interpretable by authorised events.</rationale>
+    </security_property>
+  </asset>
+
+  <asset name="Identity Provider" short_code="IDP" type="Systems" access_right="Undefined" surface_type="Undefined">
+    <description>Interface through which an Identity Provider registers and provides authentication credentials.</description>
+    <significance>webinos may fall back on a less secure backup if this is not available.</significance>
+  </asset>
+
+  <asset name="Resource" short_code="RES" type="Information" access_right="Undefined" surface_type="Undefined">
+    <description>Resource used by an application, e.g. HTML, JavaScript, CSS</description>
+    <significance>Compromised resources may compromise the entire application.</significance>
+    <security_property property="confidentiality" value="High">
+      <rationale>A danger that resources and keys might get ripped off.  From a developer's perspective, Confidentiality is more important than Integrity.</rationale>
+    </security_property>
+  </asset>
+
+  <asset name="Browser" short_code="BRW" type="Software" access_right="Undefined" surface_type="Undefined">
+    <description>A web browser.</description>
+    <significance>Some level of privacy needs to hold when connecting to the web.</significance>
+  </asset>
+
+  <asset name="Virtual Machine" short_code="VM" type="Systems" access_right="Undefined" surface_type="Undefined">
+    <description>Virtual Machine running on a cloud provider</description>
+    <significance>Compromising the VM potential compromises any applications or webinos components running on the VM.</significance>
+    <security_property property="integrity" value="Medium">
+      <rationale>Tampering with VM may circumvent security measures webinos relies on.</rationale>
+    </security_property>
+  </asset>
+
+  <asset name="Node Instance" short_code="NODE" type="Software" access_right="Undefined" surface_type="Undefined">
+    <description>Server or client side Node.js process</description>
+    <significance>Hosts webinos capabilities</significance>
+    <security_property property="integrity" value="Medium">
+      <rationale>Tampering with node may circumvent security measures webinos relies on.</rationale>
+    </security_property>
+    <security_property property="availability" value="Medium">
+      <rationale>webinos instances have some reliance on node for accessing personal zone capabilities.</rationale>
+    </security_property>
+  </asset>
+
+  <asset name="Personal Media Preferences" short_code="MEDPREF" type="Information" access_right="Undefined" surface_type="Undefined">
+    <description>Personal information about media preferences.</description>
+    <significance>Loss of preferences increases setup time when integrating with different media.</significance>
+    <security_property property="availability" value="Low">
+      <rationale>Lack of availability to these preferences is an annoyance more than anything else.  Without persona preferences the user needs to manually setup the device.</rationale>
+    </security_property>
+    <security_property property="confidentiality" value="High">
+      <rationale>Personal media preferences may store very sensitive data, e.g. credit card number used for "pay per view" services.</rationale>
+    </security_property>
+  </asset>
+
+  <asset name="Device API" short_code="API" type="Software" access_right="Undefined" surface_type="Undefined">
+    <description>API for accessing device-specific functionality</description>
+    <significance>Manipulates device features and accesses privacy-sensitive data</significance>
+    <security_property property="integrity" value="Medium">
+      <rationale>Tampering with device APIs may compromise the generation of session related events necessary for maintaining the integrity of session and identity data.</rationale>
+    </security_property>
+    <security_property property="accountability" value="Medium">
+      <rationale>Changes made to the API need to be tracked to make sure only authorised entities can do this.</rationale>
+    </security_property>
+  </asset>
+
+  <asset name="Privacy Preferences" short_code="PRIVPREF" type="Information" access_right="Undefined" surface_type="Undefined">
+    <description>The privacy preferences associated with a user.</description>
+    <significance>Ambiguous, ignored or non-existing user privacy preferences may lead to an application betraying user's privacy expectations.</significance>
+    <security_property property="pseudonymity" value="Medium">
+      <rationale>Don't want applications to send subject data back to a provider.</rationale>
+    </security_property>
+  </asset>
+
+  <asset name="Personal Data" short_code="PDATA" type="Information" access_right="Undefined" surface_type="Undefined">
+    <description>Data that is personal to a webinos user.</description>
+    <significance>Consequences of data loss are unpredictable</significance>
+  </asset>
+
+  <asset name="Session" short_code="SESS" type="Information" access_right="Undefined" surface_type="Undefined">
+    <description>State data associated with a running instance of an application on a device.</description>
+    <significance>Compromised session data might be used by an attacker to obtain data from other authorised webinos devices.</significance>
+    <security_property property="confidentiality" value="High">
+      <rationale>Disclosed sessions enable access to webinos data and services on devices within a personal zone.</rationale>
+    </security_property>
+    <security_property property="integrity" value="Medium">
+      <rationale>Compromised sessions may lead to malicious modification of webinos data and services.</rationale>
+    </security_property>
+  </asset>
+</template_assets>

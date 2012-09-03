@@ -1,0 +1,3393 @@
+h2. Section: Capabilities
+ 
+h3. Requirement: Audio and video access
+ 
+Description: webinos shall facilitate audio and video media capture where the device capabilities are available.
+ 
+|API|NavigatorUserMedia|
+|Interface|NavigatorUserMedia|
+|Method|getUserMedia|
+|Component|<none>|
+ 
+_Compliance_: 
+Is not fully provided in phase 1. Requires integration with the newly specified getusermedia w3c specification
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Automatic background start-up
+ 
+Description: It shall be possible to register a background application for automatic execution at device start-up.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|Widget manager component |
+ 
+_Compliance_: 
+This is provided by the widget manager 
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: Background application
+ 
+Description: The webinos runtime shall support the running of background applications.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|Widget manager component |
+ 
+_Compliance_: 
+This will only be fully supported when we proved services in phase 2 
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Background event notification
+ 
+Description: Users shall be notified of events received by the background application.
+ 
+|API|WebinosEventListener|
+|Interface|WebinosEventListener|
+|Method|<none>|
+|Component|<none>|
+ 
+_Compliance_: 
+background services will when implemented have the same notification capabilities as full applications
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Device Status API
+ 
+Description: webinos shall facilitate application access to the following items of device physical system information: connectivity status, power information, CPU load, audio and video codecs capabilities, memory status, output devices characteristics.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+A full vocabulary is provided for the investigation of device characteristics
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Event-based application start-up
+ 
+Description: webinos runtime shall start applications based on events.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Not implemented in phase 1
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Foreground priority
+ 
+Description: The webinos runtime shall be able switch running applications based on platform priorities.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Not implemented in phase 1
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Foreground request
+ 
+Description: Where possible, the webinos runtime shall allow background applications to be run in the foreground.  
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Needs clarification
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: Geo-location access
+ 
+Description: webinos shall provide means for applications to access device geo-location.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: JavaScript UPnP device access
+ 
+Description: webinos shall allow JavaScript API access to UPnP/DLNA devices.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Currently provided as an implementation of Gallery API. Not currently supporte in Phase 1
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Local file storage access
+ 
+Description: webinos shall provide programmatic access to local file storage.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Provided by FileAPi
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Non-GUI background applications
+ 
+Description: A webinos application shall support execution of non GUI applications.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+This will be provided in Phase 2, by webinos services 
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: non-webinos device API
+ 
+Description: The webinos runtime shall allow access to non-webinos APIs to device features.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: Physical orientation access
+ 
+Description: webinos shall provide means for applications to access device physical orientation.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: Real-time stream access
+ 
+Description: webinos shall facilitate application access to streamed real-time interactive bi-directional communication with multiple webinos applications running in the same device or different devices.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: Remote device access
+ 
+Description: Access to resources on remote devices shall be allowable.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: Standard API
+ 
+Description: webinos APIs shall re-use existing API specifications where available.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: Timer-based application invocation
+ 
+Description: The webinos runtime shall invoke applications by a timer based event.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: User profile access
+ 
+Description: webinos shall provide means for applications to access user's profile data.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: Wake-up message subscription
+ 
+Description: It shall be possible for devices to subscribe to and be woken up by wake-up messages.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: webinos enabled sensor access
+ 
+Description: webinos shall support application access to webinos enabled sensors/actuators connected to personal devices.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+
+ 
+_Status_: 
+
+ 
+ 
+h2. Section: Discovery and Addressing
+ 
+h3. Requirement: Addressing route integrity
+ 
+Description: All parts of the addressing route shall be mutually authenticated.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|Session manager|
+ 
+_Compliance_: 
+Handled by PZP and PZH, no API to handle this
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Analytical change correlation
+ 
+Description: It shall be possible to subscribe to notifications caused by analytical information changes.  
+ 
+|API|ContextManager|
+|Interface|ContextManager|
+|Method|subscribeContextEvent|
+|Component|Context manager|
+ 
+_Compliance_: 
+-
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: Analytical information query
+ 
+Description: webinos shall define a query language to allow authorised applications to interrogate analytical data.
+ 
+|API|ContextManager|
+|Interface|ContextManager|
+|Method|executeQuery|
+|Component|Context manager|
+ 
+_Compliance_: 
+Implemented in phase 1
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Analytical information schema
+ 
+Description: Analytical information stored  by webinos shall conform to a pre-defined schema.
+ 
+|API|ContextManager|
+|Interface|ContextManager|
+|Method|executeQuery|
+|Component|<none>|
+ 
+_Compliance_: 
+Phase 1 defines a data schema which will be iterated and refined in phase 2
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Analytical information
+ 
+Description: Storage and retrieval of statistical information about webinos API usage by applications at invokation time on devices shall be accessible to authorised applications.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Handled by context manager, no API
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Application-based discovery
+ 
+Description: Devices with a specific application installed shall be discoverable.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Specification is missing, to be specified in Phase 2
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Application-service adaptation
+ 
+Description: webinos shall support installation of full applications needed to interwork with the new service based on the Service Description.
+ 
+|API|AppLauncherManager|
+|Interface|AppLauncherManager|
+|Method|launchApplication|
+|Component|<none>|
+ 
+_Compliance_: 
+-
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Bound data removal
+ 
+Description: Configuration data shall be removed from a device once that device has been unbound from its user identity.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Specification is missing, to be specified
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Capability availability broadcast
+ 
+Description: The webinos network shall provide means for a service to expose its capabilities on a webinos network.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+RPC Webinos handles this via registerService , no API specified
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Description-based discovery
+ 
+Description: webinos shall provide means for an Application to find devices and services that are available on a webinos network, based on the Device and Service Description.
+ 
+|API|DiscoveryInterface|
+|Interface|DiscoveryInterface|
+|Method|findServices|
+|Component|<none>|
+ 
+_Compliance_: 
+-
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Device event discovery
+ 
+Description: Device Events shall be consumable by applications.
+ 
+|API|WebinosEventsInterface|
+|Interface|WebinosEventsInterface|
+|Method|addWebinosEventListener|
+|Component|<none>|
+ 
+_Compliance_: 
+-
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Device status discovery
+ 
+Description: The status of a device shall be discoverable by applications.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Provided currently by PZP, getPzhId and getPzpId, need proper IP
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Distributed application installation
+ 
+Description: Where an application has not already been installed on a device, application installation shall be (remotely) triggerable.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Applauncher does specify it, but no API
+ 
+_Status_: 
+Unknown: needs more clarification of the requirement 
+ 
+ 
+h3. Requirement: Editable human identity
+ 
+Description: The devices human readable name shall be editable by the user.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+no api, PZH provides as configuration parameter. Known as the friendly name of the PZP
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Human-readable identity
+ 
+Description: Device shall display a human-readable identity.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+-
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Identity barcode
+ 
+Description: Device shall display its identity as a QR barcode.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+PZH provides this functionality, but no standardized API. This is one of the PZP enrollment mechanisms
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Instance address access
+ 
+Description: Applications shall have access to an application instance address
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+PZP provides this functionality, but no standardized API
+ 
+_Status_: 
+Unknown: needs more clarification of the requirement 
+ 
+ 
+h3. Requirement: Location-based discovery
+ 
+Description: webinos shall provide means for an Application to find devices and services based on the physical location of the current user device.
+ 
+|API|DiscoveryInterface|
+|Interface|DiscoveryInterface|
+|Method|findServices|
+|Component|<none>|
+ 
+_Compliance_: 
+service discovery has option to specify geolocation
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Network availability broadcast
+ 
+Description: The webinos network shall provide means for a service to expose its availability on a webinos network.
+ 
+|API|DiscoveryInterface|
+|Interface|DiscoveryInterface|
+|Method|findServices|
+|Component|<none>|
+ 
+_Compliance_: 
+-
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Remote management provisioning
+ 
+Description: webinos shall facilitate the provisioning of remote webinos components necessary to enable personal device management.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+PZH provides this functionality, but no API exists
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Personal device management
+ 
+Description: The webinos runtime shall include interfaces to allow end-users to manage the interactions between their personal devices.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Handled by PZP, no API exists
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: QoS based discovery
+ 
+Description: Service shall be discoverable based on QoS parameters (bandwith, conncetion type, latency).
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+PZH provides this functionality, but no API exists. Full QoS query schems will be addressed in phase 2
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Requirements-service adaptation
+ 
+Description: webinos shall support installation of new software requirements to interwok with a newly installed application.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+mentioned in AppLauncher but no API specified
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Service availability detection
+ 
+Description: webinos shall provide a means for an application to detect the availability of a service (such as being able to detect when a service is started, stopped or not available).
+ 
+|API|DiscoveryInterface|
+|Interface|DiscoveryInterface|
+|Method|findServices|
+|Component|<none>|
+ 
+_Compliance_: 
+-
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Service discovery
+ 
+Description: webinos shall provide the means to discover new services advertised on a webinos network.
+ 
+|API|DiscoveryInterface|
+|Interface|DiscoveryInterface|
+|Method|findServices|
+|Component|<none>|
+ 
+_Compliance_: 
+-
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Un-supported sensor/actuator discovery
+ 
+Description: It shall be possible to address sensors and actuators that does not provide webinos support.
+ 
+|API|SensorEvent|
+|Interface|SensorEvent|
+|Method|initSensorEvent|
+|Component|<none>|
+ 
+_Compliance_: 
+-
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: User social proximity
+ 
+Description: The social proximity of webinos users shall be retrievable by applications.
+ 
+|API|UserProfileInterface|
+|Interface|UserProfileInterface|
+|Method|find|
+|Component|<none>|
+ 
+_Compliance_: 
+-
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: User-offered service discovery
+ 
+Description: Applications and services offered by other users shall be discoverable and addressable.
+ 
+|API|DiscoveryInterface|
+|Interface|DiscoveryInterface|
+|Method|findServices|
+|Component|<none>|
+ 
+_Compliance_: 
+-
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Wireless connectivity discovery
+ 
+Description: Information about Bluetooth, Wifi, Near Field Communication, 3G and other connection types shall be accessible and maintainable by applications.
+ 
+|API|-|
+|Interface|-|
+|Method|getPropertyValue|
+|Component|<none>|
+ 
+_Compliance_: 
+-
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h2. Section: Identity
+ 
+h3. Requirement: Addressable applications
+ 
+Description: Webinos shall provide methods to make applications addressable.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|Session Manager|
+ 
+_Compliance_: 
+Applications are addressable via their widget ID. By prepending this information with the host PZP address then then an applications address can be more precisely specified
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: App instance authentication
+ 
+Description: An application instance shall unambiguously authenticate itself to authorised entities.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Andrea/John
+ 
+_Status_: 
+Unknown: needs more clarification of the requirement 
+ 
+ 
+h3. Requirement: App provider proof
+ 
+Description: An application shall unambiguously prove its application provider's identity, should the provider so wish.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Andrea/John
+ 
+_Status_: 
+Unknown: needs more clarification of the requirement 
+ 
+ 
+h3. Requirement: Application authentication
+ 
+Description: An application class shall unambiguously authenticate itself to authorised entities.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Application identify is determined either by widget identifier. Web based applications may need more investigation in order to determine the application perimeter 
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Application identity
+ 
+Description: webinos shall identify a currently running application.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Andrea/John
+ 
+_Status_: 
+Unknown: needs more clarification of the requirement 
+ 
+ 
+h3. Requirement: Component address
+ 
+Description: Identifiable webinos components that interact as senders or recipients in communication process shall have an assigned address, scope of address and address resolution method.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+All addressable elements of the webinos architecture are can be named using the webinos naming schema
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Component attestation
+ 
+Description: Proof of webinos component integrity shall be provided to authorised parties.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Not yet fully addressed in phase 1
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Developer identity proof
+ 
+Description: An application shall unambiguously prove its developer's identity, should the developer so choose.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+For widgets, developer identity can be determined by signed certificate. For web based applications (to the extend that they are supported) developer identity can be determined by domain and HTTPS certificate ownership
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Device identity
+ 
+Description: A webinos device shall identify itself to a webinos application using a device identifier.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+??
+ 
+_Status_: 
+Unknown: needs more clarification of the requirement 
+ 
+ 
+h3. Requirement: Device privacy preferences
+ 
+Description: A user shall choose the acceptable identity privacy level for other webinos enabled devices trying to communicate with his own device.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+??
+ 
+_Status_: 
+Unknown: needs more clarification of the requirement 
+ 
+ 
+h3. Requirement: Disabled identity broadcast
+ 
+Description: A user shall disable the advertising of its identity to webinos components and remote applications.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+??
+ 
+_Status_: 
+Unknown: needs more clarification of the requirement 
+ 
+ 
+h3. Requirement: Identity claims
+ 
+Description: A user digital identity shall be composed of necessary claims only.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+??
+ 
+_Status_: 
+Unknown: needs more clarification of the requirement 
+ 
+ 
+h3. Requirement: Identity communication
+ 
+Description: A webinos device communicate its identity to other webinos enabled devices.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+??
+ 
+_Status_: 
+Unknown: needs more clarification of the requirement 
+ 
+ 
+h3. Requirement: Mutual authentication
+ 
+Description: Mutual authentication shall be provided between webinos components.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+all PZP and PZH elements are mutually authenticated via TLS
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Platform attestation
+ 
+Description: A webinos device shall be able to provide attestation of the webinos Platform.
+ 
+|API|WebinosAttestationInterface|
+|Interface|WebinosAttestationInterface|
+|Method|attestPlatform|
+|Component|<none>|
+ 
+_Compliance_: 
+Not yet fully addressed in phase 1
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Remote device identity
+ 
+Description: A webinos device Identifier shall be used to identify a webinos-installed device to remote servers and cloud services.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+??
+ 
+_Status_: 
+Unknown: needs more clarification of the requirement 
+ 
+ 
+h3. Requirement: Runtime authentication
+ 
+Description: A webinos runtime installed in a device shall unambiguously authenticate itself to authorised entities.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+??
+ 
+_Status_: 
+Unknown: needs more clarification of the requirement 
+ 
+ 
+h3. Requirement: Service identity
+ 
+Description: A webinos-enabled service shall be identifiable to webinos devices.
+ 
+|API|DiscoveryInterface|
+|Interface|DiscoveryInterface|
+|Method|getServiceId|
+|Component|<none>|
+ 
+_Compliance_: 
+A service declares itself, whether locally or remotely, using the feature ID to which it maps
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: Session device identity
+ 
+Description: It shall be possible to include device identity information in application session data.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+??
+ 
+_Status_: 
+Unknown: needs more clarification of the requirement 
+ 
+ 
+h3. Requirement: Two factor authentication
+ 
+Description: webinos shall provide a conjoint user and device identifier to webinos compatible end-points
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+webinos has specified he ability for device identifies to be inserted in the PZP certificate. This however has not yet been universally implemented
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Unlinkable user identity
+ 
+Description: Users shall authenticate themselves to a webinos application using an abstraction unlinkable from an existing unique entity identifier.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+??
+ 
+_Status_: 
+Unknown: needs more clarification of the requirement 
+ 
+ 
+h3. Requirement: User identity
+ 
+Description: Users shall be identifiable to their webinos devices.
+ 
+|API|WebinosAuthenticationInterface|
+|Interface|WebinosAuthenticationInterface|
+|Method|authenticate|
+|Component|<none>|
+ 
+_Compliance_: 
+All applications running in the context of the PZP, have the implied user identity of the PZP. This can be augmented by making use of the authentication PAI
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h2. Section: Lifecyle
+ 
+h3. Requirement: Application API
+ 
+Description: An application shall be associated with its required and optional APIs, and minimum supported version.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|Widget manager|
+ 
+_Compliance_: 
+These features are all part of default widget behaviour
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Application maintenance
+ 
+Description: webinos shall allow transfer, install, update, and removal of installable applications to and from personal devices at any time.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Update of widgets is defined by the widget protocol. The other fine grained aspects of application management have not yet been addressed in the phase 1 implementation
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Application meta-data
+ 
+Description: An application shall be associated with pre-specified meta-data.
+ 
+|API|Widget|
+|Interface|Widget|
+|Method|various attributes|
+|Component|<none>|
+ 
+_Compliance_: 
+The meta data associated with an application is currently defined by the widget specification. Any further meta data is currently deemed as appstore specific
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Application-like extension packaging
+ 
+Description: Extensions shall be packaged in a way that is as similar as possible to applications.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Extensions are not currently addressed in phase 1. We will evaluate between widget packagin mechanims and NPM packaging mechanisms in Phase2
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Contact details
+ 
+Description: Application specifications shall define contact details for problem reporting.
+ 
+|API|Widget|
+|Interface|Widget|
+|Method|authorEmail and authorHref attributes + webinos extension distributor, distributorEmail, distributorhref|
+|Component|<none>|
+ 
+_Compliance_: 
+Contact detaisl fo author and distributor are embedded within the widget specification
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Deferred install
+ 
+Description: When updating applications on personal devices,webinos shall support postponement of the update.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Not yet addressed in phase 1
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Development tools
+ 
+Description: webinos shall provide tools allowing to develop and test applications across devices and device types, including different screen sizes (PC, tablet, smartphone, connected TV, car), different input methods (touch, keyboard, mouse) leading to different integration models, and browser types.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+No development tools addresed in phase 1
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Device personal data uninstall
+ 
+Description: Application removal from a device shall remove any linked personal data from the device.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Uninstallation has not been fully addressed in phase 1
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Digital signature
+ 
+Description: To perform origin authenticity and integrity checking, an application shall be associated with a unique digital signature.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Implemented in phase 1
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Distribution and usage conditions
+ 
+Description: Application specifications shall describe distribution and usage conditions (e.g. expiry date, multi-device installation).
+ 
+|API|Widget|
+|Interface|Widget|
+|Method|validfor and validuntil attributes|
+|Component|<none>|
+ 
+_Compliance_: 
+Not fully addresed in phase 1
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Human-readable version
+ 
+Description: Application specifications shall define a human-readable version name.
+ 
+|API|Widget|
+|Interface|Widget|
+|Method|versionName attribute|
+|Component|<none>|
+ 
+_Compliance_: 
+
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Installation initialisation
+ 
+Description: webinos software and meta-data shall be initialised before it is first used on a device.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Installed application data
+ 
+Description: The webinos runtime shall maintain data about installed applications; this includes version information, and other application specific settings.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|Widget manager |
+ 
+_Compliance_: 
+This information is currently provided by the widget manager and can be presented to the end user through the UI. There is no API defined to make this available
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Maintenance authorisation
+ 
+Description: Authorised entities shall be able to transfer, install, update or remove installable applications to and from devices owned by a user.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Not addresed in phase 1
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Meta-data inspection
+ 
+Description: Application metadata shall be available for human inspection.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Widget manager presents this infomration through the UI
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Multi-device install
+ 
+Description: The user shall be asked whether multi-device applications should be installed on other associated devices.
+ 
+|API|Widget|
+|Interface|Widget|
+|Method|deployChild|
+|Component|<none>|
+ 
+_Compliance_: 
+Not addresed in phase 1
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Network download transfer
+ 
+Description: webinos applications shall be transferred between devices by downloading them from the network.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+A network install mechanism has been provided in phase 1
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Platform-specific extension binding
+ 
+Description: Extensions containing platform-specific code shall be associated with its supported platforms.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Extensions are not currently addressed in phase 1. We will evaluate between widget packagin mechanims and NPM packaging mechanisms in Phase2
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Standard-like extension
+ 
+Description: Extensions shall be treated in a way that is similar and consistent with standard device features.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Extensions are not currently addressed in phase 1. We will evaluate between widget packagin mechanims and NPM packaging mechanisms in Phase2
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Unbinding initialisation
+ 
+Description: webinos software and meta-data shall be initialised when a personal device is no longer bound to a user identity.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+PZP revocation needs to be better tested.
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Version name
+ 
+Description: Application specifications shall define a version name based on a predefined scheme.
+ 
+|API|Widget|
+|Interface|Widget|
+|Method|version attribute|
+|Component|<none>|
+ 
+_Compliance_: 
+Widgets support well defined versioning schema
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h2. Section: Negotiation and Compatibility
+ 
+h3. Requirement: Device independent design
+ 
+Description: The webinos platform shall support device independent application design.
+ 
+|API|<none>|
+|Interface|<none>|
+|Method|<none>|
+|Component|<none>|
+ 
+_Compliance_: 
+To date the html ui framework has proven itself entirely adequate for multi device design
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Feature access
+ 
+Description: Personal device features shall be programmatically accessible.
+ 
+|API|Service|
+|Interface|Service|
+|Method|bind|
+|Component|<none>|
+ 
+_Compliance_: 
+findServices function allows features to be discovered access devices
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Feature information
+ 
+Description: Information about device physical features shall be programmatically available to authorised applications.
+ 
+|API|DiscoveryInterface|
+|Interface|DiscoveryInterface|
+|Method|findServices|
+|Component|<none>|
+ 
+_Compliance_: 
+A combination of remove service discovery, with the device status API, allows most facets of a device to be interrogated remotely (policy issues allowing)
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Feature specification
+ 
+Description: Applications shall specify the device features they require.
+ 
+|API|<none>|
+|Interface|<none>|
+|Method|<none>|
+|Component|<none>|
+ 
+_Compliance_: 
+Application specify their required features through the widget feature declaration 
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: File format compatibility
+ 
+Description: An application shall check device compatibility with certain pre-defined file formats.
+ 
+|API|<none>|
+|Interface|<none>|
+|Method|<none>|
+|Component|<none>|
+ 
+_Compliance_: 
+Need more information 
+ 
+_Status_: 
+Unknown: needs more clarification of the requirement 
+ 
+ 
+h3. Requirement: File format conversion
+ 
+Description: The webinos platform shall provide services for converting file formats.
+ 
+|API|<none>|
+|Interface|<none>|
+|Method|<none>|
+|Component|<none>|
+ 
+_Compliance_: 
+Not addressed in Phase 1
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: GUI components
+ 
+Description: The webinos platform shall provide standard UI components.
+ 
+|API|<none>|
+|Interface|<none>|
+|Method|<none>|
+|Component|<none>|
+ 
+_Compliance_: 
+webinos provides the full UI flexibility implied by a rich web browser with HMTL5, Canvas and WebGL capability 
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Identifiable APIs
+ 
+Description: webinos APIs shall be uniquely identifiable.
+ 
+|API|Service?|
+|Interface|Service?|
+|Method|id?|
+|Component|<none>|
+ 
+_Compliance_: 
+All webinos APIs are specified by feature URI
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Interactive features
+ 
+Description: webinos shall provide device feature information for interactive device fetures.
+ 
+|API|DeviceStatusManager?|
+|Interface|DeviceStatusManager?|
+|Method|getComponents('InputDevice')?|
+|Component|<none>|
+ 
+_Compliance_: 
+Need clarification
+ 
+_Status_: 
+Unknown: needs more clarification of the requirement 
+ 
+ 
+h3. Requirement: Interface layout services
+ 
+Description: webinos shall provide a service that composes an optimised interface layout based on the application's UI components and definition.
+ 
+|API|<none>|
+|Interface|<none>|
+|Method|<none>|
+|Component|<none>|
+ 
+_Compliance_: 
+webinos provides the full UI flexibility implied by a rich web browser with HMTL5, Canvas and WebGL capability
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Media format information
+ 
+Description: Information about device supported media formats shall be programmatically available to authorised applications.
+ 
+|API|<none>|
+|Interface|<none>|
+|Method|<none>|
+|Component|<none>|
+ 
+_Compliance_: 
+Meta data about media is provided through the gallery API
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Minimum version check
+ 
+Description: At application installation time, the webinos runtime shall verify that the minimum runtime version requirement of the application is satisfied.
+ 
+|API|<none>|
+|Interface|<none>|
+|Method|<none>|
+|Component|<none>|
+ 
+_Compliance_: 
+Runtime version checking is provided with widget versioning mechanism
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Minimum webinos version
+ 
+Description: webinos applications shall specify the minimum required version of the webinos runtime.
+ 
+|API|<none>|
+|Interface|<none>|
+|Method|<none>|
+|Component|<none>|
+ 
+_Compliance_: 
+Runtime version checking is provided with widget versioning mechanism
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: OS information
+ 
+Description: Information about the device OS shall be programmatically available to authorised applications.
+ 
+|API|DeviceStatusManager|
+|Interface|DeviceStatusManager|
+|Method|getComponents('OperatingSystem')|
+|Component|<none>|
+ 
+_Compliance_: 
+Device OS information is provided by the Device Status API
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Policy difference checking
+ 
+Description: The webinos platform shall check differences in application policies between versions.
+ 
+|API|<none>|
+|Interface|<none>|
+|Method|<none>|
+|Component|<none>|
+ 
+_Compliance_: 
+Salvatore
+ 
+_Status_: 
+Unknown: needs more clarification of the requirement 
+ 
+ 
+h3. Requirement: Post-upgrade performance
+ 
+Description: The performance requirements of webinos requirements shall continue to be satisfied in subsequent versions of the webinos runtime.
+ 
+|API|<none>|
+|Interface|<none>|
+|Method|<none>|
+|Component|<none>|
+ 
+_Compliance_: 
+Not currently addressed in phase 2
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Resource preferences
+ 
+Description: An application shall define the resource preferences it needs access to.
+ 
+|API|<none>|
+|Interface|<none>|
+|Method|<none>|
+|Component|<none>|
+ 
+_Compliance_: 
+Resource preferences of an application are either statically declared by feature URIs or dynamically checked at runtime using the device status api
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Runtime version registration
+ 
+Description: webinos runtime implementations shall register the supported webinos APIs and versions.
+ 
+|API|<none>|
+|Interface|<none>|
+|Method|<none>|
+|Component|Widget Manager|
+ 
+_Compliance_: 
+All APIs and version determined by the widget manager
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Upwards compatibility
+ 
+Description: New versions of the webinos platform shall be upwards compatible.
+ 
+|API|<none>|
+|Interface|<none>|
+|Method|<none>|
+|Component|<none>|
+ 
+_Compliance_: 
+Subject to phase 2 design changes phase  1 application shall be compatible. Major discrepancies can be dealt with by changing the URI identifier
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: webinos preference access
+ 
+Description: Authorised applications shall be able to access the user's general webinos preferences.
+ 
+|API|<none>|
+|Interface|<none>|
+|Method|<none>|
+|Component|<none>|
+ 
+_Compliance_: 
+Not yet addressed in Phase 1
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h2. Section: Remote Notifications and Messaging
+ 
+h3. Requirement: Application event
+ 
+Description: Webinos applications shall incorprate an optional set of pre-defined application events.
+ 
+|API|-|
+|Interface|-|
+|Method|<none>|
+|Component|<none>|
+ 
+_Compliance_: 
+Applications can generated their own customised application events through the Events interface. In addition an application generated events when installed, run and uninstalled which are intercepted and processed by both the security and context frameworks
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Application launch notification
+ 
+Description: Application users shall be notified of launch requests.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+The Launch API receives notifications when applications launch requests succeed or fail
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Entity event subscription
+ 
+Description: It shall be possible to subscribe to events that are created by a specific entity.
+ 
+|API|Webinos Event Enitity|
+|Interface|Webinos Event Enitity|
+|Method|addWebinosEventListener|
+|Component|<none>|
+ 
+_Compliance_: 
+Provided by the Events API
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Event delivery notification
+ 
+Description: Notification upon delivery of an event shall be available to the event's originator.
+ 
+|API|WebinosEvent|
+|Interface|WebinosEvent|
+|Method|forwardWebinosEvent|
+|Component|<none>|
+ 
+_Compliance_: 
+Provided by the Events API
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Event delivery time limit
+ 
+Description: It shall be possible to specify a time limit that defines until when an event should be delivered to its destinations before it is marked as outdated and no further deliveries are tried.
+ 
+|API|WebinosEventCallbacks|
+|Interface|WebinosEventCallbacks|
+|Method|on Timeout|
+|Component|<none>|
+ 
+_Compliance_: 
+Provided by the Events API
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Event destination
+ 
+Description: An event shall restrict its visibility by specifying a set of specific destinations.
+ 
+|API|WebinosEventCallbacks|
+|Interface|WebinosEventCallbacks|
+|Method|onSending|
+|Component|<none>|
+ 
+_Compliance_: 
+Provided by the Events API
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Event distribution
+ 
+Description: Events shall be distributed to all subscribed and authorised destinations.
+ 
+|API|Dispatch webinos event|
+|Interface|Dispatch webinos event|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Provided by the Events API
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Event instance type
+ 
+Description: Event instances shall be typed.
+ 
+|API|createWebinosEvent, addWebinosEventListener|
+|Interface|createWebinosEvent, addWebinosEventListener|
+|Method|<none>|
+|Component|<none>|
+ 
+_Compliance_: 
+In so much as JavaScript is typed the call-back mechanisms allow the exchange of typed data
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Event meta-data
+ 
+Description: Event shall be associated with event-specific metedata.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Provided by the Events API
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Event name conflict
+ 
+Description: Pre-defined application event names shall not conflict with webinos event names.
+ 
+|API|no webinos predefined events|
+|Interface|no webinos predefined events|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Event names are constructed in their own namespace
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Event payload
+ 
+Description: Payload data shall, if desired, be attached to events.
+ 
+|API|WebinosEventCallbacks|
+|Interface|WebinosEventCallbacks|
+|Method|dispatchWebinosEvent and forwardWebinosEvent|
+|Component|<none>|
+ 
+_Compliance_: 
+Extra data may be carried in the event payload
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Event payload data
+ 
+Description: The payload data shall contain arbitrary application specific data.
+ 
+|API|WebinosEventCallbacks|
+|Interface|WebinosEventCallbacks|
+|Method|dispatchWebinosEvent and forwardWebinosEvent|
+|Component|<none>|
+ 
+_Compliance_: 
+Extra data may be carried in the event payload
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Event source
+ 
+Description: An event shall provide information about its creation source.
+ 
+|API|<none>|
+|Interface|<none>|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+The event source is declared in webinos address notation on the event
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Event time
+ 
+Description: Events shall provide information about the date and time when the event occurred.
+ 
+|API|WebinosEventCallbacks|
+|Interface|WebinosEventCallbacks|
+|Method|referenceTimeout in dispath and forward|
+|Component|<none>|
+ 
+_Compliance_: 
+Event timing information is attached to the event data
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Event type subscription
+ 
+Description: It shall be possible to subscribe to specific event types in order to be notified if the related event occurs.
+ 
+|API|Webinos Event Enitity|
+|Interface|Webinos Event Enitity|
+|Method|addWebinosEventListener|
+|Component|<none>|
+ 
+_Compliance_: 
+Event filters can be specified
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Event type unsubscription
+ 
+Description: It shall be possible to unsubscribe from notifications about specific event types.
+ 
+|API|Webinos Event Enitity|
+|Interface|Webinos Event Enitity|
+|Method|addWebinosEventListener|
+|Component|<none>|
+ 
+_Compliance_: 
+Listeners can be deleted which cancellers the event notification
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Message caching
+ 
+Description: Undelivered messages shall be cached.
+ 
+|API|WebinosEventCallbacks|
+|Interface|WebinosEventCallbacks|
+|Method|addWebinosEventListener allows multiple client to regiestr and dispatch and forwards takes care of test|
+|Component|<none>|
+ 
+_Compliance_: 
+The even mechanism piggybacks on top of the RPC transport which has in built transactional queuing behaviour
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Multiple entity eventing
+ 
+Description: It shall be possible to exchange information between multiple entities in terms of events.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+This in by design behaviour of the event API
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: New installation notification
+ 
+Description: Users of newly installed applications shall be notified of the device the applications were installed on.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: Subscription
+ 
+Description: Applications shall subscribe to published information of interest from other applications, services, and the webinos runtime.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Needs clarification
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: Unique event instance
+ 
+Description: Event instances shall be unique.
+ 
+|API|WebinosEventsInterface|
+|Interface|WebinosEventsInterface|
+|Method|createWebinosEvent|
+|Component|<none>|
+ 
+_Compliance_: 
+Each event had a unique ID that is used by the transport mechanism
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: webinos event creator
+ 
+Description: webinos events shall be created only by the webinos runtime.
+ 
+|API|WebinosEventsInterface|
+|Interface|WebinosEventsInterface|
+|Method|create Webinos Event|
+|Component|<none>|
+ 
+_Compliance_: 
+Clarification needed - what is a webinos event
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: webinos event
+ 
+Description: The webinos runtime shall define a set of events about runtime behaviour.
+ 
+|API|Webinos Events|
+|Interface|Webinos Events|
+|Method|?|
+|Component|<none>|
+ 
+_Compliance_: 
+Not available in Phase 1. Will be addressed as part of application and runtime lifecycle in Phase 2
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: webinos update notification
+ 
+Description: Users shall be notified of available updates for the webinos runtime and applications.
+ 
+|API|webinosEvents ?|
+|Interface|webinosEvents ?|
+|Method|not present|
+|Component|<none>|
+ 
+_Compliance_: 
+Not available in Phase 1. Will be addressed as part of application and runtime lifecycle in Phase 2
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h2. Section: Policy and Security
+ 
+h3. Requirement: Access control log
+ 
+Description: webinos shall allow access control decisions to be logged.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+This functionality can be provided by the Context framework
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Analytics control
+ 
+Description: Analytical data shall be controlled by policy.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Policy structures currently mediate access to all information. Data useful for analysis covers all data exposed by functional api in addition to the context api.
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: API access rationale
+ 
+Description: webinos applications shall contain a method explaining why access to data or APIs is being requested.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+This has not been provided in phase 1
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Application capability restriction
+ 
+Description: Application shall access only its specified device features, extensions and content.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+This is a requirement on the expressiveness and the integrity of the  policy component. The policy component does indeed allow for these constraints to be specified. The integrity of the constraint is tested by the policy test suite
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: Application data policy
+ 
+Description: webinos policies shall specify restrictions on application data.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Application data is currently stored in at least 3 way: widget storage, widget preference file access. In the current security model it is  possible to place fine grained restrictions on file access. Placing similar controls on storage and preferences is a phase 2 activity 
+ 
+_Status_: 
+Partial: part of the functionality has been implemented. Needs more implmentation work in Phase 2
+ 
+ 
+h3. Requirement: Application intent
+ 
+Description: Applications shall specify its required functionality at install time or during updates.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+This is currently supported in the installation process
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Application isolation
+ 
+Description: Applications shall be isolated from each other.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Within the current implementation this issue is prevalent at two layers  - in the  browser and the node pzp context . For the PZP this is supported through the application separation provided through node application management and further through the use of isolets. For the browser, we inherit the browser implementation , which for the webinos WRT is Chromium. Note webinos applications do not have Operating System executable separation, this is too expensive from a footprint perspective 
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Application policy approval
+ 
+Description: Changes to existing application intents shall be approved by the end user.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+This is currently supported in the installation process
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Asset-based policy
+ 
+Description: The webinos policy editor shall allow asset-based policy specification, including objects, subjects, signing authorities and APIs.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+These features are supported by the webinos policy mechanisms 
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Authentication alert
+ 
+Description: Unless overridden by a policy, users shall be alerted of attempts to authenticate a webinos device with another webinos device.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+This requirement is implemented via a default policy being in place. The current expressiveness of the policy is capable of capturing this requirement  
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Authenticity check
+ 
+Description: Before being installed or updated, origin authenticity and integrity checks shall be performed by the webinos runtime on the application.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+These are currently implemented as part of the widget installation process
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Certificate signing
+ 
+Description: webinos components shall be responsible for signing any certificates that they store.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+All webinos certificates are signed by the PZH which acts as a certificate issuing authority for all webinos certificates
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Certifier list
+ 
+Description: The list of authorities that certified their webinos applications shall be viewable by end-users.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+This is not currently supported but will be added in phase 2
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Change authenticity
+ 
+Description: Security policy downloads, installs, updates, and deletions shall require user and system authenticity and integrity checking.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Policy management is not yet supported but will be added in phase 2
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Confidential credentials storage
+ 
+Description: The webinos runtime shall support the confidential storage of user credentials.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Check with John
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: Configurable device discovery
+ 
+Description: Device discovery shall be configurable to (a) disable discovery, (b) prevent discovery by certain entities (other devices, users, types of device) and (c) enable discovery by all or particular entities.
+ 
+|API|Discovery Interface|
+|Interface|Discovery Interface|
+|Method|*|
+|Component|<none>|
+ 
+_Compliance_: 
+Check with Salvatore
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: Credentials access restriction
+ 
+Description: Access to credentials storage shall be limited to a specific user, a specific device and a set of applications.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+This constraint is satisfied by the implementation of the secure storage capability 
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: CRL signing
+ 
+Description: webinos components shall be responsible for signing any certificate revocation lists they store. 
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+??
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: Data management rationale
+ 
+Description: webinos applications shall provide a method explaining how collected sensitive data will be managed.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+??
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: Data sharing authentication
+ 
+Description: A user shall authenticate with a webinos device, before the device shares profile data with other devices.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+This process is part of the device enrolment process specified and implemented in webinos 
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Default policy
+ 
+Description: A default security policy shall be created for a new webinos runtime installation.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+A default policy has not yet been defined for webinos
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Device-identity binding
+ 
+Description: Personal devices shall be bound to its owner's identity.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+This is part of the device enrolment process. A certificate which is unique to the zone (and therefore the owners identity) is issued to each devices. 
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Out-of-band revocation
+ 
+Description: webinos shall allow out-of-band authentication when revoking certificates associated with webinos components.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Each PZH provides a web administration interface 
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Device-identity binding revokation
+ 
+Description: The binding between personal devices and owner's identity shall be revokable.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+A devices PZP certificate can be revoked via the PZH administration functions
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Event policy
+ 
+Description: webinos shall provide a policy system regarding events.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Issuance and receipt of event can be controlled by the policy system blocking the event feature
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Functionality intent
+ 
+Description: webinos application's permissible functionality shall be specified.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+the capabilities that and application access is deterministically defined by the policy language. Ensuring that the policy enforcement polices this perimeter is determined by the policy test
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Hierarchical policy enforcement
+ 
+Description: webinos shall enforce multiple policies written by multiple stakeholders in a hierarchy.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+This functionality is part of the BONDI/WAC policy framework upon which webinos policy is based
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Key generation
+ 
+Description: webinos components shall be responsible for generating any keys that they store.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+All keys within the webinos personal zone are granted by the PZH which acts a certificate authority for all devices within the zone. A such the PZH  issues both
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Out-of-band authentication
+ 
+Description: Mutual authentication through out-of-band methods shall be supported.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+John?
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: Personal device authentication
+ 
+Description: Personal devices shall be authenticated before their services are made available.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+This is currently the case. In future there may be a use case for anonymous functions. This is still under investigation
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Policy delegation
+ 
+Description: webinos shall support delegated policy management.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Policy management is not yet supported but will be added in phase 2
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Policy impact
+ 
+Description: The webinos policy editor shall incorporate example textual descriptions of how particular policy changes affect system behaviour.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+This is not currently supported. This may not be possible 
+ 
+_Status_: 
+Defer evaluation of implementability to a later date 
+ 
+ 
+h3. Requirement: Policy integrity
+ 
+Description: The authenticity and integrity of policies shall be enforced.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Policy management is not yet supported but will be added in phase 2. These requirement can be partially satisfied by re-using the widget packaging mechanism as a transport for policy fragments
+ 
+_Status_: 
+Partial: part of the functionality has been implemented. Needs more implmentation work in Phase 2
+ 
+ 
+h3. Requirement: Policy management
+ 
+Description: webinos shall allow users to view and manage application policies.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Policy management 
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: Policy override refusal
+ 
+Description: Users shall be denied the ability to modify policy settings if a policy by a more privileged authority exists which overrides them.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+This is not yet supported in phase 1. It raises the issue of who determines what is a more privileged authority
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: Policy refusal reason
+ 
+Description: Users shall be presented with a rationale for preventing the modification of some policy settings.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Not yet completed in phase 1
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Policy samples
+ 
+Description: An online repository of sample security policies shall be created.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Not yet completed in phase 1
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: Policy spec
+ 
+Description: webinos policies shall specify restrictions on device capabilities, application data, analytical and personal information held within webinos, and access to other devices.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+The current policy description language allows all of these constraints to be specified
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: Policy view/edit level
+ 
+Description: Policies shall be viewable and editable by users at both a fine-grained and coarse-grained level.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+This function will be provided by the policy editor which is still work in progress
+ 
+_Status_: 
+Partial: part of the functionality has been implemented. Needs more implmentation work in Phase 2
+ 
+ 
+h3. Requirement: Primary identity selection
+ 
+Description: A user shall choose the primary level of identity used to advertise other webinos enabled devices.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+John?
+ 
+_Status_: 
+Unknown: needs more clarification of the requirement 
+ 
+ 
+h3. Requirement: Privacy preferences
+ 
+Description: Access to user private information shall be controlled by user privacy preferences.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Salvatore
+ 
+_Status_: 
+Unknown: needs more clarification of the requirement 
+ 
+ 
+h3. Requirement: Request denial error
+ 
+Description: webinos APIs shall provide error results when an access control request is denied.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+webinos APIs issue a coarse grained permission denied error when the policy restricts access to information. Fine grained permission errors that may divulge the specifics of the policy in place should not be reported by default
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Runtime alert
+ 
+Description: The webinos runtime shall be able to alert the user at runtime.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+A notification  scheme  is provided to allows the policy enforcement point to interact with the user
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Secure analytics storage
+ 
+Description: The webinos system shall store analytical data securely
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Christos
+ 
+_Status_: 
+Unknown: needs more clarification of the requirement 
+ 
+ 
+h3. Requirement: Secure association
+ 
+Description: Associations between devices shall be allowed only when transport level security, device authentication, user authorisation, and device authorisation is enforced.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Any assocation between two devices is predicated on an exchage of the required certificaes and mutually authenicated TLS session being established between to two relevant devices
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: Secure association resilience
+ 
+Description: Associations shall be re-established between webinos components using an alternative protocol in the event of a protocol communication failure.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+This is only partically complete within phase 1. The current implmentation allows for local connections and internet routed connections, but both use the same protocol. In phase 2 there are plans for a more sophisticated connection manager that can use alternative protocols for connections
+ 
+_Status_: 
+Partial: part of the functionality has been implemented. Needs more implmentation work in Phase 2
+ 
+ 
+h3. Requirement: Secure cache
+ 
+Description: Data cached by webinos shall be securely stored to prevent disclosure and tampering by unauthorised entitites.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+This feature can be provided by use of the secure storage API. This has not yet been fully integrated into the implementation
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Secure storage
+ 
+Description: Application data shall be securely stored to prevent disclosure and tampering unauthorised entities.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+This feature can be provided by use of the secure storage API. This has not yet been fully integrated into the implementation
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: Self authentication
+ 
+Description: A webinos device shall, if required, authenticate itself to other webinos devices before an association is established.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+a webinos device is identified by the PZP certificate it carries. When two devices authenticate against each other they do so by establishing a mutually authenticated TLS session between each other
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: Shareable services
+ 
+Description: Specified services shall be shareable with other user's personal devices.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+The functionality is build into the core. 
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: Trusted application source
+ 
+Description: When installing or using an application for the first time, webinos shall establish that the user trusts the source of the application.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+The current install process, will perform certificate integrity checks on the presented application, and also present a dialog to the user presenting these credentials along with the features requested by the user. It is up to the user to accept these credentials. Moving forward in phase 2 we will look to integrate 3rd party application review services 
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: User anonymisation
+ 
+Description: webinos shall provide simple controls to allow the user to become anonymous.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Requirement needs more clarification
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: User association alert
+ 
+Description: When associating devices belonging to different users, webinos shall prompt each device to allow the association unless a policy overrides this.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+The default webinos policy will indeed require that discoverability and service attachment between users and devices is explicitly prompted for
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: User policy authoring
+ 
+Description: Security policies shall be authorable by users.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Security policies can be created and modified by the policy editor component
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: User policy editor
+ 
+Description: Policies shall be created and modified by users using a webinos policy editor.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+A policy editor has been partially completed in phase 1. This will be improved upon in the phase 2 implementation
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: User-to-user unlinkability
+ 
+Description: webinos agent shall support user-to-user unlinkability, such that no user can identify if another user is using or has used the same service.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Within the current implementation and defined protocols session establishment between a use and services leaves no explicit trace that can be detected by a secondary user
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: WAC/XACML policy
+ 
+Description: The WAC XACML-based policy framework shall be adopted as the webinos policy framework.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+The current policy framework is based on the original BONDI.WAC XACML based policy framework, but the substantial enhancements to address the extended webinos use cases
+ 
+_Status_: 
+
+ 
+ 
+h3. Requirement: webinos session re-establishment
+ 
+Description: Sessions between webinos components shall be re-established using pre-existing session identities where assurance about the pre-existing session's integrity can be established.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Session IDs are currently created between PZP and PZH. These can be used to re-establish the context of the session.  The integrity of the session is protected in that the session can only be re-established in the context of mutually authenticated tls connection
+ 
+_Status_: 
+
+ 
+ 
+h2. Section: Transfer and Management of State 
+ 
+h3. Requirement: Application data synchronisation
+ 
+Description: webinos shall allow application data synchronisation between several users.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+App data synchronisation and implementation has been deferred to phase  2
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Application data synchronisation management
+ 
+Description: webinos shall allow users to manage applications which synchronise their data with other webinos devices.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+App data synchronisation and implementation has been deferred to phase  2
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Application running state
+ 
+Description: webinos shall support storage and retrieval of applications' running state.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+App running state will be defined as  a phase 2 activity
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Application shutdown synchronisation
+ 
+Description: On exit, webinos shall allow applications to synchronize its data with another instance of the application working on another device.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+App data synchronisation and implementation has been deferred to phase  2
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Application startup synchronisation
+ 
+Description: On startup, webinos shall allow applications to synchronize its data with another instance of the application working on another device.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+App data synchronisation and implementation has been deferred to phase  2
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Application state availability
+ 
+Description: Application state shall be accessible to authorized entities.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+App data synchronisation and implementation has been deferred to phase  2
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Data subset application synchronisation
+ 
+Description:  webinos shall allow applications to synchronise a subset of data with a webinos application working on another authorised device.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+App data synchronisation and implementation has been deferred to phase  2
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Disable application data synchronisation
+ 
+Description: webinos shall allow synchronisation to be disabled for selected webinos application.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+App data synchronisation and implementation has been deferred to phase  2
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Disable device synchronisation
+ 
+Description: webinos shall users to disable synchronisation for selected devices.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+App data synchronisation and implementation has been deferred to phase  2
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Personal device application status registration
+ 
+Description: For each application running on a personal device, the current application status shall be registered
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+App running state will be defined as  a phase 2 activity
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Personal device power status
+ 
+Description: A personal device storing webinos devices data shall store the devices' power status
+ 
+|API|DeviceStatusManager|
+|Interface|DeviceStatusManager|
+|Method|getPropertyValue|
+|Component|<none>|
+ 
+_Compliance_: 
+Battery information is discoverable via the device vocabulary
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Personal device status registration
+ 
+Description: For each identified personal device, the current device status shall be registered
+ 
+|API|DeviceStatusManager|
+|Interface|DeviceStatusManager|
+|Method|getPropertyValue|
+|Component|<none>|
+ 
+_Compliance_: 
+Device status in the general sense is readable from the larger vocabulary set within the device status API
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Session re-establishment
+ 
+Description:  webinos shall allow for re-establishment of secure sessions between a webinos application and third parties after the application has transferred between webinos devices.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Session establishment mechanisms have been 
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: State and configuration transfer
+ 
+Description: webinos shall allow state and configuration transfer of several applications to another user devices.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+Currently addressed by issuing application specific events via the Events API
+ 
+_Status_: 
+Phase 1: already complete and implemented 
+ 
+ 
+h3. Requirement: Synchronisation method
+ 
+Description: webinos shall allow users to select methods for synchronising application data.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+App data synchronisation and implementation has been deferred to phase  2
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+h3. Requirement: Time period based application synchronisation
+ 
+Description: webinos shall enable applications to synchronize data with a webinos application working on another authorised device at specific time periods.
+ 
+|API|-|
+|Interface|-|
+|Method|-|
+|Component|<none>|
+ 
+_Compliance_: 
+App data synchronisation and implementation has been deferred to phase  2
+ 
+_Status_: 
+Phase 2: planned for next phase implmentation
+ 
+ 
+This line uses the WriteLine method.

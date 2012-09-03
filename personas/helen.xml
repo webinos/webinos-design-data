@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+<!DOCTYPE usability PUBLIC "-//CAIRIS//DTD USABILITY 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/usability.dtd">
+
+
+<usability>
+<persona name="Helen" type="Primary" assumption_persona="TRUE" image="/home/irisuser/webinos/wp2/personas/helen.jpg" >
+  <activities>Helen is a 32 year old marketing manager for a publishing house in Brighton.
+
+Helen has a 3 year old toddler, Eric, which she drops off at the nursery on the way to work each morning, and picks up at a fixed time on her way home. This is something Helen has to do because Scott, her husband, works in the City, so catches a train to and from work.</activities>
+  <attitudes>Helen feels strongly about her role as a mother of a young family. Even though her job can be quite stressful and demanding time-wise, she feels it's important to maintain a healthy work-life balance. For this reason, she works regular office hours (partly to make sure she can drop off her child to/from the nursery, works with work media at the office only and, unlike most of her friends, LinkedIn is the only social network she uses at work.
+
+The only time Helen transfers media between devices is when she is in the office and doing things like tranferring presentations and documents between PCs and laptops. Helen does, however, use the cloud to store snaps that she has taken of her family.</attitudes>
+  <aptitudes>Although Helen wouldn't call herself technically literate, she has become quite adept at using the technology around her to streamline her working life. She uses a blue-tooth hands-free phone in her car, and makes sure the calendar on her phone (with both work and home calendar) is kept synchronised with her work laptop, PC, and the home media system her husband has setup.</aptitudes>
+  <motivations>Helen works hard to make sure her day-to-day life is as predictable as possible. Because of this, Helen wants to rely on the context-awareness features in her applications. She wants her data to be synchronised when it needs to be, and to be prompted when she (invariably) forgets things.</motivations>
+  <skills>None</skills>
+  <persona_environment name="Identity" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Helen is so keen on keeping abreast with her work and home diary that she is prepared to trade contextual data about her behavioural patterns if this facilitates making her devices more sensitive to her different work and home contexts.</narrative>
+  </persona_environment>
+  <persona_environment name="Discovery and Addressing" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Helen is so keen on keeping abreast with her work and home diary that she is prepared to trade contextual data about her behavioural patterns if this facilitates making her devices more sensitive to her different work and home contexts.</narrative>
+  </persona_environment>
+  <persona_environment name="Remote Notifications and Messaging" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Helen is so keen on keeping abreast with her work and home diary that she is prepared to trade contextual data about her behavioural patterns if this facilitates making her devices more sensitive to her different work and home contexts.</narrative>
+  </persona_environment>
+  <persona_environment name="Policy and Security" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Helen is so keen on keeping abreast with her work and home diary that she is prepared to trade contextual data about her behavioural patterns if this facilitates making her devices more sensitive to her different work and home contexts.</narrative>
+  </persona_environment>
+  <persona_environment name="Negotiation and Compatibility" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Helen is so keen on keeping abreast with her work and home diary that she is prepared to trade contextual data about her behavioural patterns if this facilitates making her devices more sensitive to her different work and home contexts.</narrative>
+  </persona_environment>
+  <persona_environment name="Lifecycle" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Helen is so keen on keeping abreast with her work and home diary that she is prepared to trade contextual data about her behavioural patterns if this facilitates making her devices more sensitive to her different work and home contexts.</narrative>
+  </persona_environment>
+  <persona_environment name="Device and Service Functional Capability" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Helen is so keen on keeping abreast with her work and home diary that she is prepared to trade contextual data about her behavioural patterns if this facilitates making her devices more sensitive to her different work and home contexts.</narrative>
+  </persona_environment>
+  <persona_environment name="Transfer and Management of State" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Helen is so keen on keeping abreast with her work and home diary that she is prepared to trade contextual data about her behavioural patterns if this facilitates making her devices more sensitive to her different work and home contexts.</narrative>
+  </persona_environment>
+  <persona_environment name="Complete" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Helen is so keen on keeping abreast with her work and home diary that she is prepared to trade contextual data about her behavioural patterns if this facilitates making her devices more sensitive to her different work and home contexts.</narrative>
+  </persona_environment>
+</persona>
+<external_document name="Context Sensitive Triggering User Story" version="0.9" date="November 2010" authors="Louay Bassbouss, Andre Paul, Christian Fuhrhop" >
+  <description></description>
+</external_document>
+<external_document name="Recommendations Use Case" version="0.1" date="October 2010" authors="Andre Paul" >
+  <description></description>
+</external_document>
+<external_document name="Setting Notification Profiles Use Case" version="0.1" date="November 2010" authors="Radoslaw Maruszewski" >
+  <description></description>
+</external_document>
+<external_document name="User Notification Use Case" version="0.1" date="November 2010" authors="Radoslaw Maruszewski" >
+  <description></description>
+</external_document>
+<external_document name="Context-aware notifications" version="0.1" date="November 2010" authors="Hans Stokking" >
+  <description></description>
+</external_document>
+<external_document name="Context-aware content viewing Use Case" version="0.1" date="November 2010" authors="Hans Stokking" >
+  <description></description>
+</external_document>
+<document_reference name="Car owner" contributor="Shamal Faily" document="Context Sensitive Triggering User Story" >
+  <excerpt>Description: For example if the car is not near my home, work, wife, or near me...</excerpt>
+</document_reference>
+<document_reference name="SatNav driver" contributor="Shamal Faily" document="Context Sensitive Triggering User Story" >
+  <excerpt>The car navigation system senses when the user is standing idle...</excerpt>
+</document_reference>
+<document_reference name="Recent car owner" contributor="Shamal Faily" document="Context Sensitive Triggering User Story" >
+  <excerpt>Description:  ... the internal car system derives the information....</excerpt>
+</document_reference>
+<document_reference name="Predictable behaviour" contributor="Shamal Faily" document="Recommendations Use Case" >
+  <excerpt>Based on previous choices by the user, the behaviour is matched to behavioural patterns....</excerpt>
+</document_reference>
+<document_reference name="Predictable social contexts" contributor="Shamal Faily" document="Recommendations Use Case" >
+  <excerpt>4 different types of device types....... updates the User's Social Context.</excerpt>
+</document_reference>
+<document_reference name="Works office hours" contributor="Shamal Faily" document="Setting Notification Profiles Use Case" >
+  <excerpt>When using his laptop during work hours......</excerpt>
+</document_reference>
+<document_reference name="LinkedIn user" contributor="Shamal Faily" document="Setting Notification Profiles Use Case" >
+  <excerpt>Description: A user has accounts on several social networks (e.g. Facebook, Twitter, and LinkedIn).</excerpt>
+</document_reference>
+<document_reference name="Receives LinkedIn notifications" contributor="Shamal Faily" document="Setting Notification Profiles Use Case" >
+  <excerpt>Description: When using his laptop during work hours, he wants to get notified only about LinkedIn messages.</excerpt>
+</document_reference>
+<document_reference name="Phones on the road" contributor="Shamal Faily" document="Context Sensitive Triggering User Story" >
+  <excerpt>Description:... and has her phone connected to the Bluetooth hands-free system of the car.</excerpt>
+</document_reference>
+<document_reference name="Uses calendar on home media system" contributor="Shamal Faily" document="User Notification Use Case" >
+  <excerpt>Pre-condition:  Both the PC and the home media set have installed the calendar application.</excerpt>
+</document_reference>
+<document_reference name="Calendar-centric home media system" contributor="Shamal Faily" document="User Notification Use Case" >
+  <excerpt>Flow:  The user switches on his home media set.......
+The calendar displays a dialog box with the appointment reminder.</excerpt>
+</document_reference>
+<document_reference name="Mother of toddler" contributor="Shamal Faily" document="Context Sensitive Triggering User Story" >
+  <excerpt>Description:  For example notifications could be sent to parents in case that their child leaves a dedicated area (e.g. leaving Berlin - something must be wrong).</excerpt>
+</document_reference>
+<document_reference name="Frequently around contact network" contributor="Shamal Faily" document="Context-aware notifications" >
+  <excerpt>...the webinos system determines the current context of device A, and finds a device B in the immediate vicinity...</excerpt>
+</document_reference>
+<document_reference name="Selective about where media is viewed" contributor="Shamal Faily" document="Context-aware content viewing Use Case" >
+  <excerpt>3.  The content service users the request and the context information to select the appropriate content for the request.
+
+Exception: If the requested content cannot be delivered due to the context.
+
+Pre-condition: ... the device has a wallpaper that is not suitable for displaying in public places.</excerpt>
+</document_reference>
+<document_reference name="Has several social network accounts" contributor="Shamal Faily" document="Setting Notification Profiles Use Case" >
+  <excerpt>Pre-Condition:  The user has accounts on several social media sites.</excerpt>
+</document_reference>
+<document_reference name="Partitions social network usage" contributor="Shamal Faily" document="Setting Notification Profiles Use Case" >
+  <excerpt>When using his laptop during work hours, he wants to get notified only about LinkedIn messages.</excerpt>
+</document_reference>
+<document_reference name="Married" contributor="Shamal Faily" document="Context Sensitive Triggering User Story" >
+  <excerpt>Description:  For example if the car is not near my home, work, wife....</excerpt>
+</document_reference>
+<document_reference name="Takes and shares photo snaps" contributor="Shamal Faily" document="Context-aware notifications" >
+  <excerpt>End-user A has sent the webinos a notification for end-user B on a new piece of content that is now available, e.g. about a new photo end-user A has taken.</excerpt>
+</document_reference>
+<document_reference name="Uses cloud-based photo storage " contributor="Shamal Faily" document="Context-aware content viewing Use Case" >
+  <excerpt>The end-user has requested a slide-show of his holiday photos stored by the content service in the cloud.</excerpt>
+</document_reference>
+<document_reference name="Shares usage data" contributor="Shamal Faily" document="Recommendations Use Case" >
+  <excerpt>Significant amounts of usage information by either just the individual user .... is available.</excerpt>
+</document_reference>
+<document_reference name="Interested in contextual device usage" contributor="Shamal Faily" document="Context-aware notifications" >
+  <excerpt>When a user receives notifications about a piece of content.... notifications are attuned tto the current context of the user. Part of this context is the availability of other devices in the immediate vicinity.</excerpt>
+</document_reference>
+<document_reference name="Synchronises calendars with the cloud" contributor="Shamal Faily" document="User Notification Use Case" >
+  <excerpt>Flow: The calendar synchronizes itself with the webinos cloud storage.</excerpt>
+</document_reference>
+<persona_characteristic persona="Helen" behavioural_variable="Activities" modal_qualifier="Maybe" >
+  <definition>A Sales and Marketing manager</definition>
+  <grounds type="document" reference="Works office hours" />
+  <grounds type="document" reference="LinkedIn user" />
+  <warrant type="document" reference="Receives LinkedIn notifications" />
+</persona_characteristic>
+<persona_characteristic persona="Helen" behavioural_variable="Activities" modal_qualifier="Possibly" >
+  <definition>A professional commuter</definition>
+  <grounds type="document" reference="Car owner" />
+  <grounds type="document" reference="SatNav driver" />
+  <grounds type="document" reference="Recent car owner" />
+</persona_characteristic>
+<persona_characteristic persona="Helen" behavioural_variable="Activities" modal_qualifier="Ideally" >
+  <definition>Patterns of behaviour planned</definition>
+  <grounds type="document" reference="Predictable behaviour" />
+  <grounds type="document" reference="Predictable social contexts" />
+</persona_characteristic>
+<persona_characteristic persona="Helen" behavioural_variable="Aptitudes" modal_qualifier="Presumably" >
+  <definition>Keeps busy</definition>
+  <grounds type="document" reference="Phones on the road" />
+  <grounds type="document" reference="Uses calendar on home media system" />
+  <grounds type="document" reference="Calendar-centric home media system" />
+</persona_characteristic>
+<persona_characteristic persona="Helen" behavioural_variable="Attitudes" modal_qualifier="Presumably" >
+  <definition>Is Family-centered</definition>
+  <grounds type="document" reference="Mother of toddler" />
+  <grounds type="document" reference="Married" />
+  <grounds type="document" reference="Takes and shares photo snaps" />
+  <grounds type="document" reference="Uses cloud-based photo storage " />
+</persona_characteristic>
+<persona_characteristic persona="Helen" behavioural_variable="Attitudes" modal_qualifier="Probably" >
+  <definition>Maintains a Work-Life splits</definition>
+  <grounds type="document" reference="Frequently around contact network" />
+  <grounds type="document" reference="Selective about where media is viewed" />
+  <grounds type="document" reference="Has several social network accounts" />
+  <grounds type="document" reference="Partitions social network usage" />
+  <grounds type="document" reference="Works office hours" />
+  <warrant type="document" reference="Mother of toddler" />
+</persona_characteristic>
+<persona_characteristic persona="Helen" behavioural_variable="Environment_Narrative" modal_qualifier="Possibly" >
+  <definition>Prepared to share her contextual data</definition>
+  <grounds type="document" reference="Shares usage data" />
+  <grounds type="document" reference="Interested in contextual device usage" />
+  <warrant type="document" reference="Mother of toddler" />
+</persona_characteristic>
+<persona_characteristic persona="Helen" behavioural_variable="Motivations" modal_qualifier="Presumably" >
+  <definition>Shares data to manage schedule</definition>
+  <grounds type="document" reference="Shares usage data" />
+  <grounds type="document" reference="Interested in contextual device usage" />
+  <grounds type="document" reference="Synchronises calendars with the cloud" />
+  <warrant type="document" reference="Mother of toddler" />
+</persona_characteristic>
+</usability>

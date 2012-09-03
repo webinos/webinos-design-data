@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<!DOCTYPE attack_pattern PUBLIC "-//CAIRIS//DTD ATTACKPATTERN 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/attack_pattern.dtd">
+
+<!-- 
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+
+
+<attack_pattern name="Linkability through findServices" likelihood="Frequent" severity="Marginal"> 
+ 
+       
+
+  <obstacle name="User identity tracked between applications" category="Vulnerability">
+    <definition>An application is able to successfully re-identify a user of a different application despite them restricting access to personally-identifying APIs.</definition>
+  </obstacle>       
+  
+  <obstacle name="Independent apps have common identifier for user" category="Vulnerability">
+    <definition>Two or more independent applications have been installed in the personal zone and have the same user identifier.</definition>
+  </obstacle>       
+  
+<!--  <obstacle name="Apps share usage data" category="Vulnerability">
+    <definition>The two application share usage data, either directly or through an intermediary analytics service</definition>
+    <concern name="Context Object" />
+    <responsibility name="Developer of webinos Apps" />
+    <probability value="0.2">
+      <rationale>Many applications will use the same analytics tools - this is common.</rationale>
+    </probability>
+  </obstacle>      --> 
+  
+  <obstacle name="Application has user identifier without permission" category="Vulnerability">
+    <definition>One application is installed and is able to obtain a user identifier without requesting access to an API for this. </definition>
+    <concern name="Service Discovery" />
+    <responsibility name="User" />
+
+  </obstacle>       
+  
+  <obstacle name="findService API reveals permanent user identifier" category="Vulnerability">
+    <definition>The output of the findServices API is an effective user identifier.</definition>
+    <concern name="Service Discovery" />
+    <responsibility name="User" />
+  </obstacle>       
+
+                  
+       
+ 
+  <intent>Jimmy wants to be able to re-identify users of different applications in order to sell data to analytics and marketing companies who run advertising networks.  If he can collect data about users on applications this can be used to better target adverts.</intent> 
+  
+  <motivation goal="unlinkability" value="Low"> 
+    <description>Jimmy can connect actions of users of different applications</description>
+  </motivation>
+  <applicability environment="Complete" />
+  <structure attack="Cross Site Identification" exploit="Information Exposure Through Persistent Cookies" exploit_obstacle="Apps share usage data" /> 
+  <participant name="Jimmy">
+    <motive name="Money" />
+    <capability name="Software" value="Medium" />
+    <capability name="Knowledge/Methods" value="Medium" />
+  </participant>
+  <collaboration>
+    <target name="Personal Data" /> 
+    <exploit name="Device API" />
+  </collaboration>
+  <consequences>The user believes their actions are not linked together and potentially anonymous, when they are not.  This could cause embarassment or privacy-loss: e.g., targetted adverts might reveal the user's private interests or activities.  This could also build a false impression of the user on a marketing site, or cause them to receive SPAM.</consequences>
+
+
+  <implementation>
+    <description>Jimmy creates a legitimate application which uses various unimportant APIs, inluding the discovery API.  Through the discovery API he is able to retrieve identifiers for webinos services hosted in the user's personal zone.  These are persistent.  Jimmy combines these identifies with records about the user's activity on the application and sells them to an online analytics firm who combines this information with other instances of these service identifiers.</description>
+    
+    <obstacle_association obstacle_name="User identity tracked between applications" ref_type="and" subobstacle_name="Independent apps have common identifier for user" >
+      <rationale></rationale>
+    </obstacle_association>  
+    
+    <obstacle_association obstacle_name="User identity tracked between applications" ref_type="and" subobstacle_name="Apps share usage data" >
+      <rationale></rationale>
+    </obstacle_association>  
+    
+    <obstacle_association obstacle_name="Independent apps have common identifier for user" ref_type="and" subobstacle_name="Application has user identifier without permission" >
+      <rationale></rationale>
+    </obstacle_association>  
+    
+    <obstacle_association obstacle_name="Application has user identifier without permission" ref_type="and" subobstacle_name="findService API reveals permanent user identifier" >
+      <rationale></rationale>
+    </obstacle_association>      
+        
+    
+  </implementation>
+  <known_uses>None</known_uses>
+  <related_patterns>None</related_patterns>
+</attack_pattern>

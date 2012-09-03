@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<!DOCTYPE attack_pattern PUBLIC "-//CAIRIS//DTD ATTACKPATTERN 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/attack_pattern.dtd">
+
+<!-- 
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+
+
+<attack_pattern name="Policy evasion through Browser APIs" likelihood="Occasional" severity="Marginal"> 
+ 
+       
+
+  <obstacle name="Geolocation accessed despite policy setting" category="Vulnerability">
+    <definition>An application is able to access user Geolocation details despite policy settings explicitly specifying that this shouldn't be possible.</definition>
+  </obstacle>       
+
+  <obstacle name="Policy misconfigured"  category="Vulnerability">
+    <definition>The user believes they have disabled geolocation when, in fact, they haven't</definition>
+    <concern name="Policy File" />
+    <responsibility name="User" />
+    <probability value="0.3">
+      <rationale>Policies are hard to configure.</rationale>
+    </probability>
+  </obstacle>
+  
+  <obstacle name="Browser Geolocation API accessed"  category="Vulnerability">
+    <definition>The application can access the browser-supplied geolocation API</definition>
+    <concern name="Device API" />
+    <responsibility name="Developer of webinos Apps" />
+  </obstacle>
+  
+  <obstacle name="App running in browser"  category="Vulnerability">
+    <definition>The application is running in a browser</definition>
+    <concern name="Rendering Engine" />
+    <responsibility name="Developer of webinos Platform" />
+    <probability value="0.3">
+      <rationale>The browser is often used as a widget renderer at present</rationale>
+    </probability>
+  </obstacle>
+  
+  <obstacle name="Browser API authorised"  category="Vulnerability">
+    <definition></definition>
+    <concern name="Access Request" />
+    <responsibility name="User" />
+    <probability value="0.1">
+      <rationale>Users may authorise an API by mistake, or assume that a browser authorisation is related to webinos.  One-shot authorisation is easy to get wrong.</rationale>
+    </probability>
+  </obstacle>  
+                 
+       
+ 
+  <intent>Jimmy creates a webinos application which collects location data for a social application.  Jimmy believes the app is much better if location tracking is enabled and so uses every source of location data available.</intent> 
+  <motivation goal="unobservability" value="Low"> 
+    <description>Jimmy can observe user location</description>
+  </motivation>
+  <applicability environment="Complete" />
+  <structure attack="Accessing Functionality Not Properly Constrained by ACLs" attack_obstacle="Browser API authorised" exploit="Missing Authorization" /> 
+  <participant name="Jimmy">
+    <motive name="Money" />
+    <capability name="Software" value="Low" />
+    <capability name="Knowledge/Methods" value="Low" />
+  </participant>
+  <collaboration>
+    <target name="Personal Data" /> 
+    <exploit name="Browser" />
+  </collaboration>
+  <consequences>The user believes their device to not be reporting location data when, in fact, it is.  This could be embarassing (it might expose the user doing something they shouldn't) or might even be dangerous if location is revealed to malicious parties.</consequences>
+  <implementation>
+    <description>Jimmy creates a legitimate and generally non-malicious web application which the end user installs.  However, Jimmy designs it so that it accesses both webinos APIs and browser APIs, depending on what is available at the time.  When the user turns off access to geolocation using webinos, Jimmy's app automatically invokes the browser API instead which has already been authorised.</description>
+    
+    <obstacle_association obstacle_name="Geolocation accessed despite policy setting" ref_type="or" subobstacle_name="Policy misconfigured" >
+      <rationale></rationale>
+    </obstacle_association>  
+
+    <obstacle_association obstacle_name="Geolocation accessed despite policy setting" ref_type="or" subobstacle_name="Browser Geolocation API accessed" >
+      <rationale></rationale>
+    </obstacle_association>  
+    
+    <obstacle_association obstacle_name="Browser Geolocation API accessed" ref_type="or" subobstacle_name="Browser API authorised" >
+      <rationale></rationale>
+    </obstacle_association>  
+    
+    <obstacle_association obstacle_name="Browser Geolocation API accessed" ref_type="or" subobstacle_name="App running in browser" >
+      <rationale></rationale>
+    </obstacle_association>              
+        
+    
+  </implementation>
+  <known_uses>None</known_uses>
+  <related_patterns>None</related_patterns>
+</attack_pattern>

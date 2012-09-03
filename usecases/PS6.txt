@@ -1,0 +1,42 @@
+h1. WOS-UC-TA7-006_1: The publicity and privacy of context information (alternative)
+
+Author: John Lyle, Hans Myrhaug
+
+Actors: User
+
+h2. Description
+
+This use case describes two mobile phones interacting to share potentially private analytics information. It illustrates aspects of sharing analytics information across devices and applications.
+
+h2. Preconditions
+
+A user and his friend both have a webinos-enabled mobile device that he uses daily. His friend has promiscuous policy settings for a social application that he is an active user of. The user has a least one friend on the same social network.
+
+Trust relationships between PZHs of the friends' zones are established.
+
+h2. Flow
+
+# The User starts the social network application.
+# The Application shows that a friend has just updated his status to say that he is nearby.
+# The User has not seen his friend for a long time, and would like to see him. However, he does not want to interrupt, so instead requests some information from users mobile device instead of calling him.
+# The Application requests some of his friends data to the webinos runtime.
+# The webinos runtime requests the information to the PZP
+# The PZP requests the information to the PZH
+# The PZH requests the information to the friends PZH
+# The friends' PZH receives the request, determines if the policy allows sharing which data and returns the data allowed to be given. There is no policy, so the friend will decide himself which data is allowed to be sent. The request is thus forwarded to the device currently in use by the friend and that friend is notified on the screen that his friend would like to find out this information from him, and asks him to make the decision about the request.  It also tells him: (a) That his friend is sending the request from his social network application. (b) What the requested analytics information will be used for. (c) That he will provide his analytics information in exchange.
+# The User's friend sets the policy to allow some of his analytics information to be shared, and that in the future all friends on his social network can do the same when he does not have plans in his diary.
+# The Application shows this data to the user.
+
+
+h2. Postconditions
+
+A User gains access to some of his friend's analytics information, and his friend's phone is configured to take the same decision when he is in a similar context.
+
+h2. Use case map
+
+!PublicityPrivacyContextInformationAlt.png!
+
+
+| *Scenarios* | |
+| *Use Cases* | |
+| *Requirements* | |

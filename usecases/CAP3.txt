@@ -1,0 +1,32 @@
+h1. WOS-UC-TA3-005: Background Execution
+
+Author: Andre Paul
+
+Actors: User
+
+h2. Description
+
+Applications get the possibility to run code in the background that keeps running even when the main app is closed
+
+h2. Preconditions
+
+The Application that wants to execute something in background is running.
+
+h2. Flow
+
+# The Application assigns code that should be executed in the background to the System (e.g. listing to temperature sensors).
+# The main Application is closed by the User.
+# The background code notifies the Webinos Runtime that the main Application should be launched (e.g., because it is over 30 degrees now).
+# The Webinos Runtime informs the User about the occurrence of a certain event that triggers launching an Application.
+# The User decides whether he want to launch the Application or not (do nothing).
+# If the User chose to do so, the Application is launched
+
+
+h2. Postconditions
+
+Code is executed in the background without the need for a running main Application. For the User the background execution is not visible.
+
+h2. Use case map
+
+!BackgroundExecution.png!
+

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE riskanalysis PUBLIC "-//CAIRIS//DTD RISKANALYSIS 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/riskanalysis.dtd">
+
+<riskanalysis>
+<role name="Application" type="Stakeholder" short_code="APP" >
+  <description>Applications and services using webinos APIs.</description>
+</role>
+<role name="User" type="Stakeholder" short_code="USR" >
+  <description>User of webinos apps.
+
+* Of a webinos application.
+* Discovers availability of application.
+* Selects application for use and installation (including pre-conditional commercial steps)
+* Configures application for his personal preferences
+* Uses application to perform intended actions.
+* Shares knowledge about application availability with other users (e.g. invite/encourage to install)
+</description>
+</role>
+<role name="Developer of webinos Apps" type="Stakeholder" short_code="DEV" >
+  <description>* Creates software packages
+* Develops application programs using various programming languages and toolkits (DIE,SDK, etc).</description>
+</role>
+<role name="Developer of webinos Platform" type="Stakeholder" short_code="DEVP">
+  <description>* Creates functional specification and reference implementation of the webinos Platform.
+* Provides developer community support where application developers are engaged (e.g. the webinos project team).</description>
+</role>
+<role name="Application Service Provider of installable webinos Application" type="Stakeholder" short_code="ASP_I">
+  <description>* Offers applications for consumption (by means of installation) on devices under a business model of their choice (e.g. retail, direct, free, etc).
+* Provides application lifecycle management.
+* Manages application developer relations.</description>
+</role>
+<role name="Application Service Provider of hosted webinos Application" type="Stakeholder" short_code="ASP_H">
+  <description>* Runs webinos Applications in the cloud on behalf of a webinos Application user.
+* Offers hosted instances of webinos platform components.</description>
+</role>
+<role name="Device Manufacturer" type="Stakeholder" short_code="MAN" >
+  <description>Offers execution environment for the webinos runtime.
+* Supports webinos discovery functionality for devices and applications.
+* Demands webinos to add tangible user benefit by means of making webinos applications available on their devices.</description>
+</role>
+<role name="Network Provider" type="Stakeholder" short_code="NET" >
+  <description>Of Internet Connectivity (not local / short-range connectivity).
+* Provides and manages access to the internet for users as well as for application service providers.</description>
+</role>
+<role name="3rd Party Service Provider" type="Stakeholder" short_code="3RD">
+  <description>Supplies functionality outside of the webinos platform and functions set to webinos App Developers which they can use in their Apps.</description>
+</role>
+</riskanalysis>

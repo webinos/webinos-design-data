@@ -1,0 +1,66 @@
+digraph webinosTraceability {
+ graph [rankdir="TB"];
+  node [shape=rectangle,style="rounded,filled",colorscheme="spectral3",color="1"];
+ edge [arrowhead=vee,];
+
+
+
+subgraph cluster_NM {
+  label = "NM";
+  
+  "Application event" [color=2,scenarios="",backlog="",usecases="CAP3,LC2,LC3,NM1"];
+  "Application launch notification" [color=2,scenarios="",backlog="",usecases="CAP3"];
+  "Entity event subscription" [scenarios="",backlog="",usecases="NM2"];
+  "Event delivery notification" [scenarios="",backlog="",usecases=""];
+  "Event delivery time limit" [scenarios="",backlog="",usecases=""];
+  "Event destination" [scenarios="",backlog="",usecases=""];
+  "Event distribution" [color=2,scenarios="",backlog="",usecases="NM1,NM2"];
+  "Event instance type" [scenarios="",backlog="",usecases=""];
+  "Event meta-data" [scenarios="",backlog="",usecases=""];
+  "Event name conflict" [scenarios="",backlog="",usecases="NM2"];
+  "Event payload" [scenarios="",backlog="",usecases=""];
+  "Event payload data" [scenarios="",backlog="",usecases=""];
+  "Event source" [scenarios="",backlog="",usecases=""];
+  "Event time" [scenarios="",backlog="",usecases=""];
+  "Event type subscription" [color=2,scenarios="",backlog="",usecases="CAP3,CAP5,NM1,NM2"];
+  "Event type unsubscription" [color=2,scenarios="",backlog="",usecases="NM1"];
+  "Message caching" [scenarios="",backlog="",usecases=""];
+  "Multiple entity eventing" [scenarios="",backlog="",usecases="NM1,NM2"];
+  "New installation notification" [color=2,scenarios="",backlog="",usecases="PS7,PS8"];
+  "Subscription" [color=2,scenarios="",backlog="",usecases="NM1,NM2,CAP4"];
+  "Unique event instance" [scenarios="",backlog="",usecases="NM2"];
+  "webinos event creator" [scenarios="",backlog="",usecases="NM2"];
+  "webinos event" [color=2,backlog="",scenarios="",usecases="CAP5,NM3,NM2,CAP4"];
+  "webinos update notification" [scenarios="",backlog="",usecases=""];
+ }
+ "Event type subscription" -> "Entity event subscription" [label="contains"]
+ "Event type subscription" -> "Event type unsubscription" [label="contains"]
+ "Event time" -> "Event delivery notification" [label="contains"]
+ "Event delivery time limit" -> "Message caching" [label="checks"]
+ "Entity event subscription" -> "Event distribution" [label="specifies"]
+ "Event instance type" -> "Unique event instance" [label="includes"]
+ "Entity event subscription" -> "Event instance type" [label="checks"]
+ "webinos event" -> "Event source" [label="queries"]
+ "Event source" -> "Event destination" [label="triggers"] 
+ "Event payload" -> "Event payload data" [label="consists of"]
+ "Event distribution" -> "Event time" [label="uses"]
+ "webinos event" -> "Event meta-data" [label="contains"]
+ "Event source" -> "webinos event" [label="queries"]
+ "New installation notification" -> "webinos event" [label="is a"]
+ "Application launch notification" -> "webinos event" [label="is a"]
+ "webinos event creator" -> "webinos event" [label="creates"];
+ "Application event" -> "Event meta-data" [label="contains"];
+ "Event name conflict" -> "Application event" [label="constrains"];
+ "Event name conflict" -> "webinos event" [label="constrains"];
+ "Multiple entity eventing" -> "Standard API" [label="uses"];
+ "Subscription" -> "Event type subscription" [label="allows"];
+ "Subscription" -> "Entity event subscription" [label="allows"];
+ "Subscription" -> "Standard API" [label="uses"];
+ "webinos update notification" -> "webinos event" [label="is a"];
+ "Event policy" -> "Application event" [label="constrains"];
+ "Event meta-data" -> "Event time" [label="contains"];
+ "Event meta-data" -> "Event delivery time limit" [label="contains"];
+ "Event meta-data" -> "Event source" [label="contains"];
+ "Event meta-data" -> "Event destination" [label="contains"];
+ "Secure cache" -> "Message caching" [label="safeguards"];
+}

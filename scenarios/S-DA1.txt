@@ -1,0 +1,55 @@
+h1. S-DA1: Smart Device Integration
+
+Author: Andre Paul, Andrea Atzeni
+
+h2. Overview
+
+Alice wants to enhance her experience of watching movie thanks to new device's technological opportunities.
+
+h2. Description
+
+Alice is sitting in front of her Internet enabled TV and is browsing the web. She install a new application which allow access to a community of eighty's romantic movie fans (providing clips and lots of information about them) which was recommended by Bob, a friend of Alice. As usual, there is some profile information that must be provided to complete the registration procedure and become a member of the community.
+
+Because webinos has build in user identity features, the application can retrieve most of the needed information to pre-fill required data. From the PZP, the application may retrieve first name, surname, address, preferred nick name, etc. Additionally, the application credentials can be stored in the Alice personal zone, and provided to the application when required. Thus, if webinos is running there is no need for manual logins later.
+
+The webinos identity mechanism provided most of the needed information but there are still some fields left which should be filled out by Alice. Additionally, Alice may want to change some pre-­-filled values which should be unique to the application or at least different to the proposed values.
+
+Alice decides to change and add some values. Due to common remote control restrictions, such as the absence of easy to use text input facilities on the TV, this is not an easy and comfortable task if a TV remote control is used. Completing profile information could be time consuming tasks.
+
+With webinos each webinos-enabled device that provides text input capabilities could be used to insert text for an application running on a TV set in a user friendly manner. Alice has several text input sources in her environment. A common desktop computer with an attached keyboard, a smart phone, and a tablet. Thanks to the "webinos-enabled keyboard" application running on each of those devices, all of them can be used as input media for another device in the personal zone. In this way, there is no need for yet another keyboard for yet another screen; each keyboard can be used for each screen. Or, even better, only one keyboard is needed to control all the devices.
+
+The social community application needs some information from Alice and therefore the application presents alternative input methods. Alice decides to use her tablet instead of the TV’s primary input source (the remote control). Additionally she selects to use her tablet also in the future without asking.
+
+To complete the registration Alice wants to attach a current picture of hers to her profile. The social community app can query the available photos of Alice in the personal zone, but no one of them seems appropriate to Alice. She wants to make a new photo right now. The social app retrieves a list of usable cameras, and due to a policy, all but the smart phone one are filtered out since are not in close proximity to Alice, which selects her smart phone device, anyway equipped with a pretty good camera. She also decides to use her smart phone any time in the future if a camera is requested by the application. After the picture was taken is attached to the profile and the registration is complete.
+
+Because Bob proposed to join the community, Alice wants to get in contact with Bob who is currently also online in the community. Alice initializes a video chat with him to tell him that she is now also a member. She clicks on “video chat with Bob” and this time Alice is asked to use her smart phone which also notifies access to the camera. After the connections are established both videos streams, Bob’s and Alice’s, are shown in real time on the TV.
+
+While both are talking together Bob receives a message from another friend of both whose name is Charlie. Charlie is currently on the way sitting on the backseat while his father is driving. The application allows multi user video chats while all chat participants are shown in case that the application is shown on the TV screen, but will only show the current speaker if shown on small screens.
+
+Bob invites Charlie to join the video chat and to talk about what to do next weekend. Charlie’s connection does not allow for video streaming, due to limited in-car's bandwidth but instead allow for an audio-only one. The application can adapt to the local availablity, and by default choose the audio-only option when it runs in bandwidth -constrained devices.
+
+The social community app offers upcoming events which are collected from different external sources and presented to the user. The three friends are clicking a while through the events and later they decide to watch a movie that is currently running in cinemas. Bob clicks on “participate on event” and selects all video chat participants as attendees. With this click the event is added to Alice’s, Bob’s, as well as Charlie’s mobile phone calendars.
+
+
+h2. Issues
+
+
+The issues addressed by the story are directly related to the “one virtual device” idea of webinos. Each hardware or software based service of any device could be used by any of the other devices. For example using a mobile phone’s camera to take a picture and directly present it on the TV screen without any direct user interaction for the transfer of the data. In general, Alice wants to use any feature or service of any of her devices in a common integrated way realized by webinos applications, here the TV as primary application execution environment, to not rely on multiple devices with the same functionality for each device that executes applications.
+
+h2. Benefits
+
+With webinos it is unnecessary to have each service or device needed by an application directly attached to the device that is executing the application. This also covers the aspect that even uncommon components for a specific device can be used in a transparent and integrated way.
+
+
+h2. Usability breakdown 
+
+| Persona |  Alice |
+| Duration | Minutes |
+| Frequency | Daily - Weekly |
+| Demands | Low |
+| Goal Conflict | None |
+
+h2. Required Use Cases
+
+* DA1
+* NC1

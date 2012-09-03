@@ -1,0 +1,38 @@
+h1. WOS-UC-TA7-004_1: Finding devices in close physical and social proximity (alternative)
+
+Author: Heiko Desruelle
+
+Actors: User,Application
+
+h2. Description
+
+Applications should be able to get a filtered list of entities based on their physical and social proximity. Physical proximity is based on the entities location and expressed in terms of a certain physical range. Social proximity on the other hand, focuses on peoples social connections rather than the location-based aspect of physical proximity.
+
+h2. Preconditions
+
+The User is visiting another user. Both users have webinos enabled devices.  The user has a list of acceptable devices, according to the personal physical and social proximity preferences.
+
+h2. Flow
+
+# User uses an application and selects an option to obtain a media file from another device
+# Application queries the webinos runtime for an overview of authorised devices with the required capabilities within a certain physical range.
+# The webinos runtime requests the list of devices from the personal zone hub.
+# webinos executes the query and returns the resulting list of devices.
+# Application queries webinos for devices within both a preferential physical and social proximity.
+# The webinos runtime requests the list of devices from the personal zone hub.
+# webinos executes the query and returns the resulting list of devices.
+# Application presents the results ordered by social/physical proximity, availability, capabilities and associated users. 
+# The User selects a device.
+# The Application instructs the webinos to obtain the media file.
+
+h2. Postconditions
+
+The media file is obtained from the device selected within the preferred social proximity.
+
+h2. Use case map
+
+!FindingDevicesPhysicalSocialProximityAlt.png!    
+
+| *Scenarios* | |
+| *Use Cases* | |
+| *Requirements* | |  

@@ -1,0 +1,258 @@
+<?xml version="1.0"?>
+<!DOCTYPE usability PUBLIC "-//CAIRIS//DTD USABILITY 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/usability.dtd">
+
+<usability>
+<persona name="Alice" type="Primary" assumption_persona="TRUE" image="/home/irisuser/webinos/wp2/personas/alice.jpg" >
+  <activities>TV rocks Alice's world. Alice loves watching national and international TV, and, after work each day, enjoys nothing more than browsing some of the more esoteric TV channels from around the world, from Japanese Sci-Fi to Angus Buchan sermons in South Africa.
+
+At home, her TV home entertainment system takes central stage in her social life, to the extent that her primary means of web-surfing and viewing photographs is the TV.
+
+Alice is part of an online community of fellow TV addicts. She provides online services with details of her preferences, and allows services to keep track of her viewing habits. She is rewarded with suggestions about programmes of interest to her. Specifically, the selection available is based on her viewing history and the interests of others with similar viewing characteristics.</activities>
+  <attitudes>To feed her TV addiction, Alice has built her own home-entertainment system. The system is an elaborate pipeline of different components, with eclectic input sources such as satellite dishes and PCs streaming programme information, and output devices such as speakers and, of course, her TV.
+
+Her interests have made her technically adept enough to examine the specification of devices she might want to purchase to ensure they meet her quality of service expectations, and are compatible with her "cloud" of devices.</attitudes>
+  <aptitudes>To feed her TV addiction, Alice has built her own home-entertainment system.  The system is an elaborate pipeline of different components, with eclectic input sources such as satellite dishes and PCs streaming programme information, and output devices such as speakers and, of course, her TV.
+
+Her interests have made her technically adept enough to examine the specification of devices she might want to purchase to ensure they meet her quality of service expectations, and are compatible with her "cloud" of devices.</aptitudes>
+  <motivations>Alice likes to spend as much quality time as possible watching the TV, and has optimised the hardware in her lounge around this goal. When Alice wants to change channel, she will reach for whichever device is closest to her; this is invariably her smart phone, although she recently repurposed an old handset to see if she could use this as a remote as well! If Alice needs to use the web or chat online, she will re-purpose her desktop's wireless keyboard and use the TV has her monitor. To facilitate this, Alice makes sure her TV and peripheral devices are modern enough to be discoverable by her controlling applications.</motivations>
+  <skills>Alice is comfortable configuring Audio-Visual equipment. This includes transcoding media from one format to another, configuring software for streaming over her home LAN, and setting up TV and satellite feeds into her home entertainment system.</skills>
+  <persona_environment name="Identity" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Alice subscribes to several music and video online services. She also stores data on cloud-based services like Dropbox and Google docs. Alice has never had any bad experiences with the web and, as such, is comfortable with using the web for storing personal and device specific data, and is happy for web services to use this data to help manage her lifestyle.</narrative>
+  </persona_environment>
+  <persona_environment name="Discovery and Addressing" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Alice subscribes to several music and video online services. She also stores data on cloud-based services like Dropbox and Google docs. Alice has never had any bad experiences with the web and, as such, is comfortable with using the web for storing personal and device specific data, and is happy for web services to use this data to help manage her lifestyle.</narrative>
+  </persona_environment>
+  <persona_environment name="Remote Notifications and Messaging" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Alice subscribes to several music and video online services. She also stores data on cloud-based services like Dropbox and Google docs. Alice has never had any bad experiences with the web and, as such, is comfortable with using the web for storing personal and device specific data, and is happy for web services to use this data to help manage her lifestyle.</narrative>
+  </persona_environment>
+  <persona_environment name="Policy and Security" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Alice subscribes to several music and video online services. She also stores data on cloud-based services like Dropbox and Google docs. Alice has never had any bad experiences with the web and, as such, is comfortable with using the web for storing personal and device specific data, and is happy for web services to use this data to help manage her lifestyle.</narrative>
+  </persona_environment>
+  <persona_environment name="Negotiation and Compatibility" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Alice subscribes to several music and video online services. She also stores data on cloud-based services like Dropbox and Google docs. Alice has never had any bad experiences with the web and, as such, is comfortable with using the web for storing personal and device specific data, and is happy for web services to use this data to help manage her lifestyle.</narrative>
+  </persona_environment>
+  <persona_environment name="Lifecycle" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Alice subscribes to several music and video online services. She also stores data on cloud-based services like Dropbox and Google docs. Alice has never had any bad experiences with the web and, as such, is comfortable with using the web for storing personal and device specific data, and is happy for web services to use this data to help manage her lifestyle.</narrative>
+  </persona_environment>
+  <persona_environment name="Device and Service Functional Capability" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Alice subscribes to several music and video online services. She also stores data on cloud-based services like Dropbox and Google docs. Alice has never had any bad experiences with the web and, as such, is comfortable with using the web for storing personal and device specific data, and is happy for web services to use this data to help manage her lifestyle.</narrative>
+  </persona_environment>
+  <persona_environment name="Transfer and Management of State" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Alice subscribes to several music and video online services. She also stores data on cloud-based services like Dropbox and Google docs. Alice has never had any bad experiences with the web and, as such, is comfortable with using the web for storing personal and device specific data, and is happy for web services to use this data to help manage her lifestyle.</narrative>
+  </persona_environment>
+  <persona_environment name="Complete" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Alice subscribes to several music and video online services. She also stores data on cloud-based services like Dropbox and Google docs. Alice has never had any bad experiences with the web and, as such, is comfortable with using the web for storing personal and device specific data, and is happy for web services to use this data to help manage her lifestyle.</narrative>
+  </persona_environment>
+</persona>
+<external_document name="Smart TV Client User Story" version="0.2" date="October 2010" authors="Dirk Thatmann and Andre Paul" >
+  <description></description>
+</external_document>
+<external_document name="Smart Device Integration User Story" version="0.2" date="October 2010" authors="Andre Paul" >
+  <description></description>
+</external_document>
+<external_document name="Device Discovery Use Case" version="0.1" date="October 2010" authors="Andre Paul" >
+  <description></description>
+</external_document>
+<external_document name="Service Discovery Use Case" version="0.1" date="October 2010" authors="Andre Paul" >
+  <description></description>
+</external_document>
+<external_document name="Content Adaptation Use Case" version="0.1" date="October 2010" authors="Christian Fuhrhop" >
+  <description></description>
+</external_document>
+<external_document name="Synchronization Use Case" version="0.1" date="October 2010" authors="Christian Fuhrhop" >
+  <description></description>
+</external_document>
+<external_document name="Media Transcoding Use Case" version="0.1" date="October 2010" authors="Christian Fuhrhop" >
+  <description></description>
+</external_document>
+<external_document name="Media Streaming Use Case" version="0.1" date="October 2010" authors="Christian Fuhrhop" >
+  <description></description>
+</external_document>
+<document_reference name="Uses TV client as a multimedia viewer" contributor="Shamal Faily" document="Smart TV Client User Story" >
+  <excerpt>'See what I see' proposes another user to watch what the first user is currently watching which may be a TV channel, WebCam, Pictures, Videos,...</excerpt>
+</document_reference>
+<document_reference name="TV-based chats" contributor="Shamal Faily" document="Smart TV Client User Story" >
+  <excerpt>Community integration and creation:
+- Chat directly with others who are looking [at] the same channel using either TV or other devices.</excerpt>
+</document_reference>
+<document_reference name="Schedules life around TV shows" contributor="Shamal Faily" document="Smart TV Client User Story" >
+  <excerpt>TV client on non TV devices:
+- Add TV show reminders to the user's mobile phone calendar.</excerpt>
+</document_reference>
+<document_reference name="Integrates program guide data from TV" contributor="Shamal Faily" document="Smart TV Client User Story" >
+  <excerpt>TV client on non TV devices:
+- Integrates EPG data from TV</excerpt>
+</document_reference>
+<document_reference name="Browses web on TV" contributor="Shamal Faily" document="Smart Device Integration User Story" >
+  <excerpt>Alice is sitting in front of her internet enabled TV and is browsing the web....</excerpt>
+</document_reference>
+<document_reference name="User feature classifications" contributor="Shamal Faily" document="Smart TV Client User Story" >
+  <excerpt>Alice classifies the advanced features for her TV clients into 3 categories:  Personalisation and enriched content, Community integration and creation, TV client on non TV devices</excerpt>
+</document_reference>
+<document_reference name="Channel lists synchronised between devices" contributor="Shamal Faily" document="Smart TV Client User Story" >
+  <excerpt>Personalisation and enriched content:
+- Channel list synchronization between devices.</excerpt>
+</document_reference>
+<document_reference name="Uses promiscuous devices" contributor="Shamal Faily" document="Device Discovery Use Case" >
+  <excerpt>Flow:
+- The devices tries to find another webinos device</excerpt>
+</document_reference>
+<document_reference name="Applications rely on device federation" contributor="Shamal Faily" document="Service Discovery Use Case" >
+  <excerpt>Pre-condition: The User uses an application that wants to make use of a specific service that is not available on the executing device itself.</excerpt>
+</document_reference>
+<document_reference name="Automatic QoS expectation" contributor="Shamal Faily" document="Content Adaptation Use Case" >
+  <excerpt>Post-condition:  All participants of the video conference receive a user experience that is most appropriate for their device and environment.....</excerpt>
+</document_reference>
+<document_reference name="Promiscuous device expectation" contributor="Shamal Faily" document="Content Adaptation Use Case" >
+  <excerpt>Device Property: The device needs to communicate its capabilities and environment information to the application to enable the application to tailor the presentation accordingly.</excerpt>
+</document_reference>
+<document_reference name="Users have preferential TV clients" contributor="Shamal Faily" document="Smart TV Client User Story" >
+  <excerpt>..if she is on holiday she can use her preferred TV client in the hotel.  However, Alice classifies the advanced features of her TV clients in 3 categories.</excerpt>
+</document_reference>
+<document_reference name="Preference-centric TV" contributor="Shamal Faily" document="Smart TV Client User Story" >
+  <excerpt>The client can be set in a user centric mode which means that only TV shows, TV channels, and VoD content is shown which matches the user's preference (gender, age, needs, preferences, likes and dislikes)</excerpt>
+</document_reference>
+<document_reference name="Crowd-based viewing preferences" contributor="Shamal Faily" document="Smart TV Client User Story" >
+  <excerpt>Community integration and creation:
+- What's hot.... (real time viewer levels)
+- Rating (good/bad) and Tagging
+Content based and collaborative TV show recommendations
+- User driven: propose me shows</excerpt>
+</document_reference>
+<document_reference name="Shares environmental data" contributor="Shamal Faily" document="Device Discovery Use Case" >
+  <excerpt>Flow:
+- Environmental information is shared.</excerpt>
+</document_reference>
+<document_reference name="Cloud-service user" contributor="Shamal Faily" document="Smart TV Client User Story" >
+  <excerpt>Personalization and enriched content:
+- Additional meta-data and trailers of upcoming movies and shows by integrating cloud services.</excerpt>
+</document_reference>
+<document_reference name="Access to home and cloud data storage" contributor="Shamal Faily" document="Smart TV Client User Story" >
+  <excerpt>TV client on non TV devices:
+- Record shows to any device at home or directly to the network</excerpt>
+</document_reference>
+<document_reference name="Pulls services from device clouds" contributor="Shamal Faily" document="Service Discovery Use Case" >
+  <excerpt>Description: The user wants to interact with an application and want to benefit from the webinos device cloud by using a device features from one device while interaction with an application on another device.</excerpt>
+</document_reference>
+<document_reference name="User trusts webinos with personal data" contributor="Shamal Faily" document="Smart Device Integration User Story" >
+  <excerpt>The webinos identity mechanism provided most of the needed information but there are still some fields left which should be filled by Alice.</excerpt>
+</document_reference>
+<document_reference name="User provides device preferences" contributor="Shamal Faily" document="Smart Device Integration User Story" >
+  <excerpt>She also decides to use her smart phone any time in the future if a camera is requested by the application.</excerpt>
+</document_reference>
+<document_reference name="Happy to let social network friends update diary" contributor="Shamal Faily" document="Smart Device Integration User Story" >
+  <excerpt>Bob clicks on 'participate on event' and selects all video chat participants as attendees.  With this click, the event is added to Alice's, Bob's, and well as Charlie's mobile phone calendars.</excerpt>
+</document_reference>
+<document_reference name="User buys best-of-breed" contributor="Shamal Faily" document="Smart TV Client User Story" >
+  <excerpt>Alice has bought two webinos enabled TV sets from different vendors.</excerpt>
+</document_reference>
+<document_reference name="Owns smart phone" contributor="Shamal Faily" document="Device Discovery Use Case" >
+  <excerpt>For example, a smart phone may provide camera, address book, text input, and messaging services.</excerpt>
+</document_reference>
+<document_reference name="Wants a superior data input experience" contributor="Shamal Faily" document="Service Discovery Use Case" >
+  <excerpt>For example, if an application is running on a TV set it may want to use additional text input sources such as smart phones,..... to provide a better experience</excerpt>
+</document_reference>
+<document_reference name="Real-time chats using device closest to user" contributor="Shamal Faily" document="Synchronization Use Case" >
+  <excerpt>Pre-condition:... While, in most cases, this applies to media streams (and is most time critical for such streams), the same capability is also needed to keep other data, such as instant messages or status information aligned between client systems.
+....
+All application present their data in a (reasonably) synchronized manner.</excerpt>
+</document_reference>
+<document_reference name="User owns catholic devices" contributor="Shamal Faily" document="Media Transcoding Use Case" >
+  <excerpt>Flow:
+- The format of the media stream is determined
+- The formats understood by the presenting device are determined.....
+</excerpt>
+</document_reference>
+<document_reference name="Uses several text input devices" contributor="Shamal Faily" document="Smart Device Integration User Story" >
+  <excerpt>Alice has several text input sources in her environment.</excerpt>
+</document_reference>
+<document_reference name="Desktop computer owner" contributor="Shamal Faily" document="Smart Device Integration User Story" >
+  <excerpt>in her environment.....A common desktop computer with an attached keyboard.</excerpt>
+</document_reference>
+<document_reference name="Owns old feature phone" contributor="Shamal Faily" document="Smart Device Integration User Story" >
+  <excerpt>in her environment...... her older feature phone...</excerpt>
+</document_reference>
+<document_reference name="Smart phone is the remote" contributor="Shamal Faily" document="Smart Device Integration User Story" >
+  <excerpt>Alice decides to use her smart phone instead of the TV's primary input source (the remote control).</excerpt>
+</document_reference>
+<document_reference name="Users own transcoding enabled TVs" contributor="Shamal Faily" document="Smart Device Integration User Story" >
+  <excerpt>Charlie's video stream cannot be rendered on Alice's TV directly but a transparent real time media transcoding function handles this case...</excerpt>
+</document_reference>
+<document_reference name="Multiple TV inputs" contributor="Shamal Faily" document="Smart TV Client User Story" >
+  <excerpt>TV client on non TV devices:
+- view captured TV shows (stream from set-top-box to any client, transcoding)</excerpt>
+</document_reference>
+<document_reference name="User streams music and video" contributor="Shamal Faily" document="Media Streaming Use Case" >
+  <excerpt>Description
+User: The user wants to direct streams (either from one of the user's devices or from an external provider) to be received on another device, streams.</excerpt>
+</document_reference>
+<document_reference name="User streams supplemental data" contributor="Shamal Faily" document="Media Streaming Use Case" >
+  <excerpt>Description:  ... in a more general sense all forms of data that provide continuous updates, such as subtitles or location information)</excerpt>
+</document_reference>
+<document_reference name="User broadcasts streamed data" contributor="Shamal Faily" document="Media Streaming Use Case" >
+  <excerpt>Flow:
+- The stream is redirected or duplicated to be presented on the new destination devices.</excerpt>
+</document_reference>
+<persona_characteristic persona="Alice" behavioural_variable="Activities" modal_qualifier="Presumably" >
+  <definition>Alice is TV-centered</definition>
+  <grounds type="document" reference="Uses TV client as a multimedia viewer" />
+  <grounds type="document" reference="TV-based chats" />
+  <grounds type="document" reference="Browses web on TV" />
+  <warrant type="document" reference="Schedules life around TV shows" />
+  <warrant type="document" reference="Integrates program guide data from TV" />
+</persona_characteristic>
+<persona_characteristic persona="Alice" behavioural_variable="Activities" modal_qualifier="Usually" >
+  <definition>Alice drives and is driven by her preferences</definition>
+  <grounds type="document" reference="Users have preferential TV clients" />
+  <grounds type="document" reference="Preference-centric TV" />
+  <grounds type="document" reference="Crowd-based viewing preferences" />
+  <grounds type="document" reference="Shares environmental data" />
+</persona_characteristic>
+<persona_characteristic persona="Alice" behavioural_variable="Aptitudes" modal_qualifier="Usually" >
+  <definition>Home-entertainment system is a patchwork of federated components</definition>
+  <grounds type="document" reference="Channel lists synchronised between devices" />
+  <grounds type="document" reference="Uses promiscuous devices" />
+  <grounds type="document" reference="Applications rely on device federation" />
+  <grounds type="document" reference="Automatic QoS expectation" />
+  <grounds type="document" reference="Promiscuous device expectation" />
+  <warrant type="document" reference="User feature classifications" />
+</persona_characteristic>
+<persona_characteristic persona="Alice" behavioural_variable="Environment_Narrative" modal_qualifier="Always" >
+  <definition>Alice trusts the web with her data</definition>
+  <grounds type="document" reference="Cloud-service user" />
+  <grounds type="document" reference="Access to home and cloud data storage" />
+  <grounds type="document" reference="Pulls services from device clouds" />
+  <grounds type="document" reference="Happy to let social network friends update diary" />
+  <warrant type="document" reference="User trusts webinos with personal data" />
+  <warrant type="document" reference="User provides device preferences" />
+</persona_characteristic>
+<persona_characteristic persona="Alice" behavioural_variable="Motivations" modal_qualifier="Always" >
+  <definition>Convenience is part of the experience</definition>
+  <grounds type="document" reference="Owns smart phone" />
+  <grounds type="document" reference="Wants a superior data input experience" />
+  <grounds type="document" reference="Real-time chats using device closest to user" />
+  <grounds type="document" reference="Uses several text input devices" />
+  <grounds type="document" reference="Desktop computer owner" />
+  <grounds type="document" reference="Owns old feature phone" />
+  <grounds type="document" reference="Smart phone is the remote" />
+  <warrant type="document" reference="User owns catholic devices" />
+  <warrant type="document" reference="Users own transcoding enabled TVs" />
+  <rebuttal type="document" reference="User buys best-of-breed" />
+</persona_characteristic>
+<persona_characteristic persona="Alice" behavioural_variable="Skills" modal_qualifier="Presumably" >
+  <definition>Alice is skilled in setting up A-V equipment</definition>
+  <grounds type="document" reference="Multiple TV inputs" />
+  <grounds type="document" reference="User streams music and video" />
+  <grounds type="document" reference="User streams supplemental data" />
+  <grounds type="document" reference="User broadcasts streamed data" />
+</persona_characteristic>
+</usability>

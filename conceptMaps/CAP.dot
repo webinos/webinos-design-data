@@ -1,0 +1,50 @@
+digraph webinosTraceability {
+  graph [rankdir="LR"];
+  node [shape=rectangle,style="rounded,filled",colorscheme="spectral3",color="1"];
+  edge [arrowhead=vee,];
+
+  subgraph cluster_CAP {
+    label="CAP";
+    "Audio and video access" [color=2,scenarios="S-DA1",usecases="NC1",backlog=""];
+    "Automatic background start-up" [color=2,scenarios="",usecases="CAP4",backlog=""];
+    "Background application" [color=2,scenarios="",usecases="CAP3,CAP4",backlog=""];
+    "Background event notification" [color=2,scenarios="",usecases="CAP3,CAP5",backlog=""];
+    "Device Status API" [color=2,scenarios="",usecases="CAP5",backlog=""];
+    "Event-based application start-up" [color=2,scenarios="",usecases="CAP3,CAP5,NM3",backlog=""];
+    "Foreground priority" [color=2,scenarios="",usecases="CAP3,CAP5",backlog=""];
+    "Foreground request" [color=2,scenarios="",usecases="CAP3",backlog=""];
+    "Geo-location access" [scenarios="",usecases="",backlog=""];
+    "JavaScript UPnP device access" [scenarios="",usecases="",backlog=""];
+    "Local file storage access" [color=2,scenarios="",usecases="PS8",backlog="CS-89"];
+    "Non-GUI background applications" [color=2,scenarios="",usecases="CAP3,CAP4",backlog=""];
+    "non-webinos device API" [color=2,scenarios="",usecases="CAP1",backlog=""];
+    "Physical orientation access" [scenarios="",usecases="",backlog=""];
+    "Real-time stream access" [scenarios="",usecases="",backlog=""];
+    "Remote device access" [color=2,scenarios="",usecases="CAP1,CAP5,PS8",backlog=""];
+    "Standard API" [scenarios="",usecases="PS8",backlog=""];
+    "Timer-based application invocation" [scenarios="",usecases="",backlog=""];
+    "User profile access" [color=2,scenarios="",usecases="CAP2",backlog=""];
+    "Wake-up message subscription" [color=2,scenarios="",usecases="CAP5,NM1",backlog=""];
+    "webinos enabled sensor access" [color=3,scenarios="",usecases="CAP1",backlog="T830"]; 
+  }
+
+  "Event-based application start-up" -> "Timer-based application invocation" [label="enables"];
+  "Background event notification" -> "Event-based application start-up" [label="enables"];
+  "Background event notification" -> "Wake-up message subscription" [label="enables"];
+  "Event-based application start-up" -> "Automatic background start-up" [label="enables"];
+  "Background application" -> "Automatic background start-up" [label="enables"];
+  "Background application" -> "Non-GUI background applications" [label="enables"];
+  "Foreground priority" -> "Foreground request" [label="enables"];
+  "Foreground request" -> "webinos event" [label="cause of"];
+	
+  "webinos enabled sensor access" -> "Standard API" [label="uses"];
+  "Local file storage access" -> "Standard API" [label="uses"];
+  "Physical orientation access" -> "Standard API" [label="uses"];
+  "Geo-location access" -> "Standard API" [label="uses"];
+  "Remote device access" -> "Standard API" [label="realised using"];
+  "Audio and video access" -> "Standard API" [label="uses"];
+
+  "Privacy preferences" -> "User profile access" [label="restricts"];
+  "Background event notification" -> "webinos event" [label="is a"];
+  "Event policy" -> "Event-based application start-up" [label="constrains"];
+}

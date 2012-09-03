@@ -1,0 +1,224 @@
+<?xml version="1.0"?>
+<!DOCTYPE usability PUBLIC "-//CAIRIS//DTD USABILITY 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/usability.dtd">
+
+
+<usability>
+<persona name="Irwin" type="Primary" assumption_persona="TRUE" image="/home/irisuser/webinos/wp2/personas/irwin.jpg" >
+  <activities>Irwin is employed by a company that manufactures aircraft hardware and turbine engine components.
+He has access to trade secrets information.
+He has the help of his colleagues who consider him a trustworthy person.</activities>
+  <attitudes>He is married and father of three.
+He is described by friends as having a quiet sense of humor and as an excellent competitive ballroom dancer.
+He has signed a confidentiality agreement with his employer, and on exit interview he will be expected to sign a document promising the return of any information considered to be a trade secret. However, he breaks both of these agreements.</attitudes>
+  <aptitudes>He provides policy statements to identify trade secrets within the company and to protect those trade secrets.
+He has a good learning inclination.</aptitudes>
+  <motivations>He wants to earn money from his company and from the competitor.
+Alternatively, he wants to get a more lucrative work at rival company.</motivations>
+  <skills>He has good knowledge of organization security posture and good knowledge of computer languages.</skills>
+
+  <persona_environment name="Identity" is_direct="TRUE" >
+    <persona_role name="User" />
+    <persona_role name="Developer of webinos Apps" />
+    <narrative>He is careful. He conceals traces of his unauthorized activities.
+He believes that he is employed in an insecure company. The security countermeasures are ineffective as the main company concern is to trust its own staff. Moreover, there is not security training: Irwin has been helped few times by unaware collegues.</narrative>
+  </persona_environment>
+  <persona_environment name="Discovery and Addressing" is_direct="TRUE" >
+    <persona_role name="User" />
+    <persona_role name="Developer of webinos Apps" />
+    <narrative>He is careful. He conceals traces of his unauthorized activities.
+He believes that he is employed in an insecure company. The security countermeasures are ineffective as the main company concern is to trust its own staff. Moreover, there is not security training: Irwin has been helped few times by unaware collegues.</narrative>
+  </persona_environment>
+  <persona_environment name="Remote Notifications and Messaging" is_direct="TRUE" >
+    <persona_role name="User" />
+    <persona_role name="Developer of webinos Apps" />
+    <narrative>He is careful. He conceals traces of his unauthorized activities.
+He believes that he is employed in an insecure company. The security countermeasures are ineffective as the main company concern is to trust its own staff. Moreover, there is not security training: Irwin has been helped few times by unaware collegues.</narrative>
+  </persona_environment>
+  <persona_environment name="Policy and Security" is_direct="TRUE" >
+    <persona_role name="User" />
+    <persona_role name="Developer of webinos Apps" />
+    <narrative>He is careful. He conceals traces of his unauthorized activities.
+He believes that he is employed in an insecure company. The security countermeasures are ineffective as the main company concern is to trust its own staff. Moreover, there is not security training: Irwin has been helped few times by unaware collegues.</narrative>
+  </persona_environment>
+  <persona_environment name="Negotiation and Compatibility" is_direct="TRUE" >
+    <persona_role name="User" />
+    <persona_role name="Developer of webinos Apps" />
+    <narrative>He is careful. He conceals traces of his unauthorized activities.
+He believes that he is employed in an insecure company. The security countermeasures are ineffective as the main company concern is to trust its own staff. Moreover, there is not security training: Irwin has been helped few times by unaware collegues.</narrative>
+  </persona_environment>
+  <persona_environment name="Lifecycle" is_direct="TRUE" >
+    <persona_role name="User" />
+    <persona_role name="Developer of webinos Apps" />
+    <narrative>He is careful. He conceals traces of his unauthorized activities.
+He believes that he is employed in an insecure company. The security countermeasures are ineffective as the main company concern is to trust its own staff. Moreover, there is not security training: Irwin has been helped few times by unaware collegues.</narrative>
+  </persona_environment>
+  <persona_environment name="Device and Service Functional Capability" is_direct="TRUE" >
+    <persona_role name="User" />
+    <persona_role name="Developer of webinos Apps" />
+    <narrative>He is careful. He conceals traces of his unauthorized activities.
+He believes that he is employed in an insecure company. The security countermeasures are ineffective as the main company concern is to trust its own staff. Moreover, there is not security training: Irwin has been helped few times by unaware collegues.</narrative>
+  </persona_environment>
+  <persona_environment name="Transfer and Management of State" is_direct="TRUE" >
+    <persona_role name="User" />
+    <persona_role name="Developer of webinos Apps" />
+    <narrative>He is careful. He conceals traces of his unauthorized activities.
+He believes that he is employed in an insecure company. The security countermeasures are ineffective as the main company concern is to trust its own staff. Moreover, there is not security training: Irwin has been helped few times by unaware collegues.</narrative>
+  </persona_environment>
+  <persona_environment name="Complete" is_direct="TRUE" >
+    <persona_role name="User" />
+    <persona_role name="Developer of webinos Apps" />
+    <narrative>He is careful. He conceals traces of his unauthorized activities.
+He believes that he is employed in an insecure company. The security countermeasures are ineffective as the main company concern is to trust its own staff. Moreover, there is not security training: Irwin has been helped few times by unaware collegues.</narrative>
+  </persona_environment>
+</persona>
+<external_document name="Kevin Crow sentence" version="1" date="14 December 2010" authors="http://www.cybercrime.gov/crowSent.pdf" >
+  <description>None</description>
+</external_document>
+<external_document name="Clark Alan Roberts and Sean Edward Howley plea" version="1" date="9 December 2010" authors="http://www.cybercrime.gov/howleyPlea.pdf" >
+  <description>None</description>
+</external_document>
+<external_document name="Samarth Agrawal verdict" version="1" date="19 November 2010" authors="http://www.cybercrime.gov/agrawalVerdict.pdf" >
+  <description>None</description>
+</external_document>
+<external_document name="Shalin Jhaveri plea" version="1" date="5 November 2010" authors="http://www.cybercrime.gov/jhaveriPlea.pdf" >
+  <description>None</description>
+</external_document>
+<external_document name="Sergey Aleynikov verdict" version="1" date="10 December 2010" authors="http://www.cybercrime.gov/sergeyVerdict.pdf" >
+  <description>None</description>
+</external_document>
+<external_document name="Article on Sergey Aleynikov" version="1" date="12 July 2009" authors="Andrew Clark - http://www.guardian.co.uk/business/2009/jul/12/goldman-sachs-sergey-aleynikov" >
+  <description>None</description>
+</external_document>
+<document_reference name="He is involved in security policy generation" contributor="Andrea Atzeni" document="Kevin Crow sentence" >
+  <excerpt>Crow continually provided policy statements with explicit direction on identifying trade secrets within the company and how to protect those trade secrets.
+</excerpt>
+</document_reference>
+<document_reference name="He finds a work in a rival company" contributor="Andrea Atzeni" document="Kevin Crow sentence" >
+  <excerpt>Crow was later employed by Precision Components International (PCI) in Columbus, Georgia, a competitor of TECT.</excerpt>
+</document_reference>
+<document_reference name="He stole strade secrets for a rival company" contributor="Andrea Atzeni" document="Clark Alan Roberts and Sean Edward Howley plea" >
+  <excerpt>On May 30 and 31, 2007, Roberts and Howley, traveled to a Goodyear tire manufacturing facility located in Topeka, Kan., to service Wyko equipment located in the Goodyear plant with the intention of taking photographs of Goodyear's swab down device to assist them with completing their design even though they knew Goodyear protected the swab down device as a trade secret.</excerpt>
+</document_reference>
+<document_reference name="He tries to find a more lucrative work" contributor="Andrea Atzeni" document="Samarth Agrawal verdict" >
+  <excerpt>AGRAWAL had been trying to leave SocGen to find more lucrative work at another company that engaged in high-frequency trading.</excerpt>
+</document_reference>
+<document_reference name="Plans to exploit trade secrets" contributor="Andrea Atzeni" document="Shalin Jhaveri plea" >
+  <excerpt>JHAVERI stole trade secrets from Bristol-Myers and devised a plan to convert them to his own use.</excerpt>
+</document_reference>
+<document_reference name="His employer is related to trade secrets" contributor="Andrea Atzeni" document="Kevin Crow sentence" >
+  <excerpt>TECT manufactures a diverse range of products related to or including trade secrets.</excerpt>
+</document_reference>
+<document_reference name="He does not give back some trade secret information" contributor="Andrea Atzeni" document="Kevin Crow sentence" >
+  <excerpt>During Crow's exit interview he signed a document stating that he had returned all documents containing any trade secret information to TECT, when in fact, he had taken approximately 100 computer discs containing multiple pieces of information considered trade secrets from TECT.</excerpt>
+</document_reference>
+<document_reference name="He signed a document stating the return of any trade secret information" contributor="Andrea Atzeni" document="Kevin Crow sentence" >
+  <excerpt>During Crow's exit interview he signed a document stating that he had returned all documents containing any trade secret information to TECT.</excerpt>
+</document_reference>
+<document_reference name="The company takes measures to protect trade secrets" contributor="Andrea Atzeni" document="Sergey Aleynikov verdict" >
+  <excerpt>Since acquiring the system, Goldman Sachs modified and maintained the system, and took significant measures to protect the confidentiality of the system's computer programs, including firewalls to limit access to the firm's computer network, and limiting internal access to the high-frequency trading program.</excerpt>
+</document_reference>
+<document_reference name="He is employed as a computer programmer" contributor="Andrea Atzeni" document="Sergey Aleynikov verdict" >
+  <excerpt>ALEYNIKOV was employed at Goldman Sachs as a computer programmer responsible for developing computer programs.</excerpt>
+</document_reference>
+<document_reference name="He is an highly succesful computer programmer" contributor="Andrea Atzeni" document="Article on Sergey Aleynikov" >
+  <excerpt>A Rutgers professor, Evangelia Micheli-Tzanakou, described him to New Jersey's Star-Ledger newspaper as "one of the brightest students I ever worked with... He was also ambitious and driven and, by the way, an excellent competitive ballroom dancer."</excerpt>
+</document_reference>
+<document_reference name="He was a bright student,ambitious and driven" contributor="Andrea Atzeni" document="Article on Sergey Aleynikov" >
+  <excerpt>A Rutgers professor, Evangelia Micheli-Tzanakou, described him to New Jersey's Star-Ledger newspaper as "one of the brightest students I ever worked with... He was also ambitious and driven and, by the way, an excellent competitive ballroom dancer."</excerpt>
+</document_reference>
+<document_reference name="He has unaware help of colleagues" contributor="Andrea Atzeni" document="Kevin Crow sentence" >
+  <excerpt>After being employed with PCI, Crow made numerous contacts with employees of TECT requesting forging price sheets containing vendor and customer information. He also requested copies of TECT's 2007 and 2008 contract reviews that contained trade secret information.</excerpt>
+</document_reference>
+<document_reference name="The company does not want to make staff feel distrusted" contributor="Andrea Atzeni" document="Article on Sergey Aleynikov" >
+  <excerpt>Banks face a delicate task in monitoring employees' activity without making staff feel distrusted by a "Big Brother" regime.</excerpt>
+</document_reference>
+<document_reference name="He conceals traces of unauthorized activities" contributor="Andrea Atzeni" document="Sergey Aleynikov verdict" >
+  <excerpt>After transferring the files, he deleted the program he used to encrypt the files and deleted his computer's "bash history," which records the most recent commands executed on his computer.</excerpt>
+</document_reference>
+<document_reference name="He has a quiet sense of humor" contributor="Andrea Atzeni" document="Article on Sergey Aleynikov" >
+  <excerpt>He is described by friends as having a quiet sense of humour.</excerpt>
+</document_reference>
+<document_reference name="He is a ballroom dancing competitor" contributor="Andrea Atzeni" document="Article on Sergey Aleynikov" >
+  <excerpt>"Serge and Elina" from New Jersey sashayed across a stage in a YouTube clip of a ballroom dancing competition last year.</excerpt>
+</document_reference>
+<document_reference name="He is father of three" contributor="Andrea Atzeni" document="Article on Sergey Aleynikov" >
+  <excerpt>Aleynikov, a father of three, lives in the New Jersey town of Little Falls</excerpt>
+</document_reference>
+<document_reference name="He is married" contributor="Andrea Atzeni" document="Article on Sergey Aleynikov" >
+  <excerpt>A handsome pair, "Serge and Elina" from New Jersey</excerpt>
+</document_reference>
+<document_reference name="He encrypts and transfers files without authorization" contributor="Andrea Atzeni" document="Sergey Aleynikov verdict" >
+  <excerpt>Beginning at approximately 5:20 p.m. on June 5, 2009 -- his last day working at Goldman Sachs -- ALEYNIKOV, from his desk at Goldman Sachs, transferred substantial portions of Goldman Sachs's proprietary computer code for its trading platform to an outside computer server in Germany. He encrypted the files and transferred them over the Internet without informing Goldman Sachs.</excerpt>
+</document_reference>
+<document_reference name="He sends files to his personal email account without authorization" contributor="Andrea Atzeni" document="Sergey Aleynikov verdict" >
+  <excerpt>ALEYNIKOV transferred thousands of computer code files related to the firm's proprietary trading program from the firm's computers to his home computers, without the knowledge or authorization of Goldman Sachs. He did this by e-mailing the code files from his Goldman Sachs e-mail account to his personal e-mail account, and storing versions of the code files on his home computers, laptop computer, a flash drive, and other storage devices.</excerpt>
+</document_reference>
+<document_reference name="Employees sign a confidentiality agreement" contributor="Andrea Atzeni" document="Sergey Aleynikov verdict" >
+  <excerpt>Goldman Sachs takes several measures to protect the system's source code, including requiring all Goldman employees to agree to a confidentiality agreement.</excerpt>
+</document_reference>
+<document_reference name="He prints pages and stashes them in a backpack without authorization" contributor="Andrea Atzeni" document="Samarth Agrawal verdict" >
+  <excerpt>The next day, AGRAWAL printed out hundreds of pages of Unit A Code from his office at SocGen. AGRAWAL was caught on surveillance cameras stashing the printouts of the Code in a backpack. AGRAWAL then took the Code to his home in New Jersey.</excerpt>
+</document_reference>
+<persona_characteristic persona="Irwin" behavioural_variable="Activities" modal_qualifier="Presumably" >
+  <definition>He is trusted by colleagues</definition>
+  <grounds type="document" reference="He has unaware help of colleagues" />
+</persona_characteristic>
+<persona_characteristic persona="Irwin" behavioural_variable="Activities" modal_qualifier="Always" >
+  <definition>Works with trade secrets</definition>
+  <grounds type="document" reference="His employer is related to trade secrets" />
+</persona_characteristic>
+<persona_characteristic persona="Irwin" behavioural_variable="Activities" modal_qualifier="Always" >
+  <definition>He illicitly access to trade secrets</definition>
+  <grounds type="document" reference="He encrypts and transfers files without authorization" />
+  <grounds type="document" reference="He sends files to his personal email account without authorization" />
+  <grounds type="document" reference="He prints pages and stashes them in a backpack without authorization" />
+  <warrant type="document" reference="Employees sign a confidentiality agreement" />
+</persona_characteristic>
+<persona_characteristic persona="Irwin" behavioural_variable="Aptitudes" modal_qualifier="Presumably" >
+  <definition>Knowledgeable of company's assets</definition>
+  <grounds type="document" reference="He is involved in security policy generation" />
+</persona_characteristic>
+<persona_characteristic persona="Irwin" behavioural_variable="Aptitudes" modal_qualifier="Presumably" >
+  <definition>He has a good learning inclination</definition>
+  <grounds type="document" reference="He is an highly succesful computer programmer" />
+  <grounds type="document" reference="He was a bright student,ambitious and driven" />
+</persona_characteristic>
+<persona_characteristic persona="Irwin" behavioural_variable="Attitudes" modal_qualifier="Presumably" >
+  <definition>Leads a content life</definition>
+  <grounds type="document" reference="He has a quiet sense of humor" />
+  <grounds type="document" reference="He is a ballroom dancing competitor" />
+  <grounds type="document" reference="He is father of three" />
+  <grounds type="document" reference="He is married" />
+</persona_characteristic>
+<persona_characteristic persona="Irwin" behavioural_variable="Attitudes" modal_qualifier="Always" >
+  <definition>Does not respect contracts</definition>
+  <grounds type="document" reference="He signed a document stating the return of any trade secret information" />
+  <grounds type="document" reference="The company takes measures to protect trade secrets" />
+  <warrant type="document" reference="He does not give back some trade secret information" />
+</persona_characteristic>
+<persona_characteristic persona="Irwin" behavioural_variable="Environment_Narrative" modal_qualifier="Presumably" >
+  <definition>Careful</definition>
+  <grounds type="document" reference="He conceals traces of unauthorized activities" />
+</persona_characteristic>
+<persona_characteristic persona="Irwin" behavioural_variable="Environment_Narrative" modal_qualifier="Probably" >
+  <definition>Poorly secured company</definition>
+  <grounds type="document" reference="He has unaware help of colleagues" />
+  <grounds type="document" reference="The company does not want to make staff feel distrusted" />
+</persona_characteristic>
+<persona_characteristic persona="Irwin" behavioural_variable="Motivations" modal_qualifier="Presumably" >
+  <definition>He is greedy</definition>
+  <grounds type="document" reference="He finds a work in a rival company" />
+  <grounds type="document" reference="He stole strade secrets for a rival company" />
+  <grounds type="document" reference="He tries to find a more lucrative work" />
+  <grounds type="document" reference="Plans to exploit trade secrets" />
+</persona_characteristic>
+<persona_characteristic persona="Irwin" behavioural_variable="Skills" modal_qualifier="Presumably" >
+  <definition>He has a good knowledge of organization security posture</definition>
+  <grounds type="document" reference="He is involved in security policy generation" />
+</persona_characteristic>
+<persona_characteristic persona="Irwin" behavioural_variable="Skills" modal_qualifier="Presumably" >
+  <definition>He has a good knowledge of computer language</definition>
+  <grounds type="document" reference="He is employed as a computer programmer" />
+  <grounds type="document" reference="He is an highly succesful computer programmer" />
+</persona_characteristic>
+</usability>

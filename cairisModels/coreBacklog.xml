@@ -1,0 +1,303 @@
+<?xml version="1.0"?>
+<!DOCTYPE usability PUBLIC "-//CAIRIS//DTD USABILITY 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/usability.dtd">
+
+
+<usability>
+<external_document name="WP4 Core Backlog" version="1" date="17th March 2012" authors="Various" >
+  <description>WP 4 Core Backlog.  https://docs.google.com/spreadsheet/ccc?key=0AvNdFXvw8nmIdFl6NTRidVdkRDdGVnJtYmt2aEQ5V3c#gid=0</description>
+</external_document>
+<document_reference name="CS-1" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Secure key storage</excerpt>
+</document_reference>
+<document_reference name="CS-2" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Storage of certificates in directories</excerpt>
+</document_reference>
+<document_reference name="CS-3" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Certificate revoke facility for connected PZP</excerpt>
+</document_reference>
+<document_reference name="CS-4" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Regenerate certificate if expired.</excerpt>
+</document_reference>
+<document_reference name="CS-5" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Adding Master certificate to have extended attribute.</excerpt>
+</document_reference>
+<document_reference name="CS-6" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Fetching unique device id information from each device.</excerpt>
+</document_reference>
+<document_reference name="CS-7" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Using Device Id information to recognize devices.</excerpt>
+</document_reference>
+<document_reference name="CS-8" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Allow connecting via a previous session id.</excerpt>
+</document_reference>
+<document_reference name="CS-9" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Https session</excerpt>
+</document_reference>
+<document_reference name="CS-10" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>DNS resolve if hostname is used.</excerpt>
+</document_reference>
+<document_reference name="CS-11" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Initial Synchronization implementation.</excerpt>
+</document_reference>
+<document_reference name="CS-12" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Synchronize authentication data.</excerpt>
+</document_reference>
+<document_reference name="CS-13" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Synchronize policy context data with devices and policy synchronize between devices</excerpt>
+</document_reference>
+<document_reference name="CS-14" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Username and password authentication to PZH</excerpt>
+</document_reference>
+<document_reference name="CS-15" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Authenticate a new PZP to an existing PZH through the PZP</excerpt>
+</document_reference>
+<document_reference name="CS-16" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Between user and device</excerpt>
+</document_reference>
+<document_reference name="CS-17" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>User to User Authentication</excerpt>
+</document_reference>
+<document_reference name="CS-18" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Web browser authentication with PZP before getting instance id</excerpt>
+</document_reference>
+<document_reference name="CS-19" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>PZH crash logging and recovery procedure</excerpt>
+</document_reference>
+<document_reference name="CS-20" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>PZH crash handling</excerpt>
+</document_reference>
+<document_reference name="CS-21" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Support NAT addresses</excerpt>
+</document_reference>
+<document_reference name="CS-22" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Integration with session code</excerpt>
+</document_reference>
+<document_reference name="CS-23" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Check policy to generate PZP certificate</excerpt>
+</document_reference>
+<document_reference name="CS-24" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Integrate TV API with session code</excerpt>
+</document_reference>
+<document_reference name="CS-25" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Integrate Vehicle API with session code</excerpt>
+</document_reference>
+<document_reference name="CS-26" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Integrate UserProfile API with session code</excerpt>
+</document_reference>
+<document_reference name="CS-27" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Integrate Device Status API with session code</excerpt>
+</document_reference>
+<document_reference name="CS-28" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Integrate Social Profile API with session code</excerpt>
+</document_reference>
+<document_reference name="CS-30" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Checking at PZH end if certificate is trusted or not</excerpt>
+</document_reference>
+<document_reference name="CS-31" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Automated protocol analysis of Session Manager</excerpt>
+</document_reference>
+<document_reference name="CS-32" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Peer review of Session Manager code</excerpt>
+</document_reference>
+<document_reference name="CS-33" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Usage log</excerpt>
+</document_reference>
+<document_reference name="CS-34" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Transformation of captured messages into ContextDB rows.</excerpt>
+</document_reference>
+<document_reference name="CS-35" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>PZH Context DB</excerpt>
+</document_reference>
+<document_reference name="CS-36" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Context Queries and creation of Context Objects</excerpt>
+</document_reference>
+<document_reference name="CS-37" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Synchronisation of Context Objects</excerpt>
+</document_reference>
+<document_reference name="CS-38" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Policy enforcement on logging and context data</excerpt>
+</document_reference>
+<document_reference name="CS-39" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Policy information point implementation</excerpt>
+</document_reference>
+<document_reference name="CS-40" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Interaction with Context Manager</excerpt>
+</document_reference>
+<document_reference name="CS-41" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Policy Administration Point at PZH</excerpt>
+</document_reference>
+<document_reference name="CS-42" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Verify Credentials towards required contexts at PZP</excerpt>
+</document_reference>
+<document_reference name="CS-43" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Authorization decision at PZP</excerpt>
+</document_reference>
+<document_reference name="CS-44" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>PDP cache</excerpt>
+</document_reference>
+<document_reference name="CS-45" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Generating Policy ID</excerpt>
+</document_reference>
+<document_reference name="CS-46" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Setting Subject Policy </excerpt>
+</document_reference>
+<document_reference name="CS-47" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Setting Resource Attribute</excerpt>
+</document_reference>
+<document_reference name="CS-48" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Authentication API implementation</excerpt>
+</document_reference>
+<document_reference name="CS-49" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Secure storage not accessible if user is not authenticated</excerpt>
+</document_reference>
+<document_reference name="CS-50" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Message Delivery notification</excerpt>
+</document_reference>
+<document_reference name="CS-51" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Add Object references in messaging to handle multiple PZPs, PZHs running under single node instance</excerpt>
+</document_reference>
+<document_reference name="CS-52" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Multicast, broadcast message API</excerpt>
+</document_reference>
+<document_reference name="CS-53" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Session close handler </excerpt>
+</document_reference>
+<document_reference name="CS-54" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Policy enforcement on  message routing</excerpt>
+</document_reference>
+<document_reference name="CS-55" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Time stamp: Generate and handle message expiry</excerpt>
+</document_reference>
+<document_reference name="CS-56" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Caching messaging events</excerpt>
+</document_reference>
+<document_reference name="CS-57" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Event Id generation </excerpt>
+</document_reference>
+<document_reference name="CS-58" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>JSONRPC20 Request and response message</excerpt>
+</document_reference>
+<document_reference name="CS-59" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Route determination</excerpt>
+</document_reference>
+<document_reference name="CS-60" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Messaging API</excerpt>
+</document_reference>
+<document_reference name="CS-61" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>RPC to object</excerpt>
+</document_reference>
+<document_reference name="CS-62" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>FindService</excerpt>
+</document_reference>
+<document_reference name="CS-63" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>SASL Support Investigation</excerpt>
+</document_reference>
+<document_reference name="CS-64" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>QR code Analysis and Implementation</excerpt>
+</document_reference>
+<document_reference name="CS-65" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Oauth analysis and implementation</excerpt>
+</document_reference>
+<document_reference name="CS-66" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Notification</excerpt>
+</document_reference>
+<document_reference name="CS-67" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Restart Pzh from web interface</excerpt>
+</document_reference>
+<document_reference name="CS-68" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Creating a New PZH via PZH farm</excerpt>
+</document_reference>
+<document_reference name="CS-69" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Creating a New PZH via PZP</excerpt>
+</document_reference>
+<document_reference name="CS-70" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Standard Authentication Framework</excerpt>
+</document_reference>
+<document_reference name="CS-71" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>QRCode guess limit</excerpt>
+</document_reference>
+<document_reference name="CS-72" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Abstract a connection manager that can choose between websockets, XMPP and tbd connectivity protocols.</excerpt>
+</document_reference>
+<document_reference name="CS-73" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Filter logging</excerpt>
+</document_reference>
+<document_reference name="CS-74" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Context schema</excerpt>
+</document_reference>
+<document_reference name="CS-75" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Query language for data mining</excerpt>
+</document_reference>
+<document_reference name="CS-76" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Policy manager integration with session manager</excerpt>
+</document_reference>
+<document_reference name="CS-77" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Secure cache implementation</excerpt>
+</document_reference>
+<document_reference name="CS-78" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Policy Manager - Reauthenticate prompt</excerpt>
+</document_reference>
+<document_reference name="CS-79" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Module Prompt</excerpt>
+</document_reference>
+<document_reference name="CS-80" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>PZH_PZH connectivity</excerpt>
+</document_reference>
+<document_reference name="CS-84" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>ServiceDiscovery across directly connected PZPs and connected PZP and PZH</excerpt>
+</document_reference>
+<document_reference name="CS-85" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>ServiceDiscovery across PZHs</excerpt>
+</document_reference>
+<document_reference name="CS-86" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Remove Services when PZH/PZP disconnects</excerpt>
+</document_reference>
+<document_reference name="CS-87" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Description-based discovery</excerpt>
+</document_reference>
+<document_reference name="CS-88" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Adding services on fly and enable subscription-notification for application</excerpt>
+</document_reference>
+<document_reference name="CS-89" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Local File Storage Access</excerpt>
+</document_reference>
+<document_reference name="CS-90" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Secure storage to include context database</excerpt>
+</document_reference>
+<document_reference name="CS-91" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Support for logging third party API's</excerpt>
+</document_reference>
+<document_reference name="CS-92" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Store context data for offline usage</excerpt>
+</document_reference>
+<document_reference name="CS-93" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Analytical change correlation</excerpt>
+</document_reference>
+<document_reference name="CS-94" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Restart each particular PZH in PZH farm</excerpt>
+</document_reference>
+<document_reference name="CS-95" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>PZP identity can be anonymous or link to device identity</excerpt>
+</document_reference>
+<document_reference name="CS-96" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Virgin PZP mode</excerpt>
+</document_reference>
+<document_reference name="CS-97" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Certificate manager</excerpt>
+</document_reference>
+<document_reference name="CS-98" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Certifier List</excerpt>
+</document_reference>
+<document_reference name="CS-99" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Out of band authentication between PZP and PZP using NFC</excerpt>
+</document_reference>
+<document_reference name="CS-100" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Location based discovery</excerpt>
+</document_reference>
+<document_reference name="CS-101" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>User anonymous </excerpt>
+</document_reference>
+<document_reference name="CS-102" contributor="Various" document="WP4 Core Backlog" >
+  <excerpt>Personal device authentication </excerpt>
+</document_reference>
+</usability>

@@ -1,0 +1,36 @@
+h1. S-PS2: Implementing Government-mandated Privacy Controls
+
+Author: Ajit Jaokar, John Lyle, Shamal Faily, Ivan Flechais, Hans Myrhaug, Ayse Goker
+
+h2. Overview 
+
+The EU decides to take a leading role in developing privacy profiles with the aid of webinos.
+
+
+h2. Description
+
+The European Commission is interested in protecting the privacy rights of their citizens, and Carlos is responsible for helping people realize and protect their right to privacy. Carlos has seen many proposed solution, but these remain on paper alone.  Carlos also sees that many of the new privacy initiatives that the EU wants to implement, especially for sensor based networks, may be implemented after deployment. For Carlos, that means potentially never. This is a concern and on behalf of the Commission, he sets about finding a solution before sensors become commonly deployed (with privacy becoming an afterthought).
+Carlos has heard about webinos following a discussion with one of his colleagues. He likes the sounds of webinos because it is open source and web based, and thus potentially available to everyone.  Because of its cross-device scope, he thinks webinos might form part of a privacy solution across current and future platforms.  At an EU sponsored workshop on privacy and design, Carlos explains his vision to a mixed audience from academia and industry.  He wants to work collaboratively with vendors to implement privacy policies that empower and protect EU citizens, and make webinos one of the mechanisms for a central, secure profile controlled by users, which is agnostic of any technology and can be accessed across all platforms. webinos will also be used to provide a client side dashboard (e.g. on a phone) on multiple platforms that accesses the privacy profile and uses it to enable or disable services.  The dashboard will build upon previous work on EU projects, such as PrimeLife, while also being compatible with accessibility tools and technologies being developed by related projects such as Cloud4All . The systems developed by the commission will enhance the privacy profile in such a way that the latest privacy regulation guidelines are encoded in the profiles and are accessible through the dashboard.
+
+h2. Issues
+
+* The protection of user privacy will become more important in a world dominated by sensor networks and analytics platforms. Governments have an obligation to protect citizens and EU policies have been forward thinking in this respect. Software infrastructures should afford tools that enable users to take sensible decisions about their privacy.
+* There are expenses associated with the implementation of privacy frameworks which is hard to implement for most companies.
+* Privacy policies change and it is not easy to implement the latest guidelines into products. So many privacy policies remain on paper only.
+* There are research and development collaboration challenges across projects with broadly similar agendas, but subtle differences in how security and privacy expectations of different stakeholders should be satisfied.
+
+h2. Benefits
+
+Different stakeholders, from software developers to device manufacturers, can comply with privacy directives by using existing components, functionality and policies.
+* Regulatory authorities have a way to push privacy policies to webinos, with a potentially huge impact across multiple devices.
+
+h2. Usability breakdown
+
+| Persona |  Carlos|
+| Duration | Hours or longer |
+| Frequency | Hourly or more |
+| Demands | Medium |
+| Goal Conflict | None |
+
+h2. Required Use Cases
+

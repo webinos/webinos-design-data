@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<!DOCTYPE attack_pattern PUBLIC "-//CAIRIS//DTD ATTACKPATTERN 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/attack_pattern.dtd">
+
+<!-- 
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+
+
+<attack_pattern name="Identity theft with webinos messaging" likelihood="Probable" severity="Critical"> 
+  
+  <obstacle name="Webinos account is misused to phish contact" category="Vulnerability">
+    <definition>An attacker uses their ability to log in to the user's email account to impersonate them and send phishing emails to their contacts.</definition>
+  </obstacle>
+
+  <obstacle name="Messaging API misused" category="Vulnerability">
+    <definition>Malware is given access to the messaging API which is then used to send messages and receive presumed-private messages</definition>
+  </obstacle>
+  
+  <obstacle name="Malware installed" category="Vulnerability">
+    <definition>A piece of malicious software is installed by the end user</definition>
+    <concern name="Widget Processor" />
+  </obstacle>
+  <obstacle name="Malware granted permission to access messaging API" category="Vulnerability">
+    <definition>The user grants a piece of malware inappropriately high permissions</definition>
+    <concern name="Access Request" />
+  </obstacle>
+  <obstacle name="Permission prompt click-through" category="Vulnerability">
+    <definition>Users click 'ok' to all permission prompts and therefore do not realise they are granting inappropriate permission</definition>
+    <responsibility name="User" />
+  </obstacle>  
+  <obstacle name="Bad trust decisions" category="Vulnerability">
+    <definition>The user makes a bad decision to trust a piece of malware.  This could be because they have insufficent information available to make a better decision.</definition>
+    <responsibility name="User" />
+  </obstacle>    
+  
+  <obstacle name="Online email account details compromised" category="Vulnerability">
+    <definition>The attacker gains knowledge of the user's account details which are sufficient for him to log-in and impersonate them</definition>
+  </obstacle>  
+  <obstacle name="Attacker obtains user password" category="Vulnerability">
+    <definition>The attacker gains the user's login password.  This may be through the password recovery system, compromise of a re-used password on another site, or otherwise.</definition>
+    <concern name="OpenID credentials" />
+    <responsibility name="3rd Party Service Provider" />
+  </obstacle>    
+<!--
+  <obstacle name="Only one factor authentication used" category="Vulnerability">
+    <definition>The user's email account has only one factor of authentication: the password</definition>
+  </obstacle>    
+--> 
+  <obstacle name="Second factor of authentication (SMS or email code) compromised" category="Vulnerability">
+    <definition>The attacker gains credentials provided by the second authentication factor (an SMS containing a short token, for example)</definition>
+    <responsibility name="3rd Party Service Provider" />  
+  </obstacle>    
+  
+  <obstacle name="SMS intercepted and relayed" category="Vulnerability">
+    <definition>SMS messages are intercepted by malware with a subscription to the messaging API.  The authentication token is then forwarded to the attacker</definition>
+  </obstacle>    
+  
+  <implementation>
+    <description>Ethan obtains user account details and uses malware to defeat 2-factor authentication</description>
+   
+    <obstacle_association obstacle_name="Webinos account is misused to phish contact" ref_type="or" subobstacle_name="Messaging API misused" >
+      <rationale></rationale>
+    </obstacle_association>  
+    <obstacle_association obstacle_name="Webinos account is misused to phish contact" ref_type="or" subobstacle_name="Online email account details compromised" >
+      <rationale></rationale>
+    </obstacle_association>  
+    <obstacle_association obstacle_name="Messaging API misused" ref_type="and" subobstacle_name="Malware installed" >
+      <rationale></rationale>
+    </obstacle_association>  
+    <obstacle_association obstacle_name="Messaging API misused" ref_type="and" subobstacle_name="Malware granted permission to access messaging API" >
+      <rationale></rationale>
+    </obstacle_association>  
+    <obstacle_association obstacle_name="Malware granted permission to access messaging API" ref_type="or" subobstacle_name="Permission prompt click-through" >
+      <rationale></rationale>
+    </obstacle_association>  
+    <obstacle_association obstacle_name="Malware granted permission to access messaging API" ref_type="or" subobstacle_name="Bad trust decisions" >
+      <rationale></rationale>
+    </obstacle_association>  
+    <obstacle_association obstacle_name="Online email account details compromised" ref_type="and" subobstacle_name="Attacker obtains user password" >
+      <rationale></rationale>
+    </obstacle_association>  
+    <obstacle_association obstacle_name="Online email account details compromised" ref_type="and" subobstacle_name="Second factor of authentication (SMS or email code) compromised" >
+      <rationale></rationale>
+    </obstacle_association>  
+    <obstacle_association obstacle_name="Second factor of authentication (SMS or email code) compromised" ref_type="and" subobstacle_name="Messaging API misused" >
+      <rationale></rationale>
+    </obstacle_association>              
+    <obstacle_association obstacle_name="Second factor of authentication (SMS or email code) compromised" ref_type="and" subobstacle_name="SMS intercepted and relayed" >
+      <rationale></rationale>
+    </obstacle_association>         
+  </implementation>
+  
+
+  <intent>Ethan attempts to steal usernames and passwords of webinos users in order to then phish their friends by sending them scam emails.</intent> 
+  <motivation goal="confidentiality" value="Medium"> 
+    <description>The loss of email credentials</description>
+  </motivation>
+  <applicability environment="Complete" />
+  <structure attack="Mobile Phishing (aka MobPhishing)" attack_obstacle="SMS intercepted and relayed" exploit="Insufficiently Protected Credentials"/> 
+  <participant name="Ethan">
+    <motive name="Money" />
+    <capability name="Software" value="Medium" />
+    <capability name="Knowledge/Methods" value="Medium" />
+  </participant>
+  <collaboration>
+    <target name="Application Data" /> 
+    <exploit name="Access Request" />
+  </collaboration>
+  <consequences>User's online account could be disabled, the user could be locked-out temporarily, their friends or families could lose money.  They could lose face and reputation as a result of the account hijack.</consequences>
+  <known_uses>None</known_uses>
+  <related_patterns>None</related_patterns>
+</attack_pattern>

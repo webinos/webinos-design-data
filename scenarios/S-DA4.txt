@@ -1,0 +1,53 @@
+h1. S-DA4: Remote Monitoring of Chronic Disease through Access to Medical Sensor Data and Sharing of Medical Files
+
+Author: Claes Nilsson, Dieter Blomme
+
+h2. Description
+
+As the lifespan of people is growing, the number of people having at least one chronic disease is increasing. Personal medical sensors and mobile communication could play a big role for the treatment of chronically ill persons and also improve their quality of life. Furthermore, sensors and mobile communication makes remote monitoring possible, which is convenient for the patients and saves money for healthcare providers.
+
+To monitor a chronic disease, several different parties are involved: the patient, doctors, dieticians, nurses, etc. If the patient is able to share a medical file in a secure way, the process of sharing data and monitoring the disease becomes easier.
+
+In the following story, Clara is a teenager with diabetes. She uses her favorite blood glucose meter to measure her blood glucose levels. This meter is also able to communicate with internet connected computing devices such as her laptop and her mobile smart phone through a standardized local communication method (USB, Bluetooth, BLE, ANT+ etc). 
+
+Clara has found several interesting cloud-based web applications for diabetics. These applications help Clara analyzing her blood glucose levels so that she can control her disease. The applications could for example display all her glucose levels for a certain time period, display diagrams showing average values throughout a day, show statistics on glucose levels within target/below target/above target, etc. She runs these web applications not only on her laptop but also on her mobile smart phone as well as on the family's internet connected TV. When she runs the applications they discover that there is connectivity with her blood glucose meter and all values stored in the meter are transferred to the computing device and are processed by the diabetes web application. Clara's blood glucose meter can be used by any diabetes web application that fulfills any standardized manner to retrieve values from the blood glucose meter.
+
+The most common case is that the blood glucose meter is connected to the computing device and values are transferred when Clara starts the diabetes web application. It is also possible to have a continuous connection so that each measured value is instantly sent to the computing device. This is especially applicable for future non-invasive (checking blood glucose levels without puncturing the skin for a blood sample) continuous blood glucose meters. For elderly and possibly demented diabetics who are not capable of understanding and acting on blood sugar values by themselves continuous blood sugar measurement with instant transmission to a wireless connected computing device and further direct uploading to a health care provider web service may be necessary.
+
+A webinos enabled diabetes web application also has the possibility to store Clara's blood glucose values in a diabetes file in the cloud. It is important that this file is stored in a secure manner and that no unauthorized third parties have access to it. The file could be shared with her health care provider based on Clara's decision. For example, all values handled by the diabetes web application could continuously be stored in her diabetes file in the cloud and be made available to her endocrinologist, her nurse, her dietitian, etc. This would for example allow the doctor to spot persistent out-of-normal-range episodes early. The doctor and other medical parties could also update the diabetes file with information from the laboratory e.g. HBA1c (which reflects the average blood glucose level during the last 2 - 3 month period), provide recommendations on modifications to the diet or medication and remind Clara of important upcoming events such as the expiration of prescriptions.
+
+Alternatively, Clara can make her results available when she visits her diabetes doctor for her three-monthly check-up. A scenario can be that Clara takes out her mobile phone and starts her webinos diabetes web application. She goes to the Sharing my file page. The application automatically searches for webinos enabled devices in the vicinity. The doctor's mobile phone shows up on the list and webinos automatically provides Clara with the necessary data to check the security of sharing the file. Clara can then choose to share her file with the doctor using this mobile phone. Now the doctor gets a notification on his mobile phone and his PC that Clara has shared her file with him and he can now check the results and update the file where applicable.
+
+h2. Issues
+
+* Users are not able to run web applications such as a diabetes web application that automatically retrieves data from a sensor such as a blood glucose meter in the proximity of the device.
+* There is currently no easy way for web application developers to create applications that access sensors in the proximity of the device. Only a few specialized APIs to access native functionality exist, e.g. the W3C Geolocation API.
+* New types of sensors are invented all the time. There is no system for providing web developers with easy access to sensor data in a generic manner.
+* Users want medical data to be secure. This is a major issue for data stored in the cloud. No unprivileged access should be given to third parties.
+* The sharing of the medical file should be authorized only by the end user, who is the owner of the file. No third parties should be able to edit the sharing and access settings.
+
+h2. Benefits
+
+* The User is able to use her favorite sensor-aware web application, e.g. a diabetes web application, with any favorite sensor of the type that the web application needs, e.g. a blood glucose meter.
+* Data from new sensors that are invented will be available to web applications.
+* The user is able to share sensitive data, e.g. medical data, in a secure manner with all relevant parties.
+
+h2. Usability breakdown 
+
+| Persona |  Clara |
+| Duration | Minutes |
+| Frequency | Daily - Weekly |
+| Demands | Low |
+| Goal Conflict | Low |
+
+h2. Required Use Cases
+
+* CAP1
+* DA1
+* DA2
+* DA3
+* NC1
+* NM1
+* PS3
+* PS7
+* TMS1

@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<!DOCTYPE usability PUBLIC "-//CAIRIS//DTD USABILITY 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/usability.dtd">
+
+
+<usability>
+<persona name="Gloria" type="Primary" assumption_persona="TRUE" image="/home/irisuser/webinos/wp2/personas/gloria.jpg" >
+  <activities>Gloria likes using personalised services which help her organising her tasks. This holds for Internet-based services as well as for services offered by shops, restaurants and others. To ease her life with her allergies, she uses her mobile phone and related services to find food she can eat. Her profession is policy decision maker. She is an employee of an e-book store, deciding and implementing access and distribution policies for e-books.</activities>
+  <attitudes>In order to extract interesting offers she likes filtering the vast amount of offers by subscribing for information about promotions and special deals of her favourite shops. She also participates in providing useful information by writing recommendations for restaurants. On her job, it is important for her to provide attractive products. She wants her customers to enjoy reading their e-books. In her policies she allows them to read their books on any of their devices.</attitudes>
+  <aptitudes>None</aptitudes>
+  <motivations>Her private life -- her hobbies and her interests -- is what she is living for. Everything else is centred around. She enjoys shopping and dining out. She uses mobile devices and mobile services if they improve her experience of her interests. Her hobbies are even more important than her friends. She seems to enjoy herself best when she is alone. Presumably she is a single. Her job appears to provide her with enough money to be spent on her hobbies.</motivations>
+  <skills>None</skills>
+
+  <persona_environment name="Identity" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Gloria is not that computer-addicted, but she is very aware of privacy. When using online services and applications, she sets the privacy settings and she keeps separate identities for personal life and work. Her expertise on privacy is related to her job.</narrative>
+  </persona_environment>
+  <persona_environment name="Discovery and Addressing" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Gloria is not that computer-addicted, but she is very aware of privacy. When using online services and applications, she sets the privacy settings and she keeps separate identities for personal life and work. Her expertise on privacy is related to her job.</narrative>
+  </persona_environment>
+  <persona_environment name="Remote Notifications and Messaging" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Gloria is not that computer-addicted, but she is very aware of privacy. When using online services and applications, she sets the privacy settings and she keeps separate identities for personal life and work. Her expertise on privacy is related to her job.</narrative>
+  </persona_environment>
+  <persona_environment name="Policy and Security" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Gloria is not that computer-addicted, but she is very aware of privacy. When using online services and applications, she sets the privacy settings and she keeps separate identities for personal life and work. Her expertise on privacy is related to her job.</narrative>
+  </persona_environment>
+  <persona_environment name="Negotiation and Compatibility" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Gloria is not that computer-addicted, but she is very aware of privacy. When using online services and applications, she sets the privacy settings and she keeps separate identities for personal life and work. Her expertise on privacy is related to her job.</narrative>
+  </persona_environment>
+  <persona_environment name="Lifecycle" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Gloria is not that computer-addicted, but she is very aware of privacy. When using online services and applications, she sets the privacy settings and she keeps separate identities for personal life and work. Her expertise on privacy is related to her job.</narrative>
+  </persona_environment>
+  <persona_environment name="Device and Service Functional Capability" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Gloria is not that computer-addicted, but she is very aware of privacy. When using online services and applications, she sets the privacy settings and she keeps separate identities for personal life and work. Her expertise on privacy is related to her job.</narrative>
+  </persona_environment>
+  <persona_environment name="Transfer and Management of State" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Gloria is not that computer-addicted, but she is very aware of privacy. When using online services and applications, she sets the privacy settings and she keeps separate identities for personal life and work. Her expertise on privacy is related to her job.</narrative>
+  </persona_environment>
+  <persona_environment name="Complete" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Gloria is not that computer-addicted, but she is very aware of privacy. When using online services and applications, she sets the privacy settings and she keeps separate identities for personal life and work. Her expertise on privacy is related to her job.</narrative>
+  </persona_environment>
+</persona>
+<external_document name="Manageable privacy policies across the application lifecycle User Story" version="0.95" date="3 Dec 2010" authors="Ajit Jaokar, John Lyle, Shamal Faily, Ivan Flechais, Hans Myrhaug, Ayse Goker" >
+  <description>Source http://dev.webinos.org/redmine/attachments/52/Policy_Management_Story_-_version_2_-_ambie.doc</description>
+</external_document>
+<document_reference name="Uses personalised services" contributor="Sven Lachmund" document="Manageable privacy policies across the application lifecycle User Story" >
+  <excerpt>She is alerted on her phone that the restaurant can take any information about her allergies and tailor menus specifically for her.</excerpt>
+</document_reference>
+<document_reference name="Person with allergies on food" contributor="Sven Lachmund" document="Manageable privacy policies across the application lifecycle User Story" >
+  <excerpt>Jane goes to a nearby restaurant.  She is alerted on her phone that the restaurant can take any information about her allergies and tailor menus specifically for her.  Jane thinks that this sounds fantastic, and agrees to share her allergy information, stored on her mobile.</excerpt>
+</document_reference>
+<document_reference name="Has stored allergy information on her mobile phone" contributor="Sven Lachmund" document="Manageable privacy policies across the application lifecycle User Story" >
+  <excerpt>Jane thinks that this sounds fantastic, and agrees to share her allergy information, stored on her mobile.</excerpt>
+</document_reference>
+<document_reference name="Employee of an e-book store" contributor="Sven Lachmund" document="Manageable privacy policies across the application lifecycle User Story" >
+  <excerpt>Aaron works at “Zamanon” a company selling e-books through a webinos e-book application.</excerpt>
+</document_reference>
+<document_reference name="Policy decision maker at the e-book store" contributor="Sven Lachmund" document="Manageable privacy policies across the application lifecycle User Story" >
+  <excerpt>Aaron works at “Zamanon” a company selling e-books through a webinos e-book application.\n\nHe has been asked to write several policies governing the e-books and the application itself.</excerpt>
+</document_reference>
+<document_reference name="Works on implementing policies (data access, privacy)" contributor="Sven Lachmund" document="Manageable privacy policies across the application lifecycle User Story" >
+  <excerpt>He has been asked to write several policies governing the e-books and the application itself.\n\nThe company has realised that a mistake was made in their original terms and conditions and a related data-access policy. He has to push a new version of these terms and a new policy to all customers.  \n\nHe is then asked to implement a new pricing model and also to update the prices of some books. \n\nFor certain books, users can pay nothing so long as they agree to advertising and report click-through frequency and a few other details.\n\nOne of Aaron’s concerns when collecting statistics on advertising information is that spoofing is prevented.</excerpt>
+</document_reference>
+<document_reference name="Interested in promotions and special deals of her preferred shops" contributor="Sven Lachmund" document="Manageable privacy policies across the application lifecycle User Story" >
+  <excerpt>When outside work, she enjoys shopping and is interested in hearing about promotions and deals at her favourite shops and on her hobby: fishing.\n\nJane has an excellent meal, and agrees to be notified when she is next in town (or searching for somewhere to eat) of any promotions that this restaurant is offering.</excerpt>
+</document_reference>
+<document_reference name="Writes online restaurant recommendation" contributor="Sven Lachmund" document="Manageable privacy policies across the application lifecycle User Story" >
+  <excerpt>She also shares a review with friends about her experience.  She makes sure that this is done from her personal online identity, ...</excerpt>
+</document_reference>
+<document_reference name="Wants customers to experience flexibility" contributor="Sven Lachmund" document="Manageable privacy policies across the application lifecycle User Story" >
+  <excerpt>However, Aaron wants to loosen the policy to specify that any supported device that the user owns can also access e-books.  For example, his mobile phone and media centre.</excerpt>
+</document_reference>
+<document_reference name="Fond of up-to-date services on the Web and related devices" contributor="Sven Lachmund" document="Manageable privacy policies across the application lifecycle User Story" >
+  <excerpt>Jane has a webinos-enabled mobile phone and car.  She often goes out to dinner and out shopping on her local high street.  She has many online identities, but likes to keep her work and personal life separate.  \n\nShe also shares a review with friends about her experience.</excerpt>
+</document_reference>
+<document_reference name="Likes dining out" contributor="Sven Lachmund" document="Manageable privacy policies across the application lifecycle User Story" >
+  <excerpt>She often goes out to dinner and out shopping on her local high street.</excerpt>
+</document_reference>
+<document_reference name="Likes shopping" contributor="Sven Lachmund" document="Manageable privacy policies across the application lifecycle User Story" >
+  <excerpt>She often goes out to dinner and out shopping on her local high street.</excerpt>
+</document_reference>
+<document_reference name="User of a recent mobile phone" contributor="Sven Lachmund" document="Manageable privacy policies across the application lifecycle User Story" >
+  <excerpt>Jane has a webinos-enabled mobile phone and car.</excerpt>
+</document_reference>
+<document_reference name="User of a recent car" contributor="Sven Lachmund" document="Manageable privacy policies across the application lifecycle User Story" >
+  <excerpt>Jane has a webinos-enabled mobile phone and car.</excerpt>
+</document_reference>
+<document_reference name="Has accounts with several social network sites" contributor="Sven Lachmund" document="Manageable privacy policies across the application lifecycle User Story" >
+  <excerpt>When using her mobile phone for work she switches to her Linked In identity, and during the weekends she moves to her Facebook-provided identity.</excerpt>
+</document_reference>
+<document_reference name="Uses online services and her devices to support her interests" contributor="Sven Lachmund" document="Manageable privacy policies across the application lifecycle User Story" >
+  <excerpt>She therefore configures webinos to accept nearby requests from sensors and networks to inform her of relevant special offers.</excerpt>
+</document_reference>
+<document_reference name="Keeps work and personal life separate in her online identities" contributor="Sven Lachmund" document="Manageable privacy policies across the application lifecycle User Story" >
+  <excerpt>She has many online identities, but likes to keep her work and personal life separate.  \n\nWhen using her mobile phone for work she switches to her Linked In identity, and during the weekends she moves to her Facebook-provided identity.\n\nJane thinks that this sounds fantastic, and agrees to share her allergy information, stored on her mobile.  However, she also specifies that this information should not be shared with any other applications.  \n\nShe makes sure that this is done from her personal online identity, as she does not want her company to be seen to be endorsing this restaurant.\n\nJane gets home and decides to make sure her personal information is suitable protected by editing the privacy policy.  She uses webinos to restrict which applications may have access to her name, online identity, current location and device information.</excerpt>
+</document_reference>
+<document_reference name="Privacy-aware user" contributor="Sven Lachmund" document="Manageable privacy policies across the application lifecycle User Story" >
+  <excerpt>She has many online identities, but likes to keep her work and personal life separate.  \n\nJane thinks that this sounds fantastic, and agrees to share her allergy information, stored on her mobile.  However, she also specifies that this information should not be shared with any other applications.  \n\nShe makes sure that this is done from her personal online identity, as she does not want her company to be seen to be endorsing this restaurant.\n\nJane gets home and decides to make sure her personal information is suitable protected by editing the privacy policy.  She uses webinos to restrict which applications may have access to her name, online identity, current location and device information.\n\nSometimes, Jane wants a little more privacy.  She may temporarily have a medical condition that she wants to track but does not want to share, or she may be shopping somewhere more risqué, or shopping for a surprise present.   She configures a new policy in webinos that will not keep records of what she is doing and where she is going, and will keep her devices hidden from nearby networks.</excerpt>
+</document_reference>
+<document_reference name="Consciously sets privacy settings" contributor="Sven Lachmund" document="Manageable privacy policies across the application lifecycle User Story" >
+  <excerpt>Jane gets home and decides to make sure her personal information is suitable protected by editing the privacy policy.  She uses webinos to restrict which applications may have access to her name, online identity, current location and device information.</excerpt>
+</document_reference>
+<document_reference name="Uses a privacy policy which permits publishing some information about her" contributor="Sven Lachmund" document="Manageable privacy policies across the application lifecycle User Story" >
+  <excerpt>She configures a new policy in webinos that will not keep records of what she is doing and where she is going, and will keep her devices hidden from nearby networks.  She can switch to this policy very easily, and does so whenever she feels she would like greater unobservability.</excerpt>
+</document_reference>
+<document_reference name="Has a second privacy policy for not being observable" contributor="Sven Lachmund" document="Manageable privacy policies across the application lifecycle User Story" >
+  <excerpt>She configures a new policy in webinos that will not keep records of what she is doing and where she is going, and will keep her devices hidden from nearby networks.  She can switch to this policy very easily, and does so whenever she feels she would like greater unobservability.</excerpt>
+</document_reference>
+<persona_characteristic persona="Gloria" behavioural_variable="Activities" modal_qualifier="Definitely" >
+  <definition>Uses modern technology to manage her allergies</definition>
+  <grounds type="document" reference="Person with allergies on food" />
+  <grounds type="document" reference="Has stored allergy information on her mobile phone" />
+</persona_characteristic>
+<persona_characteristic persona="Gloria" behavioural_variable="Activities" modal_qualifier="Presumably" >
+  <definition>Decides and implements policies for an e-book store</definition>
+  <grounds type="document" reference="Employee of an e-book store" />
+  <grounds type="document" reference="Policy decision maker at the e-book store" />
+  <grounds type="document" reference="Works on implementing policies (data access, privacy)" />
+</persona_characteristic>
+<persona_characteristic persona="Gloria" behavioural_variable="Activities" modal_qualifier="Presumably" >
+  <definition>Personalises services</definition>
+  <grounds type="document" reference="Uses personalised services" />
+</persona_characteristic>
+<persona_characteristic persona="Gloria" behavioural_variable="Attitudes" modal_qualifier="Definitely" >
+  <definition>Writes and likes to receive recommendations</definition>
+  <grounds type="document" reference="Interested in promotions and special deals of her preferred shops" />
+  <grounds type="document" reference="Writes online restaurant recommendation" />
+</persona_characteristic>
+<persona_characteristic persona="Gloria" behavioural_variable="Attitudes" modal_qualifier="Presumably" >
+  <definition>Is interested in providing attractive products</definition>
+  <grounds type="document" reference="Wants customers to experience flexibility" />
+</persona_characteristic>
+<persona_characteristic persona="Gloria" behavioural_variable="Environment_Narrative" modal_qualifier="Definitely" >
+  <definition>Uses modern technology if it supports her interests</definition>
+  <grounds type="document" reference="Keeps work and personal life separate in her online identities" />
+  <grounds type="document" reference="Privacy-aware user" />
+  <grounds type="document" reference="Consciously sets privacy settings" />
+  <grounds type="document" reference="Uses a privacy policy which permits publishing some information about her" />
+  <grounds type="document" reference="Has a second privacy policy for not being observable" />
+  <warrant type="document" reference="Works on implementing policies (data access, privacy)" />
+</persona_characteristic>
+<persona_characteristic persona="Gloria" behavioural_variable="Motivations" modal_qualifier="Definitely" >
+  <definition>Uses modern technology if it supports her interests</definition>
+  <grounds type="document" reference="User of a recent mobile phone" />
+  <grounds type="document" reference="User of a recent car" />
+  <grounds type="document" reference="Has accounts with several social network sites" />
+  <grounds type="document" reference="Uses online services and her devices to support her interests" />
+</persona_characteristic>
+<persona_characteristic persona="Gloria" behavioural_variable="Motivations" modal_qualifier="Definitely" >
+  <definition>Has an extensive private life with interests mostly related to the real world</definition>
+  <grounds type="document" reference="Fond of up-to-date services on the Web and related devices" />
+  <grounds type="document" reference="Likes dining out" />
+  <grounds type="document" reference="Likes shopping" />
+</persona_characteristic>
+</usability>

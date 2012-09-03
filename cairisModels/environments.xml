@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<!DOCTYPE cairis PUBLIC "-//CAIRIS//DTD PROJECT 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/cairis.dtd">
+<cairis>
+<project_settings name="webinos" >
+  <background>None</background>
+  <strategic_goals>None</strategic_goals>
+  <rich_picture image="" />
+  <scope>None</scope>
+</project_settings>
+<environment name="Transfer and Management of State" short_code="TMS" >
+  <definition>Transfer and Management of State</definition>
+  <asset_values>
+    <none>To be defined</none>
+    <low>To be defined</low>
+    <medium>To be defined</medium>
+    <high>To be defined</high>
+  </asset_values>
+</environment>
+<environment name="Device and Service Functional Capability" short_code="CAP" >
+  <definition>Device and Service Functional Capability</definition>
+  <asset_values>
+    <none>To be defined</none>
+    <low>To be defined</low>
+    <medium>To be defined</medium>
+    <high>To be defined</high>
+  </asset_values>
+</environment>
+<environment name="Discovery and Addressing" short_code="DA" >
+  <definition>Discovery and Addressing</definition>
+  <asset_values>
+    <none>To be defined</none>
+    <low>To be defined</low>
+    <medium>To be defined</medium>
+    <high>To be defined</high>
+  </asset_values>
+</environment>
+<environment name="Identity" short_code="ID" >
+  <definition>Identity</definition>
+  <asset_values>
+    <none>To be defined</none>
+    <low>To be defined</low>
+    <medium>To be defined</medium>
+    <high>To be defined</high>
+  </asset_values>
+</environment>
+<environment name="Lifecycle" short_code="LC" >
+  <definition>Lifecycle</definition>
+  <asset_values>
+    <none>To be defined</none>
+    <low>To be defined</low>
+    <medium>To be defined</medium>
+    <high>To be defined</high>
+  </asset_values>
+</environment>
+<environment name="Negotiation and Compatibility" short_code="NC" >
+  <definition>Negotiation and Compatibility</definition>
+  <asset_values>
+    <none>To be defined</none>
+    <low>To be defined</low>
+    <medium>To be defined</medium>
+    <high>To be defined</high>
+  </asset_values>
+</environment>
+<environment name="Remote Notifications and Messaging" short_code="NM" >
+  <definition>Remote Notifications and Messaging</definition>
+  <asset_values>
+    <none>To be defined</none>
+    <low>To be defined</low>
+    <medium>To be defined</medium>
+    <high>To be defined</high>
+  </asset_values>
+</environment>
+<environment name="Policy and Security" short_code="PS" >
+  <definition>Policy and Security</definition>
+  <asset_values>
+    <none>To be defined</none>
+    <low>To be defined</low>
+    <medium>To be defined</medium>
+    <high>To be defined</high>
+  </asset_values>
+</environment>
+<environment name="Complete" short_code="ALL" >
+  <definition>World</definition>
+  <asset_values>
+    <none>To be defined</none>
+    <low>To be defined</low>
+    <medium>To be defined</medium>
+    <high>To be defined</high>
+  </asset_values>
+</environment>
+</cairis>

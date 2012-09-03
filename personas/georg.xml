@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<!DOCTYPE usability PUBLIC "-//CAIRIS//DTD USABILITY 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/usability.dtd">
+
+
+<usability>
+<persona name="Georg" type="Primary" assumption_persona="TRUE" image="/home/irisuser/webinos/wp2/personas/georg.jpg" >
+  <activities>Georg is a family father who lives with his family. He lives a routine life. Every morning he uses his mobile devices for reading news and for managing his Facebook account while having breakfast. Thereafter, he goes to work by car. He has a daytime job with regular working ours. He always has his personal mobile Internet device with him.</activities>
+  <attitudes>He uses his mobile internet device (MID) as authentication token. He likes single-sign-on. He only authenticates to his MID and uses other devices which inherit his authentication towards the MID when being used.</attitudes>
+  <aptitudes>None</aptitudes>
+  <motivations>None</motivations>
+  <skills>None</skills>
+  <persona_environment name="Identity" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Discovery and Addressing" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Remote Notifications and Messaging" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Policy and Security" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Negotiation and Compatibility" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Lifecycle" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Device and Service Functional Capability" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Transfer and Management of State" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Complete" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+</persona>
+<external_document name="Single Sign-On, Multiple Devices User Story" version="0.9" date="30 Nov 2010" authors="Anders Isberg" >
+  <description>Source http://bscw.fokus.fraunhofer.de/bscw/bscw.cgi/d679494/101130_WP21_Top_Stories.doc</description>
+</external_document>
+<document_reference name="Has a personal mobile internet device" contributor="Sven Lachmund" document="Single Sign-On, Multiple Devices User Story" >
+  <excerpt>Georg has a personal Mobile Internet Device.</excerpt>
+</document_reference>
+<document_reference name="Has a Facebook account" contributor="Sven Lachmund" document="Single Sign-On, Multiple Devices User Story" >
+  <excerpt>During the breakfast Georg decides to read the latest news and the latest Facebook status updates on the family Tablet computer.</excerpt>
+</document_reference>
+<document_reference name="Has a tablet computer" contributor="Sven Lachmund" document="Single Sign-On, Multiple Devices User Story" >
+  <excerpt>During the breakfast Georg decides to read the latest news and the latest Facebook status updates on the family Tablet computer.</excerpt>
+</document_reference>
+<document_reference name="Has a recent car" contributor="Sven Lachmund" document="Single Sign-On, Multiple Devices User Story" >
+  <excerpt>After reading the news, Georg leaves the home and takes the car to the work....When Georg is entering the car, he puts his Mobile Internet Device in the built-in device holder.</excerpt>
+</document_reference>
+<document_reference name="Uses the mobile device every day" contributor="Sven Lachmund" document="Single Sign-On, Multiple Devices User Story" >
+  <excerpt></excerpt>
+</document_reference>
+<document_reference name="Reads news every morning" contributor="Sven Lachmund" document="Single Sign-On, Multiple Devices User Story" >
+  <excerpt>During the breakfast Georg decides to read the latest news and the latest Facebook status updates on the family Tablet computer.</excerpt>
+</document_reference>
+<document_reference name="Manages his Facebook account every day" contributor="Sven Lachmund" document="Single Sign-On, Multiple Devices User Story" >
+  <excerpt>During the breakfast Georg decides to read the latest news and the latest Facebook status updates on the family Tablet computer.</excerpt>
+</document_reference>
+<document_reference name="Goes to work by car" contributor="Sven Lachmund" document="Single Sign-On, Multiple Devices User Story" >
+  <excerpt>After reading the news, Georg leaves the home and takes the car to the work.</excerpt>
+</document_reference>
+<document_reference name="Has a job with regular working hours during daytime" contributor="Sven Lachmund" document="Single Sign-On, Multiple Devices User Story" >
+  <excerpt>When Georg switches on the device for the first time in the morning he is authenticated against his identity provider.\n\nDuring the breakfast Georg decides to read the latest news and the latest Facebook status updates on the family Tablet computer. \n\nAfter reading the news, Georg leaves the home and takes the car to the work.</excerpt>
+</document_reference>
+<document_reference name="Lives with his family" contributor="Sven Lachmund" document="Single Sign-On, Multiple Devices User Story" >
+  <excerpt>During the breakfast Georg decides to read the latest news and the latest Facebook status updates on the family Tablet computer.</excerpt>
+</document_reference>
+<document_reference name="Uses an identity provider" contributor="Sven Lachmund" document="Single Sign-On, Multiple Devices User Story" >
+  <excerpt>When Georg switches on the device for the first time in the morning he is authenticated against his identity provider.</excerpt>
+</document_reference>
+<document_reference name="Uses mobile device as authentication token" contributor="Sven Lachmund" document="Single Sign-On, Multiple Devices User Story" >
+  <excerpt>To avoid the burden to authenticate him again, Georg puts the Mobile Internet Device and the Tablet together.</excerpt>
+</document_reference>
+<persona_characteristic persona="Georg" behavioural_variable="Activities" modal_qualifier="Definitely" >
+  <definition>Family man</definition>
+  <grounds type="document" reference="Lives with his family" />
+</persona_characteristic>
+<persona_characteristic persona="Georg" behavioural_variable="Activities" modal_qualifier="Definitely" >
+  <definition>Uses modern technology</definition>
+  <grounds type="document" reference="Has a personal mobile internet device" />
+  <grounds type="document" reference="Has a Facebook account" />
+  <grounds type="document" reference="Has a tablet computer" />
+  <grounds type="document" reference="Has a recent car" />
+</persona_characteristic>
+<persona_characteristic persona="Georg" behavioural_variable="Activities" modal_qualifier="Definitely" >
+  <definition>Lives a routine life</definition>
+  <grounds type="document" reference="Uses the mobile device every day" />
+  <grounds type="document" reference="Reads news every morning" />
+  <grounds type="document" reference="Manages his Facebook account every day" />
+  <grounds type="document" reference="Goes to work by car" />
+  <grounds type="document" reference="Has a job with regular working hours during daytime" />
+</persona_characteristic>
+<persona_characteristic persona="Georg" behavioural_variable="Attitudes" modal_qualifier="Definitely" >
+  <definition>Likes single-sign-o</definition>
+  <grounds type="document" reference="Uses an identity provider" />
+  <grounds type="document" reference="Uses mobile device as authentication token" />
+</persona_characteristic>
+</usability>

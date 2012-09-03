@@ -1,0 +1,255 @@
+<?xml version="1.0"?>
+<!DOCTYPE architectural_pattern PUBLIC "-//CAIRIS//DTD ARCHITECTURAL PATTERN 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/architectural_pattern.dtd"> 
+
+<!-- 
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+
+<architectural_pattern name="PZH Authentication">
+<synopsis>Model illustrating the components associated PZH authentication.</synopsis>
+
+<access_right name="trusted" value="10">
+  <description>None</description>
+  <rationale>None</rationale>
+</access_right>
+<access_right name="authenticated" value="5">
+  <description>None</description>
+  <rationale>None</rationale>
+</access_right>
+<access_right name="anonymous" value="1">
+  <description>None</description>
+  <rationale>None</rationale>
+</access_right>
+
+<protocol name="RPC" value="10">
+  <description>None</description>
+  <rationale>None</rationale>
+</protocol>
+<protocol name="TLS" value="1">
+  <description>None</description>
+  <rationale>None</rationale>
+</protocol>
+<protocol name="Undefined" value="10">
+  <description>None</description>
+  <rationale>None</rationale>
+</protocol>
+
+<privilege name="privileged" value="10">
+  <description>None</description>
+  <rationale>None</rationale>
+</privilege>
+<privilege name="normal" value="1">
+  <description>None</description>
+  <rationale>None</rationale>
+</privilege>
+
+<surface_type name="JSON" value="10">
+  <description>None</description>
+  <rationale>None</rationale>
+</surface_type>
+<surface_type name="Unconstrained XML" value="5">
+  <description>XML document without a validating DTD or schema</description>
+  <rationale>Should not be left to a client application to validate the document on its own.</rationale>
+</surface_type>
+<surface_type name="Plaintext" value="5">
+  <description>ASCII plaintext</description>
+  <rationale>Should not be left to a client application to validate data on its own.</rationale>
+</surface_type>
+<surface_type name="Constrained XML" value="1">
+  <description>XML document with a validating DTD or schema</description>
+  <rationale>None</rationale>
+</surface_type>
+<surface_type name="HTML" value="1">
+  <description>HTML document</description>
+  <rationale>May contain malicious embedded code or links</rationale>
+</surface_type>
+<surface_type name="Unconstrained Image" value="1">
+  <description>Image files</description>
+  <rationale>Malformed images might be used a potential attack vector.</rationale>
+</surface_type>
+<surface_type name="Client application" value="10">
+  <description>None</description>
+  <rationale>None</rationale>
+</surface_type>
+<surface_type name="Privileged application" value="1">
+  <description>None</description>
+  <rationale>None</rationale>
+</surface_type>
+
+<asset name="Rendering Engine" short_code="RENG" type="Software" surface_type="Client application" access_right="anonymous">
+  <description>Rendering Engine</description>
+  <significance>Responsible for rendering widget resources</significance>
+</asset>
+<asset name="TLS Server" short_code="TLSSVR" type="Software" surface_type="Privileged application" access_right="trusted">
+  <description>TLS Server</description>
+  <significance>Responsible for TLS communication between personal zone components</significance>
+</asset>
+<asset name="Web Server" short_code="WEBSVR" type="Software" surface_type="Privileged application" access_right="trusted">
+  <description>Web Server</description>
+  <significance>Provides web interface to PZH provider</significance>
+</asset>
+<asset name="Farm Configuration" short_code="FARMCFG" type="Information" surface_type="JSON" access_right="authenticated">
+  <description>Configuration</description>
+  <significance>Stores connection parameters for PZH Provider TLS server</significance>
+</asset>
+<asset name="PZH Configuration" short_code="PZHCFG" type="Information" surface_type="JSON" access_right="authenticated">
+  <description>PZH Configuration</description>
+  <significance>Stores certificates and CRLs</significance>
+</asset>
+<asset name="PZH Session" short_code="PZHS" type="Information" surface_type="JSON" access_right="authenticated">
+  <description>PZH Session</description>
+  <significance>Session information about a PZH</significance>
+</asset>
+<asset name="Relying Party" short_code="RP" type="Information" surface_type="JSON" access_right="authenticated">
+  <description>Relying Party</description>
+  <significance>Data used to establish identity with openid provider</significance>
+</asset>
+
+<asset name="Attribute Exchange" short_code="ATEX" type="Information" surface_type="JSON" access_right="authenticated">
+  <description>Attribute Exchange</description>
+  <significance>None</significance>
+</asset>
+
+<asset name="JSON Object" short_code="JSON_OBJT" type="Information" surface_type="JSON" access_right="trusted">
+  <description>JSON Object</description>
+  <significance>Encapsulates data sent between components.</significance>
+</asset>
+
+<asset name="XML HTTP Request" short_code="XMLHTTP" type="Information" surface_type="JSON" access_right="trusted">
+  <description>XML HTTP Request</description>
+  <significance>Channel used to send messages between components.</significance>
+</asset>
+
+<asset name="PZH Proxy" short_code="PZHP" type="Information" surface_type="JSON" access_right="authenticated">
+  <description>PZH Proxy</description>
+  <significance>Proxy through which messages are sent to the PZH Provider</significance>
+</asset>
+
+<asset name="OpenID credentials" short_code="OIDC" type="Information" surface_type="Plaintext" access_right="authenticated">
+  <description>OpenID credentials</description>
+  <significance>Used to authenticate to a PZH Provider</significance>
+  <security_property property="confidentiality" value="Medium">
+    <rationale>Credentials may be misused for other purposes.</rationale>
+  </security_property>
+</asset>
+
+
+
+<goal name="Hub zone uniqueness">
+  <definition>A personal zone hub shall be associated with no more than one personal zone.</definition>
+  <rationale></rationale>
+</goal>
+<goal name="Zone hub uniqueness">
+  <definition>Each personal zone shall be associated with a single personal zone hub.</definition>
+  <rationale></rationale>
+</goal>
+<goal name="Zone router">
+  <definition>If required, the personal zone hub shall route communication between devices in a personal zone.</definition>
+  <rationale></rationale>
+</goal>
+
+<goal name="Authenticate authentication data changes">
+  <definition>Re-authentication shall be necessary to update authentication data.</definition>
+  <rationale>Need to authenticate to the hub to change synchronised policies.</rationale>
+</goal>
+<goal name="Authenticate PZP changes">
+  <definition>Re-authentication shall be necessary to update PZP configuration data.</definition>
+  <rationale>Every time PZP has update configuration data, it will be treated as a new PZP to authenticate.</rationale>
+</goal>
+<goal name="Device revocation authentication">
+  <definition>Re-authentication shall be necessary to revoke devices from a personal zone.</definition>
+  <rationale>Authentication carried out via the PZP admin interface</rationale>
+</goal>
+
+<goal name="Click-through controls">
+  <definition>Permission prompts shall prevent dialog click-through.</definition>
+  <rationale>Based on a proposed mock-up, click-throughs will not result in a default policy.</rationale>
+</goal>
+
+<goal name="Hub reachability">
+  <definition>When online, personal zone hubs shall be reachable from the public internet.</definition>
+  <rationale>Necessary for facilitating discovery.</rationale>
+  <concern name="Web Server" />
+  <concern name="TLS Server" />
+</goal>
+<goal name="OpenID provider online">
+  <definition>PZH administrative access shall be possible only if the OpenID provider is online.</definition>
+  <rationale>If the OpenID provider is offline it is not possible to carry out the OpenID authentication.</rationale>
+  <concern name="Identity Provider" />
+</goal>
+
+<component name="User Agent">
+  <description>Browser user agent</description>
+  <interface name="post" type="provided" access_right="trusted" privilege="privileged" />
+  <structure head_asset="Personal Zone Administration Console" head_adornment="Association" head_nav="1" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="Rendering Engine" />
+  <structure head_asset="Personal Zone Administration Console" head_adornment="Composition" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="PZH Proxy" />
+  <structure head_asset="PZH Proxy" head_adornment="Aggregation" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1..a" tail_nav="0" tail_adornment="Association" tail_asset="XML HTTP Request" />
+  <structure head_asset="XML HTTP Request" head_adornment="Aggregation" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="JSON Object" />
+</component>
+
+<component name="PZH Provider">
+  <description>PZH Provider</description>
+  <interface name="authenticate" type="required" access_right="authenticated" privilege="normal" />
+  <interface name="on" type="provided" access_right="trusted" privilege="privileged" />
+  <interface name="addPzh" type="required" access_right="authenticated" privilege="privileged" />
+  <structure head_asset="TLS Server" head_adornment="Association" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="Farm Configuration" />
+  <structure head_asset="Web Server" head_adornment="Association" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="Farm Configuration" />
+  <structure head_asset="Web Server" head_adornment="Aggregation" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1..a" tail_nav="0" tail_adornment="Association" tail_asset="XML HTTP Request" />
+  <structure head_asset="Web Server" head_adornment="Aggregation" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1..a" tail_nav="0" tail_adornment="Association" tail_asset="JSON Object" />
+  <component_goal name="Hub reachability" />
+  <component_goal name="Zone hub uniqueness" />
+  <component_goal name="Hub zone uniqueness" />
+  <component_goal name="Zone router" />
+  <component_goal name="Authenticate authentication data changes"/>
+  <component_goal name="Click-through controls"/>
+  <component_goal name="Device revocation authentication"/>
+  <component_goal name="Authenticate PZP changes"/>
+  <component_goal_association goal_name="Hub reachability" ref_type="and" subgoal_name="OpenID provider online"/>
+  <component_goal_association goal_name="Hub zone uniqueness" ref_type="and" subgoal_name="Zone hub uniqueness"/>
+  <component_goal_association goal_name="Hub zone uniqueness" ref_type="and" subgoal_name="Zone router"/>
+  <component_goal_association goal_name="Authenticate authentication data changes" ref_type="and" subgoal_name="Authenticate PZP changes"/>
+  <component_goal_association goal_name="Authenticate authentication data changes" ref_type="and" subgoal_name="Device revocation authentication"/>
+</component>
+
+<component name="PZH Session Handler">
+  <description>PZH</description>
+  <interface name="addPzh" type="provided" access_right="authenticated" privilege="privileged" />
+  <interface name="getAllServices" type="required" access_right="authenticated" privilege="normal" />
+  <structure head_asset="TLS Server" head_adornment="Association" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="PZH Configuration" />
+</component>
+
+<component name="Discovery Manager">
+  <description>Discovery Manager</description>
+  <interface name="getAllServices" type="provided" access_right="authenticated" privilege="normal" />
+</component>
+
+<component name="OpenID Proxy">
+  <description>OpenID Proxy</description>
+  <interface name="authenticate" type="provided" access_right="authenticated" privilege="normal" />
+  <structure head_asset="Relying Party" head_adornment="Composition" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1..a" tail_nav="0" tail_adornment="Association" tail_asset="Attribute Exchange" />
+  <structure head_asset="Attribute Exchange" head_adornment="Association" head_nav="0" head_nry="1" head_role="" tail_role="encapsulate" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="OpenID credentials" />
+  <structure head_asset="Relying Party" head_adornment="Association" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="1" tail_adornment="Association" tail_asset="Identity Provider" />
+  <component_goal name="OpenID provider online"/>
+</component>
+
+<connector name="https" from_component="User Agent" from_role="post-http" from_interface="post" to_component="PZH Provider" to_interface="on" to_role="receive-https" protocol="TLS" access_right="trusted" asset_name="XML HTTP Request"/>
+<connector name="authenticate" from_component="PZH Provider" from_role="request-authenticate" from_interface="authenticate" to_component="OpenID Proxy" to_interface="authenticate" to_role="provide-authenticate" protocol="JSON-RPC" access_right="authenticated" asset_name="JSON Object"/>
+<connector name="addpzh" from_component="PZH Provider" from_role="request-addpzh" from_interface="addPzh" to_component="PZH Session Handler" to_interface="addPzh" to_role="provide-addpzh" protocol="JSON-RPC" access_right="authenticated" asset_name="PZH Configuration"/>
+<connector name="allservices" from_component="PZH Session Handler" from_role="request-registeredservices" from_interface="getAllServices" to_component="Discovery Manager" to_interface="getAllServices" to_role="provide-registeredservices" protocol="JSON-RPC" access_right="authenticated" asset_name="JSON Object"/>
+
+</architectural_pattern>

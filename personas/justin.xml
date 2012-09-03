@@ -1,0 +1,207 @@
+<?xml version="1.0"?>
+<!DOCTYPE usability PUBLIC "-//CAIRIS//DTD USABILITY 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/usability.dtd">
+
+
+<usability>
+<persona name="Justin" type="Primary" assumption_persona="TRUE" image="/home/irisuser/webinos/wp2/personas/justin.jpg" >
+  <activities>Justin is a young, hip trendsetter who is constantly active and loves using cutting edge technology. He has a lucrative job (a trader in the city) and plenty of spare cash. He's always busy and uses his mobile (and many applications) to schedule his life. his interests are in cars, technology, music and fashion.
+
+Justin commutes frequently and is also a keen runner, cyclist and does plenty of exercise.</activities>
+  <attitudes>For Justin, style is everything. He cares deeply about his appearance and the way his personal effects look. He does not mind spending money on things that look good.
+
+Justin is very busy and constantly multitasking. He uses technology to keep himself up to date and fill in the gaps in his schedule.
+
+He trusts technology and is happy to share data with many people through it.</attitudes>
+  <aptitudes>Justin is cutting edge, constantly buying new gadgets. He is fairly technology savvy, although he does not necessarily know much about the risks he faces online.</aptitudes>
+  <motivations>His motivations are pleasure and style: he cares about appearance and buying things that absolutely meet his specifications.
+
+He also tries to fit a lot of activities into the day in order to keep up with his numerous interests.</motivations>
+  <skills>None</skills>
+
+  <persona_environment name="Identity" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Justin doesn't care much for his own privacy or personal data; he is just happy to get new features and gadgets, and is indifferent about spending money to satiate his whims. Technology is a bit like magic for him, but perhaps he is setting himself up for a catastrophe in the future?</narrative>
+  </persona_environment>
+  <persona_environment name="Discovery and Addressing" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Justin doesn't care much for his own privacy or personal data; he is just happy to get new features and gadgets, and is indifferent about spending money to satiate his whims. Technology is a bit like magic for him, but perhaps he is setting himself up for a catastrophe in the future?</narrative>
+  </persona_environment>
+  <persona_environment name="Remote Notifications and Messaging" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Justin doesn't care much for his own privacy or personal data; he is just happy to get new features and gadgets, and is indifferent about spending money to satiate his whims. Technology is a bit like magic for him, but perhaps he is setting himself up for a catastrophe in the future?</narrative>
+  </persona_environment>
+  <persona_environment name="Policy and Security" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Justin doesn't care much for his own privacy or personal data; he is just happy to get new features and gadgets, and is indifferent about spending money to satiate his whims. Technology is a bit like magic for him, but perhaps he is setting himself up for a catastrophe in the future?</narrative>
+  </persona_environment>
+  <persona_environment name="Negotiation and Compatibility" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Justin doesn't care much for his own privacy or personal data; he is just happy to get new features and gadgets, and is indifferent about spending money to satiate his whims. Technology is a bit like magic for him, but perhaps he is setting himself up for a catastrophe in the future?</narrative>
+  </persona_environment>
+  <persona_environment name="Lifecycle" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Justin doesn't care much for his own privacy or personal data; he is just happy to get new features and gadgets, and is indifferent about spending money to satiate his whims. Technology is a bit like magic for him, but perhaps he is setting himself up for a catastrophe in the future?</narrative>
+  </persona_environment>
+  <persona_environment name="Device and Service Functional Capability" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Justin doesn't care much for his own privacy or personal data; he is just happy to get new features and gadgets, and is indifferent about spending money to satiate his whims. Technology is a bit like magic for him, but perhaps he is setting himself up for a catastrophe in the future?</narrative>
+  </persona_environment>
+  <persona_environment name="Transfer and Management of State" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Justin doesn't care much for his own privacy or personal data; he is just happy to get new features and gadgets, and is indifferent about spending money to satiate his whims. Technology is a bit like magic for him, but perhaps he is setting himself up for a catastrophe in the future?</narrative>
+  </persona_environment>
+  <persona_environment name="Complete" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Justin doesn't care much for his own privacy or personal data; he is just happy to get new features and gadgets, and is indifferent about spending money to satiate his whims. Technology is a bit like magic for him, but perhaps he is setting himself up for a catastrophe in the future?</narrative>
+  </persona_environment>
+</persona>
+<external_document name="Converging applications within and across devices Story" version="0.9" date="30/11/10" authors="Hans Myrhaug, Ayse Goker, Anders Isberg" >
+  <description>None</description>
+</external_document>
+<external_document name="Wikipedia Metrosexual definition" version="1" date="21 December 2010" authors="Various" >
+  <description>http://en.wikipedia.org/wiki/Metrosexual</description>
+</external_document>
+<external_document name="BMW Price list" version="1" date="November 2010" authors="BMW" >
+  <description>http://external.bmw.ie/templates/bmw06/downloads/E115783-3BMWIEModelGuideWEBfinal26.10.10.pdf</description>
+</external_document>
+<document_reference name="Spends a lot of time exercising" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>I use the music daily whilst walking, jogging, biking</excerpt>
+</document_reference>
+<document_reference name="Fills time wherever possible" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>As Peter is waiting for his dessert, he picks up a magazine in a different language than his that somebody has forgotten on a shelf. He doesn\'t understand the headers and takes a picture of one of the headers with his phone. The header is automatically translated for him. Peter then stows the magazine away as he spots a very interesting contemporary painting on the wall next to the table. He quickly opens the artist application on his mobile for recognising paintings and photos, and the name and information about the artist is automatically retrieved as he takes a photo of it. He continues to search for more information about the artist in the browser just as the dessert is served to him.</excerpt>
+</document_reference>
+<document_reference name="Constantly listening to music" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>I use the music daily whilst walking, jogging, biking, and I really would like to continue using them in the car sometimes too</excerpt>
+</document_reference>
+<document_reference name="Wants to customise the style and features of his new car" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>He likes the style of it and especially that he can travel to Munich to personalise for his individual interior choice, exterior, but also for infotainment, engine, tires, and safety choices.</excerpt>
+</document_reference>
+<document_reference name="Is happy to accept personalised advertising" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>Peter thinks, not only is he very happy for being able to transfer his music into the car, moreover also to be able to personalise his radio program offer, combined with a new advertisement offering</excerpt>
+</document_reference>
+<document_reference name="Buys a pink car" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>Wow, his new pink metallic car with beige leather seats, is indeed his favourite pet by now</excerpt>
+</document_reference>
+<document_reference name="Metrosexuals are young, wealthy, near a city, fashion-conscious" contributor="John Lyle" document="Wikipedia Metrosexual definition" >
+  <excerpt>Various definition of Metrosexual includes \"The typical metrosexual is a young man with money to spend, living in or within easy reach of a metropolis\", \"[someone who is] much more interested in being looked at\", \"desires to be what he sees in magazines and advertising\", \"he colo[u]r-coordinates\"</excerpt>
+</document_reference>
+<document_reference name="Lives several hours from Munich" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>He arrives at the hotel in Munich late evening in the main street.</excerpt>
+</document_reference>
+<document_reference name="Uses mobile phone to organise life" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>...the calendar on his phone reminds his about his appointment for BMW car customisation.... A confirmation of order automatically appears in his inbox on the mobile. It tells him where he can pick up the car keys tomorrow at 12:30. </excerpt>
+</document_reference>
+<document_reference name="Installs a third-party application" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>he is offered a museum guide for mobile with free connection to the wireless network. He accepts and installs the application. </excerpt>
+</document_reference>
+<document_reference name="Uses his mobile to pay for small purchases without authentication" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>Peter pays by waving his mobile and the chosen product on the shop counter.</excerpt>
+</document_reference>
+<document_reference name="Buys an BMW 3-series" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>2012: Peter is considering buying new car of the BMW 3-series.</excerpt>
+</document_reference>
+<document_reference name="Has other smart devices" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>As the museum guide starts, it asks Peter if he by the way also would like to add a copy of the application to his cloud service for access and installation on other personal devices in the future. Peter answers positive to this....He chooses the converge-with-personal-mobile, converge-with-passenger-mobiles, converge-with-home-media options.</excerpt>
+</document_reference>
+<document_reference name="BMW 3 series costs at least 32000 euros" contributor="John Lyle" document="BMW Price list" >
+  <excerpt>BMW 318i ES, price: EUR 32,520</excerpt>
+</document_reference>
+<document_reference name="Takes 3 days off to buy a car" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>The following story is about Peter. He is a keen user of new mobile applications and has decided to spend three full days in leisure mode in Munich to further enjoy the planned purchasing of a new car.</excerpt>
+</document_reference>
+<document_reference name="Does not live with family" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>As he enters the door at home in the evening, he notices that the converged application on his mobile suggests to continue playing the same music he listened to in the car when he switched off the engine in the garage. Wow, his new pink metallic car with beige leather seats, is indeed his favourite pet by now; He immediately calls his friend Fiona over to find out if her mobile also can connect to his new converged infotainment package too!</excerpt>
+</document_reference>
+<document_reference name="Uses and contributes to online social networks" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>Peter decides to buy the product with the best [online] review....He selects Recommend in the application and the recommendation is published to his friends.....Peter therefore adds a recommendation entry for the restaurant in the restaurant guide whilst eating dinner that becomes instantly visible for other people using the guide.</excerpt>
+</document_reference>
+<document_reference name="Shares personal data with BMW" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>The adviser asks Peter to touch his phone onto a tablet with a larger screen. Peter does so and his name, contacts, and appointment appears automatically on the bigger tablet screen.</excerpt>
+</document_reference>
+<document_reference name="Uses mobile phone for complex tasks" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>Some of his mobile applications are woven together and interplay already.....Peter pays by waving his mobile and the chosen product on the shop counter.....the calendar on his phone reminds his about his appointment for BMW car customisation......He has planned for next day to walk to the BMW museum with the help of the mobile navigation software on his phone.....A confirmation of order automatically appears in his inbox on the mobile. It tells him where he can pick up the car keys tomorrow at 12:30......He is told to pair the electronic car key with his mobile and he willingly does so.....Peter says as he holds up his mobile towards the customer consultant to clearly signal that he wants to pay.</excerpt>
+</document_reference>
+<document_reference name="Early adopter of technology" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>He is a keen user of new mobile applications....The tablet is like a wizard with lots of dazzling multi-media and in-depth information about each product. Once he finds his choice, he can check it and the system adds it to the customisation list.</excerpt>
+</document_reference>
+<persona_characteristic persona="Justin" behavioural_variable="Activities" modal_qualifier="Definitely" >
+  <definition>Uses mobile applications frequently</definition>
+  <grounds type="document" reference="Uses mobile phone to organise life" />
+  <grounds type="document" reference="Installs a third-party application" />
+  <grounds type="document" reference="Uses his mobile to pay for small purchases without authentication" />
+</persona_characteristic>
+<persona_characteristic persona="Justin" behavioural_variable="Activities" modal_qualifier="Possibly" >
+  <definition>Hyperactive multi-tasker</definition>
+  <grounds type="document" reference="Fills time wherever possible" />
+  <grounds type="document" reference="Constantly listening to music" />
+</persona_characteristic>
+<persona_characteristic persona="Justin" behavioural_variable="Activities" modal_qualifier="Very likely" >
+  <definition>Disposable income</definition>
+  <grounds type="document" reference="Buys an BMW 3-series" />
+  <warrant type="document" reference="Has other smart devices" />
+  <warrant type="document" reference="BMW 3 series costs at least 32000 euros" />
+</persona_characteristic>
+<persona_characteristic persona="Justin" behavioural_variable="Activities" modal_qualifier="Possibly" >
+  <definition>Metrosexual</definition>
+  <grounds type="document" reference="Spends a lot of time exercising" />
+  <grounds type="document" reference="Wants to customise the style and features of his new car" />
+  <grounds type="document" reference="Is happy to accept personalised advertising" />
+  <grounds type="document" reference="Buys a pink car" />
+  <warrant type="document" reference="Metrosexuals are young, wealthy, near a city, fashion-conscious" />
+  <rebuttal type="document" reference="Lives several hours from Munich" />
+</persona_characteristic>
+<persona_characteristic persona="Justin" behavioural_variable="Activities" modal_qualifier="Definitely" >
+  <definition>Exercises frequently</definition>
+  <grounds type="document" reference="Spends a lot of time exercising" />
+</persona_characteristic>
+<persona_characteristic persona="Justin" behavioural_variable="Activities" modal_qualifier="Possibly" >
+  <definition>Young and single</definition>
+  <grounds type="document" reference="Takes 3 days off to buy a car" />
+  <grounds type="document" reference="Does not live with family" />
+  <grounds type="document" reference="Spends a lot of time exercising" />
+  <grounds type="document" reference="Uses and contributes to online social networks" />
+</persona_characteristic>
+<persona_characteristic persona="Justin" behavioural_variable="Aptitudes" modal_qualifier="Probably" >
+  <definition>Enjoys using cutting-edge technology</definition>
+  <grounds type="document" reference="Has other smart devices" />
+  <grounds type="document" reference="Early adopter of technology" />
+</persona_characteristic>
+<persona_characteristic persona="Justin" behavioural_variable="Attitudes" modal_qualifier="Presumably" >
+  <definition>Trusts technology</definition>
+  <grounds type="document" reference="Uses and contributes to online social networks" />
+  <grounds type="document" reference="Uses mobile phone to organise life" />
+  <grounds type="document" reference="Installs a third-party application" />
+  <grounds type="document" reference="Shares personal data with BMW" />
+  <grounds type="document" reference="Uses his mobile to pay for small purchases without authentication" />
+</persona_characteristic>
+<persona_characteristic persona="Justin" behavioural_variable="Attitudes" modal_qualifier="Probably" >
+  <definition>Uses technology to organise life</definition>
+  <grounds type="document" reference="Uses mobile phone to organise life" />
+  <grounds type="document" reference="Uses mobile phone for complex tasks" />
+</persona_characteristic>
+<persona_characteristic persona="Justin" behavioural_variable="Environment_Narrative" modal_qualifier="Possibly" >
+  <definition>Not particularly security or privacy conscious</definition>
+  <grounds type="document" reference="Uses and contributes to online social networks" />
+  <grounds type="document" reference="Is happy to accept personalised advertising" />
+  <grounds type="document" reference="Installs a third-party application" />
+  <grounds type="document" reference="Uses his mobile to pay for small purchases without authentication" />
+</persona_characteristic>
+<persona_characteristic persona="Justin" behavioural_variable="Environment_Narrative" modal_qualifier="Presumably" >
+  <definition>Willing to share personal data</definition>
+  <grounds type="document" reference="Uses and contributes to online social networks" />
+  <grounds type="document" reference="Is happy to accept personalised advertising" />
+  <grounds type="document" reference="Shares personal data with BMW" />
+</persona_characteristic>
+<persona_characteristic persona="Justin" behavioural_variable="Motivations" modal_qualifier="Presumably" >
+  <definition>Likes new gadgets and technology</definition>
+  <grounds type="document" reference="Takes 3 days off to buy a car" />
+  <grounds type="document" reference="Has other smart devices" />
+  <grounds type="document" reference="Early adopter of technology" />
+</persona_characteristic>
+<persona_characteristic persona="Justin" behavioural_variable="Motivations" modal_qualifier="Probably" >
+  <definition>Cares deeply about style and personal appearance</definition>
+  <grounds type="document" reference="Spends a lot of time exercising" />
+  <grounds type="document" reference="Wants to customise the style and features of his new car" />
+  <grounds type="document" reference="Buys a pink car" />
+</persona_characteristic>
+</usability>

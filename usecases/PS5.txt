@@ -1,0 +1,40 @@
+h1. WOS-UC-TA7-006: The publicity and privacy of analytics information
+
+Author: John Lyle, Hans Myrhaug
+
+Actors: User, Application
+
+h2. Description
+
+This use case describes two mobile phones interacting to share potentially private analytics information. It illustrates aspects of sharing analytics information across devices and applications.
+
+h2. Preconditions
+
+A user and his friend both have a webinos-enabled mobile device that he uses daily. His friend has promiscuous policy settings for a social application that he is an active user of. The user has a least one friend on the same social network.
+
+Trust relationships between PZHs of the friends' zones are established.
+
+
+h2. Flow
+
+# The User starts the social network application.
+# The Application shows that a friend has just updated his status to say that he is nearby.
+# The User has not seen his friend for a long time, and would like to see him. However, he does not want to interrupt, so instead requests some information from users mobile device instead of calling him.
+# The Application requests some of his friends data to the webinos runtime.
+# The webinos runtime requests the information to the PZP
+# The PZP requests the information to the PZH
+# The PZH requests the information to the friends PZH
+# The friend's PZH receives the request, determines if the policy allows sharing which data and returns the data allowed to be given. The policy is relatively promiscuous, and states that any of his friends may find out whether he is free later in the day, and whether any of his friends are nearby.  However, it denies access to his location data.
+# The Application shows this data to the user
+
+h2. Postconditions
+
+The user receives analytics information about his friends activities in line with his friends personal profile settings.
+
+h2. Use case map
+
+!PublicityPrivacyContextInformation.png!
+
+| *Scenarios* | |
+| *Use Cases* | |
+| *Requirements* | |

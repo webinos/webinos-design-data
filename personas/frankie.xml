@@ -1,0 +1,280 @@
+<?xml version="1.0"?>
+<!DOCTYPE usability PUBLIC "-//CAIRIS//DTD USABILITY 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/usability.dtd">
+
+
+<usability>
+<persona name="Frankie" type="Primary" assumption_persona="TRUE" image="/home/irisuser/webinos/wp2/personas/frankie.jpg" >
+  <activities>Frankie is an alienated computer addict. He started using computer at the age of six, when he was troubled by the separation of his parents, and all his life has been centered on computers ever since. Up to now, he has had a quite normal student career, without any notable brilliance or related achievements.</activities>
+  <attitudes>He never established strong friendships and can only express himself through computers. Since computers have been his main friends, he has failed to pick up some society norms and values, including commonly known laws and rules.
+
+The parent's separation gave him an inner sense of rage and frustration, making him quarrelsome and vexatious. Sadly, he is just looking for attention and support, but he's not able to express this to anyone in person.
+
+His present hobbys involve malicious computer actions, however, his knowledge of security is naive, and he can only us publicly-available tools for exploiting systems. He is constantly seeking attention and recognition and usually brags about his stunts on internet. This gains him only disregard from his victims and scorn from real security experts.</attitudes>
+  <aptitudes>The very early emotional trauma he suffered deprived him of his motivation to learn. He just wants attention, but no one has taught him the right way to get self-esteem. So, he learns to take the easy option and the "fast way" toward his goals, not understanding the fruitfulness of the longer ones. He is involved in a number of licit or illicit tasks (Wi-F cracking, virus spreading) but he has no more than a superficial knowledge and interest in any of them.</aptitudes>
+  <motivations>He wants to damage others and gain money in order to attract attention, and achieve a fake sense of control in a otherwise unhappy and unimportant life.</motivations>
+  <skills>He has an understanding of computers and Internet, but due to his lack of motivation for education and learning, his knowledge is only a little above average, especially regarding public (or almost public) domain software used to hack networks.</skills>
+
+  <persona_environment name="Identity" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>He does not have any respect of the privacy of others. Essentially, due to his scarce human relationships, he does not really understand motivation of privacy and of many human rights.
+
+Since his university is quite open and trust students, it exposes naive weaknesses that even a poor attacker like Frankie can exploit and trespass security policies.</narrative>
+  </persona_environment>
+  <persona_environment name="Discovery and Addressing" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>He does not have any respect of the privacy of others. Essentially, due to his scarce human relationships, he does not really understand motivation of privacy and of many human rights.
+
+Since his university is quite open and trust students, it exposes naive weaknesses that even a poor attacker like Frankie can exploit and trespass security policies.</narrative>
+  </persona_environment>
+  <persona_environment name="Remote Notifications and Messaging" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>He does not have any respect of the privacy of others. Essentially, due to his scarce human relationships, he does not really understand motivation of privacy and of many human rights.
+
+Since his university is quite open and trust students, it exposes naive weaknesses that even a poor attacker like Frankie can exploit and trespass security policies.</narrative>
+  </persona_environment>
+  <persona_environment name="Policy and Security" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>He does not have any respect of the privacy of others. Essentially, due to his scarce human relationships, he does not really understand motivation of privacy and of many human rights.
+
+Since his university is quite open and trust students, it exposes naive weaknesses that even a poor attacker like Frankie can exploit and trespass security policies.</narrative>
+  </persona_environment>
+  <persona_environment name="Negotiation and Compatibility" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>He does not have any respect of the privacy of others. Essentially, due to his scarce human relationships, he does not really understand motivation of privacy and of many human rights.
+
+Since his university is quite open and trust students, it exposes naive weaknesses that even a poor attacker like Frankie can exploit and trespass security policies.</narrative>
+  </persona_environment>
+  <persona_environment name="Lifecycle" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>He does not have any respect of the privacy of others. Essentially, due to his scarce human relationships, he does not really understand motivation of privacy and of many human rights.
+
+Since his university is quite open and trust students, it exposes naive weaknesses that even a poor attacker like Frankie can exploit and trespass security policies.</narrative>
+  </persona_environment>
+  <persona_environment name="Device and Service Functional Capability" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>He does not have any respect of the privacy of others. Essentially, due to his scarce human relationships, he does not really understand motivation of privacy and of many human rights.
+
+Since his university is quite open and trust students, it exposes naive weaknesses that even a poor attacker like Frankie can exploit and trespass security policies.</narrative>
+  </persona_environment>
+  <persona_environment name="Transfer and Management of State" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>He does not have any respect of the privacy of others. Essentially, due to his scarce human relationships, he does not really understand motivation of privacy and of many human rights.
+
+Since his university is quite open and trust students, it exposes naive weaknesses that even a poor attacker like Frankie can exploit and trespass security policies.</narrative>
+  </persona_environment>
+  <persona_environment name="Complete" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>He does not have any respect of the privacy of others. Essentially, due to his scarce human relationships, he does not really understand motivation of privacy and of many human rights.
+
+Since his university is quite open and trust students, it exposes naive weaknesses that even a poor attacker like Frankie can exploit and trespass security policies.</narrative>
+  </persona_environment>
+</persona>
+<external_document name="Joseph A. Camp and Daniel J. Fowler indictment" version="1" date="22 November 2010" authors="http://www.cybercrime.gov/campIndict.pdf" >
+  <description>None</description>
+</external_document>
+<external_document name="Article on David Kernell" version="1" date="12 November 2010" authors="http://www.commercialappeal.com/news/2010/nov/12/judge-sentences-david-kernell-year-custody-hacking" >
+  <description>None</description>
+</external_document>
+<external_document name="David C. Kernell sentence" version="1" date="12 November 2010" authors="http://www.cybercrime.gov/kernellSent.pdf" >
+  <description>None</description>
+</external_document>
+<external_document name="Article on Barry Vincent Ardolf" version="1" date="22 December 2010" authors="Robert McMillan - http://www.pcworld.com/businesscenter/article/214659/man_used_neighbors_wifi_to_threaten_vice_president_biden.html" >
+  <description>None</description>
+</external_document>
+<external_document name="Jan de Wit on Wikipedia" version="Page modified on 7 D" date="unknown" authors="http://en.wikipedia.org/wiki/Anna_Kournikova_%28computer_virus%29" >
+  <description>None</description>
+</external_document>
+<external_document name="Article on Andrew Harvey and Jordan Bradley" version="1" date="7 October 2005" authors="http://news.bbc.co.uk/2/hi/uk_news/england/4319942.stm" >
+  <description>None</description>
+</external_document>
+<external_document name="Michael Calce on wikipedia" version="1" date="21 January 2011" authors="http://en.wikipedia.org/wiki/Mafiaboy" >
+  <description>None</description>
+</external_document>
+<external_document name="Barry Vincent Ardolf plea" version="1" date="17 December 2010" authors="http://www.cybercrime.gov/blainePlea.pdf" >
+  <description>None</description>
+</external_document>
+<external_document name="David C. Kernell on wikipedia" version="1" date="21 January 2011" authors="http://en.wikipedia.org/wiki/Sarah_Palin_email_hack" >
+  <description>None</description>
+</external_document>
+<document_reference name="Grades alteration" contributor="Andrea Atzeni" document="Joseph A. Camp and Daniel J. Fowler indictment" >
+  <excerpt>Camp and Fowler gained unlawful and unauthorized access to the UCM computer network (...) to attempt to change grades.</excerpt>
+</document_reference>
+<document_reference name="University student" contributor="Andrea Atzeni" document="Joseph A. Camp and Daniel J. Fowler indictment" >
+  <excerpt>Two students sought to victimize thousands of students and others associated with the University of Central Missouri</excerpt>
+</document_reference>
+<document_reference name="He operates from camp room" contributor="Andrea Atzeni" document="Joseph A. Camp and Daniel J. Fowler indictment" >
+  <excerpt>They allegedly used Fowler's room on the UCM campus as their base of operations
+</excerpt>
+</document_reference>
+<document_reference name="He had boasted of the e-mail access" contributor="Andrea Atzeni" document="Article on David Kernell" >
+  <excerpt>He had boasted of the e-mail access on an Internet discussion board and posted a new password to the account.</excerpt>
+</document_reference>
+<document_reference name="He teases authorities" contributor="Andrea Atzeni" document="Joseph A. Camp and Daniel J. Fowler indictment" >
+  <excerpt>The indictment alleges that, after their hacking scheme was discovered, law enforcement officers executed a search warrant on Fowler's university dorm room while Camp was in New York. Officers discovered that all of the computers had been removed from the room. According to the indictment, detectives found a post-it note on a remaining computer monitor, which read, "too late!" with a smiley face on it.</excerpt>
+</document_reference>
+<document_reference name="He published screenshots of breached email account" contributor="Andrea Atzeni" document="David C. Kernell sentence" >
+  <excerpt>Kernell posted screenshots of the e-mails and other personal information to a public website.</excerpt>
+</document_reference>
+<document_reference name="He published the new password of breached email account" contributor="Andrea Atzeni" document="David C. Kernell sentence" >
+  <excerpt>Kernell also posted the new e-mail account password that he had created, thus providing access to the account by others.</excerpt>
+</document_reference>
+<document_reference name="Wi-Fi cracking software user" contributor="Andrea Atzeni" document="Article on Barry Vincent Ardolf" >
+  <excerpt>He used the Aircrack Wi-Fi cracking software to gain access to his neighbour's WEP-encrypted network.</excerpt>
+</document_reference>
+<document_reference name="Virus creation tooltik user" contributor="Andrea Atzeni" document="Jan de Wit on Wikipedia" >
+  <excerpt>The virus was created using a simple and widely available Visual Basic Worm Generator program developed by an Argentinian programmer called "[K]Alamar".</excerpt>
+</document_reference>
+<document_reference name="Sense of control" contributor="Andrea Atzeni" document="Article on Andrew Harvey and Jordan Bradley" >
+  <excerpt>Adrian Waterman, prosecuting, told the court: "Harvey and Bradley, along with others, were doing what they do because of the control it gave them not with an end purpose in mind."
+Robin Patton, defending Harvey, said: "The motivation for committing these offences was the power over computers rather than any nefarious purpose.
+"It's one thing to want the power and its another to misuse it and neither defendant ever showed the slightest intention to be malicious."</excerpt>
+</document_reference>
+<document_reference name="He expands illicit access over university network" contributor="Andrea Atzeni" document="Joseph A. Camp and Daniel J. Fowler indictment" >
+  <excerpt>Once the virus was successfully installed on a computer, the indictment says, Camp and Fowler could obtain remote access to the computer, capture a user's keystrokes and download any of the user's files.</excerpt>
+</document_reference>
+<document_reference name="From a broken home" contributor="Andrea Atzeni" document="Michael Calce on wikipedia" >
+  <excerpt>When he was five, his parents separated and he lived with his mother after she had won a lengthy battle for primary custody. Every second weekend he would stay with his father at his condo in the metropolitan area of Montreal.</excerpt>
+</document_reference>
+<document_reference name="Few friends" contributor="Andrea Atzeni" document="Michael Calce on wikipedia" >
+  <excerpt>Calce felt isolated from his friends back home</excerpt>
+</document_reference>
+<document_reference name="Computer early user" contributor="Andrea Atzeni" document="Michael Calce on wikipedia" >
+  <excerpt>his father purchased him his own computer at the age of six.</excerpt>
+</document_reference>
+<document_reference name="Silly attempt to delete traces" contributor="Andrea Atzeni" document="David C. Kernell sentence" >
+  <excerpt>Evidence at trial showed that Kernell became aware on Sept. 16, 2008, after the illegal entry into the email account, of a possible FBI investigation. Evidence showed that Kernell began a series of deletions of records and documents with the intent to impede an anticipated FBI investigation.</excerpt>
+</document_reference>
+<document_reference name="He hacked into neighbours Wi-Fi" contributor="Andrea Atzeni" document="Barry Vincent Ardolf plea" >
+  <excerpt>In his plea agreement, Ardolf, who was indicted on June 23, 2010, admitted that in February of 2009, he hacked into his neighbour's wireless Internet connection</excerpt>
+</document_reference>
+<document_reference name="He creates email accounts in his neighbours name" contributor="Andrea Atzeni" document="Barry Vincent Ardolf plea" >
+  <excerpt>he (...) created multiple Yahoo.com email accounts in his neighbour's name.
+</excerpt>
+</document_reference>
+<document_reference name="Upset with neighbour" contributor="Andrea Atzeni" document="Article on Barry Vincent Ardolf" >
+  <excerpt>Ardolf had been upset with the lawyer since 2008, when he filed a police report against Ardolf</excerpt>
+</document_reference>
+<document_reference name="He poses as his neighbour to email death threats" contributor="Andrea Atzeni" document="Barry Vincent Ardolf plea" >
+  <excerpt>pleaded guilty to (...) posing as the neighbour to make threats to kill the Vice President of the United States.</excerpt>
+</document_reference>
+<document_reference name="He tries to shift the blame to his neighbour" contributor="Andrea Atzeni" document="Barry Vincent Ardolf plea" >
+  <excerpt>He admitted he sent the email using the neighbour's wireless router with the intent that the email would be traced back to the neighbour.</excerpt>
+</document_reference>
+<document_reference name="He poses as his neighbour to send emails of a sexual nature" contributor="Andrea Atzeni" document="Barry Vincent Ardolf plea" >
+  <excerpt>he posed as his neighbour and used the email accounts he had created to send emails of a sexual nature to three of the neighbour's co-workers.</excerpt>
+</document_reference>
+<document_reference name="He uses social network to threat witness of his illicit activities" contributor="Andrea Atzeni" document="Joseph A. Camp and Daniel J. Fowler indictment" >
+  <excerpt>hen their activities were discovered by law enforcement, the indictment says, Camp and Fowler used the social media Web site Facebook.com to communicate threats and harass potential witnesses against them.</excerpt>
+</document_reference>
+<document_reference name="Unauthorized reset of an email account password" contributor="Andrea Atzeni" document="David C. Kernell sentence" >
+  <excerpt>On Sept. 16, 2008, Kernell, a resident of Knoxville, Tenn., obtained unauthorized access to former Gov. Palin's personal e-mail account by resetting the account password. Evidence showed that after answering a series of security questions that allowed him to reset the password and gain access to the e-mail account</excerpt>
+</document_reference>
+<document_reference name="Unauthorized access to the university DB" contributor="Andrea Atzeni" document="Joseph A. Camp and Daniel J. Fowler indictment" >
+  <excerpt>Camp and Fowler gained unlawful and unauthorized access to the UCM computer network (...) which allowed them to view and download large databases of faculty, staff, alumni and student information</excerpt>
+</document_reference>
+<document_reference name="University computers infection" contributor="Andrea Atzeni" document="Joseph A. Camp and Daniel J. Fowler indictment" >
+  <excerpt>Camp and Fowler developed a computer virus, which they used to infect UCM computers</excerpt>
+</document_reference>
+<document_reference name="Virus dissemination by thumbdrive" contributor="Andrea Atzeni" document="Joseph A. Camp and Daniel J. Fowler indictment" >
+  <excerpt>They allegedly used several strategies to infect computers, such as offering to show vacation photographs on a thumb drive that contained the virus</excerpt>
+</document_reference>
+<document_reference name="Virus dissemination by hidden email attachment" contributor="Andrea Atzeni" document="Joseph A. Camp and Daniel J. Fowler indictment" >
+  <excerpt>They allegedly used several strategies to infect computers, such as (...) sending out e-mails with the virus hidden in an attachment.</excerpt>
+</document_reference>
+<document_reference name="Virus dissemination by manual installation" contributor="Andrea Atzeni" document="Joseph A. Camp and Daniel J. Fowler indictment" >
+  <excerpt>They manually installed the virus on several UCM computers in public areas, such as computer labs and the library.</excerpt>
+</document_reference>
+<document_reference name="He tries to unlawfully transfer university founds" contributor="Andrea Atzeni" document="Joseph A. Camp and Daniel J. Fowler indictment" >
+  <excerpt>They also obtained the username and password of a residence hall director, according to the indictment, and used that information to exploit the university's computer system to conduct financial transactions, in an attempt to unlawfully credit their student accounts with UCM funds.</excerpt>
+</document_reference>
+<document_reference name="He tries to illicitly sell personal informations" contributor="Andrea Atzeni" document="Joseph A. Camp and Daniel J. Fowler indictment" >
+  <excerpt>In December 2009, Camp allegedly contacted an individual in New York and offered to sell the personal information of thousands of people that he and Fowler had obtained from UCM. Camp offered to sell 90,000 identities for $35,000, according to the indictment.</excerpt>
+</document_reference>
+<document_reference name="Unauthorized access to university network" contributor="Andrea Atzeni" document="Joseph A. Camp and Daniel J. Fowler indictment" >
+  <excerpt>Camp and Fowler gained unlawful and unauthorized access to the UCM computer network</excerpt>
+</document_reference>
+<document_reference name="Unauthorized access to an email account" contributor="Andrea Atzeni" document="David C. Kernell sentence" >
+  <excerpt>on Sept. 16, 2008, Kernell, a resident of Knoxville, Tenn., obtained unauthorized access to former Gov. Palin's personal e-mail account.</excerpt>
+</document_reference>
+<document_reference name="Biographical driven password compromise" contributor="Andrea Atzeni" document="David C. Kernell on wikipedia" >
+  <excerpt>The hacker, David Kernell, had obtained access to Palin's account by looking up biographical details such as her high school and birthdate</excerpt>
+</document_reference>
+<persona_characteristic persona="Frankie" behavioural_variable="Activities" modal_qualifier="Presumably" >
+  <definition>Inept student</definition>
+  <grounds type="document" reference="Grades alteration" />
+  <grounds type="document" reference="University student" />
+  <grounds type="document" reference="He operates from camp room" />
+</persona_characteristic>
+<persona_characteristic persona="Frankie" behavioural_variable="Activities" modal_qualifier="Presumably" >
+  <definition>Life centered around computers</definition>
+  <grounds type="document" reference="Few friends" />
+  <grounds type="document" reference="Computer early user" />
+  <warrant type="document" reference="From a broken home" />
+</persona_characteristic>
+<persona_characteristic persona="Frankie" behavioural_variable="Aptitudes" modal_qualifier="Presumably" >
+  <definition>Depthless intellectual curiosity</definition>
+  <grounds type="document" reference="Wi-Fi cracking software user" />
+  <grounds type="document" reference="Grades alteration" />
+  <grounds type="document" reference="Virus creation tooltik user" />
+</persona_characteristic>
+<persona_characteristic persona="Frankie" behavioural_variable="Attitudes" modal_qualifier="Presumably" >
+  <definition>Quarrelsome</definition>
+  <grounds type="document" reference="He hacked into neighbours Wi-Fi" />
+  <grounds type="document" reference="He creates email accounts in his neighbours name" />
+  <grounds type="document" reference="Upset with neighbour" />
+</persona_characteristic>
+<persona_characteristic persona="Frankie" behavioural_variable="Attitudes" modal_qualifier="Usually" >
+  <definition>Looking for consideration</definition>
+  <grounds type="document" reference="He had boasted of the e-mail access" />
+  <grounds type="document" reference="He teases authorities" />
+  <grounds type="document" reference="He published screenshots of breached email account" />
+  <grounds type="document" reference="He published the new password of breached email account" />
+</persona_characteristic>
+<persona_characteristic persona="Frankie" behavioural_variable="Attitudes" modal_qualifier="Presumably" >
+  <definition>Vexatious</definition>
+  <grounds type="document" reference="He poses as his neighbour to email death threats" />
+  <grounds type="document" reference="He tries to shift the blame to his neighbour" />
+  <grounds type="document" reference="He poses as his neighbour to send emails of a sexual nature" />
+  <grounds type="document" reference="He uses social network to threat witness of his illicit activities" />
+  <grounds type="document" reference="Unauthorized reset of an email account password" />
+</persona_characteristic>
+<persona_characteristic persona="Frankie" behavioural_variable="Attitudes" modal_qualifier="Presumably" >
+  <definition>Naive</definition>
+  <grounds type="document" reference="Silly attempt to delete traces" />
+</persona_characteristic>
+<persona_characteristic persona="Frankie" behavioural_variable="Attitudes" modal_qualifier="Presumably" >
+  <definition>Enjoy malicious computer actions</definition>
+  <grounds type="document" reference="Unauthorized access to the university DB" />
+  <grounds type="document" reference="University computers infection" />
+  <grounds type="document" reference="Virus dissemination by thumbdrive" />
+  <grounds type="document" reference="Virus dissemination by hidden email attachment" />
+  <grounds type="document" reference="Virus dissemination by manual installation" />
+</persona_characteristic>
+<persona_characteristic persona="Frankie" behavioural_variable="Environment_Narrative" modal_qualifier="Presumably" >
+  <definition>Unrespectful of privacy</definition>
+  <grounds type="document" reference="Unauthorized access to university network" />
+  <grounds type="document" reference="Unauthorized access to an email account" />
+  <grounds type="document" reference="Biographical driven password compromise" />
+</persona_characteristic>
+<persona_characteristic persona="Frankie" behavioural_variable="Environment_Narrative" modal_qualifier="Presumably" >
+  <definition>Laughable university security policy</definition>
+  <grounds type="document" reference="Unauthorized access to the university DB" />
+  <grounds type="document" reference="University computers infection" />
+  <grounds type="document" reference="Virus dissemination by manual installation" />
+</persona_characteristic>
+<persona_characteristic persona="Frankie" behavioural_variable="Motivations" modal_qualifier="Presumably" >
+  <definition>Greed</definition>
+  <grounds type="document" reference="He tries to unlawfully transfer university founds" />
+  <grounds type="document" reference="He tries to illicitly sell personal informations" />
+</persona_characteristic>
+<persona_characteristic persona="Frankie" behavioural_variable="Motivations" modal_qualifier="Usually" >
+  <definition>Computer control</definition>
+  <grounds type="document" reference="Sense of control" />
+  <grounds type="document" reference="He expands illicit access over university network" />
+</persona_characteristic>
+<persona_characteristic persona="Frankie" behavioural_variable="Skills" modal_qualifier="Presumably" >
+  <definition>Mediocre computer security knowledge</definition>
+  <grounds type="document" reference="Wi-Fi cracking software user" />
+  <grounds type="document" reference="Virus creation tooltik user" />
+</persona_characteristic>
+</usability>

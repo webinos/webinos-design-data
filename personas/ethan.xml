@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+<!DOCTYPE usability PUBLIC "-//CAIRIS//DTD USABILITY 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/usability.dtd">
+
+
+<usability>
+<persona name="Ethan" type="Primary" assumption_persona="TRUE" image="/home/irisuser/webinos/wp2/personas/ethan.png" >
+  <activities>Ethan is a student just like many others: he has no particular problems or outstanding successes. Unlike many others, he believes that taking some shortcuts (of dubious legality) can be of some help. In order to gain some extra spending-money and fill his always-empty student pockets, he devotes part of his time to earning money illegally as a spammer. One of his activities, for example, is sending messages on behalf of individuals who sell counterfeit good, or participating in an email campaign for a "pump and dump" scheme.</activities>
+  <attitudes>Much like many other students, Ethan does not have a strong inclination toward rules and laws. In fact, he has a quite pronounced inclination toward illicit activities that can be more or less remunerative. However, he still doesn't want to get in trouble with the law, he is just willing to risk it because he wants money even more.</attitudes>
+  <aptitudes>Ethan has cultivated some of the essential skills for his fraudulent network activities. His habitual tasks consist in looking for vulnerable networks, exploiting such vulnerabilities and then gathering data from those non security-savvy systems. Whenever possible and whenever he thinks it is not too risky, he enjoys accessing and taking control of vulnerable systems and harvesting data from vulnerable targets. When successful, this often includes usernames, passwords, and also details of credit cards that have been illicitly gained by other malicious intruders. This information can be profitably used for trading of credit card number (good offers for them in Black Market) and for circumvent monitoring system and anti-spam filters.</aptitudes>
+  <motivations>He wants easy money, since in his opinion it is very rarely the most tiresome way that is the best one. During his student career, he has found it difficult to make much money in legal ways. Since he already has a botnet at his service, why not use it for some additional source of wealth? Being a botnet administrator has many other benefits. For example, he can attack politicians with whom he disagrees. After all, Ethan has some sense of civic responsibility in his own way.</motivations>
+  <skills>Ethan most important skills lies in the administrator-level knowledge of a botnet, and on the knowledge of how exploit it for illicit spamming activities and other illicit activities using them. For these reasons, knowledge of using spamming tools is of benefit to his business.</skills>
+
+  <persona_environment name="Identity" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <persona_role name="User" />
+    <narrative>Ethan does not want a blemish on his CV. He knows enough on the security postures of his targets to be reasonably safe from problems. Up to now, he has never been identified has an illegal spammer, and he's very willingly to sustain his perfect record and appearance of honesty.</narrative>
+  </persona_environment>
+  <persona_environment name="Discovery and Addressing" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <persona_role name="User" />
+    <narrative>Ethan does not want a blemish on his CV. He knows enough on the security postures of his targets to be reasonably safe from problems. Up to now, he has never been identified has an illegal spammer, and he's very willingly to sustain his perfect record and appearance of honesty.</narrative>
+  </persona_environment>
+  <persona_environment name="Remote Notifications and Messaging" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <persona_role name="User" />
+    <narrative>Ethan does not want a blemish on his CV. He knows enough on the security postures of his targets to be reasonably safe from problems. Up to now, he has never been identified has an illegal spammer, and he's very willingly to sustain his perfect record and appearance of honesty.</narrative>
+  </persona_environment>
+  <persona_environment name="Policy and Security" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <persona_role name="User" />
+    <narrative>Ethan does not want a blemish on his CV. He knows enough on the security postures of his targets to be reasonably safe from problems. Up to now, he has never been identified has an illegal spammer, and he's very willingly to sustain his perfect record and appearance of honesty.</narrative>
+  </persona_environment>
+  <persona_environment name="Negotiation and Compatibility" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <persona_role name="User" />
+    <narrative>Ethan does not want a blemish on his CV. He knows enough on the security postures of his targets to be reasonably safe from problems. Up to now, he has never been identified has an illegal spammer, and he's very willingly to sustain his perfect record and appearance of honesty.</narrative>
+  </persona_environment>
+  <persona_environment name="Lifecycle" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <persona_role name="User" />
+    <narrative>Ethan does not want a blemish on his CV. He knows enough on the security postures of his targets to be reasonably safe from problems. Up to now, he has never been identified has an illegal spammer, and he's very willingly to sustain his perfect record and appearance of honesty.</narrative>
+  </persona_environment>
+  <persona_environment name="Device and Service Functional Capability" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <persona_role name="User" />
+    <narrative>Ethan does not want a blemish on his CV. He knows enough on the security postures of his targets to be reasonably safe from problems. Up to now, he has never been identified has an illegal spammer, and he's very willingly to sustain his perfect record and appearance of honesty.</narrative>
+  </persona_environment>
+  <persona_environment name="Transfer and Management of State" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <persona_role name="User" />
+    <narrative>Ethan does not want a blemish on his CV. He knows enough on the security postures of his targets to be reasonably safe from problems. Up to now, he has never been identified has an illegal spammer, and he's very willingly to sustain his perfect record and appearance of honesty.</narrative>
+  </persona_environment>
+  <persona_environment name="Complete" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <persona_role name="User" />
+    <narrative>Ethan does not want a blemish on his CV. He knows enough on the security postures of his targets to be reasonably safe from problems. Up to now, he has never been identified has an illegal spammer, and he's very willingly to sustain his perfect record and appearance of honesty.</narrative>
+  </persona_environment>
+
+</persona>
+<external_document name="Mitchell L. Frost sentence" version="1" date="4 November 2010" authors="http://www.cybercrime.gov/frostSent.pdf" >
+  <description>None</description>
+</external_document>
+<external_document name="Oleg Nikolaenko indictment" version="1" date="3 December 2010" authors="http://www.cybercrime.gov/nikolaenkoChar.pdf" >
+  <description>None</description>
+</external_document>
+<external_document name="James Bragg Plea" version="1" date="20 October 2010" authors="http://www.cybercrime.gov/braggPlea.pdf" >
+  <description>None</description>
+</external_document>
+<external_document name="Article on Mitchell L. Frost" version="1" date="9 November 2010" authors="Robert McMillan - http://www.pcworld.com/businesscenter/article/210083/student_who_hacked_bill_oreilly_gets_30_months.html" >
+  <description>None</description>
+</external_document>
+<external_document name="Thirugnanam Ramanathan sentence" version="1" date="9 September 2008" authors="http://www.sec.gov/litigation/litreleases/2008/lr20711.htm" >
+  <description>None</description>
+</external_document>
+<document_reference name="Enrolled at the university" contributor="Andrea Atzeni" document="Mitchell L. Frost sentence" >
+  <excerpt>Student at the University of Akron</excerpt>
+</document_reference>
+<document_reference name="Emails sent on behalf of individuals who sell counterfeit goods" contributor="Andrea Atzeni" document="Oleg Nikolaenko indictment" >
+  <excerpt>He sent billions of spam emails on behalf of individuals who were selling counterfeit Rolexes, non-FDA approved herbal remedies, and counterfeit prescription medications.</excerpt>
+</document_reference>
+<document_reference name="Email campaign for a pump and dump scheme" contributor="Andrea Atzeni" document="James Bragg Plea" >
+  <excerpt>Bragg admitted today that he participated in a mass e-mail campaign in support of an illegal, get-rich-quick stock manipulation scam. The conspirators may have updated the fraud with technology, but strip away the army of computers and this is a classic pump and dump scheme.</excerpt>
+</document_reference>
+<document_reference name="Sending unsolicited commercial email is illegal" contributor="Andrea Atzeni" document="Oleg Nikolaenko indictment" >
+  <excerpt>The indictment alleges that the volume of electronic mail messages transmitted in furtherance of the offense exceeded 250,000 during a one-year period. The maximum possible penalty for this offense is imprisonment for not more than three years, a fine of not more than $250,000, and up to one year of supervised release. A restitution order also may be issued.
+</excerpt>
+</document_reference>
+<document_reference name="Use of university network to control a botnet" contributor="Andrea Atzeni" document="Mitchell L. Frost sentence" >
+  <excerpt>He used the University's computer network to access IRC channels on the Internet to control other computers and computer networks via computers intentionally infected and taken over, known as "BotNet" zombies.</excerpt>
+</document_reference>
+<document_reference name="Use of compromised computers to spread malicious codes" contributor="Andrea Atzeni" document="Mitchell L. Frost sentence" >
+  <excerpt>Frost admitted using the compromised computers to spread malicious computer codes, commands and information to even more computers.</excerpt>
+</document_reference>
+<document_reference name="Set up a website to sell synthetic cannabis" contributor="Andrea Atzeni" document="Article on Mitchell L. Frost" >
+  <excerpt>Prosecutors asked the court for a tough sentence after Frost lied to his probation officer about an online business he'd set up following his arrest. In a letter to the court, Frost said he set up the Discountjwh.com website earlier this year after quitting his job as a Stanley Steemer carpet cleaning technician. JWH is a form of synthetic cannabis that is legal for sale in some U.S. states, including Ohio.</excerpt>
+</document_reference>
+<document_reference name="Gain access and control over vulnerable systems" contributor="Andrea Atzeni" document="Mitchell L. Frost sentence" >
+  <excerpt>gaining unauthorized access to and control over such computers, and fraudulently obtaining user names and passwords for users on such systems.</excerpt>
+</document_reference>
+<document_reference name="Use of hijacked online brokerage accounts" contributor="Andrea Atzeni" document="Thirugnanam Ramanathan sentence" >
+  <excerpt>without the account holders' knowledge, and using the victims' own accounts and funds, the Defendants placed scores of unauthorized buy orders at above-market prices.</excerpt>
+</document_reference>
+<document_reference name="Scan internet searching for vulnerable networks" contributor="Andrea Atzeni" document="Mitchell L. Frost sentence" >
+  <excerpt>Scanning the Internet searching for computer networks which were vulnerable to attack or unauthorized intrusion.</excerpt>
+</document_reference>
+<document_reference name="Harvest data from computer networks" contributor="Andrea Atzeni" document="Mitchell L. Frost sentence" >
+  <excerpt>all for the purpose of harvesting and obtaining information and data from the compromised computer networks, including user names, passwords, credit card numbers, and cvv security codes</excerpt>
+</document_reference>
+<document_reference name="Exploit network" contributor="Andrea Atzeni" document="Mitchell L. Frost sentence" >
+  <excerpt>According to court documents, Frost admitted that between August 2006, and March 2007, while enrolled as a student at the University of Akron, he used the University's computer network to access IRC channels on the Internet to control other computers and computer networks via computers intentionally infected and taken over.
+</excerpt>
+</document_reference>
+<document_reference name="Hired to send emails promoting counterfeit goods" contributor="Andrea Atzeni" document="Oleg Nikolaenko indictment" >
+  <excerpt>He sent billions of spam emails on behalf of individuals who were selling counterfeit Rolexes, non-FDA approved herbal remedies, and counterfeit prescription medications. In return, Mr. Nikolaenko was paid hundreds of thousands of dollars.</excerpt>
+</document_reference>
+<document_reference name="Hired to illegally promote stocks" contributor="Andrea Atzeni" document="James Bragg Plea" >
+  <excerpt>Bragg was hired by an individual referred to in the Information as "C.R." to promote certain stocks.</excerpt>
+</document_reference>
+<document_reference name="Knock offline websites belonging to conservative pundits" contributor="Andrea Atzeni" document="Article on Mitchell L. Frost" >
+  <excerpt>A 23-year-old Bellevue, Ohio, man has been sentenced to 30 months in prison following a 2007 online crime spree in which he used a network of hacked computers to attack and knock offline websites belonging to conservative pundits Bill O'Reilly and Ann Coulter.</excerpt>
+</document_reference>
+<document_reference name="Send messages by use of a botnet" contributor="Andrea Atzeni" document="Oleg Nikolaenko indictment" >
+  <excerpt>Mr.Nikolaenko is alleged to have initiated the sending of these messages by use of his botnet, which had been dubbed the "Mega-D" botnet.</excerpt>
+</document_reference>
+<document_reference name="Launch DDoS attacks" contributor="Andrea Atzeni" document="Mitchell L. Frost sentence" >
+  <excerpt>for the purpose of launching Distributed Denial of Service (DDoS) attacks on computer systems and Internet websites.</excerpt>
+</document_reference>
+<document_reference name="Huge volume of emails transmitted" contributor="Andrea Atzeni" document="Oleg Nikolaenko indictment" >
+  <excerpt>The volume of electronic mail messages transmitted in furtherance of the offense exceeded 250,000 during a one-year period.</excerpt>
+</document_reference>
+<document_reference name="Alter emails to avoid spam filters" contributor="Andrea Atzeni" document="James Bragg Plea" >
+  <excerpt>altering the contents of the e-mail to avoid spam filters.
+</excerpt>
+</document_reference>
+<document_reference name="IRC user" contributor="Andrea Atzeni" document="Mitchell L. Frost sentence" >
+  <excerpt>He used the University's computer network to access IRC channels on the Internet.
+</excerpt>
+</document_reference>
+<document_reference name="CVV thief" contributor="Andrea Atzeni" document="Mitchell L. Frost sentence" >
+  <excerpt>harvesting and obtaining information and data from the compromised computer networks, including (...) credit card numbers, and CVV security codes.
+</excerpt>
+</document_reference>
+<document_reference name="Disguise emails true origin" contributor="Andrea Atzeni" document="Oleg Nikolaenko indictment" >
+  <excerpt>Nikolaenko knowingly and materially falsified header information in email messages to disguise the emails' true origin.</excerpt>
+</document_reference>
+<persona_characteristic persona="Ethan" behavioural_variable="Activities" modal_qualifier="Always" >
+  <definition>Student</definition>
+  <grounds type="document" reference="Enrolled at the university" />
+</persona_characteristic>
+<persona_characteristic persona="Ethan" behavioural_variable="Activities" modal_qualifier="Presumably" >
+  <definition>Illegal spammer</definition>
+  <grounds type="document" reference="Emails sent on behalf of individuals who sell counterfeit goods" />
+  <grounds type="document" reference="Email campaign for a pump and dump scheme" />
+  <warrant type="document" reference="Sending unsolicited commercial email is illegal" />
+</persona_characteristic>
+<persona_characteristic persona="Ethan" behavioural_variable="Aptitudes" modal_qualifier="Usually" >
+  <definition>Data harvester</definition>
+  <grounds type="document" reference="Scan internet searching for vulnerable networks" />
+  <grounds type="document" reference="Harvest data from computer networks" />
+  <grounds type="document" reference="Exploit network" />
+</persona_characteristic>
+<persona_characteristic persona="Ethan" behavioural_variable="Aptitudes" modal_qualifier="Maybe" >
+  <definition>Credit card data trader</definition>
+  <grounds type="document" reference="IRC user" />
+  <grounds type="document" reference="CVV thief" />
+</persona_characteristic>
+<persona_characteristic persona="Ethan" behavioural_variable="Aptitudes" modal_qualifier="Usually" >
+  <definition>Vulnerability exploiter</definition>
+  <grounds type="document" reference="Gain access and control over vulnerable systems" />
+  <grounds type="document" reference="Use of hijacked online brokerage accounts" />
+</persona_characteristic>
+<persona_characteristic persona="Ethan" behavioural_variable="Attitudes" modal_qualifier="Presumably" >
+  <definition>Crime-prone</definition>
+  <grounds type="document" reference="Use of university network to control a botnet" />
+  <grounds type="document" reference="Use of compromised computers to spread malicious codes" />
+  <grounds type="document" reference="Set up a website to sell synthetic cannabis" />
+</persona_characteristic>
+<persona_characteristic persona="Ethan" behavioural_variable="Environment_Narrative" modal_qualifier="Presumably" >
+  <definition>Security aware</definition>
+  <grounds type="document" reference="Disguise emails true origin" />
+  <grounds type="document" reference="Alter emails to avoid spam filters" />
+</persona_characteristic>
+<persona_characteristic persona="Ethan" behavioural_variable="Motivations" modal_qualifier="Probably" >
+  <definition>Hacktivist</definition>
+  <grounds type="document" reference="Knock offline websites belonging to conservative pundits" />
+</persona_characteristic>
+<persona_characteristic persona="Ethan" behavioural_variable="Motivations" modal_qualifier="Presumably" >
+  <definition>Wants to make money fast</definition>
+  <grounds type="document" reference="Hired to send emails promoting counterfeit goods" />
+  <grounds type="document" reference="Hired to illegally promote stocks" />
+</persona_characteristic>
+<persona_characteristic persona="Ethan" behavioural_variable="Skills" modal_qualifier="Presumably" >
+  <definition>Administration knowledge of spamming software</definition>
+  <grounds type="document" reference="Huge volume of emails transmitted" />
+  <grounds type="document" reference="Alter emails to avoid spam filters" />
+</persona_characteristic>
+<persona_characteristic persona="Ethan" behavioural_variable="Skills" modal_qualifier="Maybe" >
+  <definition>Botnet administrator knowledge</definition>
+  <grounds type="document" reference="Send messages by use of a botnet" />
+  <grounds type="document" reference="Launch DDoS attacks" />
+</persona_characteristic>
+</usability>

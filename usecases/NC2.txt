@@ -1,0 +1,35 @@
+h1. WOS-UC-TA7-001: Device Based Analytics Retrieval
+
+Author: George Gionis
+
+Actors: Application
+
+h2. Description
+
+Webinos retrieves contextual information based on the device or device set under scope.
+
+h2. Preconditions
+
+The user has a device or set of devices with webinos installed.
+
+h2. Flow
+
+# The Application queries the Webinos runtime for analytics information about the user's devices
+# The Webinos runtime queries the PZP for this information.
+# The PZP determines it doesn't possess this information, or this information is not up to date, and queries the PZH for this information.
+# The PZH checks the user's policies and returns the information allowed to be given. Examples can be: - device identity: device type, device model, hardware configuration. - device status: device is active (or not), operating system version, installed applications, currently running applications, current application active (on display). - device sensors readings: GPS, IP, accelerometer, photo camera, flash, speed, consumption, temperature, time. - connected devices: feature(s) currently shared to other device(s), feature(s) currently shared by other device(s), metadata of connected devices (could be a subset of all the above). The above information are an indicative set of the analytics information the system can retrieve from the registered users devices.
+# The Application accesses the data retrieved by webinos
+
+h2. Postconditions
+
+The application can modify its behavior according to the context retrieved
+
+h2. Use case map
+
+!DeviceBasedContextRetrieval.png!
+
+h2. Related artifacts
+
+| *Scenarios* | |
+| *Use Cases* | |
+| *Requirements* | |

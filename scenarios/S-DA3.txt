@@ -1,0 +1,56 @@
+h1. S-DA3: Converging Applications within and across Devices
+
+Author: Hans Myrhaug, Dr Ayse Goker, Anders Isberg, Andrea Paul, Andrea Atzeni
+
+h2. Overview
+
+Peter and Jimmy arrange a trip for buying and seeing a commonly asset: Luxury cars
+
+h2. Description
+
+Peter is considering buying a new car of the BMW 3-­-series. He likes the style of it and especially that he can travel to Munich to personalize for his individual interior choice, exterior, but also for infotainment, engine, tires, and safety choices.
+
+Justin accepts to go to the BMW museum with Peter, since interested in cars, music and fashion.
+
+When Peter arrives to the Museum, at the reception desk He may get a museum guide for mobile with free connection to the wireless network. He accepts and installs the application.
+
+The museum guide allows to be shared on different devices and users, and Justin happily ask to share it while in the museum.
+
+Through the guide, Peter discovers that he can literally hold the phone close to each artifact, and relevant information is automatically presented on his mobile. Meanwhile Justin discover the possibility to also view videos describing the history of some BMW series.
+Those videos comes with extra audio and subtitle streams for different languages. The videos has also a special stream for hearing impaired users where the environmental noise is reduced in order to make the actors speech clearer.
+It is a huge advantage for the friends that the movie has these different audio streams. Justin is not as good as Peter in understanding German and prefers video in the English language anyway. 
+
+h2. Issues
+
+For some users it is uncomfortable to consume the same content together. Especially language or physical restrictions can influence the experience. One issue here is to provide the content in an appropriate format while using an appropriate device to the user’s private device in order to improve the user’s content consumption experience.
+
+The scenario requires that the devices involved have wireless, contactless, and camera capabilities. It also requires from the converged webinos applications that data can be instantly and seamlessly transferred between the devices and applications through open standard interfaces. Applications can additionally run in parallel. Applications and data can also be added automatically to the cloud in the background while applications are being used.
+
+h2. Benefits
+
+An easy integration of private “output streams” (which could be audio, video, or text maybe even with real-time translation) allows for an improved social life style. webinos allows to deliver content in a format that can be handled by the user’s device.
+
+Providing converged applications enables application developers to incrementally roll out applications as an evolving package consisting of several smaller applications. These can be glued and interlinked together with each other. They can start/pause/resume/stop each other from within the application. Additionally the applications can run in parallel. Devices instantly connect to each other to enhance aspects of the information experience for the end users. The story also involves the use of contactless and wireless transfer of data between devices, and in addition to this, the use of the camera on the mobile to obtain object recognition and visual search for information
+
+h2. Usability breakdown 
+
+| Persona |  Justin |
+| Duration | Hours or longer |
+| Frequency | Monthly or less |
+| Demands | None |
+| Goal Conflict | None |
+
+| Persona |  Peter |
+| Duration | Hours or longer |
+| Frequency | Monthly or less |
+| Demands | Low |
+| Goal Conflict | None |
+
+
+h2. Required Use Cases
+
+* DA4
+* DA6
+* NM4
+* NC1
+

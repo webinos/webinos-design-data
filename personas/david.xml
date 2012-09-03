@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<!DOCTYPE usability PUBLIC "-//CAIRIS//DTD USABILITY 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/usability.dtd">
+
+<usability>
+<persona name="David" type="Primary" assumption_persona="TRUE" image="/home/irisuser/webinos/wp2/personas/david.jpg" >
+  <activities>From early age, David has been involved in a number of challenging (legal and illegal) activities. However, his minor sporting successes have not brought a very comfortable or profitable life. He has spent a significant part of his life as a young adult in jail.
+
+His actual work as skilled car mechanics has positive facets: raised in a household of mechanics and car experts, he finds the work easy, and he can effortlessly achieve very good results in repairing cars. However, his troubled nature prevents him from being satisfied and he is unable to foresee a bright career.</activities>
+  <attitudes>David was raised in family where talking about cars was the norm. His parents allowed his love of racing vehicles to bloom.
+
+Another parental (David's father's, in particular) gift was the negative influence (build up on the father's disciplinary extremes) that cursed him with a youth of disorder and an unbalanced personality. This resulted in an inclination to commit crimes, break laws and rules, and be violent.
+
+Some sporting achievements have made him fairly popular, but have had the unfortunate side-effect of encouraging his illegal activities: his self-confidence increased as well as his attraction to hazardous activities.
+
+Due to his careless attitude and lack of consideration for consequences, he can perform actions that have potentially dreadful impact on others and possibly also to himself.</attitudes>
+  <aptitudes>His upbringing gifted him with a good competence in the working and internals of cars as he was involved in daily car trouble-shooting and discussion. This love for talking about cars and problem-solving led him to open and maintain a blog where car problems are dissected. Often, David give good advice and pretty good solutions to a problem in comprehensible and effective manner, due to his disposition to break up problems into simpler terms.</aptitudes>
+  <motivations>David loves to be fast, he feels all life should be passed at increasing speed. In this sense, a growing feeling of non-satisfaction is growing within him. David's present work is boring, his pockets are empty (difficult to have any savings if you come and go from prison). Furthermore, he recently lost a chance of a career move.
+
+A way to possibly collect some money more is tampering. Clever tampering! "Selective" tampering! Meaning a kind of damage that causes vehicles to develop a problem after some time, possibly in different parts. This means that he will be asked to fix a number of problems that happen at the same time, resulting in more work and even some well-paid overtime.</motivations>
+  <skills>Apart car aptitudes, David also has some IT skills.
+David is quite familiar with company's communication system and with vulnerability exploitation.</skills>
+  <persona_environment name="Identity" is_direct="TRUE" >
+    <persona_role name="3rd Party Service Provider" />
+    <narrative>David has a deranged personality, and is not fully capable of evaluating the consequences of his actions. This is true also in terms of his own personal damage. His actions can lead to devasting result for himself, as the years in prison have demonstrated.
+
+On the other hand, he is also fairly clever (in a frenzied way). His plan to tamper with car systems (including on board computers) has a non-negligible chance of success, at least in the short term. In the longer term, David will very likely face some more time in the local penitentiary.</narrative>
+  </persona_environment>
+  <persona_environment name="Discovery and Addressing" is_direct="TRUE" >
+    <persona_role name="3rd Party Service Provider" />
+    <narrative>David has a deranged personality, and is not fully capable of evaluating the consequences of his actions. This is true also in terms of his own personal damage. His actions can lead to devasting result for himself, as the years in prison have demonstrated.
+
+On the other hand, he is also fairly clever (in a frenzied way). His plan to tamper with car systems (including on board computers) has a non-negligible chance of success, at least in the short term. In the longer term, David will very likely face some more time in the local penitentiary.</narrative>
+  </persona_environment>
+  <persona_environment name="Remote Notifications and Messaging" is_direct="TRUE" >
+    <persona_role name="3rd Party Service Provider" />
+    <narrative>David has a deranged personality, and is not fully capable of evaluating the consequences of his actions. This is true also in terms of his own personal damage. His actions can lead to devasting result for himself, as the years in prison have demonstrated.
+
+On the other hand, he is also fairly clever (in a frenzied way). His plan to tamper with car systems (including on board computers) has a non-negligible chance of success, at least in the short term. In the longer term, David will very likely face some more time in the local penitentiary.</narrative>
+  </persona_environment>
+  <persona_environment name="Policy and Security" is_direct="TRUE" >
+    <persona_role name="3rd Party Service Provider" />
+    <narrative>David has a deranged personality, and is not fully capable of evaluating the consequences of his actions. This is true also in terms of his own personal damage. His actions can lead to devasting result for himself, as the years in prison have demonstrated.
+
+On the other hand, he is also fairly clever (in a frenzied way). His plan to tamper with car systems (including on board computers) has a non-negligible chance of success, at least in the short term. In the longer term, David will very likely face some more time in the local penitentiary.</narrative>
+  </persona_environment>
+  <persona_environment name="Negotiation and Compatibility" is_direct="TRUE" >
+    <persona_role name="3rd Party Service Provider" />
+    <narrative>David has a deranged personality, and is not fully capable of evaluating the consequences of his actions. This is true also in terms of his own personal damage. His actions can lead to devasting result for himself, as the years in prison have demonstrated.
+
+On the other hand, he is also fairly clever (in a frenzied way). His plan to tamper with car systems (including on board computers) has a non-negligible chance of success, at least in the short term. In the longer term, David will very likely face some more time in the local penitentiary.</narrative>
+  </persona_environment>
+  <persona_environment name="Lifecycle" is_direct="TRUE" >
+    <persona_role name="3rd Party Service Provider" />
+    <narrative>David has a deranged personality, and is not fully capable of evaluating the consequences of his actions. This is true also in terms of his own personal damage. His actions can lead to devasting result for himself, as the years in prison have demonstrated.
+
+On the other hand, he is also fairly clever (in a frenzied way). His plan to tamper with car systems (including on board computers) has a non-negligible chance of success, at least in the short term. In the longer term, David will very likely face some more time in the local penitentiary.</narrative>
+  </persona_environment>
+  <persona_environment name="Device and Service Functional Capability" is_direct="TRUE" >
+    <persona_role name="3rd Party Service Provider" />
+    <narrative>David has a deranged personality, and is not fully capable of evaluating the consequences of his actions. This is true also in terms of his own personal damage. His actions can lead to devasting result for himself, as the years in prison have demonstrated.
+
+On the other hand, he is also fairly clever (in a frenzied way). His plan to tamper with car systems (including on board computers) has a non-negligible chance of success, at least in the short term. In the longer term, David will very likely face some more time in the local penitentiary.</narrative>
+  </persona_environment>
+  <persona_environment name="Transfer and Management of State" is_direct="TRUE" >
+    <persona_role name="3rd Party Service Provider" />
+    <narrative>David has a deranged personality, and is not fully capable of evaluating the consequences of his actions. This is true also in terms of his own personal damage. His actions can lead to devasting result for himself, as the years in prison have demonstrated.
+
+On the other hand, he is also fairly clever (in a frenzied way). His plan to tamper with car systems (including on board computers) has a non-negligible chance of success, at least in the short term. In the longer term, David will very likely face some more time in the local penitentiary.</narrative>
+  </persona_environment>
+  <persona_environment name="Complete" is_direct="TRUE" >
+    <persona_role name="3rd Party Service Provider" />
+    <narrative>David has a deranged personality, and is not fully capable of evaluating the consequences of his actions. This is true also in terms of his own personal damage. His actions can lead to devasting result for himself, as the years in prison have demonstrated.
+
+On the other hand, he is also fairly clever (in a frenzied way). His plan to tamper with car systems (including on board computers) has a non-negligible chance of success, at least in the short term. In the longer term, David will very likely face some more time in the local penitentiary.</narrative>
+  </persona_environment>
+</persona>
+<external_document name="Article on Sean Mullins Plea" version="1" date="19 January 2011" authors="Jeff Morganteen - http://www.stamfordadvocate.com/news/article/City-teen-pleads-guilty-in-car-theft-ring-armed-951188.php" >
+  <description>None</description>
+</external_document>
+<external_document name="Peter Brock on wikipedia" version="1" date="19 January 2011" authors="http://en.wikipedia.org/wiki/Peter_brock" >
+  <description>None</description>
+</external_document>
+<external_document name="FBI famous cases and criminals - story of John Dillinger" version="1" date="19 January 2011" authors="http://www.fbi.gov/about-us/history/famous-cases/john-dillinger" >
+  <description>None</description>
+</external_document>
+<external_document name="Frankies Garage Blog" version="1" date="19 January 2011" authors="Franki D'Antoni - http://automechanics.wordpress.com/about/" >
+  <description>None</description>
+</external_document>
+<external_document name="Memorandum of Cameron Lacroix debate" version="1" date="19 January 2011" authors="http://www.sociallaw.com/slip.htm?cid=18798" >
+  <description>None</description>
+</external_document>
+<external_document name="Cameron Lacroix on wikipedia" version="1" date="19 January 2011" authors="http://en.wikipedia.org/wiki/Cameron_Lacroix" >
+  <description>None</description>
+</external_document>
+<external_document name="Article on Mario Azar Plea" version="1" date="19 January 2011" authors="Robert McMillan - http://www.cio.com/article/503074/Contractor_Pleads_Guilty_to_SCADA_Tampering" >
+  <description>None</description>
+</external_document>
+<external_document name="The Tampering Defense to Lemon Law Claims by Mercedes and BMW" version="1.0" date="09 February 2009" authors="http://www.articlesbase.com/law-articles/the-tampering-defense-to-lemon-law-claims-by-mercedes-and-bmw-761993.html" >
+  <description>None</description>
+</external_document>
+<document_reference name="Guilty of multiple, serious felonies" contributor="Andrea Atzeni" document="Article on Sean Mullins Plea" >
+  <excerpt>pleaded guilty Tuesday to several felonies and will serve at least six years in prison
+
+</excerpt>
+</document_reference>
+<document_reference name="Racing cars driver" contributor="Andrea Atzeni" document="Peter Brock on wikipedia" >
+  <excerpt>although he raced vehicles of other manufacturers including BMW, Ford, Volvo, Porsche and Peugeot.</excerpt>
+</document_reference>
+<document_reference name="participation in a baseball tournament" contributor="Andrea Atzeni" document="Article on Sean Mullins Plea" >
+  <excerpt>...former baseball standout... he had been playing in a Babe Ruth baseball tournament
+
+</excerpt>
+</document_reference>
+<document_reference name="Good worker in the machine shop" contributor="Andrea Atzeni" document="FBI famous cases and criminals - story of John Dillinger" >
+  <excerpt>got a job in a machine shop in Indianapolis. Although intelligent and a good worker ...</excerpt>
+</document_reference>
+<document_reference name="He mixed with car experts from early age" contributor="Andrea Atzeni" document="Frankies Garage Blog" >
+  <excerpt>Born and raised in a household of car mechanics,</excerpt>
+</document_reference>
+<document_reference name="Abandoned school to work in a machine shop" contributor="Andrea Atzeni" document="FBI famous cases and criminals - story of John Dillinger" >
+  <excerpt>In adolescence, the flaws in his bewildering personality became evident, and he was frequently in trouble. Finally, he quit school and got a job in a machine shop in Indianapolis</excerpt>
+</document_reference>
+<document_reference name="Deserted his ship" contributor="Andrea Atzeni" document="FBI famous cases and criminals - story of John Dillinger" >
+  <excerpt>There he soon got into trouble and deserted his ship when it docked in Boston</excerpt>
+</document_reference>
+<document_reference name="appeared on the press" contributor="Andrea Atzeni" document="Article on Sean Mullins Plea" >
+  <excerpt>he appeared on the sports pages of local newspapers over the summer
+
+</excerpt>
+</document_reference>
+<document_reference name="suspected of different crimes" contributor="Andrea Atzeni" document="Article on Sean Mullins Plea" >
+  <excerpt>accused of stealing several cars during a weeks-long 2009 car theft spree, as well as other serious crimes
+
+</excerpt>
+</document_reference>
+<document_reference name="implication in armed crimes " contributor="Andrea Atzeni" document="Article on Sean Mullins Plea" >
+  <excerpt>He was later accused of playing a role in the armed hold-up of a taxi driver in February 2009.</excerpt>
+</document_reference>
+<document_reference name="use fire weapons to break the law" contributor="Andrea Atzeni" document="FBI famous cases and criminals - story of John Dillinger" >
+  <excerpt>made heroes of outlaws who took what they wanted at gunpoint</excerpt>
+</document_reference>
+<document_reference name="Credit cards thief" contributor="Andrea Atzeni" document="Memorandum of Cameron Lacroix debate" >
+  <excerpt>
+the overall suspicious conduct and statements of the Defendant and Corey led Turgeon to believe that they had committed a credit card and identity fraud related crime ...
+...
+The contents of the trunk confirmed Turgeon's suspicions</excerpt>
+</document_reference>
+<document_reference name="Winner of car endurance race" contributor="Andrea Atzeni" document="Peter Brock on wikipedia" >
+  <excerpt>He won the Bathurst 1000 endurance</excerpt>
+</document_reference>
+<document_reference name="Sensitive to flops" contributor="Andrea Atzeni" document="Peter Brock on wikipedia" >
+  <excerpt>the failed 1984 Le Mans attempt left him physically and emotionally drained</excerpt>
+</document_reference>
+<document_reference name="raised up in disciplinary extremes" contributor="Andrea Atzeni" document="FBI famous cases and criminals - story of John Dillinger" >
+  <excerpt>His father, ..., raised him in an atmosphere of disciplinary extremes, harsh and repressive on some occasions, but generous and permissive on others</excerpt>
+</document_reference>
+<document_reference name="Bewilder personality" contributor="Andrea Atzeni" document="FBI famous cases and criminals - story of John Dillinger" >
+  <excerpt>In adolescence, the flaws in his bewildering personality became evident, and he was frequently in trouble</excerpt>
+</document_reference>
+<document_reference name="Description of  problem in simple terms" contributor="Andrea Atzeni" document="Frankies Garage Blog" >
+  <excerpt>But unlike many sites who confuse visitors instead of helping, Auto Mechanic is the better choice. We make things simpler. From engine mounts to disc brake systems, read and learn about things that they won't normally tell you in repair shops.</excerpt>
+</document_reference>
+<document_reference name="Car maintenance deep knowledge" contributor="Andrea Atzeni" document="Frankies Garage Blog" >
+  <excerpt>Auto Mechanic is the premier blog for car maintenance tutorial. Every article posted provides an inside look into basic and advanced troubleshooting</excerpt>
+</document_reference>
+<document_reference name="Successful car catalog writer" contributor="Andrea Atzeni" document="Frankies Garage Blog" >
+  <excerpt>is a catalog writer for one of the biggest car manufacturers in the United States</excerpt>
+</document_reference>
+<document_reference name="in search for easy money" contributor="Andrea Atzeni" document="FBI famous cases and criminals - story of John Dillinger" >
+  <excerpt>... had no luck finding work in the city and joined the town pool shark, Ed Singleton, in his search for easy money.</excerpt>
+</document_reference>
+<document_reference name="Access to someone elses cellular phone" contributor="Andrea Atzeni" document="Cameron Lacroix on wikipedia" >
+  <excerpt>is a computer hacker best known for the hacking of Paris Hilton's cellular phone</excerpt>
+</document_reference>
+<document_reference name="tampering of computer systems" contributor="Andrea Atzeni" document="Article on Mario Azar Plea" >
+  <excerpt>has pleaded guilty to tampering with the company's computer systems after he was turned down for a permanent position with the company.</excerpt>
+</document_reference>
+<document_reference name="Car tamperer" contributor="Andrea Atzeni" document="The Tampering Defense to Lemon Law Claims by Mercedes and BMW" >
+  <excerpt>there have been reported tampering cases where consumers with contacts within the dealerships have subtly altered the electronics of the vehicle to produce codes, check-engine lights and other electrical malfunctions
+
+</excerpt>
+</document_reference>
+<persona_characteristic persona="David" behavioural_variable="Activities" modal_qualifier="Presumably" >
+  <definition>Convicted felon</definition>
+  <grounds type="document" reference="Guilty of multiple, serious felonies" />
+</persona_characteristic>
+<persona_characteristic persona="David" behavioural_variable="Activities" modal_qualifier="Probably" >
+  <definition>He is a talented sportsman</definition>
+  <grounds type="document" reference="Racing cars driver" />
+  <grounds type="document" reference="participation in a baseball tournament" />
+</persona_characteristic>
+<persona_characteristic persona="David" behavioural_variable="Activities" modal_qualifier="Presumbly" >
+  <definition>He is an expert car repairman</definition>
+  <grounds type="document" reference="Good worker in the machine shop" />
+  <grounds type="document" reference="He mixed with car experts from early age" />
+</persona_characteristic>
+<persona_characteristic persona="David" behavioural_variable="Aptitudes" modal_qualifier="Presumably" >
+  <definition>Good problem solver</definition>
+  <grounds type="document" reference="Description of  problem in simple terms" />
+</persona_characteristic>
+<persona_characteristic persona="David" behavioural_variable="Aptitudes" modal_qualifier="Likely" >
+  <definition>Comfortable with car's internals</definition>
+  <grounds type="document" reference="He mixed with car experts from early age" />
+  <grounds type="document" reference="Car maintenance deep knowledge" />
+  <grounds type="document" reference="Successful car catalog writer" />
+</persona_characteristic>
+<persona_characteristic persona="David" behavioural_variable="Attitudes" modal_qualifier="Likely" >
+  <definition>Hard life in early age</definition>
+  <grounds type="document" reference="raised up in disciplinary extremes" />
+  <grounds type="document" reference="Bewilder personality" />
+  <grounds type="document" reference="Abandoned school to work in a machine shop" />
+</persona_characteristic>
+<persona_characteristic persona="David" behavioural_variable="Attitudes" modal_qualifier="Possibly" >
+  <definition>Frail personality</definition>
+  <grounds type="document" reference="Sensitive to flops" />
+</persona_characteristic>
+<persona_characteristic persona="David" behavioural_variable="Attitudes" modal_qualifier="Likely" >
+  <definition>Illegal inclination</definition>
+  <grounds type="document" reference="suspected of different crimes" />
+  <grounds type="document" reference="implication in armed crimes " />
+  <grounds type="document" reference="use fire weapons to break the law" />
+  <grounds type="document" reference="Credit cards thief" />
+</persona_characteristic>
+<persona_characteristic persona="David" behavioural_variable="Attitudes" modal_qualifier="Probably" >
+  <definition>Uncomfortable to rules and laws</definition>
+  <grounds type="document" reference="Abandoned school to work in a machine shop" />
+  <grounds type="document" reference="Deserted his ship" />
+</persona_characteristic>
+<persona_characteristic persona="David" behavioural_variable="Attitudes" modal_qualifier="Possibly" >
+  <definition>Reckless</definition>
+  <grounds type="document" reference="Deserted his ship" />
+</persona_characteristic>
+<persona_characteristic persona="David" behavioural_variable="Attitudes" modal_qualifier="Likely" >
+  <definition>Competitive</definition>
+  <grounds type="document" reference="participation in a baseball tournament" />
+  <grounds type="document" reference="Winner of car endurance race" />
+</persona_characteristic>
+<persona_characteristic persona="David" behavioural_variable="Attitudes" modal_qualifier="Maybe" >
+  <definition>Attention seeker</definition>
+  <grounds type="document" reference="appeared on the press" />
+</persona_characteristic>
+<persona_characteristic persona="David" behavioural_variable="Environment_Narrative" modal_qualifier="Possibly" >
+  <definition>Successful tamperer</definition>
+  <grounds type="document" reference="tampering of computer systems" />
+  <grounds type="document" reference="Car tamperer" />
+</persona_characteristic>
+<persona_characteristic persona="David" behavioural_variable="Environment_Narrative" modal_qualifier="Likely" >
+  <definition>Deranged personality</definition>
+  <grounds type="document" reference="use fire weapons to break the law" />
+  <grounds type="document" reference="raised up in disciplinary extremes" />
+  <grounds type="document" reference="Bewilder personality" />
+</persona_characteristic>
+<persona_characteristic persona="David" behavioural_variable="Environment_Narrative" modal_qualifier="Likely" >
+  <definition>Careless of his own action's consequences</definition>
+  <grounds type="document" reference="Guilty of multiple, serious felonies" />
+  <grounds type="document" reference="use fire weapons to break the law" />
+</persona_characteristic>
+<persona_characteristic persona="David" behavioural_variable="Motivations" modal_qualifier="Likely" >
+  <definition>Money greedy</definition>
+  <grounds type="document" reference="in search for easy money" />
+</persona_characteristic>
+<persona_characteristic persona="David" behavioural_variable="Skills" modal_qualifier="Presumably" >
+  <definition>Knowledge of basic exploits</definition>
+  <grounds type="document" reference="Access to someone elses cellular phone" />
+</persona_characteristic>
+</usability>

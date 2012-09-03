@@ -1,0 +1,40 @@
+h1. WOS-UC-TA4-001_1: Subscribe and Publish Events (alternative)
+
+Author: Anders Isberg
+Review: André Paul
+
+Actors: Application
+
+h2. Description
+
+In addition to application based publishing of events webinos itself is able to publish a set of system events like, for example, system was booted, WiFi connection becomes available, low battery level, after a certain interval, at a given timer or others. A full list of events should be defined in the related requirement and specification documents.
+    
+
+h2. Preconditions
+
+Webinos is running on at least one device and an application that wants to be informed about webinos events is currently running.
+      
+
+h2. Flow
+
+# Application subscribes to specific events that are published by the webinos runtime.
+# webinos detects that conditions for a specific webinos event are met (e.g., WiFi connectivity, low battery level or other pre defined and specified webinos system events).
+# webinos creates an event that describes the occurred conditions.
+# webinos publishes the event.
+# webinos checks which applications have been subscribed to the event in question.
+# The event is distributed to all subscribing applications on the same or other devices, including the Application.
+
+h2. Postconditions
+
+Application has received the published information.
+
+h2. Use Case Map
+
+!Communication_Use_Case_Maps-Map167-Publish_and_Subscribe_of_webinos_events__alternate_.png!
+
+h2. Related artifacts
+
+| *Scenarios* | |
+| *Use Cases* | |
+| *Requirements* | |
+

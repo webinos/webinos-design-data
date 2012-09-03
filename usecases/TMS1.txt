@@ -1,0 +1,40 @@
+h1. WOS-UC-TA1-007: Linking device to a user account
+
+Author: Simon Isenberg, Andre Paul
+
+Actors: User
+
+h2. Description
+
+The user of a device links a device to his personal zone in order to facilitate remote management of the device (data + policy synchronization, revocation, ...), make its services available in the personal zone and enable installing applications remotely.
+
+
+h2. Preconditions
+
+User has already running a personal zone.  The device is uniquely identifiable within the personal zone.  The user's device and webinos runtime is already running.
+
+
+h2. Flow
+
+
+# The user selects the function to add his device to his personal zone.
+# The user enters addressing information for his device.
+# webinos' device runtime requests the addition of the device to the user's personal zone.
+# webinos displays the details of the new device and verification information for secure pairing.
+# The user verifies the pairing.
+# webinos adds the new device to the list of user devices available within the user's personal zone.
+
+h2. Postconditions
+
+Device is now a member of the user's personal zone, and services provided by the device can be used by locally or remotely from authorised webinos applications.
+
+h2. Use Case Map
+
+!Virtual_Device-Map2-Linking_device_to_a_user_account.png!
+
+h2. Related artifacts
+
+| *Scenarios* | |
+| *Use Cases* | |
+| *Requirements* | |
+

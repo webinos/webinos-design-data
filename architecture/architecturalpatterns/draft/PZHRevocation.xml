@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<!DOCTYPE component_view PUBLIC "-//CAIRIS//DTD COMPONENT 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/component_view.dtd">
+
+<!-- 
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+
+
+<architectural_pattern name="PZH Revocation">
+<synopsis>Model illustrating how to revoke the PZH certificate</synopsis>
+
+<access_right name="trusted" value="5">
+  <description>None</description>
+  <rationale>None</rationale>
+</access_right>
+<access_right name="untrusted" value="1">
+  <description>None</description>
+  <rationale>None</rationale>
+</access_right>
+
+<privilege name="privileged" value="10">
+  <description>None</description>
+  <rationale>None</rationale>
+</privilege>
+<privilege name="normal" value="1">
+  <description>None</description>
+  <rationale>None</rationale>
+</privilege>
+
+<protocol name="TLS" value="10">
+  <description>None</description>
+  <rationale>None</rationale>
+</protocol>
+<protocol name="RPC" value="10">
+  <description>None</description>
+  <rationale>None</rationale>
+</protocol>
+<protocol name="None" value="1">
+  <description>None</description>
+  <rationale>None</rationale>
+</protocol>
+
+<surface_type name="JSON" value="10">
+  <description>None</description>
+  <rationale>None</rationale>
+</surface_type>
+
+<asset name="JSON Object" short_code="JSON_OBJT" type="Information" surface_type="JSON" access_right="authenticated">
+  <description>JSON Object</description>
+  <significance>Encapsulates data sent between components within the same node process</significance>
+</asset>
+<asset name="PZH Revocation Request" short_code="PZH_REV_REQ" type="Information" surface_type="JSON" access_right="trusted">
+  <description>Request for PZH certificate revocation</description>
+  <significance>Request for PZH certificate revocation</significance>
+</asset>
+
+<component name="Certificate Manager">
+	<description>Generates certificates for PZPs before device enrolement.</description>
+	<interface name="addToCRL" type="provided" access_right="trusted" privilege="normal" />
+</component>
+
+<component name="PZH Provider">
+	<description>PZH Provider</description>
+	<interface name="addToCRL" type="required" access_right="trusted" privilege="normal" />
+	<interface name="revokePzh" type="provided" access_right="trusted" privilege="normal" />
+</component>
+
+<component name="PZH Web Server">
+	<description>PZH Web Server</description>
+	<interface name="revokePzh" type="required" access_right="trusted" privilege="normal" />
+</component>
+
+<connector name="addToCRL" from_component="PZH Provider" from_role="" from_interface="addToCRL" to_component="Certificate Manager" to_interface="addToCRL" to_role="" protocol="RPC" access_right="trusted" asset_name="JSON Object"/>
+<connector name="revoke" from_component="PZH Web Server" from_role="" from_interface="revokePzh" to_component="PZH Provider" to_interface="revokePzh" to_role="" protocol="TLS" access_right="trusted" asset_name="PZH Revocation Request"/>
+</architectural_pattern>

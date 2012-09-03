@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<!DOCTYPE attack_pattern PUBLIC "-//CAIRIS//DTD ATTACKPATTERN 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/attack_pattern.dtd">
+
+<!-- 
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+
+
+<attack_pattern name="Exploiting transitive permissions" likelihood="Frequent" severity="Marginal"> 
+ 
+  <obstacle name="Unauthorised API access by application" category="Vulnerability">
+    <definition>A webinos application is able to access an API despite restrictions imposed by the policy system through calling another, trusted application</definition>
+  </obstacle>       
+  
+  <obstacle name="Malicious App misuses communication interface" category="Vulnerability">
+    <definition>A malicious application is able to communicate arbitrarily with a trusted application</definition>
+  </obstacle>       
+  
+  <obstacle name="Malicious App installed" category="Vulnerability">
+    <definition>A malicious application is installed with limited privileges</definition>
+    <responsibility name="User" />    
+  </obstacle>       
+  
+  <obstacle name="Installed App exposes communication interface" category="Vulnerability">
+    <definition>A trusted app exposes communication interface to other applications</definition>
+    <responsibility name="Developer of webinos Apps" />
+    <probability value="0.5">
+      <rationale>It is likely that suitably complex applications will be extensible and accessible by others</rationale>
+    </probability>  
+  </obstacle>       
+
+  <obstacle name="Installed App given API permissions" category="Vulnerability">
+    <definition>A trusted app is installed and given permission to access several APIs with access to personal data</definition>
+    <responsibility name="User" />
+    <probability value="0.7">
+      <rationale>Users are likely to authorise trusted applications to access APIs</rationale>
+    </probability>  
+
+  </obstacle>         
+                  
+  <obstacle name="Installed App vulnerable to content injection" category="Vulnerability">
+    <definition>The trusted application is part hosted and vulnerable to a content injection attack, allowing another site to abuse the permissions of that site</definition>
+    <concern name="Application Data" />
+    <responsibility name="Developer of webinos Apps" />
+    <probability value="0.05">
+      <rationale>Content injection attacks are common, but this requires the app to be hosted AND for two-way communication to be possible, which is less likely</rationale>
+    </probability>  
+  </obstacle>         
+                  
+  <obstacle name="Installed App allows unrestricted XHR" category="Vulnerability">
+    <definition>The trusted application is part hosted and allows arbitrary XHR from other origins</definition>
+    <concern name="XML HTTP Request" />
+    <responsibility name="Developer of webinos Apps" />  
+  </obstacle>         
+  
+  <obstacle name="Installed App allows unrestricted postMessage" category="Vulnerability">
+    <definition>The trusted application is part hosted and allows arbitrary postMessages from other origins</definition>
+    <concern name="WebSocket Server" />
+    <responsibility name="Developer of webinos Apps" />    
+  </obstacle>  
+  
+  <obstacle name="Installed App uses unauthenticated webinos event messages" category="Vulnerability">
+    <definition>The trusted application will receive and process event messages from other apps without verifying the authenticity of the other applications</definition>
+    <concern name="Message Handler" />
+    <responsibility name="Developer of webinos Apps" />
+  </obstacle>           
+ 
+ 
+  <intent>Frankie wants to spy on people through a web application, as he thinks it might be fun and might be able to catch people in embarassing situations</intent> 
+  
+  <motivation goal="confidentiality" value="Medium"> 
+    <description>Frankie can access personal data normally protected by webinos policies</description>
+  </motivation>
+  <applicability environment="Complete" />
+  <structure attack="Data Interception Attacks" attack_obstacle="Installed App exposes communication interface" exploit="Improper Preservation of Permissions" exploit_obstacle="Installed App given API permissions" /> 
+  <participant name="Frankie">
+    <motive name="Thrill-seeking" />
+    <capability name="Software" value="Medium" />
+    <capability name="Knowledge/Methods" value="Medium" />
+  </participant>
+  <collaboration>
+    <target name="Personal Data" /> 
+    <exploit name="Device API" />
+  </collaboration>
+  <consequences>A user could reveal or lose valuable or personal data.  They could be blackmailed or extorted, or be publically embarassed by unexpected data sharing.  </consequences>
+
+  <implementation>
+    <description>Frankie creates an application which appears to be legitimate and only requests minimal permissions.  Even if untrusted, many users are likely to install it and trust the webinos security framework to protect it once it has been uploaded to an app store.  However, the application makes use of an unprotected communication interface with another application (which has access to many APIs) to read user data.  Frankie makes sure that his app uploads this data to is servers...</description>
+    
+    <obstacle_association obstacle_name="Unauthorised API access by application" ref_type="and" subobstacle_name="Malicious App misuses communication interface" >
+      <rationale></rationale>
+    </obstacle_association>  
+
+    <obstacle_association obstacle_name="Unauthorised API access by application" ref_type="and" subobstacle_name="Installed App exposes communication interface" >
+      <rationale></rationale>
+    </obstacle_association>  
+    
+    <obstacle_association obstacle_name="Unauthorised API access by application" ref_type="and" subobstacle_name="Installed App given API permissions" >
+      <rationale></rationale>
+    </obstacle_association>  
+        
+    <obstacle_association obstacle_name="Installed App exposes communication interface" ref_type="or" subobstacle_name="Installed App vulnerable to content injection" >
+      <rationale></rationale>
+    </obstacle_association>      
+    
+    <obstacle_association obstacle_name="Installed App exposes communication interface" ref_type="or" subobstacle_name="Installed App allows unrestricted XHR" >
+      <rationale></rationale>
+    </obstacle_association>          
+
+    <obstacle_association obstacle_name="Installed App exposes communication interface" ref_type="or" subobstacle_name="Installed App allows unrestricted postMessage" >
+      <rationale></rationale>
+    </obstacle_association>      
+    
+    <obstacle_association obstacle_name="Installed App exposes communication interface" ref_type="or" subobstacle_name="Installed App uses unauthenticated webinos event messages" >
+      <rationale></rationale>
+    </obstacle_association>                        
+    
+  </implementation>
+  <known_uses>None</known_uses>
+  <related_patterns>None</related_patterns>
+</attack_pattern>

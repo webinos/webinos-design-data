@@ -1,0 +1,48 @@
+h1. S-PS1: Usable Privacy Controls for webinos
+
+Author: Ajit Jaokar, John Lyle, Shamal Faily, Ivan Flechais, Hans Myrhaug, Ayse Goker
+
+h2. Overview 
+
+A chance alert leads to Gloria updating her webinos privacy preferences.
+
+h2. Description
+
+
+Gloria has a webinos-compatible mobile phone and car, and owns several online identities; she is particular keen on keeping her work and personal life separate. When using her mobile phone for work she uses her LinkedIn identity, and during the weekends she moves to a Facebook-provided identity.  Outside work, she enjoys shopping and, on occasion, hearing about promotions and deals at her favorite shops.  For this reason, she has configured webinos to accept nearby requests from sensors and networks to inform her of relevant special offers.
+
+Gloria visits a nearby restaurant, and is alerted on her phone that the restaurant can take any information about her allergies and tailor menus specifically for her.  After a few moments thought, Gloria thought this might be useful, so she agrees to share her allergy information. However, she also specifies that this information should not be shared with any other applications.  On her return home, Gloria gives more thought about how the restaurants was able to alert her about allergy-specific menus.  "Sometimes", Gloria thought, "I might want a little more privacy because I'm visiting somewhere more risqué or shopping for a surprise present."  As she nows feels a little uncomfortable about some of her private information becoming publicly available, she decides to edit her webinos privacy preferences.  In particular, she restricts the applications which might have access to her name, online identity, current location and device information.  These revised preferences won't keep track of what she is doing or where she is going, and will keep her devices hidden from nearby networks. She can switch to this policy very easily, and does so whenever she feels she would like greater “nonobservability”.
+
+
+h2. Issues
+
+* People have many electronic identities which they would like to keep separate, but current systems are bad at providing this isolation.
+* Users do want to share data and receive personalized services. However, they need the tools to control what services are allowed to do and what data they disclose.
+* Policy and privacy decisions change over time. What was once unacceptable may change, or a new application feature might persuade someone to alter their policy decisions. However, existing applications often force the decision upfront and do not make it easy for these changes to happen.
+* Privacy violations can affect the trust that users have in a system or infrastructure.
+* The protection of user privacy will become more important in a world dominated by sensor networks. Governments have an obligation to protect citizens and EU policies have been forward thinking in this respect. Software infrastructures should provide the necessary tools to let users make sensible decisions about their privacy.
+* Privacy policies change according to domain and should be context enabled. For example -- home, venue (e.g. the café), office, street and city have different (and in some cases overlapping) privacy frameworks. In addition, specific applications will have their own privacy policies, for example in smart grids and health care.
+* Policy management, no matter how well designed, can be time consuming and difficult for even technically-­skilled end users.
+
+h2. Benefits
+
+* Users are given both fine-­-grained control as well as intuitive simple control to manage their privacy and visibility.
+* webinos can scale to future technologies such as sensor networks, smart grid and healthcare scenarios by managing the changing privacy and security issues.
+* Users can share data with trustworthy services and applications with more confidence when policies are enforced.
+* webinos can enable advertisers to tailor adverts to the right customer and offer discounts on products they have a genuine interest in. This functionality is balanced against the need for users to maintain the confidentiality of their private information and not share too much about themselves.
+
+h2. Usability breakdown 
+
+| Persona |  Gloria |
+| Duration | Hours or longer |
+| Frequency | Monthly or less |
+| Demands | Low |
+| Goal Conflict | Low |
+
+h2. Required Use Cases
+
+* DA4
+* CAP1
+* PS7
+* PS9
+

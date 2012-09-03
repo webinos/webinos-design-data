@@ -1,0 +1,252 @@
+<?xml version="1.0"?>
+<!DOCTYPE usability PUBLIC "-//CAIRIS//DTD USABILITY 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/usability.dtd">
+
+
+<usability>
+<persona name="Jimmy" type="Primary" assumption_persona="TRUE" image="/home/irisuser/webinos/wp2/personas/jimmy.jpg" >
+  <activities>Jimmy's life is software development and Internet services. He is a self-employed professional software developer for mobile applications but he also spends his leisure time on writing plug-ins for his home equipment.
+
+Jimmy is a passionate and experienced professional software developer. His focus is on mobile applications and Web applications. His experience covers the iPhone, Android and further technologies. He writes new applications and ports them to different platforms. He does software development for quite some years. Apart from that, he is a passionate and successful blogger.</activities>
+  <attitudes>When developing software, Jimmy prefers open source. For him it is important to control what is going on in the software he uses. He chooses his tool chain and makes architectural decisions for his software accordingly. He keeps all the source code he once wrote and reuses fragments of it in other projects whenever it makes sense. For him, his source code is his own treasury of valuables he has created in his life. He always wants to have access to it and reuse whenever useful. He has no notion of braking the law by this behaviour. He just wants to implement good and working applications without reimplementing things he already implemented.</attitudes>
+  <aptitudes>Jimmy follows a pragmatic hands-on design and implementation approach. He is much more into trying out things rather than spending time on theory. As he is interested in new technologies and new market opportunities he always stays up-to-date in his field. Jimmy enjoys experimenting with new technology and he adapts quickly. He learns best by just trying out things. Apart from that, he knows how to make money from the applications he writes, as he sells some mobile applications on an application store.</aptitudes>
+  <motivations>Jimmy is font of software-controlled gadgets which interact with other devices on his home network. He makes use of his professional knowledge to implement plug-ins and extensions for his home equipment. This allows him to let all the devices do what he needs.</motivations>
+  <skills>Jimmy implements low-level functional details. Since he has deep knowledge on how things work, he can reverse-engineer software and take special features of target devices into account.</skills>
+  <persona_environment name="Identity" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <narrative>Jimmy is experienced in software security to some extent. He configures his home equipment to be accessible from the Internet, but it is protected by access control. On the other hand, he does not like to be limited by access control while using his computer and while implementing software.</narrative>
+  </persona_environment>
+  <persona_environment name="Discovery and Addressing" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <narrative>Jimmy is experienced in software security to some extent. He configures his home equipment to be accessible from the Internet, but it is protected by access control. On the other hand, he does not like to be limited by access control while using his computer and while implementing software.</narrative>
+  </persona_environment>
+  <persona_environment name="Remote Notifications and Messaging" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <narrative>Jimmy is experienced in software security to some extent. He configures his home equipment to be accessible from the Internet, but it is protected by access control. On the other hand, he does not like to be limited by access control while using his computer and while implementing software.</narrative>
+  </persona_environment>
+  <persona_environment name="Policy and Security" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <narrative>Jimmy is experienced in software security to some extent. He configures his home equipment to be accessible from the Internet, but it is protected by access control. On the other hand, he does not like to be limited by access control while using his computer and while implementing software.</narrative>
+  </persona_environment>
+  <persona_environment name="Negotiation and Compatibility" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <narrative>Jimmy is experienced in software security to some extent. He configures his home equipment to be accessible from the Internet, but it is protected by access control. On the other hand, he does not like to be limited by access control while using his computer and while implementing software.</narrative>
+  </persona_environment>
+  <persona_environment name="Lifecycle" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <narrative>Jimmy is experienced in software security to some extent. He configures his home equipment to be accessible from the Internet, but it is protected by access control. On the other hand, he does not like to be limited by access control while using his computer and while implementing software.</narrative>
+  </persona_environment>
+  <persona_environment name="Device and Service Functional Capability" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <narrative>Jimmy is experienced in software security to some extent. He configures his home equipment to be accessible from the Internet, but it is protected by access control. On the other hand, he does not like to be limited by access control while using his computer and while implementing software.</narrative>
+  </persona_environment>
+  <persona_environment name="Transfer and Management of State" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <narrative>Jimmy is experienced in software security to some extent. He configures his home equipment to be accessible from the Internet, but it is protected by access control. On the other hand, he does not like to be limited by access control while using his computer and while implementing software.</narrative>
+  </persona_environment>
+  <persona_environment name="Complete" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <narrative>Jimmy is experienced in software security to some extent. He configures his home equipment to be accessible from the Internet, but it is protected by access control. On the other hand, he does not like to be limited by access control while using his computer and while implementing software.</narrative>
+  </persona_environment>
+
+</persona>
+<external_document name="Creating Applications for Webinos User Story" version="0.9" date="30 Nov 2010" authors="Victor Klos" >
+  <description>Source: http://bscw.fokus.fraunhofer.de/bscw/bscw.cgi/d679494/101130_WP21_Top_Stories.doc</description>
+</external_document>
+<document_reference name="A developer who loves developing mobile applications" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>Jimmy loves to develop programs. He has created several good-selling apps for the iPhone. [...] His expertise is creating well working mobile apps in the category of life hacking.</excerpt>
+</document_reference>
+<document_reference name="Professional software developer" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>As a professional and agile developer Jimmy likes his development, test and deployment environments clearly separated while highly manageable.</excerpt>
+</document_reference>
+<document_reference name="Prefers the agile programming style" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>As a professional and agile developer Jimmy likes his development, test and deployment environments clearly separated while highly manageable.</excerpt>
+</document_reference>
+<document_reference name="Loves software development" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>Jimmy loves to develop programs.</excerpt>
+</document_reference>
+<document_reference name="Professional iPhone developer" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>He has created several good-selling apps for the iPhone.</excerpt>
+</document_reference>
+<document_reference name="ex-gonzo programmer" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>... reminded him of the old days: short [sic] nights with pizza and lots of cola</excerpt>
+</document_reference>
+<document_reference name="A developer who is interested in writing applications which run on the TV, but he did not do yet" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>Jimmy would very much like to create apps that use the television, but he is too unfamiliar with UPnP, DLNA and what else.</excerpt>
+</document_reference>
+<document_reference name="has iPhone SDK expertise" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>...good selling apps for the iPhone</excerpt>
+</document_reference>
+<document_reference name="acquainted with application porting" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>He soon gets familiarised..... and ports his latest iPhone app.....\nThe mobile app needs to be written...... this is okay because the website ... and the mobile app will have more in common and are thus easily maintainable.</excerpt>
+</document_reference>
+<document_reference name="Experienced in Web App development" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>The mobile app however needs to be rewritten to HTML + CSS + Javascript.  This is okay, because.......</excerpt>
+</document_reference>
+<document_reference name="has software security expertise" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>His NAS is securely reachable from the internet using public/private keys.</excerpt>
+</document_reference>
+<document_reference name="network app development expertise" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>His NAS is securely reachable from the internet...... he runs his own mail server for all his domain</excerpt>
+</document_reference>
+<document_reference name="An active and successful blogger" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>Also, his blog is well visited and he makes quite some cash with the corresponding add income.</excerpt>
+</document_reference>
+<document_reference name="Habitual blogger" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>..his blog is well visited</excerpt>
+</document_reference>
+<document_reference name="Respected blogger" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>...his blog is well visited....</excerpt>
+</document_reference>
+<document_reference name="A developer who prefers open source over closed source" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>He has heard of webinos and decides to take it for a spin. Luckily, it is open source as he is getting more and more frustrated with the closedness of the iStore.</excerpt>
+</document_reference>
+<document_reference name="Leverages open source" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>... Luckily, it is open source....</excerpt>
+</document_reference>
+<document_reference name="Prefers to decide on his own on which level of abstraction he wants to design his applications" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>He has an allergy for notions like ‘the one platform that rules them all’ or ‘the mother of all platforms’. He likes to be able to make his own choice which abstraction level to design his applications on.</excerpt>
+</document_reference>
+<document_reference name="Likes to control the services he is using" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>Jimmy likes to control his own stuff. His NAS is securely reachable from the internet using public/private keys and he runs his own mail server for all his domains.</excerpt>
+</document_reference>
+<document_reference name="expects Javascript device interfaces" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>... but also show them on the endusers\' TV.  All that for just a couple of JavaScript lines.</excerpt>
+</document_reference>
+<document_reference name="keeps a manageable development environment" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>...likes his development, test and deployment environments clearly separated while highly manageable.</excerpt>
+</document_reference>
+<document_reference name="A developer who is a practitioner" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>Time to start experimenting. [...] After browsing a while Jimmy dives into the examples. They run on the built-in web server that allows in-spot editing. Experimenting like it is supposed to be!\n\nHis favourite learning style is just to start experimenting.</excerpt>
+</document_reference>
+<document_reference name="hacks around existing paradigms" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>... new paradigms he often finds hard to comprehend.  His favoured learning style is just to start experimenting.</excerpt>
+</document_reference>
+<document_reference name="pragmatic designer" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>He has an allergy for notions like the only platform that rules them all, or the mother of all platforms...</excerpt>
+</document_reference>
+<document_reference name="Likes to understand the details of the technologies which he uses" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>He finds out it also exists as a plug-in for his NAS (Networked Attached Storage) which seems handy because he can now study the full inner workings as he has complete access to processes, logging etc.</excerpt>
+</document_reference>
+<document_reference name="Interested in learning new technologies" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>Jimmy wants to learn new technology but is often overwhelmed before he begins.</excerpt>
+</document_reference>
+<document_reference name="Fast learner" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>Jimmy learns quickly.</excerpt>
+</document_reference>
+<document_reference name="Up-to-date with research developments" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>He has heard of webinos....</excerpt>
+</document_reference>
+<document_reference name="Prepared to experiment" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>He has heard of webinos and decides to take it for a spin</excerpt>
+</document_reference>
+<document_reference name="Adapts to new technology" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>...After only 15 minutes he is running his own development webinos cloud</excerpt>
+</document_reference>
+<document_reference name="Learns through examples" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>.... After browsing a while, Jimmy dives into the examples.</excerpt>
+</document_reference>
+<document_reference name="Learns by hacking running systems" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>.... that allows in-spot editing.  Experimenting like it is supposed to be!</excerpt>
+</document_reference>
+<document_reference name="an affiliate marketeer" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>...he makes quite some cash with the corresponding add[sic] income</excerpt>
+</document_reference>
+<document_reference name="Looking for new markets" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>...he is getting more and more frustrated with the closedness of the iStore [sic]</excerpt>
+</document_reference>
+<document_reference name="Looking to target new devices" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>...because webinos bridges to the DLNA home network, his app cannot only suggest beautiful pictures but also show them on endusers\' TV</excerpt>
+</document_reference>
+<document_reference name="Interested in using device plugins" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>..he finds out it also exists as a plug-in for his NAS (Networked Attached Storage) which seems handy....</excerpt>
+</document_reference>
+<document_reference name="owns multiple web domains" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>...he runs his own mail server for all his domains.</excerpt>
+</document_reference>
+<document_reference name="Exploits device features in apps" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>The front-end is the aforementioned iPhone app with its excellent navigational interface.</excerpt>
+</document_reference>
+<document_reference name="reverse engineers plugins" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>exists as a plugin for his NAS....... which seems handy because he can now study the full inner workings as he has complete access to processes, logging, etc</excerpt>
+</document_reference>
+<document_reference name="writes federated apps" contributor="Sven Lachmund" document="Creating Applications for Webinos User Story" >
+  <excerpt>.... it only takes a few simple steps to connect his instances to all other instances in the world.</excerpt>
+</document_reference>
+<persona_characteristic persona="Jimmy" behavioural_variable="Activities" modal_qualifier="Presumably" >
+  <definition>Passionate and successful blogger</definition>
+  <grounds type="document" reference="An active and successful blogger" />
+  <grounds type="document" reference="Habitual blogger" />
+  <grounds type="document" reference="Respected blogger" />
+</persona_characteristic>
+<persona_characteristic persona="Jimmy" behavioural_variable="Activities" modal_qualifier="Definitely" >
+  <definition>Passionate and experienced professional software developer</definition>
+  <grounds type="document" reference="A developer who loves developing mobile applications" />
+  <grounds type="document" reference="Professional software developer" />
+  <grounds type="document" reference="Prefers the agile programming style" />
+  <grounds type="document" reference="Loves software development" />
+  <grounds type="document" reference="Professional iPhone developer" />
+  <grounds type="document" reference="ex-gonzo programmer" />
+</persona_characteristic>
+<persona_characteristic persona="Jimmy" behavioural_variable="Activities" modal_qualifier="Definitely" >
+  <definition>Focused on mobile and Web development</definition>
+  <grounds type="document" reference="has iPhone SDK expertise" />
+  <grounds type="document" reference="acquainted with application porting" />
+  <grounds type="document" reference="Experienced in Web App development" />
+  <grounds type="document" reference="has software security expertise" />
+  <grounds type="document" reference="network app development expertise" />
+  <rebuttal type="document" reference="A developer who is interested in writing applications which run on the TV, but he did not do yet" />
+</persona_characteristic>
+<persona_characteristic persona="Jimmy" behavioural_variable="Aptitudes" modal_qualifier="Definitely" >
+  <definition>Knows how to do business with his applications</definition>
+  <grounds type="document" reference="an affiliate marketeer" />
+  <grounds type="document" reference="Looking for new markets" />
+  <grounds type="document" reference="Looking to target new devices" />
+</persona_characteristic>
+<persona_characteristic persona="Jimmy" behavioural_variable="Aptitudes" modal_qualifier="Definitely" >
+  <definition>Follows a pragmatic hands-on design and implementation approach</definition>
+  <grounds type="document" reference="A developer who is a practitioner" />
+  <grounds type="document" reference="hacks around existing paradigms" />
+  <grounds type="document" reference="pragmatic designer" />
+</persona_characteristic>
+<persona_characteristic persona="Jimmy" behavioural_variable="Aptitudes" modal_qualifier="Presumably" >
+  <definition>Is self-employed</definition>
+  <grounds type="document" reference="an affiliate marketeer" />
+  <grounds type="document" reference="Looking for new markets" />
+  <grounds type="document" reference="Looking to target new devices" />
+</persona_characteristic>
+<persona_characteristic persona="Jimmy" behavioural_variable="Aptitudes" modal_qualifier="Definitely" >
+  <definition>Stays up-to-date on various technologies</definition>
+  <grounds type="document" reference="Likes to understand the details of the technologies which he uses" />
+  <grounds type="document" reference="Interested in learning new technologies" />
+  <grounds type="document" reference="Fast learner" />
+  <grounds type="document" reference="Up-to-date with research developments" />
+  <grounds type="document" reference="Prepared to experiment" />
+  <grounds type="document" reference="Adapts to new technology" />
+  <grounds type="document" reference="Learns through examples" />
+  <grounds type="document" reference="Learns by hacking running systems" />
+</persona_characteristic>
+<persona_characteristic persona="Jimmy" behavioural_variable="Attitudes" modal_qualifier="Definitely" >
+  <definition>Prefers open source</definition>
+  <grounds type="document" reference="A developer who prefers open source over closed source" />
+  <grounds type="document" reference="Leverages open source" />
+</persona_characteristic>
+<persona_characteristic persona="Jimmy" behavioural_variable="Attitudes" modal_qualifier="Definitely" >
+  <definition>Knows what he wants and chooses tool chain and architectural design accordingly</definition>
+  <grounds type="document" reference="Prefers to decide on his own on which level of abstraction he wants to design his applications" />
+  <grounds type="document" reference="Likes to control the services he is using" />
+  <grounds type="document" reference="expects Javascript device interfaces" />
+  <grounds type="document" reference="keeps a manageable development environment" />
+</persona_characteristic>
+<persona_characteristic persona="Jimmy" behavioural_variable="Motivations" modal_qualifier="Definitely" >
+  <definition>Is fond of gadgets which interact on his home network</definition>
+  <grounds type="document" reference="A developer who is interested in writing applications which run on the TV, but he did not do yet" />
+  <grounds type="document" reference="Interested in using device plugins" />
+  <grounds type="document" reference="owns multiple web domains" />
+</persona_characteristic>
+<persona_characteristic persona="Jimmy" behavioural_variable="Skills" modal_qualifier="Definitely" >
+  <definition>Is comfortable with developing low-level functional details</definition>
+  <grounds type="document" reference="Exploits device features in apps" />
+  <grounds type="document" reference="reverse engineers plugins" />
+  <grounds type="document" reference="writes federated apps" />
+</persona_characteristic>
+</usability>

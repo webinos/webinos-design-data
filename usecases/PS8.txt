@@ -1,0 +1,48 @@
+h1. WOS-UC-TA9-002_2: Interpreting policies and making access control decisions (alternative)
+
+Author: John Lyle
+
+Actors: User,Application 
+
+h2. Description
+
+A freshly installed application wants to share his photos through a shared repository. This task is controlled by webinos policies.
+In this case the policies require an extra condition before allowing this action: requesting User input to confirm that this behaviour is permitted. .  .  The photo-sharing application resumes uploading photos.
+
+
+h2. Preconditions
+
+User has a tablet PC running webinos. User has a photo collection on his tablet PC which he would like to share with other people (Users) who are connected.
+The webinos runtime has a set of policies installed. These are not contradictory or ambiguous, so a decision can always be made based on their content.
+      
+
+h2. Flow
+
+# The User has installed a new photo-sharing application
+# The application automatically tries to upload his photos to a shared repository
+# Accessing photos stored on the webinos device  his tablet pc  results in an access-control request to the webinos runtime.
+# Webinos runtime takes the event (application X accessing File F) and checks against the set of policies (PS) installed that are present in the PZH/PZP. In this case, the set of policies in the PZP is fresh and valid, so the PZP does not need to update it to the PZH to made the correct access control decision.
+# Webinos prompts the User to confirm that access to photos is allowed
+# The User agrees
+# The photo-sharing app resumes uploading photos
+# Other users who are connected can access these photos.
+
+h2. Postconditions
+
+The photos are available for sharing with other online friends, on the base of the webinos policies
+
+h2. Postconditions
+
+
+h2. Use Case Map
+
+!Interpreting_Policies_v2.png!
+
+h2. Related artifacts
+
+| *Scenarios* | |
+| *Use Cases* | |
+| *Requirements* | |
+
+
+      

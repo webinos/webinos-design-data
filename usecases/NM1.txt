@@ -1,0 +1,40 @@
+h1. WOS-UC-TA4-001: Subscribe and Publish Events
+
+Author: Anders Isberg
+Review: André Paul
+
+Actors: Application
+
+h2. Description
+
+Applications can publish application specific information. When the information is published the data is distributed to all authorised applications that are subscribed to the information. The application can decide whether the information is distributed to a specific set of receivers or to all applications that are interested in the specific information type. Thus, information can be also distributed without having prior knowledge about the destinations of the distributed information.
+
+h2. Preconditions
+
+Application A wants to publish information to others is running one at least one device. Application B has subscribed to the information matching the subscription of Application A.
+
+
+h2. Flow
+
+# Application A creates an identifiable event that describes the information that should be published.
+# Application A attaches information about the intended recipients, which everybody that has subscribed to the identifiable event.
+# Application A attaches caching data indicating how long the event should be stored for if recipients cannot be contacted.
+# Application A triggers the publication of the information.
+# webinos checks who has been subscribed to the event in question and attempts to deliver the event irrespective of subscribing application location.
+# webinos detects that Application B is not reachable and caches the event for the specified time frame.
+
+
+h2. Postconditions
+
+All authorised applications that are subscribed to the information and are reachable considering the given caching restrictions have received the published information.
+
+h2. Use Case Map
+
+!Communication_Use_Case_Maps-Map2-Publish_and_Subscribe.png!
+
+h2. Related artifacts
+
+| *Scenarios* | |
+| *Use Cases* | |
+| *Requirements* | |
+

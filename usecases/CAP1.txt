@@ -1,0 +1,48 @@
+h1. WOS-UC-TA1-005: Sensors and Actuators
+
+Author: Andre Paul
+
+Actors: User, Application
+
+h2. Description
+
+The use case describes how to access data from sensors or use actuators which may or may not webinos enabled. Different sensor types are possible, temperature sensor, light switch, proximity sensor and integration of external web services which providing sensor like data are only some examples.
+
+
+h2. Preconditions
+
+The user and its application is allowed to access the sensors and actuators in scope. Sensor or actuator specific security implications are not in scope of the use case. Non webinos enabled sensors or actuators are bound to a PZP which acts as mediator to access the services.
+
+
+h2. Flow
+
+# The User starts an application that needs to have access to certain sensors or actuators. For example temperature, heart rate, light, heater etc.
+# Therefore, the Application asks the webinos runtimes discovery mechanism to get access to certain sensor or actuator types.
+# The webinos runtime forwards the request to the PZP.
+# The PZP executes the query and asks the PZH for known sensor and actuators that matching the requested type.
+# The PZH provides information about available sensor and actuator services back to the PZP.
+# The PZP provides the service information to the application.
+# The application selects a sensor or actuator service to use and binds to the service.
+# The application invokes the sensor or actuator using related sensor or actuator API calls.
+# The PZP processes the invocation requests and forwards the request to the device where the service is located (which may involve forwarding through the PZH).
+# The PZP where the service is bound to receives the invocation request.
+# In case the service is directly available on the same device as the PZP the service is executed and step 15 follows.
+# In case the sensor of actuator is mediated through the PZP the PZP translates the invocation request into sensor or actuator specific commands.
+# The service provides results back to the mediating PZP
+# The PZP translates the results into webinos specific messages.
+# The PZP sends the results of the service invocation back to the requesting application.
+# The application makes use of the provided information.
+
+h2. Postconditions
+
+A sensor or actuator that is not webinos enabled can be accessed and the application can interact with sensors and actuators.
+
+h2. Use Case Map
+
+!Virtual_Device-Map85-Sensors_and_Actuators.png!
+
+h2. Related artifacts
+
+| *Scenarios* | |
+| *Use Cases* | |
+| *Requirements* | |

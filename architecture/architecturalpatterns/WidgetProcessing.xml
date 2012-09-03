@@ -1,0 +1,282 @@
+<?xml version="1.0"?>
+<!DOCTYPE architectural_pattern PUBLIC "-//CAIRIS//DTD ARCHITECTURAL PATTERN 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/architectural_pattern.dtd"> 
+
+<!-- 
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+
+
+<architectural_pattern name="Widget Processing">
+<synopsis>Model illustrating the components associated with widget processing</synopsis>
+
+<access_right name="trusted" value="10">
+  <description>None</description>
+  <rationale>None</rationale>
+</access_right>
+<access_right name="authenticated" value="5">
+  <description>None</description>
+  <rationale>None</rationale>
+</access_right>
+<access_right name="anonymous" value="1">
+  <description>None</description>
+  <rationale>None</rationale>
+</access_right>
+
+<protocol name="JSON-RPC" value="10">
+  <description>None</description>
+  <rationale>None</rationale>
+</protocol>
+<protocol name="RPC" value="10">
+  <description>None</description>
+  <rationale>None</rationale>
+</protocol>
+<protocol name="TLS" value="1">
+  <description>None</description>
+  <rationale>None</rationale>
+</protocol>
+
+<privilege name="privileged" value="10">
+  <description>None</description>
+  <rationale>None</rationale>
+</privilege>
+<privilege name="normal" value="1">
+  <description>None</description>
+  <rationale>None</rationale>
+</privilege>
+
+<surface_type name="JSON" value="10">
+  <description>None</description>
+  <rationale>None</rationale>
+</surface_type>
+<surface_type name="Unconstrained XML" value="5">
+  <description>XML document without a validating DTD or schema</description>
+  <rationale>Should not be left to a client application to validate the document on its own.</rationale>
+</surface_type>
+<surface_type name="Constrained XML" value="1">
+  <description>XML document with a validating DTD or schema</description>
+  <rationale>None</rationale>
+</surface_type>
+<surface_type name="HTML" value="1">
+  <description>HTML document</description>
+  <rationale>May contain malicious embedded code or links</rationale>
+</surface_type>
+<surface_type name="Unconstrained Image" value="1">
+  <description>Image files</description>
+  <rationale>Malformed images might be used a potential attack vector.</rationale>
+</surface_type>
+<surface_type name="Client application" value="10">
+  <description>None</description>
+  <rationale>None</rationale>
+</surface_type>
+<surface_type name="Privileged application" value="1">
+  <description>None</description>
+  <rationale>None</rationale>
+</surface_type>
+
+
+<asset name="Widget Processor" short_code="WPROC" type="Software" surface_type="Privileged application" access_right="trusted">
+  <description>Widget Processor</description>
+  <significance>Responsible for implementing the widget installation logic</significance>
+</asset>
+<asset name="Widget Validator" short_code="WVAL" type="Software" surface_type="Privileged application" access_right="trusted">
+  <description>Widget Validator</description>
+  <significance>Responsible for validating the digital signature of the packages</significance>
+</asset>
+<asset name="Configuration Processor" short_code="CPROC" type="Software" surface_type="Privileged application" access_right="trusted">
+  <description>Configuration Processor</description>
+  <significance>Encapsulates the algorithm responsible for checking the contents of the widget configuration file</significance>
+</asset>
+<asset name="Widget Persistence" short_code="CPROC" type="Software" surface_type="Privileged application" access_right="trusted">
+  <description>Widget Persistence implementation</description>
+  <significance>Responsible for physically deploying the contents of the widget package and creating the requisite directory structure.</significance>
+</asset>
+<asset name="Widget Signature" short_code="SIG" type="Information" surface_type="Constrained XML" access_right="trusted">
+  <description>Widget Digital Signature</description>
+  <significance>Verifies the data integrity of the files within the widget package and confirms the signing key.</significance>
+  <security_property property="availability" value="Medium">
+    <rationale>Needs to exist to allow developer authentication and validation of code integrity.</rationale>
+  </security_property>
+</asset>
+<asset name="Configuration Document" short_code="WCONFIG" type="Information" surface_type="Unconstrained XML" access_right="authenticated">
+  <description>The XML vocabulary that declares metadata and configuration parameters for a widget.</description>
+  <significance>Characterises the provenance of an application</significance>
+  <security_property property="integrity" value="Medium">
+    <rationale>This asset defines permissions about what the application will do</rationale>
+  </security_property>
+  <security_property property="accountability" value="Medium">
+    <rationale>This asset assigns responsibility to the application.</rationale>
+  </security_property>
+</asset>
+<asset name="WARP File" short_code="WARP" type="Information" surface_type="Unconstrained XML" access_right="trusted">
+  <description>Extension to the configuration document controlling network access from within a widget.</description>
+  <significance>Stipulate origins that widget can access, and defines author expectations for resources needed by application.</significance>
+</asset>
+<asset name="Start File" short_code="START" type="Information" surface_type="HTML" access_right="authenticated">
+  <description>A file from the widget package to be loaded by the user agent when it instantiates the widget.</description>
+  <significance>Loaded each time an application starts.</significance>
+  <security_property property="integrity" value="Medium">
+    <rationale>Corrupting this could divert users to a malicious location.</rationale>
+  </security_property>
+</asset>
+<asset name="Icon" short_code="ICON" type="Information" surface_type="Unconstrained Image" access_right="authenticated">
+  <description>File used to represent the widget in various application contexts; this helps users of visual browsers recognise the widget at a glance.</description>
+  <significance>Loaded each time an application starts.</significance>
+</asset>
+<asset name="File" short_code="FILE" type="Information" surface_type="Unconstrained Image" access_right="anonymous">
+  <description>A decompressed physical representation of a file entry.</description>
+  <significance>None</significance>
+</asset>
+<asset name="Widget Package" short_code="WGT" type="Software" surface_type="Client application" access_right="authenticated">
+  <description>Client side application packaged for distribution.</description>
+  <significance>Characterises webinos applications.</significance>
+</asset>
+<asset name="ZIP Archive" short_code="ZIP" type="Information" surface_type="Client application" access_right="anonymous">
+  <description>Archive conforming to PKWare ZIP specification.</description>
+  <significance>Archives might contain things other than webinos applications.</significance>
+</asset>
+
+<goal name="Packaging Format">
+  <definition>A conforming specification must recommend a packaging format that is royalty free, open, and widely implemented across market-leading widget user agents and compatible with mobile devices.  In addition, a conforming specification must specify exactly which aspects of the packaging format are to be supported by conforming widget user agents.</definition>
+  <rationale>To specify an interoperable and pervasive packaging format that is relatively easy for vendors to implement, and easy for authors to use/access on any platform.</rationale>
+  <concern name="Widget Package" />
+</goal>
+<goal name="Media Type">
+  <definition>A conforming specification MUST recommend that a conforming widget package be sent over HTTP with a formally registered media type that is specific to the Widgets 1.0 Family of specifications. The Working Group MUST formally register the media type with the Internet Assigned Numbers Authority (IANA). A conforming specification MUST specify how a widget user agent will process a widget package that was served with an unsupported media type or when the media type is unspecified.</definition>
+  <rationale>To provide a formal means for an author to denote that a widget package conforms to a W3C endorsed specification when a widget package is served over HTTP. In addition, the media type could potentially be used in conjunction with an auto-discovery mechanism, such as Atom Auto-Discovery, to facilitate deployment of a widget package.</rationale>
+  <concern name="Widget Package" />
+  <responsibility name="Developer of webinos Apps" />
+</goal>
+<goal name="File Extension">
+  <definition>A conforming specification MUST specify a file extension that authors MAY assign to widget packages in contexts that rely on file extensions to indicate the content type, such is the case on many popular file systems.</definition>
+  <rationale>When a media type is not present, as is often the case when a widget is instantiated locally from an end-user's storage device, the operating system will sometimes use the file extension to associate the widget package with the appropriate widget user agent. However, when the widget is distributed over HTTP and a media type is present, a file extension will usually not be required. However, in some cases, a Web server may rely on a file extension to correctly set a widget package's media type in the HTTP headers. In addition, a user agent that is aware of the content type of widgets may add the appropriate file extension automatically or include it as the default if the user is prompted for the file name during a saving process.</rationale>
+  <concern name="ZIP Archive" />
+</goal>
+<goal name="Internal Abstract Structure">
+  <definition>A conforming specification MUST recommend a packaging format that supports structuring resources into collections such as files and directories (understood in this document in a broader sense than in some popular file systems, namely as forms of generic logical containers). In addition, the packaging format SHOULD allow authors to add and remove resources of a widget package without needing to recreate the widget package.</definition>
+  <rationale>To provide authors with a format that is easy to use in a development process.</rationale>
+  <concern name="Configuration Processor" />
+</goal>
+<goal name="Addressing Scheme">
+  <definition>A conforming specification MUST recommend a hierarchical addressing scheme that can be used to address the individual resources within a widget package from within a configuration document. The hierarchical addressing scheme MUST be capable of expressing both absolute and relative relationships between a resource and the widget package. In addition, the hierarchical addressing scheme MUST be interoperable with resources that might also need to address other resources within the widget package (e.g., HTML documents, CSS documents, JavaScript documents, etc.). The hierarchical addressing scheme SHOULD be one that Web authors would feel comfortable using or to which they are already accustomed.</definition>
+  <rationale>To make it easy for authors to address resources from the configuration document or other relevant resources within the widget package. For example, addressing a custom icon within a widget package from the configuration document. Or, for example, addressing an image within a widget package from within a HTML start file.</rationale>
+  <concern name="Configuration Document" />
+</goal>
+<goal name="Reserved Resource Names">
+  <definition>A conforming specification MUST indicate if any resources (files or directories or similar logical containers) are mandatory or reserved and what specific function they serve in the widget package. A conforming specification SHOULD specify graceful error handling/recovery procedures if those resources are used erroneously or missing.</definition>
+  <rationale>To make it more efficient for widget user agents to locate reserved resources at runtime. For example, the packaging format may require authors to place all resources inside a 'resources' directory located at the root of the widget package.</rationale>
+  <concern name="Configuration Document" />
+</goal>
+<goal name="Multilingual File Names">
+  <definition>A conforming specification MUST recommend a packaging format that allows for non-ASCII characters in file and directory names, allowing authors to create widgets suitable for various cultures and languages, as well as multilingual contexts. The packaging format MUST either provide some means to declare the character encoding or specify what the character encoding is. The UTF-8 character encoding SHOULD be either the default (if multiple encodings are allowed) or sole encoding used.</definition>
+  <rationale>To allow authors to create files and folders using characters beyond the ASCII character repertoire. Since packaged widgets are widely distributed, variation in character encoding between different platforms or configurations may render a widget with non-ASCII resources inoperable or otherwise degrade the user experience unless a character encoding is used.</rationale>
+  <concern name="Widget Package" />
+</goal>
+<goal name="Localization Guidelines">
+  <definition>A conforming specification MUST provide guidelines that explain to authors how collections of resources need to be structured for the purpose of internationalization.</definition>
+  <rationale>To both guide and encourage authors to localize content. For example, the specification could mandate that authors place localized content into a strictly named directory structure that denotes localized content (e.g. 'resources/en/' for all English content, and 'resources/en-AU/' for further localized Australian-English content, and so on).</rationale>
+  <concern name="Configuration Document" />
+</goal>
+<goal name="Automatic Localization">
+  <definition>A conforming specification SHOULD specify a processing model that automatically localizes content when authors follow the localization guidelines.</definition>
+  <rationale>To define an internationalization model, complete with graceful error handling, to reduce the amount of engineering work an author needs to do in order to localize a widget.</rationale>
+  <concern name="Configuration Processor" />
+</goal>
+<goal name="Device Independent Delivery">
+  <definition>A conforming specification MUST recommend a packaging format that is suitable for delivery on many devices, particularly Web-enabled mobile devices.</definition>
+  <rationale>To recommend a packaging format that is interoperable with desktops and for mobile devices, where the widget space is currently growing.</rationale>
+  <concern name="ZIP Archive" />
+</goal>
+<goal name="Data Compression">
+  <definition>A conforming specification MUST recommend a packaging format that supports both uncompressed data and OPTIONAL data compression. A conforming specification SHOULD also recommend at least one royalty-free default compression/decompression algorithm that is compatible with market-leading widget user agents and implementations of the packaging format on mobile devices.</definition>
+  <rationale>A conforming specification MUST recommend a packaging format that supports both uncompressed data and OPTIONAL data compression. A conforming specification SHOULD also recommend at least one royalty-free default compression/decompression algorithm that is compatible with market-leading widget user agents and implementations of the packaging format on mobile devices.</rationale>
+  <concern name="ZIP Archive" />
+</goal>
+<goal name="Derive the Media Type of Resources">
+  <definition>In the case that the packaging format does not support labeling resources with a media type, a conforming specification MUST either specify or recommend a means of deriving the media type of resources for the purposes of rendering. A conforming specification MAY define a means to override how a widget user agent derives the media type of a resource (e.g., treat resources with the file extension .php as text/html), but MUST NOT force a widget user agent to process resources of one media type as that of another type (e.g. treating a jpeg image at text/html).</definition>
+  <rationale>To allow appropriate rendering of resources by the widget user agent. For instance, for the sake of interoperability, all widget user agents should treat resources with a .html file extension as text/html (and not as application/xhtml+xml).</rationale>
+  <concern name="Configuration Document" />
+</goal>
+<goal name="Application signing key verified">
+  <definition>Update procedure shall verify the update signing key matches the original signing key.</definition>
+  <rationale>widgetmanager.js performs the author matching (calling matching code in comparisonresult.js)</rationale>
+</goal>
+<goal name="Verified application installation">
+  <definition>webinos applications shall be verified before installation.</definition>
+  <rationale>widgetprocessor.js performs the signature validation (the called validation code is in widgetvalidator.js)</rationale>
+  <concern name="Widget Validator" />
+  <concern name="Widget Processor" />
+</goal>
+
+<component name="Widget Manager">
+  <description>W3C based Widget Manager</description>
+  <interface name="validatePolicy" type="required" access_right="trusted" privilege="privileged" />
+  <structure head_asset="Widget Processor" head_adornment="Aggregation" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="Widget Validator" />
+  <structure head_asset="Widget Processor" head_adornment="Aggregation" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="Configuration Processor" />
+  <structure head_asset="Widget Processor" head_adornment="Aggregation" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="Widget Persistence" />
+  <structure head_asset="Widget Validator" head_adornment="Association" head_nav="0" head_nry="1" head_role="" tail_role="validate" tail_nry="1" tail_nav="1" tail_adornment="Association" tail_asset="Widget Signature" />
+  <structure head_asset="Configuration Processor" head_adornment="Association" head_nav="0" head_nry="1" head_role="" tail_role="process" tail_nry="1" tail_nav="1" tail_adornment="Association" tail_asset="Configuration Document" />
+  <structure head_asset="Widget Persistence" head_adornment="Association" head_nav="0" head_nry="1" head_role="" tail_role="extract" tail_nry="1" tail_nav="1" tail_adornment="Association" tail_asset="Widget Package" />
+  <structure head_asset="Widget Package" head_adornment="Composition" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="a" tail_nav="0" tail_adornment="Association" tail_asset="Widget Signature" />
+  <structure head_asset="Widget Package" head_adornment="Composition" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="Configuration Document" />
+  <structure head_asset="Widget Package" head_adornment="Composition" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="a" tail_nav="0" tail_adornment="Association" tail_asset="Start File" />
+  <structure head_asset="Widget Package" head_adornment="Composition" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="a" tail_nav="0" tail_adornment="Association" tail_asset="File" />
+  <structure head_asset="Widget Package" head_adornment="Composition" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="a" tail_nav="0" tail_adornment="Association" tail_asset="Icon" />
+  <structure head_asset="Widget Package" head_adornment="Composition" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="a" tail_nav="0" tail_adornment="Association" tail_asset="Widget Package" />
+  <structure head_asset="Configuration Document" head_adornment="Composition" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="WARP File" />
+  <structure head_asset="ZIP Archive" head_adornment="Inheritance" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="Widget Package" />
+  <structure head_asset="Access Request" head_adornment="Inheritance" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="WARP File" />
+  <component_goal name="Packaging Format" />
+  <component_goal name="Media Type" />
+  <component_goal name="File Extension" />
+  <component_goal name="Internal Abstract Structure" />
+  <component_goal name="Reserved Resource Names" />
+  <component_goal name="Addressing Scheme" />
+  <component_goal name="Multilingual File Names" />
+  <component_goal name="Localization Guidelines" />
+  <component_goal name="Automatic Localization" />
+  <component_goal name="Device Independent Delivery" />
+  <component_goal name="Data Compression" />
+  <component_goal name="Derive the Media Type of Resources" />
+  <component_goal name="Application signing key verified" />
+  <component_goal name="Verified application installation" />
+  <component_goal_association goal_name="Device Independent Delivery" ref_type="and" subgoal_name="Packaging Format"/>
+  <component_goal_association goal_name="Packaging Format" ref_type="and" subgoal_name="Data Compression"/>
+  <component_goal_association goal_name="Packaging Format" ref_type="and" subgoal_name="Media Type"/>
+  <component_goal_association goal_name="Packaging Format" ref_type="and" subgoal_name="File Extension"/>
+  <component_goal_association goal_name="Verified application installation" ref_type="and" subgoal_name="Application signing key verified"/>
+  <component_goal_association goal_name="Automatic Localization" ref_type="and" subgoal_name="Localization Guidelines"/>
+  <component_goal_association goal_name="Automatic Localization" ref_type="and" subgoal_name="Multilingual File Names"/>
+  <component_goal_association goal_name="Packaging Format" ref_type="and" subgoal_name="Internal Abstract Structure"/>
+  <component_goal_association goal_name="Internal Abstract Structure" ref_type="and" subgoal_name="Addressing Scheme"/>
+  <component_goal_association goal_name="Internal Abstract Structure" ref_type="and" subgoal_name="Reserved Resource Names"/>
+  <component_goal_association goal_name="Internal Abstract Structure" ref_type="and" subgoal_name="Derive the Media Type of Resources"/>
+</component>
+
+<component name="Policy Manager">
+  <description>XACML based policy manager component.</description>
+  <interface name="enforceRequest" type="provided" access_right="trusted" privilege="normal" />
+</component> 
+
+<!--<component name="">
+  <description></description>
+  <interface name="" type="" access_right="" privilege="" />
+</component> -->
+
+<connector name="validatePolicy" from_component="Widget Manager" from_role="request-validatePolicy" from_interface="validatePolicy" to_component="Policy Manager" to_interface="enforceRequest" to_role="provide-validatePolicy" protocol="RPC" access_right="trusted" asset_name="Configuration Processor"/>
+
+</architectural_pattern>

@@ -1,0 +1,35 @@
+h1. WOS-UC-TA2-005: Authentication
+
+Author: Andre Paul
+
+Actors: User, Application
+
+h2. Description
+
+The user logs in to so he's authorized towards the webinos runtime.
+
+h2. Preconditions
+
+No trust between the webinos runtime and the User. The webinos runtime has knowledge about different trustworthy User identities.
+
+h2. Flow
+
+# At the beginning of a session (e.g., turning on a device), the the webinos runtime presents the user with the option to log in or to use the system anonymously
+# The user logs in to the webinos runtime.
+# The webinos runtime checks the user's credentials/authorization key/...
+# After the user is logged in, he is allowed to access all of his services.
+
+h2. Postconditions
+
+Trust between the webinos runtime and the user is accomplished.
+
+h2. Use Case Map
+
+!auth1.png!
+
+h2. Related artifacts
+
+| *Scenarios* | |
+| *Use Cases* | |
+| *Requirements* | |
+

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE usability PUBLIC "-//CAIRIS//DTD USABILITY 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/usability.dtd">
+
+
+<usability>
+<external_document name="WP4 Platform Implementation wiki" version="1" date="21st March 2012" authors="Various" >
+  <description>WP 4 Platform Implementation issues.  http://dev.webinos.org/redmine/projects/wp4/issues</description>
+</external_document>
+<document_reference name="F658" contributor="Salvatore Monteleone" document="WP4 Platform Implementation wiki" >
+  <excerpt>Device status API</excerpt>
+</document_reference>
+<document_reference name="T830" contributor="Claes Nilsson" document="WP4 Platform Implementation wiki" >
+  <excerpt>Sensor API implementation for Android</excerpt>
+</document_reference>
+</usability>

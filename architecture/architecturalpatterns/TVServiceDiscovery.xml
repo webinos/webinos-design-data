@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+<!DOCTYPE architectural_pattern PUBLIC "-//CAIRIS//DTD ARCHITECTURAL PATTERN 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/architectural_pattern.dtd">
+
+<!-- 
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+
+
+<architectural_pattern name="TV Service Discovery">
+<synopsis>Model illustrating discovery and use of TV services</synopsis>
+
+<access_right name="trusted" value="10">
+  <description>None</description>
+  <rationale>None</rationale>
+</access_right>
+<access_right name="trusted" value="3">
+  <description>Overwritten desc</description>
+  <rationale>Overwritten rationale</rationale>
+</access_right> 
+<access_right name="authenticated" value="5">
+  <description>None</description>
+  <rationale>None</rationale>
+</access_right>
+<access_right name="anonymous" value="1">
+  <description>None</description>
+  <rationale>None</rationale>
+</access_right>
+<access_right name="Undefined" value="10">
+  <description>None</description>
+  <rationale>None</rationale>
+</access_right>
+
+<protocol name="JSON-RPC" value="10">
+  <description>None</description>
+  <rationale>None</rationale>
+</protocol>
+<protocol name="RPC" value="10">
+  <description>None</description>
+  <rationale>None</rationale>
+</protocol>
+<protocol name="TLS" value="1">
+  <description>None</description>
+  <rationale>None</rationale>
+</protocol>
+<protocol name="Undefined" value="10">
+  <description>None</description>
+  <rationale>None</rationale>
+</protocol>
+
+<privilege name="privileged" value="10">
+  <description>None</description>
+  <rationale>None</rationale>
+</privilege>
+<privilege name="normal" value="1">
+  <description>None</description>
+  <rationale>None</rationale>
+</privilege>
+<privilege name="Undefined" value="10">
+  <description>None</description>
+  <rationale>None</rationale>
+</privilege>
+
+<surface_type name="JSON" value="10">
+  <description>None</description>
+  <rationale>None</rationale>
+</surface_type>
+<surface_type name="Unconstrained XML" value="5">
+  <description>None</description>
+  <rationale>None</rationale>
+</surface_type>
+<surface_type name="Constrained XML" value="1">
+  <description>None</description>
+  <rationale>None</rationale>
+</surface_type>
+<surface_type name="Client application" value="10">
+  <description>None</description>
+  <rationale>None</rationale>
+</surface_type>
+<surface_type name="Privileged application" value="1">
+  <description>None</description>
+  <rationale>None</rationale>
+</surface_type>
+<surface_type name="Undefined" value="10">
+  <description>None</description>
+  <rationale>None</rationale>
+</surface_type>
+
+
+<asset name="Access Request" short_code="AC_REQ" type="Information" surface_type="JSON" access_right="authenticated">
+  <description>Request for a resources</description>
+  <significance>Request for a resources</significance>
+  <security_property property="integrity" value="Medium">
+    <rationale>Unwanted modification of request may lead to unauthorised access of data.</rationale>
+  </security_property>
+</asset>
+
+<asset name="Channel" short_code="CHAN" type="Information" surface_type="JSON" access_right="authenticated">
+  <description>Channel</description>
+  <significance>Contains media stream</significance>
+</asset>
+<asset name="TV Source" short_code="TVSRC" type="Information" surface_type="JSON" access_right="authenticated">
+  <description>List of channels with a name</description>
+  <significance>None</significance>
+</asset>
+<asset name="Webinos Service" short_code="RPCWS" type="Software" surface_type="Privileged application" access_right="authenticated">
+  <description>Webinos Service Implementation</description>
+  <significance>None</significance>
+</asset>
+<asset name="Remote TV Manager" short_code="RTVMAN" type="Software" surface_type="Privileged application" access_right="authenticated">
+  <description>Remote TV Manager</description>
+  <significance>None</significance>
+</asset>
+<asset name="TV Display Manager" short_code="TVDISP" type="Software" surface_type="Privileged application" access_right="authenticated">
+  <description>TV Display Manager</description>
+  <significance>None</significance>
+</asset>
+<asset name="TV Tuner Manager" short_code="TVTUNE" type="Software" surface_type="Privileged application" access_right="authenticated">
+  <description>TV Tuner Manager</description>
+  <significance>None</significance>
+</asset>
+<asset name="Service Proxy" short_code="SERV" type="Software" surface_type="Client application" access_right="authenticated">
+  <description>webinos service interface</description>
+  <significance>None</significance>
+</asset>
+<asset name="Event" short_code="EV" type="Software" surface_type="JSON" access_right="anonymous">
+  <description>webinos event</description>
+  <significance>None</significance>
+</asset>
+<asset name="Custom Event" short_code="CUEV" type="Software" surface_type="JSON" access_right="anonymous">
+  <description>webinos event</description>
+  <significance>None</significance>
+</asset>
+<asset name="Service Discovery" short_code="SVCDI" type="Software" surface_type="Privileged application" access_right="authenticated">
+  <description>Service Discovery module</description>
+  <significance>None</significance>
+</asset>
+<asset name="JSON-RPC Handler" short_code="JRH" type="Software" surface_type="Privileged application" access_right="trusted">
+  <description>JSON-RPC Handler</description>
+  <significance>Handles JSON-RPC requests</significance>
+</asset>
+<asset name="Webinos Object" short_code="WOS" type="Software" surface_type="Client application" access_right="authenticated">
+  <description>webinos singleton</description>
+  <significance>None</significance>
+</asset>
+<asset name="Device API" short_code="API" type="Software" access_right="Privileged application" surface_type="authenticated">
+  <description>API for accessing device-specific functionality</description>
+  <significance>Manipulates device features and accesses privacy-sensitive data</significance>
+  <security_property property="integrity" value="Medium">
+    <rationale>Tampering with device APIs may compromise the generation of session related events necessary for maintaining the integrity of session and identity data.</rationale>
+  </security_property>
+  <security_property property="accountability" value="Medium">
+    <rationale>Changes made to the API need to be tracked to make sure only authorised entities can do this.</rationale>
+  </security_property>
+</asset>
+
+
+
+<component name="Policy Manager">
+  <description>XACML based policy manager component.</description>
+  <interface name="enforceRequest" type="provided" access_right="trusted" privilege="privileged" />
+</component>
+
+<component name="Discovery Manager">
+  <description>Discovery manager component.</description>
+  <interface name="findServices" type="provided" access_right="authenticated" privilege="normal" />
+  <interface name="enforceRequest" type="required" access_right="authenticated" privilege="normal" />
+  <structure head_asset="Webinos Service" head_adornment="Inheritance" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="Service Discovery" />
+</component>
+
+<component name="TV Manager">
+  <description>TV API implementation implementation</description>
+  <interface name="getTVSources" type="provided" access_right="authenticated" privilege="normal" />
+  <interface name="enforceRequest" type="required" access_right="authenticated" privilege="normal" />
+  <structure head_asset="Webinos Service" head_adornment="Inheritance" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="Remote TV Manager" />
+  <structure head_asset="TV Source" head_adornment="Aggregation" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1..a" tail_nav="0" tail_adornment="Association" tail_asset="Channel" />
+  <structure head_asset="Remote TV Manager" head_adornment="Composition" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="TV Display Manager" />
+  <structure head_asset="Remote TV Manager" head_adornment="Composition" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="TV Tuner Manager" />
+  <structure head_asset="TV Tuner Manager" head_adornment="Association" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="1" tail_adornment="Association" tail_asset="TV Source" />
+</component>
+
+<component name="Application Client">
+  <description>Application using webinos APIs.</description>
+  <interface name="getTVSources" type="required" access_right="authenticated" privilege="normal" />
+  <interface name="findServices" type="required" access_right="authenticated" privilege="normal" />
+  <structure head_asset="Event" head_adornment="Inheritance" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="Custom Event" />
+  <structure head_asset="JSON-RPC Handler" head_adornment="Association" head_nav="1" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="Webinos Object" />
+  <structure head_asset="Webinos Object" head_adornment="Association" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1..a" tail_nav="1" tail_adornment="Association" tail_asset="Service Proxy" />
+  <structure head_asset="Device API" head_adornment="Inheritance" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="Service Proxy" />
+  <structure head_asset="JSON-RPC Handler" head_adornment="Association" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1..a" tail_nav="1" tail_adornment="Association" tail_asset="Event" />
+</component>
+
+<connector name="tvapi" from_component="Application Client" from_role="request-tvapi" from_interface="getTVSources" to_component="TV Manager" to_interface="getTVSources" to_role="provide-tvapi" protocol="JSON-RPC" access_right="authenticated" asset_name="TV Source"/>
+<connector name="servicedisco" from_component="Application Client" from_role="request-service" from_interface="findServices" to_component="Discovery Manager" to_interface="findServices" to_role="provide-service" protocol="JSON-RPC" access_right="authenticated" asset_name="Service Proxy"/>
+<connector name="service-permission" from_component="Discovery Manager" from_role="request-permission" from_interface="enforceRequest" to_component="Policy Manager" to_interface="enforceRequest" to_role="provide-permission" protocol="TLS" access_right="trusted" asset_name="Access Request" />
+<connector name="tvsource-permission" from_component="TV Manager" from_role="request-permission" from_interface="enforceRequest" to_component="Policy Manager" to_interface="enforceRequest" to_role="provide-permission" protocol="TLS" access_right="trusted" asset_name="Access Request" />
+</architectural_pattern>

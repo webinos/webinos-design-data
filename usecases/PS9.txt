@@ -1,0 +1,42 @@
+h1. WOS-UC-TA9-003: Enforcing multiple policies on multiple devices
+
+Author: John Lyle
+
+Actors: User
+
+h2. Description
+
+Any policy enforcement done on one of the devices would change on the other device too.  
+
+
+h2. Preconditions
+
+The User has webinos runtime running on his mobile and on an in-car entertainment system which is connected to a PZH. 
+
+Policies are stored in PZH and mobile and in-car PZPs
+
+h2. Flow
+
+# User switches on his webinos enabled mobile
+# User changes his zone policy on the mobile, expressing that he does not want to alert local networks about his presence.
+# the policies are stored locally on the PZP mobile.
+# the PZP changes the zone policies contacting the PZH
+# PZH update policies on the in-car PZP specifying that should remain hidden and not discoverable.  
+
+
+h2. Postconditions
+
+Any webinos device used by the User subsequently will not be discoverable by a remote network.  This includes his car whenever he is using it.
+
+h2. Use Case Map
+
+!Enforcing_Policies_v2.png!
+
+h2. Related artifacts
+
+| *Scenarios* | |
+| *Use Cases* | |
+| *Requirements* | |
+
+
+

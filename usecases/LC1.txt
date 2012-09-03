@@ -1,0 +1,29 @@
+h1. LC1: Installation and update of webinos applications
+
+Author: Katrin Jordan
+
+Actors: User
+
+h2. Description
+
+The user downloads, installs and renders applications and settings from the network (an application store) or another device. The application functionality will be available in offline mode, Data will be synchronised once online connection is restored and based on user/app settings.
+
+
+h2. Preconditions
+
+The application has been developed and is available online (e.g. in an app store). The webinos device has not yet installed an application, either already downloaded or still to be downloaded. The user will give authorisation to install the application by the webinos policy enforcement point. The application certificate is valid (the keys used are the same as the keys stated, the expiry date has not passed, and none of the keys have been revoked, and the digest matches the application binary)  
+
+
+h2. Flow
+
+# The end user attempts to install an application
+# Webinos checks the local policy to see whether any restrictions are in place.
+# The user is presented with information about the application, including the company (or person) who created it, what it claims to do, which features of the device it will use, which content it will have access to, and any additional certificates that are available. If there are privacy-sensitive implications to the application, these are presented as part of this process.
+# The user is asked whether the application should be made available to all their devices.
+# The user selects yes and installs the application to his devices.
+
+
+h2. Postconditions
+
+The application is installed to the device and available for use on all instances of webinos that the user owns.
+

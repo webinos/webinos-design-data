@@ -1,0 +1,147 @@
+<?xml version="1.0"?>
+<!DOCTYPE attack_pattern PUBLIC "-//CAIRIS//DTD ATTACKPATTERN 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/attack_pattern.dtd">
+
+<!-- 
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+
+
+<attack_pattern name="Device availability loss" likelihood="Occasional" severity="Critical"> 
+  <obstacle name="Device effectively unavailable" category="Vulnerability">
+    <definition>The mobile device becomes effectively unusable for any function</definition>
+  </obstacle>
+  <obstacle name="Battery exhausted" category="Vulnerability">
+    <definition>The device's battery is out of capacity</definition>   
+  </obstacle>
+  <obstacle name="Processor always busy" category="Vulnerability">
+    <definition>The device's processor is constantly active, perhaps due to infinite loops or too many processes running</definition>
+    <concern name="Widget Processor" />
+  </obstacle>
+  <obstacle name="Data storage limit reached" category="Vulnerability">
+    <definition>The local storage is full, preventing normal operation</definition>
+  </obstacle>
+  <obstacle name="Unnecessary use of APIs" category="Vulnerability">
+    <definition>APIs are being called repeatedly, just for the purpose of exhausting the device</definition>  
+  </obstacle>
+  <obstacle name="Malicious background application running" category="Vulnerability">
+    <definition>A background application is running and is behaving maliciously</definition>
+  </obstacle>    
+  <obstacle name="Malicious background application installed" category="Vulnerability">
+    <definition>A malicious webinos application has been installed </definition>
+    <responsibility name="User" />       
+  </obstacle>
+  <obstacle name="Webinos widget processor bug" category="Vulnerability">
+    <definition>The webinos platform contains a bug resulting in it acting unpredictably or looping infinitely</definition>
+    <concern name="Widget Processor" />
+    <responsibility name="Developer of webinos Platform" />       
+  </obstacle>
+  <obstacle name="Native malware running" category="Vulnerability">
+    <definition>There is native malware installed on the device</definition>
+  </obstacle>
+  <obstacle name="Installed app misbehaving" category="Vulnerability">
+    <definition>An installed and trusted application is behaving in unexpected ways with bad consequences</definition>
+    <responsibility name="Developer of webinos Apps" />           
+  </obstacle>
+  <obstacle name="Installed app exploited" category="Vulnerability">
+    <definition>An installed application has been compromised and is now under the control of an attacker</definition>
+    <responsibility name="Developer of webinos Apps" />           
+  </obstacle>
+  <obstacle name="XSS attack on hosted app" category="Vulnerability">
+    <definition>An installed app has been attacked through a XSS vulnerability, allowing code injection</definition>
+    <responsibility name="Developer of webinos Apps" />  
+  </obstacle>
+
+  
+  <implementation>
+    <description>Ethan exploits commonly used web applications to drain the battery life of users and encourage them to use his software.</description>
+    
+    <obstacle_association obstacle_name="Device effectively unavailable" ref_type="or" subobstacle_name="Battery exhausted" >
+      <rationale></rationale>
+    </obstacle_association>  
+    <obstacle_association obstacle_name="Device effectively unavailable" ref_type="or" subobstacle_name="Processor always busy" >
+      <rationale></rationale>
+    </obstacle_association>  
+    <obstacle_association obstacle_name="Device effectively unavailable" ref_type="or" subobstacle_name="Data storage limit reached" >
+      <rationale></rationale>
+    </obstacle_association>  
+    <obstacle_association obstacle_name="Battery exhausted" ref_type="or" subobstacle_name="Unnecessary use of APIs" >
+      <rationale></rationale>
+    </obstacle_association>  
+    <obstacle_association obstacle_name="Processor always busy" ref_type="or" subobstacle_name="Unnecessary use of APIs" >
+      <rationale></rationale>
+    </obstacle_association>  
+    <obstacle_association obstacle_name="Data storage limit reached" ref_type="or" subobstacle_name="Unnecessary use of APIs" >
+      <rationale></rationale>
+    </obstacle_association>  
+    <obstacle_association obstacle_name="Unnecessary use of APIs" ref_type="or" subobstacle_name="Malicious background application running" >
+      <rationale></rationale>
+    </obstacle_association>  
+    <obstacle_association obstacle_name="Processor always busy" ref_type="or" subobstacle_name="Malicious background application running" >
+      <rationale></rationale>
+    </obstacle_association>      
+    <obstacle_association obstacle_name="Battery exhausted" ref_type="or" subobstacle_name="Malicious background application running" >
+      <rationale></rationale>
+    </obstacle_association>              
+    
+    <obstacle_association obstacle_name="Malicious background application running" ref_type="or" subobstacle_name="Malicious background application installed" >
+      <rationale></rationale>
+    </obstacle_association>      
+    <obstacle_association obstacle_name="Malicious background application running" ref_type="or" subobstacle_name="Installed app misbehaving" >
+      <rationale></rationale>
+    </obstacle_association>      
+    <obstacle_association obstacle_name="Malicious background application running" ref_type="or" subobstacle_name="Installed app exploited" >
+      <rationale></rationale>
+    </obstacle_association>         
+    <obstacle_association obstacle_name="Malicious background application running" ref_type="or" subobstacle_name="XSS attack on hosted app" >
+      <rationale></rationale>
+    </obstacle_association>     
+    
+    <obstacle_association obstacle_name="Processor always busy" ref_type="or" subobstacle_name="Webinos widget processor bug" >
+      <rationale></rationale>
+    </obstacle_association>  
+     <obstacle_association obstacle_name="Battery exhausted" ref_type="or" subobstacle_name="Native malware running" >
+      <rationale></rationale>
+    </obstacle_association>  
+    <obstacle_association obstacle_name="Processor always busy" ref_type="or" subobstacle_name="Native malware running" >
+      <rationale></rationale>
+    </obstacle_association>  
+    <obstacle_association obstacle_name="Data storage limit reached" ref_type="or" subobstacle_name="Native malware running" >
+      <rationale></rationale>
+    </obstacle_association>  
+  </implementation>
+  
+
+  <intent>Part of a larger attack, Ethan tries to drum-up interest in his own "battery life extender" application by rendering his victim's devices unusuable due to battery life problems that he has caused.</intent> 
+  <motivation goal="availability" value="Medium"> 
+    <description>The device rapidly becomes unavailable as battery life is spent too quickly</description>
+  </motivation>
+  <applicability environment="Complete" />
+  <structure attack="Denial of Service through Resource Depletion" attack_obstacle="Device effectively unavailable" exploit="Uncontrolled Resource Consumption ('Resource Exhaustion')" exploit_obstacle="Processor always busy" /> 
+  <participant name="Ethan">
+    <motive name="Money" />
+    <capability name="Software" value="Medium" />
+    <capability name="Knowledge/Methods" value="High" />
+  </participant>
+  <collaboration>
+    <target name="Widget Processor" /> 
+    <exploit name="Widget Processor" />
+  </collaboration>
+  <consequences>At the very least: users are annoyed.  At most: may result in monetary loss, users might lose access to important data or functionality (safety consequences), device may be replaced.</consequences>
+  <known_uses>None</known_uses>
+  <related_patterns>None</related_patterns>
+</attack_pattern>

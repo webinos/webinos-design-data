@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<!DOCTYPE usability PUBLIC "-//CAIRIS//DTD USABILITY 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/usability.dtd">
+
+<usability>
+<persona name="Carlos" type="Secondary" assumption_persona="TRUE" image="/home/irisuser/webinos/wp2/personas/carlos.jpg" >
+  <activities>Carlos works at the European Commission as regulator. He works together with various companies on usable and efficient privacy solutions for citizens.</activities>
+  <attitudes>He is a strong believer in privacy. He knows the field very well: Carlos is up-to-date with various research activities and solutions. He knows that privacy is complex and he sometimes feels he has to surrender from the enormous amount of privacy-related projects which are not brought to solutions. He is disappointed from the fact that there is no usable solution on the market yet.</attitudes>
+  <aptitudes>None</aptitudes>
+  <motivations>Privacy is Carlos' driver. He strongly follows his goal which is to provide solutions for European citizens which effectively protect the privacy of the citizens. He knows that this is challenging but this challenge motivates him.</motivations>
+  <skills>None</skills>
+  <persona_environment name="Identity" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Discovery and Addressing" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Remote Notifications and Messaging" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Policy and Security" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Negotiation and Compatibility" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Lifecycle" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Device and Service Functional Capability" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Transfer and Management of State" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Complete" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+</persona>
+<external_document name="Manageable privacy policies across the application lifecycle User Story" version="0.95" date="3 Dec 2010" authors="Ajit Jaokar, John Lyle, Shamal Faily, Ivan Flechais, Hans Myrhaug, Ayse Goker" >
+  <description>Source http://dev.webinos.org/redmine/attachments/52/Policy_Management_Story_-_version_2_-_ambie.doc</description>
+</external_document>
+<document_reference name="Regulator who works at the European Commission" contributor="Sven Lachmund" document="Manageable privacy policies across the application lifecycle User Story" >
+  <excerpt>Members of the European commission are interested in protecting the rights of their citizens when it comes to privacy and security. Carlos at the commission is responsible for helping people realise and protect their right to privacy.</excerpt>
+</document_reference>
+<document_reference name="Is privacy-aware" contributor="Sven Lachmund" document="Manageable privacy policies across the application lifecycle User Story" >
+  <excerpt>This is a concern and on behalf of the commission, he sets about finding a solution before sensors become commonly deployed (with privacy becoming an afterthought).\n\nHe likes Webinos because he sees that Webinos can provide a solution for privacy across platforms both current and future. \n\nHe wants to work collaboratively with vendors to implement privacy policies that empower and protect EU citizens. </excerpt>
+</document_reference>
+<document_reference name="Knows very well the state-of-the-art in privacy solutions" contributor="Sven Lachmund" document="Manageable privacy policies across the application lifecycle User Story" >
+  <excerpt>Carlos has seen many reports and is drowning in analysis and paper. However, he sees that many of these solutions remain on paper alone. Carlos also sees that many of the new privacy initiatives that the EU wants to implement, especially for sensor based networks, may be implemented After deployment.</excerpt>
+</document_reference>
+<document_reference name="Understands that privacy is complex" contributor="Sven Lachmund" document="Manageable privacy policies across the application lifecycle User Story" >
+  <excerpt>Carlos has seen many reports and is drowning in analysis and paper. However, he sees that many of these solutions remain on paper alone. Carlos also sees that many of the new privacy initiatives that the EU wants to implement, especially for sensor based networks, may be implemented After deployment.</excerpt>
+</document_reference>
+<document_reference name="Is overwhelmed by the vast number of proposed privacy solutions" contributor="Sven Lachmund" document="Manageable privacy policies across the application lifecycle User Story" >
+  <excerpt>Carlos has seen many reports and is drowning in analysis and paper. However, he sees that many of these solutions remain on paper alone. Carlos also sees that many of the new privacy initiatives that the EU wants to implement, especially for sensor based networks, may be implemented After deployment.</excerpt>
+</document_reference>
+<document_reference name="Wants to push privacy solutions" contributor="Sven Lachmund" document="Manageable privacy policies across the application lifecycle User Story" >
+  <excerpt>This is a concern and on behalf of the commission, he sets about finding a solution before sensors become commonly deployed (with privacy becoming an afterthought).\n\nHe likes Webinos because he sees that Webinos can provide a solution for privacy across platforms both current and future. \n\nHe wants to work collaboratively with vendors to implement privacy policies that empower and protect EU citizens. </excerpt>
+</document_reference>
+<document_reference name="Wants to provide usable privacy solutions to citizens" contributor="Sven Lachmund" document="Manageable privacy policies across the application lifecycle User Story" >
+  <excerpt>Carlos also sees that many of the new privacy initiatives that the EU wants to implement, especially for sensor based networks, may be implemented “After deployment“. For Carlos, that means potentially “never“. This is a concern and on behalf of the commission, he sets about finding a solution before sensors become commonly deployed (with privacy becoming an afterthought)</excerpt>
+</document_reference>
+<persona_characteristic persona="Carlos" behavioural_variable="Activities" modal_qualifier="Definitely" >
+  <definition>Works at the European Commission as regulator</definition>
+  <grounds type="document" reference="Regulator who works at the European Commission" />
+</persona_characteristic>
+<persona_characteristic persona="Carlos" behavioural_variable="Attitudes" modal_qualifier="Definitely" >
+  <definition>Is convinced of privacy and knows the field very well</definition>
+  <grounds type="document" reference="Is privacy-aware" />
+  <grounds type="document" reference="Knows very well the state-of-the-art in privacy solutions" />
+  <grounds type="document" reference="Understands that privacy is complex" />
+  <grounds type="document" reference="Is overwhelmed by the vast number of proposed privacy solutions" />
+</persona_characteristic>
+<persona_characteristic persona="Carlos" behavioural_variable="Motivations" modal_qualifier="Presumably" >
+  <definition>Works for establishing privacy for European citizens</definition>
+  <grounds type="document" reference="Wants to push privacy solutions" />
+  <grounds type="document" reference="Wants to provide usable privacy solutions to citizens" />
+</persona_characteristic>
+</usability>

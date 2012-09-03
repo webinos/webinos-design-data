@@ -1,0 +1,171 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE attack_pattern PUBLIC "-//CAIRIS//DTD ATTACKPATTERN 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/attack_pattern.dtd">
+
+<!-- 
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+
+
+<attack_pattern name="Application DoS" likelihood="Probable" severity="Critical"> 
+  
+  <obstacle name="Application impossible to use" category="Vulnerability">
+    <definition>A webinos application is no longer usable</definition>
+<!--    <responsibility></responsibility> -->
+  </obstacle>
+  <obstacle name="Badly configured policy" category="Vulnerability">
+    <definition>The webinos policy settings are poorly chosen and the application is denied access to too many APIs</definition>
+    <concern name="Policy File" />
+<!--    <responsibility></responsibility> -->
+  </obstacle>  
+  <obstacle name="Bad default policy" category="Vulnerability">
+    <definition>The default webinos policy settings are too restrictive</definition>
+    <concern name="Policy File" />
+    <responsibility name="Developer of webinos Platform" /> 
+    
+  </obstacle>  
+  <obstacle name="Bad user-selected policy" category="Vulnerability">
+    <definition>The user has selected bad policy settings</definition>
+    <concern name="Policy File" />
+    <responsibility name="User" />
+  </obstacle>    
+  
+  <obstacle name="The Application is auto-updated by an attacker" category="Vulnerability">
+    <definition>The application downloads an update automatically and installs it.  However, the update was issued by an attacker rather than the application author</definition>
+    <responsibility name="Developer of webinos Platform" />
+  </obstacle>       
+<!--  
+  <obstacle name="Auto-update enabled" category="Vulnerability">
+    <definition>Applications are automatically updated</definition>
+    <responsibility>Developer of webinos Platform</responsibility>
+  </obstacle>     
+-->  
+  <obstacle name="Application signing key not checked" category="Vulnerability">
+    <definition>Update procedure does not check that the update signing key matches the original signing key</definition>
+    <concern name="Widget Validator" />
+    <responsibility name="Developer of webinos Platform" />
+ </obstacle>     
+  <obstacle name="Application developer signing key compromised" category="Vulnerability">
+    <definition>The application developer's signing key is leaked to the attacker, perhaps due to it being embedded in a source file or another means.</definition>
+    <concern name="Widget Signature" />
+    <responsibility name="Developer of webinos Apps" />
+    <probability value="0.1">
+      <rationale>There has been a history of key compromise by developers who are careless or who are attacked.</rationale>
+    </probability>
+  </obstacle>     
+  
+  <obstacle name="Hosted application is attacked through content injection" category="Vulnerability">
+    <definition>The application's hosted components are attacked via a content injection attack, possibly XSS.</definition>
+    <concern name="Rendering Engine" />
+    <responsibility name="Developer of webinos Apps" />
+  </obstacle>     
+  <obstacle name="JavaScript injection triggers security violation" category="Vulnerability">
+    <definition>Injected javascript causes the application to trigger security warnings and get disconnected by the PZP or webinos runtime</definition>
+  </obstacle>       
+  <obstacle name="JavaScript injection overwrites webinos.js" category="Vulnerability">
+    <definition>Injected javascript prevents the application from accessing PZP functionality by overwriting webinos.js</definition>
+    <concern name="Webinos Module" />
+  </obstacle>       
+  
+  <obstacle name="Application blacklisted after negative reviews" category="Vulnerability">
+    <definition>The application is given several negative reviews and warnings on app stores and social networks, putting it on a blacklist</definition>
+    <responsibility name="3rd Party Service Provider" />
+  </obstacle>       
+
+  <obstacle name="Webinos backdoor" category="Vulnerability">
+    <definition>The webinos platform is updated to specifically target this application and render it unusable</definition>
+    <responsibility name="Developer of webinos Platform" /> 
+    <probability value="0.01">
+      <rationale>Commits to the project are reviewed by a limited number of people.  A backdoor would be relatively hard to insert and would be accountable</rationale>
+    </probability>   
+
+  </obstacle>       
+  
+    
+  
+
+
+  
+  
+  
+
+  <intent>Harold has developed a webinos application he is very proud of.  Unfortunately it is not receiving much attention because another app (which he believes to be inferior) is extremely popular.  Harold decides to get rid of the competition, which he feels will be best for everyone: he gets the recognition he deserves and users get a better experience.</intent> 
+  <motivation goal="availability" value="High"> 
+    <description>Users become unable to reliably use a certain app</description>
+  </motivation>
+  <applicability environment="Complete" />
+  <structure attack="Malicious Automated Software Update" attack_obstacle="The Application is auto-updated by an attacker" exploit="Improper Verification of Cryptographic Signature" exploit_obstacle="Application signing key not checked" /> 
+  <participant name="Harold">
+    <motive name="Money" />
+    <capability name="Software" value="Medium" />
+    <capability name="Knowledge/Methods" value="High" />
+  </participant>
+  <collaboration>
+    <target name="Application Module" /> 
+    <exploit name="Widget Processor" />
+  </collaboration>
+  <consequences>Depending on the application, users might simply no longer be able to use the app.  They might also lose access to some data.  The developer could lose money, reputation and social contacts.  The developer might lose their job.</consequences>
+  
+  <implementation>
+    <description>Harold performs a denial of service attack on an application, rendering it unusable by end users.</description>
+    <obstacle_association obstacle_name="Application impossible to use" ref_type="or" subobstacle_name="Badly configured policy" >
+      <rationale></rationale>
+    </obstacle_association>           
+    <obstacle_association obstacle_name="Badly configured policy" ref_type="or" subobstacle_name="Bad default policy" >
+      <rationale></rationale>
+    </obstacle_association>           
+    <obstacle_association obstacle_name="Badly configured policy" ref_type="or" subobstacle_name="Bad user-selected policy" >
+      <rationale></rationale>
+    </obstacle_association>           
+    
+    
+    
+    <obstacle_association obstacle_name="Application impossible to use" ref_type="or" subobstacle_name="The Application is auto-updated by an attacker" >
+      <rationale></rationale>
+    </obstacle_association>           
+    <obstacle_association obstacle_name="The Application is auto-updated by an attacker" ref_type="or" subobstacle_name="Application signing key not checked" >
+      <rationale></rationale>
+    </obstacle_association>           
+    <obstacle_association obstacle_name="The Application is auto-updated by an attacker" ref_type="or" subobstacle_name="Application developer signing key compromised" >
+      <rationale></rationale>
+    </obstacle_association>           
+    
+    <obstacle_association obstacle_name="Application impossible to use" ref_type="or" subobstacle_name="Hosted application is attacked through content injection" >
+      <rationale></rationale>
+    </obstacle_association>           
+    <obstacle_association obstacle_name="Hosted application is attacked through content injection" ref_type="or" subobstacle_name="JavaScript injection triggers security violation" >
+      <rationale></rationale>
+    </obstacle_association>           
+    <obstacle_association obstacle_name="Hosted application is attacked through content injection" ref_type="or" subobstacle_name="JavaScript injection overwrites webinos.js" >
+      <rationale></rationale>
+    </obstacle_association>  
+
+    <obstacle_association obstacle_name="Application impossible to use" ref_type="or" subobstacle_name="Application blacklisted after negative reviews" >
+      <rationale></rationale>
+    </obstacle_association>  
+
+    <obstacle_association obstacle_name="Application impossible to use" ref_type="or" subobstacle_name="Webinos backdoor" >
+      <rationale></rationale>
+    </obstacle_association>  
+
+         
+  </implementation>
+  
+  
+  <known_uses>None</known_uses>
+  <related_patterns>None</related_patterns>
+</attack_pattern>

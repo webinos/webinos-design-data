@@ -1,0 +1,33 @@
+h1. WOS-UC-Ta2-003: Automatic login for External Services
+
+Author: Christian Nord, Andre Paul
+
+Actors: User, Application
+
+h2. Description
+
+A user automatically logs in to external services.
+
+h2. Preconditions
+
+The user has already registered with the service and the service has been added to his webinos account.
+
+h2. Flow
+
+# The user points his Internet application, e.g., the browser, to a service end-point or runs a webinos application/runtime that provides access to the service.
+# In the background the webinos runtime provides the service a unique identity identifier (Certificates) when the user connects to the service
+# By using the offered identity the service can, by accessing the webinos runtime for the user, determine if the user is already a registered user and grant access
+
+h2. Postconditions
+
+The user is granted access to the service without login prompting.
+
+h2. Use Case Map
+
+!account1.png!
+
+h2. Related artifacts
+
+| *Scenarios* | |
+| *Use Cases* | WOS-UC-Ta2-004 |
+| *Requirements* | |

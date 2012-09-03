@@ -1,0 +1,28 @@
+h1. WOS-UC-TA5-001: Discovering the application
+
+Author: Katrin Jordan
+
+Actors: User, Application
+
+h2. Description
+
+The user becomes aware of a new application.
+
+
+h2. Preconditions
+
+The application has been developed and is accessible on device(s) and/or the network.  Devices are registered, i.e. are identified, authenticated and authorised 
+
+
+h2. Flow
+
+# Application scans the available networks for applications based on certain API criteria.
+# webinos discovers a personal zone with a running application matching this criteria.
+# webinos carries out a device check is done to ensure availability and compatibility of the required features.
+# webinos notifies the user of successful detection, with an identifier of the application and its destination.
+
+
+h2. Postconditions
+
+The application is available for further use, subject to authorisation.
+

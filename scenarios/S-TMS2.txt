@@ -1,0 +1,33 @@
+h1. S-TMS2: Single Sign-On, Multiple Devices
+
+Author: Anders Isberg, Shamal Faily
+
+h2. Overview 
+
+Before going to work, Georg interacts with several personal devices.
+
+
+h2. Description
+
+Georg has a mobile phone. When Georg reaches for his phone first time in the morning, he uses his credentials to authenticate against his OpenId identity provider; this enables access to all services he is authorised to use with his identity.  During breakfast Georg decides to read the latest news and the latest Facebook status updates on his tablet computer. To avoid manually re-authenticating, Georg puts the Mobile internet device and the tablet together; the tablet then transfers the authorisation from his phone. After reading the news, Georg leaves home and drives to work.  As Georg enters the vehicle, he puts his phone in the built-in device holder; this transfers authorisation from the phone to the in-car.
+
+h2. Issues
+
+How can authorisation can be transferred across devices without introducing new security threats and making the user experience less intuitive?
+
+h2. Benefits
+
+The end user should be able to use the personal services without needing continually authenticate across multiple devices, while still enjoy personalised services with a reasonable level of trust.
+
+h2. Usability breakdown
+
+| Persona |  Georg |
+| Duration | Minutes |
+| Frequency | Daily - Weekly |
+| Demands | Low |
+| Goal Conflict | Low |
+
+h2. Required Use Cases
+
+* PS3
+* TMS2

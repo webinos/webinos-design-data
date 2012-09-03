@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE attack_pattern PUBLIC "-//CAIRIS//DTD ATTACKPATTERN 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/attack_pattern.dtd">
+
+<!-- 
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+
+
+<attack_pattern name="Capture Hidden Analytics" likelihood="Probable" severity="Critical"> 
+
+  <obstacle name="Apps share usage data" category="Vulnerability">
+    <definition>The two application share usage data, either directly or through an intermediary analytics service</definition>
+    <concern name="Context Object" />
+    <responsibility name="Developer of webinos Apps" />
+    <probability value="0.2">
+      <rationale>Many applications will use the same analytics tools - this is common.</rationale>
+    </probability>
+  </obstacle>
+
+  <intent>Subversely capture analytics about application usage.</intent> 
+  <motivation goal="anonymity" value="High"> 
+    <description>Jimmy relies on anonymity to capture context data without users realising it.</description>
+  </motivation>
+  <applicability environment="Complete" />
+  <structure attack="Spyware" exploit="Lack of data provenance" exploit_obstacle="Apps share usage data" /> 
+  <participant name="Jimmy">
+    <motive name="Data theft" />
+    <motive name="Indifference" />
+    <capability name="Software" value="High" />
+    <capability name="Knowledge/Methods" value="Medium" />
+  </participant>
+  <collaboration>
+    <target name="Analytics Data" /> 
+    <exploit name="Analytics Data" />
+  </collaboration>
+  <consequences>A webinos application anonymously leaks unauthorised (and potentially privacy-invasive) data.</consequences>
+  <implementation>
+    <description>Peter is about to head to Berlin for a long weekend and decides to download the Berlin Gallery Guide from the Android app store. This application gives Peter a quick overview of art galleries in Berlin and allows him to take snaps and submit reviews about places visited. Before downloading the app, Peter checks what the application has access to. Additionally, before running the app for the first time, he also scans the application's terms and conditions, briefly noting that the application captures information about time. Several days later, Peter is walking out of the Neue Nationalgalerie and submits some of his thoughts about the gallery as a review.
+
+One month earlier, Jimmy was in the midst of a dilemma. His Berlin cafe guide was more successful than he thought, but he really wished that he had captured more analytics information; his new Berlin Gallery Guide might be just the opportunity he needs to get this data. While Peter really wants to capture information about location rather than time of review, this would mean re-drafting the privacy policy associated with the app to better reflect his intentions; this is both time consuming and, to his mind, unnecessary. "I mean" Jimmy thought, "I'm the only person using the data, and I'm not going to abuse it so who really cares if I capture location data rather than time in my app. The PDP associated with the running application won't notice the difference and, perhaps, maybe that means capturing this data is ok." Eventually, Jimmy convinces himself to reuse his previous privacy policy and configuration file entries related to permission, but change the Javascript code to store location data as context data rather than time.
+Several weeks later, Jimmy feels vindicated by this decision as useful, fine-grained location data starts to arrive via his gallery guide app, including unauthorised location data arising about Peter's visit to Neue Nationalgalerie.</description>
+   </implementation>
+  <known_uses>None</known_uses>
+  <related_patterns>None</related_patterns>
+</attack_pattern>

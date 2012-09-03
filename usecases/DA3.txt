@@ -1,0 +1,42 @@
+h1. WOS-UC-Ta1-003: Virtual Device Ownership
+
+Author: Andre Paul
+
+Actors: User, Application
+
+h2. Description
+
+webinos not only allow to use services from remote devices if the involved devices are belonging to the same user, it also allows access services from devices belonging to a different user. 
+
+
+h2. Preconditions
+
+Both user, user A and user B, representing two different webinos accounts, thus, belonging to two different personal zones. Both users have webinos enabled devices which are provide access to certain services. Accessing and using remote resources of a different user is not possible.  User B knows user A's identity.  User A is running an application requiring access to User B's media.
+
+h2. Flow
+
+# User A starts an application that needs to use a certain service provided by a device from user B (e.g., access to the media folder or using the camera to take a picture).
+# The webinos runtime for user A sends a request to user B's webinos runtime.
+# The webinos runtime of user B notifies user B.
+# User B accepts the invitation of user A.
+# Application uses webinos service discovery to find user B's media.
+# Application invokes the related service API.
+# The webinos runtime for User A sends an invocation requests to the device of user B that hosts the required media.
+# The webinos runtime of the target devices determines whether it is allowed to execute the service.
+# User B's webinos runtime authorizes access to the application.
+# User B's webinos runtime satisfies the media access request,
+# Application uses the media resource.
+
+h2. Postconditions
+
+User A's application has access to authorised media files in User B's personal zone.
+
+h2. Use Case Map
+
+!Virtual_Device-Map38-Virtual_Device_Ownership.png!
+
+h2. Related artifacts
+
+| *Scenarios* | |
+| *Use Cases* | |
+| *Requirements* | |

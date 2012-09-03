@@ -1,0 +1,370 @@
+<?xml version="1.0"?>
+<!DOCTYPE usability PUBLIC "-//CAIRIS//DTD USABILITY 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/usability.dtd">
+
+
+<usability>
+<persona name="Harold" type="Primary" assumption_persona="TRUE" image="/home/irisuser/webinos/wp2/personas/harold.jpg" >
+  <activities>He is a security expert and an entrepreneur in the security field.
+He is also a keynote speaker at conferences and he lectured on the history of technology at several universities.</activities>
+  <attitudes>He has his own personal ethic. He is law unattentive and too much self confident. This led him to be engaged in borderline activities.</attitudes>
+  <aptitudes>He is a technology enthusiast with an inquiring mind and is part of the hacker sub-culture.</aptitudes>
+  <motivations>His motivation is the love of knowledge.</motivations>
+  <skills>He is a hacker with lifetime experience in system and network intrusion.
+</skills>
+
+  <persona_environment name="Identity" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <persona_role name="User" />
+    <narrative>Harold is a penetrator tester, and believes that his code of behaviour can let him remain undetected and that his opponents are not at his level of expertise.</narrative>
+  </persona_environment>
+  <persona_environment name="Discovery and Addressing" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <persona_role name="User" />
+    <narrative>Harold is a penetrator tester, and believes that his code of behaviour can let him remain undetected and that his opponents are not at his level of expertise.</narrative>
+  </persona_environment>
+  <persona_environment name="Remote Notifications and Messaging" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <persona_role name="User" />
+    <narrative>Harold is a penetrator tester, and believes that his code of behaviour can let him remain undetected and that his opponents are not at his level of expertise.</narrative>
+  </persona_environment>
+  <persona_environment name="Policy and Security" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <persona_role name="User" />
+    <narrative>Harold is a penetrator tester, and believes that his code of behaviour can let him remain undetected and that his opponents are not at his level of expertise.</narrative>
+  </persona_environment>
+  <persona_environment name="Negotiation and Compatibility" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <persona_role name="User" />
+    <narrative>Harold is a penetrator tester, and believes that his code of behaviour can let him remain undetected and that his opponents are not at his level of expertise.</narrative>
+  </persona_environment>
+  <persona_environment name="Lifecycle" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <persona_role name="User" />
+    <narrative>Harold is a penetrator tester, and believes that his code of behaviour can let him remain undetected and that his opponents are not at his level of expertise.</narrative>
+  </persona_environment>
+  <persona_environment name="Device and Service Functional Capability" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <persona_role name="User" />
+    <narrative>Harold is a penetrator tester, and believes that his code of behaviour can let him remain undetected and that his opponents are not at his level of expertise.</narrative>
+  </persona_environment>
+  <persona_environment name="Transfer and Management of State" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <persona_role name="User" />
+    <narrative>Harold is a penetrator tester, and believes that his code of behaviour can let him remain undetected and that his opponents are not at his level of expertise.</narrative>
+  </persona_environment>
+  <persona_environment name="Complete" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <persona_role name="User" />
+    <narrative>Harold is a penetrator tester, and believes that his code of behaviour can let him remain undetected and that his opponents are not at his level of expertise.</narrative>
+  </persona_environment>
+
+
+
+
+</persona>
+<external_document name="Mark Abene on wikipedia" version="1" date="21 January 2011" authors="http://en.wikipedia.org/wiki/Mark_Abene" >
+  <description>None</description>
+</external_document>
+<external_document name="Article on Mark Abene" version="1" date="23 June 2009" authors="Elinor Mills - http://news.cnet.com/8301-1009_3-10270582-83.html" >
+  <description>None</description>
+</external_document>
+<document_reference name="He created his own security firm" contributor="Andrea Atzeni" document="Mark Abene on wikipedia" >
+  <excerpt>After some years as a very successful security consultant, he joined forces with former Legion of Doom member Dave Buchwald and a third colleague, Andrew Brown, to create the security consulting firm Crossbar Security.
+</excerpt>
+</document_reference>
+<document_reference name="Lecturer" contributor="Andrea Atzeni" document="Mark Abene on wikipedia" >
+  <excerpt>(...) lecturing on the history of telecommunications technology at the night courses of several New York City universities.
+</excerpt>
+</document_reference>
+<document_reference name="Keynote speaker" contributor="Andrea Atzeni" document="Mark Abene on wikipedia" >
+  <excerpt>He has been chosen as a keynote speaker at both hacker and security industry conferences worldwide and frequently visits universities to speak to students concerning information security.
+</excerpt>
+</document_reference>
+<document_reference name="Subject to home search" contributor="Andrea Atzeni" document="Mark Abene on wikipedia" >
+  <excerpt>On January 24, 1990, Abene and other MOD members had their homes searched and property seized by the U.S. Secret Service largely based on government suspicions of having caused ATandT's network crash just over a week earlier on January 15 (Abene was personally accused by the Secret Service of having done as much, during the search and seizure).</excerpt>
+</document_reference>
+<document_reference name="Indicted of computer tampering and computer trepass" contributor="Andrea Atzeni" document="Mark Abene on wikipedia" >
+  <excerpt>In February 1991, Abene was arrested and charged with computer tampering and computer trespass
+</excerpt>
+</document_reference>
+<document_reference name="Sentenced to 35 hours of community service" contributor="Andrea Atzeni" document="Mark Abene on wikipedia" >
+  <excerpt>Abene, who was a minor at the time, pleaded "not guilty" to the first two offenses and ultimately accepted a plea agreement to a lesser misdemeanor charge, and was sentenced to 35 hours of community service.
+</excerpt>
+</document_reference>
+<document_reference name="Arrested with other members of the MOD" contributor="Andrea Atzeni" document="Mark Abene on wikipedia" >
+  <excerpt>Abene and four other members of the Masters of Deception were also arrested in December 1991 and indicted by a Manhattan federal grand jury on July 8, 1992 on an 11-count charge.
+</excerpt>
+</document_reference>
+<document_reference name="Sentenced to 12 months imprisonment" contributor="Andrea Atzeni" document="Mark Abene on wikipedia" >
+  <excerpt>Despite the fact that Abene was a minor at the time the crimes were allegedly committed, was only involved in a small fraction of the sub-charges, and often in a passive way, a plea arrangement resulted in by far the harshest sentence: 12 months imprisonment, three years probation and 600 hours of community service.
+</excerpt>
+</document_reference>
+<document_reference name="Served the sentence at a federal prison" contributor="Andrea Atzeni" document="Mark Abene on wikipedia" >
+  <excerpt>After serving the one-year sentence at the Federal Prison "Camp" in Schuylkill, Pennsylvania, Abene was released in November 1994.
+</excerpt>
+</document_reference>
+<document_reference name="Forgetful of danger signs" contributor="Andrea Atzeni" document="Article on Mark Abene" >
+  <excerpt>it really didn't sway me from doing what I was doing. Although in retrospect, I could have been more careful at that point.
+</excerpt>
+</document_reference>
+<document_reference name="Lack of notion of illegal behaviour" contributor="Andrea Atzeni" document="Article on Mark Abene" >
+  <excerpt>There was no real notion you were doing something illegal. It really wasn't (illegal). The fact that you were using a guest account on a minicomputer being maintained at a high school ... there wasn't any notion that anyone was doing anything wrong.
+</excerpt>
+</document_reference>
+<document_reference name="There were no clear-cut computer crime laws" contributor="Andrea Atzeni" document="Article on Mark Abene" >
+  <excerpt>And when I first got online there were no clear-cut computer crime laws.
+</excerpt>
+</document_reference>
+<document_reference name="He was known as the Robin Hood of cyberspace" contributor="Andrea Atzeni" document="Mark Abene on wikipedia" >
+  <excerpt>In Time, Joshua Quittner called him "the first underground hero of the Information Age, the Robin Hood of cyberspace."
+</excerpt>
+</document_reference>
+<document_reference name="He defends the morals and motivations of hackers" contributor="Andrea Atzeni" document="Mark Abene on wikipedia" >
+  <excerpt>Abene had built up a significant reputation in the hacker sub-culture, for example regularly appearing on the radio show Off the Hook, hosted by Eric Corley (a.k.a. Emmanuel Goldstein), debating and defending the morals and motivations of hackers in public forums and in interviews
+</excerpt>
+</document_reference>
+<document_reference name="Observe a code of behavior" contributor="Andrea Atzeni" document="Article on Mark Abene" >
+  <excerpt>We always conducted our activities according to a certain code of behavior
+</excerpt>
+</document_reference>
+<document_reference name="Proud of his past" contributor="Andrea Atzeni" document="Article on Mark Abene" >
+  <excerpt>I took part in something that at least I considered special. There were certainly some negative aspects in it in the trouble I got into. But there was definitely a lot of positive that came out of it.
+</excerpt>
+</document_reference>
+<document_reference name="He was not really thinking about what the law says" contributor="Andrea Atzeni" document="Article on Mark Abene" >
+  <excerpt>When you are a young teenager you're not really thinking about what the law says.
+</excerpt>
+</document_reference>
+<document_reference name="Unregretful of law violations" contributor="Andrea Atzeni" document="Article on Mark Abene" >
+  <excerpt>But it hasn't hindered your career at all, has it?
+Abene: Not at all. I've worked as a system administrator and network administrator. Even when I was still doing things that could obviously be construed as being illegal I did a fair amount of public speaking.
+</excerpt>
+</document_reference>
+<document_reference name="Fearful of jail" contributor="Andrea Atzeni" document="Article on Mark Abene" >
+  <excerpt>What were you charged with and how much time did you serve?
+(...)
+It was not an experience I like thinking about and it is something I put behind me long since.</excerpt>
+</document_reference>
+<document_reference name="He used his computer to access BBSes" contributor="Andrea Atzeni" document="Mark Abene on wikipedia" >
+  <excerpt>After receiving the gifts of a RAM upgrade (to 20K) and a 300 baud modem from his parents, he used his computer to access CompuServe and shortly after discovered the world of dialup BBSes via people he met on CompuServe's "CB simulator", the first nation-wide online chat.</excerpt>
+</document_reference>
+<document_reference name="He is intrigued by more powerful programming environment" contributor="Andrea Atzeni" document="Mark Abene on wikipedia" >
+  <excerpt>Accessing those DEC minicomputers he realized there was a programming environment that was much more powerful than that of his own home computer
+</excerpt>
+</document_reference>
+<document_reference name="He learns new programming languages" contributor="Andrea Atzeni" document="Mark Abene on wikipedia" >
+  <excerpt>he began taking books out of the library in order to learn the programming languages that were now available to him.</excerpt>
+</document_reference>
+<document_reference name="He views his computer as a window into a larger world" contributor="Andrea Atzeni" document="Mark Abene on wikipedia" >
+  <excerpt>He realized there was a programming environment that was much more powerful than that of his own home computer, this and the ability to remotely save and load back programs that would still be there the next time he logged in had a profound effect on Abene, who came to view his rather simple computer as a window into a much larger world.</excerpt>
+</document_reference>
+<document_reference name="Access to more powerful computers" contributor="Andrea Atzeni" document="Article on Mark Abene" >
+  <excerpt>One of our major motivations was that we wanted to get access to computers that were more powerful than the simplistic ones we had at home. Today most kids' home computers are a lot more powerful. For us it was a great equalizer. We wanted to get access to the high technology we otherwise wouldn't have access to, understand it, and learn to program it.
+</excerpt>
+</document_reference>
+<document_reference name="Interested in telco system internals" contributor="Andrea Atzeni" document="Mark Abene on wikipedia" >
+  <excerpt>Having learned about programming and fundamental security concepts during those early years, Abene further honed his skill in understanding the intricacies of the nation-wide telephone network.
+</excerpt>
+</document_reference>
+<document_reference name="Explore the online frontier" contributor="Andrea Atzeni" document="Article on Mark Abene" >
+  <excerpt>Mark Abene first started using computers when he was about 9 years old, and by 12 he was exploring the electronic frontier from his home in Queens, New York.
+</excerpt>
+</document_reference>
+<document_reference name="He is a computer security hacker" contributor="Andrea Atzeni" document="Mark Abene on wikipedia" >
+  <excerpt>Mark Abene (born 1972), better known by his pseudonym Phiber Optik, is a computer security hacker</excerpt>
+</document_reference>
+<document_reference name="He was member of hacker groups" contributor="Andrea Atzeni" document="Mark Abene on wikipedia" >
+  <excerpt>Phiber Optik was once a member of the hacker groups Legion of Doom and Masters of Deception.</excerpt>
+</document_reference>
+<document_reference name="On BBSes he found data to access to DEC minicomputers" contributor="Andrea Atzeni" document="Mark Abene on wikipedia" >
+  <excerpt>On some of these BBSes, Abene discovered dialups and guest accounts to DEC minicomputers running the RSTS/E and TOPS-10 operating systems as part of the BOCES educational program in Long Island, New York.
+</excerpt>
+</document_reference>
+<document_reference name="The focus of the group was to explore and understand technolody" contributor="Andrea Atzeni" document="Mark Abene on wikipedia" >
+  <excerpt>Their main focus was to explore telecommunications systems, minicomputer and mainframe operating systems and large-scale packet data networks.
+</excerpt>
+</document_reference>
+<document_reference name="He had built up a significant reputation in the hacker sub-culture" contributor="Andrea Atzeni" document="Mark Abene on wikipedia" >
+  <excerpt>Abene had built up a significant reputation in the hacker sub-culture</excerpt>
+</document_reference>
+<document_reference name="He wants to trade programming ideas and software" contributor="Andrea Atzeni" document="Article on Mark Abene" >
+  <excerpt>And I was seeking out people to trade programming ideas, possibly software and so on.
+</excerpt>
+</document_reference>
+<document_reference name="Interested in underground topics" contributor="Andrea Atzeni" document="Article on Mark Abene" >
+  <excerpt>Behind the scenes there were often private sections restricted to specific users to discuss certain underground topics, not the least of which was trading passwords for online systems and even calling card numbers to circumvent toll charges.
+</excerpt>
+</document_reference>
+<document_reference name="He shares the desire to understand technology" contributor="Andrea Atzeni" document="Mark Abene on wikipedia" >
+  <excerpt>In the mid-1980s he was first introduced to members of the Legion of Doom (LOD), a loosely-knit group of highly respected teenage hackers who shared Abene's uncompromising desire to understand technology.
+</excerpt>
+</document_reference>
+<document_reference name="Intellectual challenge" contributor="Andrea Atzeni" document="Article on Mark Abene" >
+  <excerpt>Besides being fun it was definitely an intellectual challenge.
+</excerpt>
+</document_reference>
+<document_reference name="He was a high-profile hacker" contributor="Andrea Atzeni" document="Mark Abene on wikipedia" >
+  <excerpt>Phiber Optik was a high-profile hacker in the early 1990s, appearing in The New York Times, Harper's, Esquire, in debates and on television.</excerpt>
+</document_reference>
+<document_reference name="Eminent clientele" contributor="Andrea Atzeni" document="Mark Abene on wikipedia" >
+  <excerpt>Abene's clientele come from various sectors of the corporate world, ranging from the financial and telecom industries to health care and high-technology. American Express, Sun Microsystems, IBM and Union Bank of Switzerland are a few of his former clients.
+</excerpt>
+</document_reference>
+<document_reference name="Staff consultant" contributor="Andrea Atzeni" document="Mark Abene on wikipedia" >
+  <excerpt>He has also worked as a staff consultant for Ernst and Young in their New York Information Security and Audit Services (ISAAS) group where he was recruited to help form Ernst and Young's Tiger Team practice.
+</excerpt>
+</document_reference>
+<document_reference name="Knowledge of system administration and security models" contributor="Andrea Atzeni" document="Article on Mark Abene" >
+  <excerpt>I had gotten pretty proficient not only at programming, but at understanding the system administration and security models of a lot of these operating systems from DEC.
+</excerpt>
+</document_reference>
+<document_reference name="He learned C to crack the login program" contributor="Andrea Atzeni" document="Article on Mark Abene" >
+  <excerpt> Another thing that motivated me to learn C was to be able to do modifications to the security infrastructure of a lot of these systems in order to maintain access to them...The log-in program that runs on Unix was written in C. Being able to modify that and insert a backdoor password for easy entry is something you had to be skilled to do.
+</excerpt>
+</document_reference>
+<document_reference name="He learned C to run password crakers" contributor="Andrea Atzeni" document="Article on Mark Abene" >
+  <excerpt>And my motivation for wanting to program in C stemmed from my wanting to run password crackers.
+</excerpt>
+</document_reference>
+<document_reference name="He wrote encryption routines for a streaming service" contributor="Andrea Atzeni" document="Article on Mark Abene" >
+  <excerpt>A fun job I had recently was writing the encryption routines for the online streaming service for Major League Baseball.
+</excerpt>
+</document_reference>
+<document_reference name="Computer early adopter" contributor="Andrea Atzeni" document="Mark Abene on wikipedia" >
+  <excerpt>Mark Abene's first contact with computers was at around 9 years of age at a local department store, where he would often pass the time while his parents shopped.</excerpt>
+</document_reference>
+<document_reference name="His first computer was a TRS-80 MC-10" contributor="Andrea Atzeni" document="Mark Abene on wikipedia" >
+  <excerpt>His first computer was a TRS-80 MC-10 with 4K of RAM, a 32-column screen, no lower case, and a cassette tape recorder to load and save programs.</excerpt>
+</document_reference>
+<document_reference name="BBS employee" contributor="Andrea Atzeni" document="Mark Abene on wikipedia" >
+  <excerpt>At the time of the indictment he was working at MindVox, an early BBS/ISP founded by two New York LOD members, and subsequently at ECHO, also a multi-user BBS and early ISP.
+</excerpt>
+</document_reference>
+<document_reference name="Expert in information and network security" contributor="Andrea Atzeni" document="Mark Abene on wikipedia" >
+  <excerpt>Mark Abene has over 20 years of professional experience in the field of information and network security
+</excerpt>
+</document_reference>
+<document_reference name="Over reliance in hacker rules" contributor="Andrea Atzeni" document="Article on Mark Abene" >
+  <excerpt>We always believed that as long as we adhered to that code of behavior we wouldn't show up on too many people's radar.
+</excerpt>
+</document_reference>
+<document_reference name="Opponent underestimation" contributor="Andrea Atzeni" document="Article on Mark Abene" >
+  <excerpt>I figured that these guys were so far off in what they believed was going on
+</excerpt>
+</document_reference>
+<document_reference name="Security pundit" contributor="Andrea Atzeni" document="Mark Abene on wikipedia" >
+  <excerpt>Abene has spoken on the subject of security in many publications such as the New York Times, the Washington Post, the Wall Street Journal, and Time Magazine.
+</excerpt>
+</document_reference>
+<document_reference name="Worldwide company" contributor="Andrea Atzeni" document="Mark Abene on wikipedia" >
+  <excerpt>Crossbar provided consulting services for a number of large corporations during its lifetime, during which the principals conducted business in the U.S., Japan, Brazil, and Sweden.
+</excerpt>
+</document_reference>
+<document_reference name="Successful independent consultant" contributor="Andrea Atzeni" document="Mark Abene on wikipedia" >
+  <excerpt>Living in New York City today, Abene is a successful independent consultant for various organizations.
+</excerpt>
+</document_reference>
+<persona_characteristic persona="Harold" behavioural_variable="Activities" modal_qualifier="Presumably" >
+  <definition>Convicted hacker</definition>
+  <grounds type="document" reference="Subject to home search" />
+  <grounds type="document" reference="Indicted of computer tampering and computer trepass" />
+  <grounds type="document" reference="Sentenced to 35 hours of community service" />
+  <grounds type="document" reference="Arrested with other members of the MOD" />
+  <grounds type="document" reference="Sentenced to 12 months imprisonment" />
+  <grounds type="document" reference="Served the sentence at a federal prison" />
+  <grounds type="document" reference="Forgetful of danger signs" />
+</persona_characteristic>
+<persona_characteristic persona="Harold" behavioural_variable="Activities" modal_qualifier="Always" >
+  <definition>Entrepreneur</definition>
+  <grounds type="document" reference="He created his own security firm" />
+</persona_characteristic>
+<persona_characteristic persona="Harold" behavioural_variable="Activities" modal_qualifier="Presumably" >
+  <definition>Esteemed Pen-Tester</definition>
+  <grounds type="document" reference="Security pundit" />
+  <grounds type="document" reference="Worldwide company" />
+  <grounds type="document" reference="Successful independent consultant" />
+</persona_characteristic>
+<persona_characteristic persona="Harold" behavioural_variable="Activities" modal_qualifier="Always" >
+  <definition>Technology speaker</definition>
+  <grounds type="document" reference="Lecturer" />
+  <grounds type="document" reference="Keynote speaker" />
+</persona_characteristic>
+<persona_characteristic persona="Harold" behavioural_variable="Aptitudes" modal_qualifier="Presumably" >
+  <definition>Inquiring mind</definition>
+  <grounds type="document" reference="He used his computer to access BBSes" />
+  <grounds type="document" reference="Interested in telco system internals" />
+  <grounds type="document" reference="Explore the online frontier" />
+</persona_characteristic>
+<persona_characteristic persona="Harold" behavioural_variable="Aptitudes" modal_qualifier="Always" >
+  <definition>Part of hacker sub-culture</definition>
+  <grounds type="document" reference="He is a computer security hacker" />
+  <grounds type="document" reference="He was member of hacker groups" />
+  <grounds type="document" reference="On BBSes he found data to access to DEC minicomputers" />
+  <grounds type="document" reference="The focus of the group was to explore and understand technolody" />
+  <grounds type="document" reference="He had built up a significant reputation in the hacker sub-culture" />
+  <grounds type="document" reference="He wants to trade programming ideas and software" />
+  <grounds type="document" reference="Interested in underground topics" />
+</persona_characteristic>
+<persona_characteristic persona="Harold" behavioural_variable="Aptitudes" modal_qualifier="Presumably" >
+  <definition>Techno enthusiat</definition>
+  <grounds type="document" reference="He used his computer to access BBSes" />
+  <grounds type="document" reference="He is intrigued by more powerful programming environment" />
+  <grounds type="document" reference="He learns new programming languages" />
+  <grounds type="document" reference="He views his computer as a window into a larger world" />
+  <grounds type="document" reference="Access to more powerful computers" />
+</persona_characteristic>
+<persona_characteristic persona="Harold" behavioural_variable="Attitudes" modal_qualifier="Presumably" >
+  <definition>Borderline activity</definition>
+  <grounds type="document" reference="Lack of notion of illegal behaviour" />
+  <grounds type="document" reference="There were no clear-cut computer crime laws" />
+</persona_characteristic>
+<persona_characteristic persona="Harold" behavioural_variable="Attitudes" modal_qualifier="Presumably" >
+  <definition>Law inattentive</definition>
+  <grounds type="document" reference="He was not really thinking about what the law says" />
+  <grounds type="document" reference="Unregretful of law violations" />
+  <rebuttal type="document" reference="Fearful of jail" />
+</persona_characteristic>
+<persona_characteristic persona="Harold" behavioural_variable="Attitudes" modal_qualifier="Presumably" >
+  <definition>Personal ethic</definition>
+  <grounds type="document" reference="He was known as the Robin Hood of cyberspace" />
+  <grounds type="document" reference="He defends the morals and motivations of hackers" />
+  <grounds type="document" reference="Observe a code of behavior" />
+</persona_characteristic>
+<persona_characteristic persona="Harold" behavioural_variable="Attitudes" modal_qualifier="Presumably" >
+  <definition>Self confident</definition>
+  <grounds type="document" reference="Proud of his past" />
+</persona_characteristic>
+<persona_characteristic persona="Harold" behavioural_variable="Environment_Narrative" modal_qualifier="Presumably" >
+  <definition>Overconfident</definition>
+  <grounds type="document" reference="Over reliance in hacker rules" />
+  <grounds type="document" reference="Opponent underestimation" />
+</persona_characteristic>
+<persona_characteristic persona="Harold" behavioural_variable="Motivations" modal_qualifier="Presumably" >
+  <definition>Love for knowledge</definition>
+  <grounds type="document" reference="He shares the desire to understand technology" />
+  <grounds type="document" reference="Intellectual challenge" />
+</persona_characteristic>
+<persona_characteristic persona="Harold" behavioural_variable="Skills" modal_qualifier="Presumably" >
+  <definition>Lifetime experience in computer intrusion</definition>
+  <grounds type="document" reference="Computer early adopter" />
+  <grounds type="document" reference="His first computer was a TRS-80 MC-10" />
+  <grounds type="document" reference="On BBSes he found data to access to DEC minicomputers" />
+  <grounds type="document" reference="BBS employee" />
+  <grounds type="document" reference="Expert in information and network security" />
+</persona_characteristic>
+<persona_characteristic persona="Harold" behavioural_variable="Skills" modal_qualifier="Presumably" >
+  <definition>Expert hacker</definition>
+  <grounds type="document" reference="He was a high-profile hacker" />
+  <grounds type="document" reference="On BBSes he found data to access to DEC minicomputers" />
+  <grounds type="document" reference="Eminent clientele" />
+  <grounds type="document" reference="Staff consultant" />
+  <grounds type="document" reference="Knowledge of system administration and security models" />
+  <grounds type="document" reference="He learned C to crack the login program" />
+</persona_characteristic>
+<persona_characteristic persona="Harold" behavioural_variable="Skills" modal_qualifier="Always" >
+  <definition>Programmer</definition>
+  <grounds type="document" reference="Eminent clientele" />
+  <grounds type="document" reference="He learned C to run password crakers" />
+  <grounds type="document" reference="He wrote encryption routines for a streaming service" />
+</persona_characteristic>
+</usability>

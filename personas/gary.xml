@@ -1,0 +1,170 @@
+<?xml version="1.0"?>
+<!DOCTYPE usability PUBLIC "-//CAIRIS//DTD USABILITY 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/usability.dtd">
+
+<usability>
+<persona name="Gary" type="Primary" assumption_persona="TRUE" image="/home/irisuser/webinos/wp2/personas/gary.jpg" >
+  <activities>Presently unemployed, recently fired, not in a very happy mood. Gary angrily remembers his former career as task leader of the information technology unit, working for over 25 years in desktop and networking support, and building a professional websites for more than 10 years. Until he was discharged without consideration of his long-serving loyalty to the company's work.</activities>
+  <attitudes>An experienced PC user, who happily uses a PC for everyday tasks. His always demands new challenges capable of stimulating his natural curiosity and matching his desire for personal improvement. In particular, he enjoys improving his knowledge of computers and the Internet every day.</attitudes>
+  <aptitudes>Already fed by a good knowledge of PC and Internet, he can easily prove the obtained knowledge through many certificates related to his job. However, despite his existing achievements he still has a desire to obtain new certification as evidence of his tireless appetite for learning.</aptitudes>
+  <motivations>Due to the perceived unjust treatment by his former employer, Gary first idea is to retaliate for his dismissal by deleting company data. After a second thought, the idea remains the same! It is impossible for him to forgive such insensitive behaviour by the company. Since he is able to access the computer system, a huge amount of damage is eagerly achievable.</motivations>
+  <skills>Gary knows the company's internal network and his old user account is still working (the company should have disabled it promptly, but did not). He can directly access and delete relevant files or embed a malicious script in a routine program to plant a logic bomb on the company server.</skills>
+
+  <persona_environment name="Identity" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Gary knows relatively little about security. Even if the security posture of its organization is not very well shaped (his non-disabled account is the best proof of this), he still left an obvious trace of his actions in the system. As a result, his actions are destined to drive him in front of a court of justice.</narrative>
+  </persona_environment>
+  <persona_environment name="Discovery and Addressing" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Gary knows relatively little about security. Even if the security posture of its organization is not very well shaped (his non-disabled account is the best proof of this), he still left an obvious trace of his actions in the system. As a result, his actions are destined to drive him in front of a court of justice.</narrative>
+  </persona_environment>
+  <persona_environment name="Remote Notifications and Messaging" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Gary knows relatively little about security. Even if the security posture of its organization is not very well shaped (his non-disabled account is the best proof of this), he still left an obvious trace of his actions in the system. As a result, his actions are destined to drive him in front of a court of justice.</narrative>
+  </persona_environment>
+  <persona_environment name="Policy and Security" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Gary knows relatively little about security. Even if the security posture of its organization is not very well shaped (his non-disabled account is the best proof of this), he still left an obvious trace of his actions in the system. As a result, his actions are destined to drive him in front of a court of justice.</narrative>
+  </persona_environment>
+  <persona_environment name="Negotiation and Compatibility" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Gary knows relatively little about security. Even if the security posture of its organization is not very well shaped (his non-disabled account is the best proof of this), he still left an obvious trace of his actions in the system. As a result, his actions are destined to drive him in front of a court of justice.</narrative>
+  </persona_environment>
+  <persona_environment name="Lifecycle" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Gary knows relatively little about security. Even if the security posture of its organization is not very well shaped (his non-disabled account is the best proof of this), he still left an obvious trace of his actions in the system. As a result, his actions are destined to drive him in front of a court of justice.</narrative>
+  </persona_environment>
+  <persona_environment name="Device and Service Functional Capability" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Gary knows relatively little about security. Even if the security posture of its organization is not very well shaped (his non-disabled account is the best proof of this), he still left an obvious trace of his actions in the system. As a result, his actions are destined to drive him in front of a court of justice.</narrative>
+  </persona_environment>
+  <persona_environment name="Transfer and Management of State" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Gary knows relatively little about security. Even if the security posture of its organization is not very well shaped (his non-disabled account is the best proof of this), he still left an obvious trace of his actions in the system. As a result, his actions are destined to drive him in front of a court of justice.</narrative>
+  </persona_environment>
+  <persona_environment name="Complete" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Gary knows relatively little about security. Even if the security posture of its organization is not very well shaped (his non-disabled account is the best proof of this), he still left an obvious trace of his actions in the system. As a result, his actions are destined to drive him in front of a court of justice.</narrative>
+  </persona_environment>
+</persona>
+<external_document name="Darnell H. Albert-El sentence" version="1" date="29 October 2010" authors="http://www.cybercrime.gov/albertSent.pdf" >
+  <description>None</description>
+</external_document>
+<external_document name="Darnell Albert-El Linkedin profile" version="1" date="unknown" authors="http://www.linkedin.com/in/darnellalbert" >
+  <description>None</description>
+</external_document>
+<external_document name="Ismael Alvarez plea" version="1" date="2 December 2010" authors="http://www.cybercrime.gov/alvarezPlea.pdf" >
+  <description>None</description>
+</external_document>
+<external_document name="Rajendrasinh Babubhai Makwana convict" version="1" date="4 October 2010" authors="http://www.cybercrime.gov/makwanaConvict.pdf" >
+  <description>None</description>
+</external_document>
+<external_document name="Article on Rajendrasinh Babubhai Makwana" version="1" date="29 January 2009" authors="Dan Goodin - http://www.theregister.co.uk/2009/01/29/fannie_mae_sabotage_averted/" >
+  <description>None</description>
+</external_document>
+<document_reference name="Dismissal" contributor="Andrea Atzeni" document="Darnell H. Albert-El sentence" >
+  <excerpt>In June 2008, Transmarx terminated Albert-El from his position as their information technology director.
+</excerpt>
+</document_reference>
+<document_reference name="Dissatisfaction" contributor="Andrea Atzeni" document="Darnell H. Albert-El sentence" >
+  <excerpt>Albert-El admitted that he caused the damage because he was angry about being fired.</excerpt>
+</document_reference>
+<document_reference name="Information technology director" contributor="Andrea Atzeni" document="Darnell H. Albert-El sentence" >
+  <excerpt>In June 2008, Transmarx terminated Albert-El from his position as their information technology director.
+</excerpt>
+</document_reference>
+<document_reference name="Webmaster" contributor="Andrea Atzeni" document="Darnell Albert-El Linkedin profile" >
+  <excerpt>I have been building professional websites for the Military and Government since 2001.</excerpt>
+</document_reference>
+<document_reference name="Challenging" contributor="Andrea Atzeni" document="Darnell Albert-El Linkedin profile" >
+  <excerpt>My goal remains to seek opportunities that challenge both intellectually and creatively.</excerpt>
+</document_reference>
+<document_reference name="Certified PC technician" contributor="Andrea Atzeni" document="Darnell Albert-El Linkedin profile" >
+  <excerpt>A+ Certified PC Technician</excerpt>
+</document_reference>
+<document_reference name="Certified webmaster" contributor="Andrea Atzeni" document="Darnell Albert-El Linkedin profile" >
+  <excerpt>Certified Internet Webmaster Instructor.
+Dell Certified Systems Expert ASP Web application Developer </excerpt>
+</document_reference>
+<document_reference name="Certified programmer" contributor="Andrea Atzeni" document="Darnell Albert-El Linkedin profile" >
+  <excerpt>I hold (...) Certificates in Microcomputer Programming and Applications.</excerpt>
+</document_reference>
+<document_reference name="Willing to take certification" contributor="Andrea Atzeni" document="Darnell Albert-El Linkedin profile" >
+  <excerpt>My Goal is to become a Microsoft certified Web developer. Presently studying J2EE and ASP.</excerpt>
+</document_reference>
+<document_reference name="Improving web-based skills" contributor="Andrea Atzeni" document="Darnell Albert-El Linkedin profile" >
+  <excerpt>My Goal is to become a Microsoft certified Web developer. Presently studying J2EE and ASP.</excerpt>
+</document_reference>
+<document_reference name="Deleted valuable company data" contributor="Andrea Atzeni" document="Ismael Alvarez plea" >
+  <excerpt>Alvarez admitted that on September 1, 2010, he illegally gained access to the computer system of Gray Wireline, Inc., and deleted approximately 68 files, including analysis reports on oil and natural gas wells in Odessa, Levelland, Denver City and Andrews. As a result, Gray Wireline estimates that it had to spend approximately $16,000 to correct and remedy the damage caused by Alvarez.
+</excerpt>
+</document_reference>
+<document_reference name="Administrator-level access" contributor="Andrea Atzeni" document="Darnell H. Albert-El sentence" >
+  <excerpt>During his employment, Albert-El had administrator-level access to the Transmarx computer network.
+</excerpt>
+</document_reference>
+<document_reference name="Administrator-level access to web hosted files" contributor="Andrea Atzeni" document="Darnell H. Albert-El sentence" >
+  <excerpt>Albert-El admitted that on July 25, 2008, he used a personal computer and an administrator account and password to access the computer hosting the Transmarx website. After accessing the computer, Albert-El knowingly caused the transmission of a series of commands that intentionally caused damage without authorization to the computer by deleting approximately 1,000 files related to the Transmarx website.</excerpt>
+</document_reference>
+<document_reference name="Embed a malicious script" contributor="Andrea Atzeni" document="Rajendrasinh Babubhai Makwana convict" >
+  <excerpt>On October 29, 2008, a Fannie Mae senior engineer discovered a malicious script embedded in a routine program.
+(...)
+Makwana had transmitted the malicious code on October 24, 2008 which was intended to execute on January 31, 2009. The malicious code was designed to propagate throughout the Fannie Mae network of computers and destroy all data, including financial, securities and mortgage information.
+</excerpt>
+</document_reference>
+<document_reference name="Monitoring alerts temporarly disabled" contributor="Andrea Atzeni" document="Article on Rajendrasinh Babubhai Makwana" >
+  <excerpt>The .y.sh script would place a blocker on the monitoring system disabling any ABC engineers from receiving a monitoring alert for any problems on any machines in the entire ABC environment for 61 minutes.</excerpt>
+</document_reference>
+<document_reference name="Pleaded guilty of illicit access" contributor="Andrea Atzeni" document="Ismael Alvarez plea" >
+  <excerpt>faces up to ten years in federal prison after pleading guilty to illegally accessing his former employer's computer database and deleting files.
+</excerpt>
+</document_reference>
+<document_reference name="Over 25 years of desktop and networking support" contributor="Andrea Atzeni" document="Darnell Albert-El Linkedin profile" >
+  <excerpt>Over 25 years of Desktop and Networking support.</excerpt>
+</document_reference>
+<persona_characteristic persona="Gary" behavioural_variable="Activities" modal_qualifier="Always" >
+  <definition>Angry employee</definition>
+  <grounds type="document" reference="Dissatisfaction" />
+  <warrant type="document" reference="Dismissal" />
+</persona_characteristic>
+<persona_characteristic persona="Gary" behavioural_variable="Activities" modal_qualifier="Presumably" >
+  <definition>Experienced employee</definition>
+  <grounds type="document" reference="Over 25 years of desktop and networking support" />
+</persona_characteristic>
+<persona_characteristic persona="Gary" behavioural_variable="Aptitudes" modal_qualifier="Presumably" >
+  <definition>Learning inclination</definition>
+  <grounds type="document" reference="Willing to take certification" />
+  <grounds type="document" reference="Improving web-based skills" />
+</persona_characteristic>
+<persona_characteristic persona="Gary" behavioural_variable="Aptitudes" modal_qualifier="Presumably" >
+  <definition>Working knowledge of PC and Internet</definition>
+  <grounds type="document" reference="Certified PC technician" />
+  <grounds type="document" reference="Certified webmaster" />
+  <grounds type="document" reference="Certified programmer" />
+</persona_characteristic>
+<persona_characteristic persona="Gary" behavioural_variable="Attitudes" modal_qualifier="Presumably" >
+  <definition>He wants to pick up different skills</definition>
+  <grounds type="document" reference="Information technology director" />
+  <grounds type="document" reference="Webmaster" />
+  <warrant type="document" reference="Challenging" />
+</persona_characteristic>
+<persona_characteristic persona="Gary" behavioural_variable="Environment_Narrative" modal_qualifier="presumably" >
+  <definition>Unaware of monitoring systems</definition>
+  <grounds type="document" reference="Pleaded guilty of illicit access" />
+</persona_characteristic>
+<persona_characteristic persona="Gary" behavioural_variable="Motivations" modal_qualifier="Likely" >
+  <definition>He wants revenge</definition>
+  <grounds type="document" reference="Deleted valuable company data" />
+  <grounds type="document" reference="Administrator-level access" />
+</persona_characteristic>
+<persona_characteristic persona="Gary" behavioural_variable="Skills" modal_qualifier="Presumably" >
+  <definition>Make a server bomb</definition>
+  <grounds type="document" reference="Administrator-level access" />
+  <grounds type="document" reference="Embed a malicious script" />
+  <grounds type="document" reference="Monitoring alerts temporarly disabled" />
+</persona_characteristic>
+<persona_characteristic persona="Gary" behavioural_variable="Skills" modal_qualifier="Always" >
+  <definition>Access to company network</definition>
+  <grounds type="document" reference="Administrator-level access" />
+  <grounds type="document" reference="Administrator-level access to web hosted files" />
+</persona_characteristic>
+</usability>

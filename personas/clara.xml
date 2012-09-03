@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<!DOCTYPE usability PUBLIC "-//CAIRIS//DTD USABILITY 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/usability.dtd">
+
+
+<usability>
+<persona name="Clara" type="Primary" assumption_persona="TRUE" image="/home/irisuser/webinos/wp2/personas/clara.jpg" >
+  <activities>Clara is a teenager who lives with her family. Clara has diabetes and in order to live a good life, she actively manages her diabetes by herself. For this purpose, she uses modern technology, such as a laptop and a smartphone. Together with her blood glucose meter she collects and stores the measured data on a cloud service which is accessible by her physician.</activities>
+  <attitudes>Like most of the teenagers of her age, Clara wants to enjoy her life and have fun. She goes out with friends, eats unhealthy things and has an irregular daily routine. Being distracted by all the interesting things around her, she often forgets to measure her blood glucose level. As a result, her glucose level is too high on average. This is dangerous to her health. Even though her physician emphasises the importance of a good glucose level and the risks of a high glucose level, she is not caring enough. In fact, Clara is willing to manage her disease but she also does not want to give up the fun part of her life. Currently, she tends more to the fun part than to healthcare. She did not find her balance yet, but she is in the process of learning to cope with her disease.</attitudes>
+  <aptitudes>None</aptitudes>
+  <motivations>None</motivations>
+  <skills>None</skills>
+  <persona_environment name="Identity" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Discovery and Addressing" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Remote Notifications and Messaging" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Policy and Security" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Negotiation and Compatibility" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Lifecycle" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Device and Service Functional Capability" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Transfer and Management of State" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Complete" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+</persona>
+<external_document name="Remote Monitoring of Chronical Discease through Access to Medical Sensor Data and Sharing of Medical Files User Story" version="0.9" date="30 Nov 2010" authors="Claes Nilsson, Dieter Blomme" >
+  <description>Source http://bscw.fokus.fraunhofer.de/bscw/bscw.cgi/d679494/101130_WP21_Top_Stories.doc</description>
+</external_document>
+<external_document name="Take Care of Yourself Task" version="0.6" date="Take Care of Yourself Task" authors="Dieter Blomme" >
+  <description>Take Care of Yourself Task</description>
+</external_document>
+<document_reference name="Teenager" contributor="Sven Lachmund" document="Remote Monitoring of Chronical Discease through Access to Medical Sensor Data and Sharing of Medical Files User Story" >
+  <excerpt>Clara is a teenager with diabetes.</excerpt>
+</document_reference>
+<document_reference name="Lives at home" contributor="Sven Lachmund" document="Remote Monitoring of Chronical Discease through Access to Medical Sensor Data and Sharing of Medical Files User Story" >
+  <excerpt>She runs these web applications not only on her laptop but also on her mobile smartphone as well as on the family’s internet connected TV.</excerpt>
+</document_reference>
+<document_reference name="Has a chronic disease namely diabetes" contributor="Sven Lachmund" document="Remote Monitoring of Chronical Discease through Access to Medical Sensor Data and Sharing of Medical Files User Story" >
+  <excerpt>Clara is a teenager with diabetes.</excerpt>
+</document_reference>
+<document_reference name="Measures her blood glucose level by herself" contributor="Sven Lachmund" document="Remote Monitoring of Chronical Discease through Access to Medical Sensor Data and Sharing of Medical Files User Story" >
+  <excerpt>She uses her favorite blood glucose meter to measure her blood glucose levels. </excerpt>
+</document_reference>
+<document_reference name="These applications help controlling her glucose level" contributor="Sven Lachmund" document="Remote Monitoring of Chronical Discease through Access to Medical Sensor Data and Sharing of Medical Files User Story" >
+  <excerpt>These applications help Clara analyzing her blood glucose levels to help her in controlling her disease. The applications could for example display all her glucose levels for a certain time period, display diagrams showing average values throughout a day, show statistics on glucose levels within target/below target/above target, etc. </excerpt>
+</document_reference>
+<document_reference name="Transmits measured glucose levels to the Web application" contributor="Sven Lachmund" document="Remote Monitoring of Chronical Discease through Access to Medical Sensor Data and Sharing of Medical Files User Story" >
+  <excerpt>The most common case is that the blood glucose meter is connected to the computing device and values are transferred when Clara starts the diabetes web application. It is also possible to have a continuous connection so that each measured value is instantly sent to the computing device.</excerpt>
+</document_reference>
+<document_reference name="Stores glucose values in the cloud" contributor="Sven Lachmund" document="Remote Monitoring of Chronical Discease through Access to Medical Sensor Data and Sharing of Medical Files User Story" >
+  <excerpt>A Webinos enabled diabetes web application also has the possibility to store Clara’s blood glucose values in a diabetes file in the cloud. It is important that this file is stored in a secure manner and no unauthorized third parties have access to it.</excerpt>
+</document_reference>
+<document_reference name="Grants her diabetes physician access to her measured data" contributor="Sven Lachmund" document="Remote Monitoring of Chronical Discease through Access to Medical Sensor Data and Sharing of Medical Files User Story" >
+  <excerpt>For example, all values handled by the diabetes web application could continuously be stored in her diabetes file in the cloud and made available to her endocrinologist, her nurse, her dietitian, etc. \n\nAlternatively, Clara can make her results available when she visits her diabetes doctor for her three-monthly check-up. A scenario is that Clara takes out her mobile phone and starts her Webinos diabetes web application. She goes to the “Sharing my file” page. The application automatically searches for Webinos enabled devices in the vicinity. The doctor’s mobile phone shows up on the list and Webinos automatically provides Clara with the necessary data to check the security of sharing the file. Clara can then choose to share her file with the doctor using this mobile phone.</excerpt>
+</document_reference>
+<document_reference name="Uses a cutting-edge blood glucose level meter" contributor="Sven Lachmund" document="Remote Monitoring of Chronical Discease through Access to Medical Sensor Data and Sharing of Medical Files User Story" >
+  <excerpt>She uses her favorite blood glucose meter to measure her blood glucose levels. This meter is also able to communicate with internet connected computing devices such as her laptop and her mobile smartphone through a standardized local communication method (USB, Bluetooth, BLE, ANT+ etc).</excerpt>
+</document_reference>
+<document_reference name="Her blood glucose level meter connects to other devices" contributor="Sven Lachmund" document="Remote Monitoring of Chronical Discease through Access to Medical Sensor Data and Sharing of Medical Files User Story" >
+  <excerpt>She uses her favorite blood glucose meter to measure her blood glucose levels. This meter is also able to communicate with internet connected computing devices such as her laptop and her mobile smartphone through a standardized local communication method (USB, Bluetooth, BLE, ANT+ etc).\n\nShe runs these web applications not only on her laptop but also on her mobile smartphone as well as on the family’s internet connected TV.</excerpt>
+</document_reference>
+<document_reference name="Has a laptop" contributor="Sven Lachmund" document="Remote Monitoring of Chronical Discease through Access to Medical Sensor Data and Sharing of Medical Files User Story" >
+  <excerpt>She uses her favorite blood glucose meter to measure her blood glucose levels. This meter is also able to communicate with internet connected computing devices such as her laptop and her mobile smartphone through a standardized local communication method (USB, Bluetooth, BLE, ANT+ etc).\n\nShe runs these web applications not only on her laptop but also on her mobile smartphone as well as on the family’s internet connected TV.</excerpt>
+</document_reference>
+<document_reference name="Has a smartphone" contributor="Sven Lachmund" document="Remote Monitoring of Chronical Discease through Access to Medical Sensor Data and Sharing of Medical Files User Story" >
+  <excerpt>She uses her favorite blood glucose meter to measure her blood glucose levels. This meter is also able to communicate with internet connected computing devices such as her laptop and her mobile smartphone through a standardized local communication method (USB, Bluetooth, BLE, ANT+ etc).\n\nShe runs these web applications not only on her laptop but also on her mobile smartphone as well as on the family’s internet connected TV.</excerpt>
+</document_reference>
+<document_reference name="Family TV is recent" contributor="Sven Lachmund" document="Remote Monitoring of Chronical Discease through Access to Medical Sensor Data and Sharing of Medical Files User Story" >
+  <excerpt>She runs these web applications not only on her laptop but also on her mobile smartphone as well as on the family’s internet connected TV.</excerpt>
+</document_reference>
+<document_reference name="Uses cloud-based Web applications for diabetics" contributor="Sven Lachmund" document="Remote Monitoring of Chronical Discease through Access to Medical Sensor Data and Sharing of Medical Files User Story" >
+  <excerpt>Clara has found several interesting cloud-based web applications for diabetics. These applications help Clara analyzing her blood glucose levels to help her in controlling her disease.</excerpt>
+</document_reference>
+<document_reference name="Uses the rich set of features of the Web applications" contributor="Sven Lachmund" document="Remote Monitoring of Chronical Discease through Access to Medical Sensor Data and Sharing of Medical Files User Story" >
+  <excerpt>These applications help Clara analyzing her blood glucose levels to help her in controlling her disease. The applications could for example display all her glucose levels for a certain time period, display diagrams showing average values throughout a day, show statistics on glucose levels within target/below target/above target, etc. </excerpt>
+</document_reference>
+<document_reference name="Often forgets measuring her glucose level" contributor="Dieter Blomme" document="Take Care of Yourself Task" >
+  <excerpt>Clara has the nasty habit of forgetting to measure her glucose values before eating and when she goes to bed.</excerpt>
+</document_reference>
+<document_reference name="Has too high blood glucose level too often" contributor="Dieter Blomme" document="Take Care of Yourself Task" >
+  <excerpt>Because of this her blood sugar is too high most of the time, increasing the risk of heart conditions.</excerpt>
+</document_reference>
+<document_reference name="Is oblivious to the risks of her high glucose level" contributor="Dieter Blomme" document="Take Care of Yourself Task" >
+  <excerpt>At the hospital the doctor explains all the risks of continuous high blood sugar to Clara in the hope that she will understand and correct her behavior. However, the message does not seem to sink in completely and the doctor decides to try a new approach.</excerpt>
+</document_reference>
+<document_reference name="Agrees to external monitoring by her physician" contributor="Dieter Blomme" document="Take Care of Yourself Task" >
+  <excerpt>Clara, who in the meantime realizes that she needs to change her habits, complies and gives the doctor full rights to her diabetes file so he can add recommendations.</excerpt>
+</document_reference>
+<document_reference name="Needs notifications to be reminded to measure her glucose level" contributor="Dieter Blomme" document="Take Care of Yourself Task" >
+  <excerpt>The doctor decides to take it one step further. He accesses the Webinos enabled web application Clara and the hospital uses to manage the diabetes file. There he alters some settings so a notification is shown to Clara on her smartphone so she is reminded she needs to measure her blood sugar.</excerpt>
+</document_reference>
+<persona_characteristic persona="Clara" behavioural_variable="Activities" modal_qualifier="Definitely" >
+  <definition>Uses modern technology</definition>
+  <grounds type="document" reference="Uses a cutting-edge blood glucose level meter" />
+  <grounds type="document" reference="Her blood glucose level meter connects to other devices" />
+  <grounds type="document" reference="Has a laptop" />
+  <grounds type="document" reference="Has a smartphone" />
+  <grounds type="document" reference="Family TV is recent" />
+  <grounds type="document" reference="Uses cloud-based Web applications for diabetics" />
+  <grounds type="document" reference="Uses the rich set of features of the Web applications" />
+</persona_characteristic>
+<persona_characteristic persona="Clara" behavioural_variable="Activities" modal_qualifier="Definitely" >
+  <definition>Manages her diabetes by herself</definition>
+  <grounds type="document" reference="Has a chronic disease namely diabetes" />
+  <grounds type="document" reference="Measures her blood glucose level by herself" />
+  <grounds type="document" reference="These applications help controlling her glucose level" />
+</persona_characteristic>
+<persona_characteristic persona="Clara" behavioural_variable="Activities" modal_qualifier="Definitely" >
+  <definition>Is a teenanger</definition>
+  <grounds type="document" reference="Teenager" />
+</persona_characteristic>
+<persona_characteristic persona="Clara" behavioural_variable="Activities" modal_qualifier="Definitely" >
+  <definition>Manages her data with cloud services</definition>
+  <grounds type="document" reference="Transmits measured glucose levels to the Web application" />
+  <grounds type="document" reference="Stores glucose values in the cloud" />
+  <grounds type="document" reference="Grants her diabetes physician access to her measured data" />
+</persona_characteristic>
+<persona_characteristic persona="Clara" behavioural_variable="Activities" modal_qualifier="Definitely" >
+  <definition>Lives with her family</definition>
+  <grounds type="document" reference="Lives at home" />
+</persona_characteristic>
+<persona_characteristic persona="Clara" behavioural_variable="Attitudes" modal_qualifier="Definitely" >
+  <definition>Is careless with her disease but is basically willing to manage it</definition>
+  <grounds type="document" reference="Often forgets measuring her glucose level" />
+  <grounds type="document" reference="Has too high blood glucose level too often" />
+  <grounds type="document" reference="Is oblivious to the risks of her high glucose level" />
+  <grounds type="document" reference="Agrees to external monitoring by her physician" />
+  <grounds type="document" reference="Needs notifications to be reminded to measure her glucose level" />
+</persona_characteristic>
+</usability>

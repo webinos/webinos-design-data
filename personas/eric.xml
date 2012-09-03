@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE usability PUBLIC "-//CAIRIS//DTD USABILITY 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/usability.dtd">
+
+
+<usability>
+<persona name="Eric" type="Primary" assumption_persona="FALSE" image="/home/irisuser/webinos/wp2/personas/eric.jpg">
+  <activities>Eric is Helen's 5 year old son.  Although not a webinos user as such, he does use sometimes use his mother's webinos-enabled tablet device when going on journeys.  Although Helen usually thinks about what Eric might do for long journeys, he is usually left to his own devices on short-duration trips like school-runs or shopping trips.</activities>
+  <attitudes>Eric enjoys activities which draw the attention of others, and likes to involve other people in the games that he plays.  For this reason, Eric is particularly fond of playing simple games with his parents, such as I Spy.</attitudes>
+  <aptitudes>As Eric has grown older, he has also developed an interest in activities which absorb his interest.  Card and memory games have been known to keep Eric distracted on long journeys.  Similarly, Eric is happy to watch films and take a snooze when feels a little tired.</aptitudes>
+  <motivations>Eric focuses his energies on whatever technology he has to hand, but always looks for instant gratification based on his current needs.  Although he finds tables and touch-screens intriguing, he is prone to throwing down objects he doesn't like.  Eric will tolerate things he doesn't find immediately useful only if he expects a reward as a consequence of using it.
+If Eric is going on long journeys, he takes comfort in his things which are familiar to him.  For example, Helen often gives Eric his teddy bear when travelling long distances, such as to a theme park or trips to his grandparents, and is usually unable to sleep on car journeys without this.  Although Eric doesn't hold his teddy bear all the time, he becomes distressed if unable to reach for this at any time from his seat.</motivations>
+  <skills>None</skills>
+  <persona_environment name="Identity" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Discovery and Addressing" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Remote Notifications and Messaging" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Policy and Security" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Negotiation and Compatibility" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Lifecycle" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Device and Service Functional Capability" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Transfer and Management of State" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Complete" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+</persona>
+    
+<external_document name="Helen focus group transcript" version="1" date="21st July 2011" authors="Shamal Faily" >
+  <description>Transcript from focus group with parents of young children looking at webinos in-car telematics security and privacy issues.</description>
+</external_document>
+<external_document name="Ivan Flechais interview" version="1" date="20th December July 2011" authors="Shamal Faily" >
+  <description>Notes from discussions with Ivan Flechais about his eldest son</description>
+</external_document>
+<document_reference name="Wants to feel involved" contributor="Shamal Faily" document="Helen focus group transcript">
+  <excerpt>Wants to feel involved</excerpt>
+</document_reference>
+<document_reference name="Throws away non-working tech" contributor="Shamal Faily" document="Helen focus group transcript">
+  <excerpt> Throws away non-working tech</excerpt>
+</document_reference>
+<document_reference name="Likes touch screens" contributor="Shamal Faily" document="Helen focus group transcript">
+  <excerpt>Likes touch screens</excerpt>
+</document_reference>
+<document_reference name="Travels to theme-parks" contributor="Shamal Faily" document="Helen focus group transcript">
+  <excerpt>Travels to theme-parks</excerpt>
+</document_reference>
+<document_reference name="Expects rewards for waiting" contributor="Shamal Faily" document="Helen focus group transcript">
+  <excerpt>Expects rewards for waiting</excerpt>
+</document_reference>    
+<document_reference name="Sleeping teddy bear" contributor="Shamal Faily" document="Ivan Flechais interview">
+    <excerpt>Sleeping teddy bear</excerpt>
+</document_reference>
+<document_reference name="Holds teddy bear" contributor="Shamal Faily" document="Ivan Flechais interview">
+    <excerpt>Holds teddy bear</excerpt>
+</document_reference>
+<document_reference name="Visits grandparents" contributor="Shamal Faily" document="Ivan Flechais interview">
+    <excerpt>Visits grandparents</excerpt>
+</document_reference>
+<document_reference name="Travels to theme park" contributor="Shamal Faily" document="Ivan Flechais interview">
+  <excerpt>Travels to theme park (returns late)</excerpt>
+</document_reference>
+<document_reference name="Overnight trip" contributor="Shamal Faily" document="Ivan Flechais interview">
+  <excerpt>Overnight trip</excerpt>
+</document_reference>
+<document_reference name="3.5 hour journey" contributor="Shamal Faily" document="Ivan Flechais interview">
+    <excerpt>3.5 hour journey</excerpt>
+</document_reference>
+<document_reference name="After school activities" contributor="Shamal Faily" document="Ivan Flechais interview">
+    <excerpt>After school activities</excerpt>
+</document_reference>
+<document_reference name="Shopping trips" contributor="Shamal Faily" document="Ivan Flechais interview">
+  <excerpt>Shopping trips</excerpt>
+</document_reference>
+<document_reference name="Travel short distances daily" contributor="Shamal Faily" document="Ivan Flechais interview">
+    <excerpt>Travel short distances daily</excerpt>
+</document_reference>
+<document_reference name="Fascinated by tablets" contributor="Shamal Faily" document="Ivan Flechais interview">
+    <excerpt>Fascinated by tablets</excerpt>
+</document_reference>
+<document_reference name="Likes touch screens" contributor="Shamal Faily" document="Ivan Flechais interview">
+    <excerpt>Likes touch screens</excerpt>
+</document_reference>
+<document_reference name="Wants to get to destination" contributor="Shamal Faily" document="Ivan Flechais interview">
+    <excerpt>Wants to get to destination</excerpt>
+</document_reference>
+<document_reference name="Focus on thing at hand" contributor="Shamal Faily" document="Ivan Flechais interview">
+    <excerpt>Focus on thing at hand"</excerpt>
+</document_reference>
+<document_reference name="Watches films" contributor="Shamal Faily" document="Ivan Flechais interview">
+    <excerpt>Watches films</excerpt>
+</document_reference>
+<document_reference name="Occasionally sleeps" contributor="Shamal Faily" document="Ivan Flechais interview">
+    <excerpt>Occasionally sleeps</excerpt>
+</document_reference>
+<document_reference name="Plays memory and card games" contributor="Shamal Faily" document="Ivan Flechais interview">
+    <excerpt>Plays memory and card games</excerpt>
+</document_reference>
+<document_reference name="Plays I spy" contributor="Shamal Faily" document="Ivan Flechais interview">
+    <excerpt>Plays I spy</excerpt>
+</document_reference>
+<document_reference name="Plays with parents" contributor="Shamal Faily" document="Ivan Flechais interview">
+  <excerpt>Plays with parents</excerpt>
+</document_reference>
+
+
+
+<persona_characteristic persona="Eric" behavioural_variable="Motivations" modal_qualifier="Usually">
+  <definition>Needs a comforting object</definition>
+  <grounds type="document" reference="Sleeping teddy bear"/>
+  <grounds type="document" reference="Holds teddy bear"/>
+  <grounds type="document" reference="Visits grandparents"/>
+  <warrant type="document" reference="Travels to theme park"/>
+  <warrant type="document" reference="Overnight trip"/>
+  <warrant type="document" reference="3.5 hour journey"/>
+</persona_characteristic>
+<persona_characteristic persona="Eric" behavioural_variable="Activities" modal_qualifier="Usually">
+  <definition>Routine trips require little preparation</definition>
+  <grounds type="document" reference="After school activities"/>
+  <grounds type="document" reference="Shopping trips"/>
+  <grounds type="document" reference="Travel short distances daily"/>
+</persona_characteristic>
+<persona_characteristic persona="Eric" behavioural_variable="Motivations" modal_qualifier="Usually">
+  <definition>Gratification is needs-driven</definition>
+  <grounds type="document" reference="Fascinated by tablets"/>
+  <grounds type="document" reference="Likes touch screens"/>
+  <grounds type="document" reference="Throws away non-working tech"/>
+  <grounds type="document" reference="Expects rewards for waiting"/>
+  <grounds type="document" reference="Wants to get to destination"/>
+  <warrant type="document" reference="Focus on thing at hand"/>
+</persona_characteristic>
+<persona_characteristic persona="Eric" behavioural_variable="Aptitudes" modal_qualifier="Usually">
+  <definition>Participates in absorbing activities</definition>
+  <grounds type="document" reference="Watches films"/>
+  <grounds type="document" reference="Occasionally sleeps"/>
+  <grounds type="document" reference="Plays memory and card games"/>
+</persona_characteristic>  
+    
+<persona_characteristic persona="Eric" behavioural_variable="Attitudes" modal_qualifier="Usually">
+  <definition>Attention seeks</definition>
+  <grounds type="document" reference="Plays I spy"/>
+  <grounds type="document" reference="Plays with parents"/>
+  <warrant type="document" reference="Wants to feel involved"/>
+</persona_characteristic>
+
+</usability>

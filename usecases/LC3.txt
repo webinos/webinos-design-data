@@ -1,0 +1,28 @@
+h1. LC3: Removal of applications
+
+Author: Katrin Jordan
+
+Actors: User
+
+h2. Description
+
+A webinos application is removed via remote action.
+
+
+h2. Preconditions
+
+An application is already installed.
+
+
+h2. Flow
+
+# User opens the management view of the webinos runtime.
+# Widget manager presents the list of installed applications
+# User selects the application which shall be removed from the devices and confirms the selection.
+# The Widget manager deletes the application locally and triggers the removal on the remote devices.
+# Application is removed on remote devices.
+
+
+h2. Postconditions
+
+Application is no longer available on the users device.

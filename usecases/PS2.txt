@@ -1,0 +1,34 @@
+h1. WOS-UC-Ta2-004: Account Management
+
+Author: Christian Nord, Andre Paul
+
+Actors: User
+
+h2. Description
+
+The user wants to check his service subscriptions and authorizations with the webinos runtime.
+
+h2. Preconditions
+
+* A valid webinos runtime account related to the User that handles the account management must be available.
+* The user must be authenticated towards the webinos runtime.
+
+h2. Flow
+
+# The user goes to his account management page.
+# The user can view all current accounts that he has signed up to, their validity and services that the user allows them to be used towards.
+# The user is now able to cancel any accounts and de-link accounts from service authorizations.
+
+h2. Postconditions
+
+The user's changes to his managed accounts are saved.
+
+h2. Use Case Map
+
+!account1.png!
+
+h2. Related artifacts
+
+| *Scenarios* | |
+| *Use Cases* | |
+| *Requirements* | |

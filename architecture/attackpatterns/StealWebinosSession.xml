@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE attack_pattern PUBLIC "-//CAIRIS//DTD ATTACKPATTERN 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/attack_pattern.dtd">
+
+<!-- 
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+
+
+<attack_pattern name="Steal webinos Session" likelihood="Probable" severity="Critical"> 
+  <intent>Exploit open sessions to steal personal data for financial gain</intent> 
+  <motivation goal="confidentiality" value="Medium"> 
+    <description>The attack allows the malicious code access to session data, some of which may be long-lived.</description>
+  </motivation>
+  <motivation goal="anonymity" value="Low"> 
+    <description>The malicious request associated with the CSRF may involve harvesting small amounts of data which, collectively, could lead to the disclosure of a subject's identity.</description>
+  </motivation>
+  <applicability environment="Complete" />
+  <structure attack="Cross-Site Request Forgery" exploit="Session Fixation" exploit_obstacle="Malicious code evaluated" /> 
+  <participant name="Ethan">
+    <motive name="Money" />
+    <capability name="Technology" value="Medium" />
+    <capability name="Software" value="Medium" />
+    <capability name="Knowledge/Methods" value="Medium" />
+  </participant>
+  <collaboration>
+    <target name="Personal Data" /> 
+    <exploit name="Session" />
+  </collaboration>
+  <consequences>Embarrasement as reports grow of scammers making money from webinos-based applications.</consequences>
+  <implementation>
+    <description>As a new source of income, Ethan has opened an account with an affiliate stock photo service. Ethan carries out some rudimentary google hacking to identify forums that might be open to stored XSS vulnerabilities. Eventually, Ethan finds a forum that is used by a Webinos enabled camera app that synchronises images with a cloud based photo sharing service.
+
+Ethan develops an XSS/CSRF exploit by loading malicious code into the application's blog page. On viewing the blog, the script obtains the Webinos session data and, via some local and external javascript and php, sends the session data to another site which uses the Webinos APIs, close a device's session, re-opens the session to the device, obtains the images, and submits these to the affiliate stock photo service using the service providers web services API. Ethan realises the exploit might only work on certain devices, but he thinks that something is better than nothing...
+
+Several days later, Justin is taking some snaps of some his friends at a bar using a recently downloaded camera application that syncs his images to the cloud based provider. On his way home, Justin browses the community developed help data in the application. Justin doesn't realise that, by checking this help data, his photos are about to net Ethan some additional income.</description>
+   </implementation>
+  <known_uses>None</known_uses>
+  <related_patterns>None</related_patterns>
+</attack_pattern>

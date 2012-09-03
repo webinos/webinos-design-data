@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<!DOCTYPE attack_pattern PUBLIC "-//CAIRIS//DTD ATTACKPATTERN 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/attack_pattern.dtd">
+
+<!-- 
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+
+
+<attack_pattern name="Loss of personal zone administration access" likelihood="Occasional" severity="Critical"> 
+  <obstacle name="Loss of PZH admin access" category="Vulnerability">
+    <definition>The PZH administration interface cannot be reached</definition>
+  </obstacle>
+  <responsibility name="Developer of webinos Platform" />
+  <obstacle name="PZH offline" category="Vulnerability">
+    <definition>The PZH is not accessible over the internet</definition>
+  </obstacle>
+  <obstacle name="OpenID account inaccessible" category="Vulnerability">
+    <definition>The OpenID process does not successfully authenticate the correct user to the hub</definition>
+    <concern name="OpenID credentials" />
+  </obstacle>
+  <obstacle name="OpenID provider offline" category="Vulnerability">
+    <definition>The OpenID provider is unavailable</definition>
+    <probability value="0.01">
+      <rationale>Should be provided by large, trusted company with DoS protection</rationale>
+    </probability>
+    <responsibility name="3rd Party Service Provider" />   
+  </obstacle>
+  <obstacle name="Authentication failure" category="Vulnerability">
+    <definition>The OpenID authentication process refuses to authenticate the user</definition>
+  </obstacle>
+  <obstacle name="Forgotten credentials" category="Vulnerability">
+    <definition>The webinos user has forgotten their credentials</definition>
+    <concern name="OpenID credentials" />
+    <probability value="0.1">
+      <rationale>This account is used frequently</rationale>
+    </probability>
+    <responsibility name="User" />    
+  </obstacle>
+  <obstacle name="Account lock-out" category="Vulnerability">
+    <definition>The OpenID account has been "locked out" due to too many failed authentication attempts</definition>
+    <responsibility name="3rd Party Service Provider" />       
+  </obstacle>
+  <obstacle name="Credentials changed" category="Vulnerability">
+    <definition>The OpenID account credentials have been changed by an attacker</definition>
+    <concern name="OpenID credentials" />
+  </obstacle>
+  <obstacle name="Password recovery process attacked" category="Vulnerability">
+    <definition>The OpenID account recovery procedure has been exploited to reset the password</definition>
+    <concern name="OpenID credentials" />
+    <probability value="0.05">
+      <rationale>Likely to be possible by a determined attacker with few targets</rationale>
+    </probability>
+    <responsibility name="3rd Party Service Provider" />       
+  </obstacle>
+  <obstacle name="Password guessed and reset" category="Vulnerability">
+    <definition>The OpenID account password was guessed by an attacker and then reset</definition>
+    <concern name="OpenID credentials" />
+    <probability value="0.01">
+      <rationale>Will be possible on a significant but small number of accounts</rationale>
+    </probability>
+    <responsibility name="3rd Party Service Provider" />       
+  </obstacle>    
+  <obstacle name="Account deleted" category="Vulnerability">
+    <definition>The OpenID account was deleted by an attacker impersonating the user</definition>
+    <responsibility name="3rd Party Service Provider" />       
+  </obstacle>     
+  
+  
+  <implementation>
+    <description>Frankie finds vulnerable OpenID accounts and resets their passwords while miusing their web identities.</description>
+    <obstacle_association obstacle_name="Loss of PZH admin access" ref_type="or" subobstacle_name="PZH offline" >
+      <rationale></rationale>
+    </obstacle_association>
+    
+    <obstacle_association obstacle_name="Loss of PZH admin access" ref_type="or" subobstacle_name="OpenID account inaccessible" >
+      <rationale></rationale>
+    </obstacle_association>
+    
+    <obstacle_association obstacle_name="OpenID account inaccessible" ref_type="or" subobstacle_name="OpenID provider offline" >
+      <rationale></rationale>
+    </obstacle_association>
+    
+    <obstacle_association obstacle_name="OpenID account inaccessible" ref_type="or" subobstacle_name="Authentication failure" >
+      <rationale></rationale>
+    </obstacle_association>
+    
+    <obstacle_association obstacle_name="Authentication failure" ref_type="or" subobstacle_name="Forgotten credentials" >
+      <rationale></rationale>
+    </obstacle_association>
+    
+    <obstacle_association obstacle_name="Authentication failure" ref_type="or" subobstacle_name="Account lock-out" >
+      <rationale></rationale>
+    </obstacle_association>    
+    
+    <obstacle_association obstacle_name="Authentication failure" ref_type="or" subobstacle_name="Credentials changed" >
+      <rationale></rationale>
+    </obstacle_association>  
+    
+    <obstacle_association obstacle_name="Credentials changed" ref_type="or" subobstacle_name="Password recovery process attacked" >
+      <rationale></rationale>
+    </obstacle_association>  
+    
+    <obstacle_association obstacle_name="Credentials changed" ref_type="or" subobstacle_name="Password guessed and reset" >
+      <rationale></rationale>
+    </obstacle_association>   
+    
+    <obstacle_association obstacle_name="Credentials changed" ref_type="or" subobstacle_name="Account deleted" >
+      <rationale></rationale>
+    </obstacle_association>  
+    
+  </implementation>
+  
+
+  <intent>Part of a larger attack to misuse user credentials or perform identity theft, an attacker deletes or changes the password on the user's OpenID account.</intent> 
+  <motivation goal="availability" value="Medium"> 
+    <description>The attacker makes the personal zone administration interface unavailable to the user, resulting in an inability to control policy or authentication in the zone</description>
+  </motivation>
+  <motivation goal="confidentiality" value="High"> 
+    <description>The attacker can view and misuse user personal zone data</description>
+  </motivation>
+  <applicability environment="Complete" />
+  <structure attack="Denial of Service" attack_obstacle="PZH offline" exploit="Unverified Password Change" exploit_obstacle="Password recovery process attacked" /> 
+  <participant name="Frankie">
+    <motive name="Defamation" />
+    <capability name="Software" value="Low" />
+    <capability name="Knowledge/Methods" value="Medium" />
+  </participant>
+  <collaboration>
+    <target name="Personal Zone Administration Console" /> 
+    <exploit name="Identity Provider" />
+  </collaboration>
+  <consequences>Potential for loss of access to webinos and webinos services.  Inability to recover account or account data at identity provider.  Loss of data if further attacks happen.</consequences>
+  <implementation>
+    <description>Frankie is attempting to gain access to personal accounts on a range of popular websites, including email services and social networks.  He intends to deface public records of some people (those he knows and has taken offense to) and maybe to expose a few people who he thinks are arrogant and deserve to be knocked down a peg or two.  To do this, he is exploiting password recovery features and guessing commonly used "secret phrases" for openid accounts based on user names he knows, as well as some he has found on public forums.  This resets user passwords and, as a consequence, means that the real users can't authenticate against the OpenID providers.  Unfortunately for the victims, this also means that they have lost access to their webinos personal zone administration interface.  Later on, Frankie realises that some of his victims are running webinos, and he makes use of his access to their accounts to (in some cases) delete files and settings, and in other cases secretly add his own device to their personal zones.</description>
+   </implementation>
+  <known_uses>None</known_uses>
+  <related_patterns>None</related_patterns>
+</attack_pattern>

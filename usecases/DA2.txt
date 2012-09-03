@@ -1,0 +1,40 @@
+h1. WOS-UC-TA1-002: Network Independent Virtual Device
+
+Author: Andre Paul
+
+Actors: User, Application
+
+h2. Description
+
+webinos allows applications to use device features available on a user's currently used device or on other remotely available devices (especially mobile, PC, automotive, and home media devices) no matter where the device is and how it is physically accessible (e.g., network that is used, physical location, GSM vs. WiFi etc.).
+
+h2. Preconditions
+
+The user has at least two webinos enabled devices, which are known to each other. Both devices are running and are connected so that communication is possible and using services from each other is allowed and permitted.  The two devices used are running in completely separated network areas (e.g., home network vs. GSM network or home network A vs. home network B).
+
+h2. Flow
+
+# User starts an application on one of his devices.
+# The application needs to use a camera service which is not accessible using local APIs.
+# The application uses a service discovery mechanism provided by the webinos runtime to find all camera services available to the user.
+# webinos discovers devices that are located in the same network
+# webinos discovers devices that are located in separated networks
+# webinos creates a set of services available to the application and user which meat the discovery criteria while the set includes cameras available within different networks.
+# Application receives a reference to a discovered camera services that can be used.
+# Application accesses a discovered camera service to carry out his desired task.
+
+
+h2. Postconditions
+
+A service available on a device in a different personal zone can be used by the application.
+
+h2. Use Case Map
+
+!WOS-UC-TA1-002_Network_Independent_Virtual_Device.png!
+
+h2. Related artifacts
+
+| *Scenarios* | |
+| *Use Cases* | |
+| *Requirements* | |
+

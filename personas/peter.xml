@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<!DOCTYPE usability PUBLIC "-//CAIRIS//DTD USABILITY 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/usability.dtd">
+
+
+<usability>
+<persona name="Peter" type="Primary" assumption_persona="TRUE" image="/home/irisuser/webinos/wp2/personas/peter.jpg" >
+  <activities>Peter is an older gentleman, single and without many family commitments. He is fairly wealthy and enjoys spending his time and money on his interests: music, art and cars. He has a senior position at a large financial company, but when he is out of work he rarely thinks about his job.
+
+Peter collects all the objects related to his interests - albums, paintings and cars - and would like to increase his access to them through new technology.</activities>
+  <attitudes>Peter's well-paid job has allowed him to concentrate on the things that he loves: art, music and his main obsession: cars.
+
+Peter likes using technology to further these interests. He spends considerable amounts of his leisure time driving, reading about cars and buying accessories and upgrades. He expects technology to help bridge the gap between his interests, so that he can enjoy art and music while on the move. Peter's lack of family commitments allows him to spend even more time on his hobbies. He relies on technology to let him organise and use his enormous music collection.</attitudes>
+  <aptitudes>Peter is familiar with technology and no stranger to electronic media such as music and radio.
+
+Peter is patient with technology and is willing to explore a new interface and follow pop-up instructions before he achieves his main objectives.</aptitudes>
+  <motivations>Peter is primarily interest-driven. He wants to use technology to bring his interests to his daily commute as well as letting him enjoy art and music whenever he has a spare moment, or whenever he comes across something new that he likes.</motivations>
+  <skills>Peter has a reasonable amount of experience with different forms of technology, particularly in using multimedia systems.</skills>
+
+  <persona_environment name="Identity" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Peter is generally law-abiding and rule following. He is prudent with his purchases and has an expectation of some security around financial transactions.</narrative>
+  </persona_environment>
+  <persona_environment name="Discovery and Addressing" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Peter is generally law-abiding and rule following. He is prudent with his purchases and has an expectation of some security around financial transactions.</narrative>
+  </persona_environment>
+  <persona_environment name="Remote Notifications and Messaging" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Peter is generally law-abiding and rule following. He is prudent with his purchases and has an expectation of some security around financial transactions.</narrative>
+  </persona_environment>
+  <persona_environment name="Policy and Security" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Peter is generally law-abiding and rule following. He is prudent with his purchases and has an expectation of some security around financial transactions.</narrative>
+  </persona_environment>
+  <persona_environment name="Negotiation and Compatibility" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Peter is generally law-abiding and rule following. He is prudent with his purchases and has an expectation of some security around financial transactions.</narrative>
+  </persona_environment>
+  <persona_environment name="Lifecycle" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Peter is generally law-abiding and rule following. He is prudent with his purchases and has an expectation of some security around financial transactions.</narrative>
+  </persona_environment>
+  <persona_environment name="Device and Service Functional Capability" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Peter is generally law-abiding and rule following. He is prudent with his purchases and has an expectation of some security around financial transactions.</narrative>
+  </persona_environment>
+  <persona_environment name="Transfer and Management of State" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Peter is generally law-abiding and rule following. He is prudent with his purchases and has an expectation of some security around financial transactions.</narrative>
+  </persona_environment>
+  <persona_environment name="Complete" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>Peter is generally law-abiding and rule following. He is prudent with his purchases and has an expectation of some security around financial transactions.</narrative>
+  </persona_environment>
+</persona>
+<external_document name="Converging applications within and across devices Story" version="0.9" date="30/11/10" authors="Hans Myrhaug, Ayse Goker, Anders Isberg" >
+  <description>None</description>
+</external_document>
+<external_document name="BMW Price list" version="1" date="November 2010" authors="BMW" >
+  <description>http://external.bmw.ie/templates/bmw06/downloads/E115783-3BMWIEModelGuideWEBfinal26.10.10.pdf</description>
+</external_document>
+<document_reference name="German speaking" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>[He] has decided to spend three full days in leisure mode in Munich to further enjoy the planned purchasing of a new car.....As Peter is waiting for his dessert, he picks up a magazine in a different language than his that somebody has forgotten on a shelf</excerpt>
+</document_reference>
+<document_reference name="Buys an BMW 3-series" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>2012: Peter is considering buying new car of the BMW 3-series.</excerpt>
+</document_reference>
+<document_reference name="Does not speak many other languages" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>he picks up a magazine in a different language than his that somebody has forgotten on a shelf. He doesn\'t understand the headers and takes a picture of one of the headers with his phone. The header is automatically translated for him.</excerpt>
+</document_reference>
+<document_reference name="Takes 3 days off to buy a car" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>The following story is about Peter. He is a keen user of new mobile applications and has decided to spend three full days in leisure mode in Munich to further enjoy the planned purchasing of a new car.</excerpt>
+</document_reference>
+<document_reference name="Does not live with family" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>As he enters the door at home in the evening, he notices that the converged application on his mobile suggests to continue playing the same music he listened to in the car when he switched off the engine in the garage. Wow, his new pink metallic car with beige leather seats, is indeed his favourite pet by now; He immediately calls his friend Fiona over to find out if her mobile also can connect to his new converged infotainment package too!</excerpt>
+</document_reference>
+<document_reference name="Dines alone" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>He goes back to the hotel. Later in the evening he opens the restaurant guide to find a restaurant of interest.</excerpt>
+</document_reference>
+<document_reference name="BMW 3 series costs at least 32000 euros" contributor="John Lyle" document="BMW Price list" >
+  <excerpt>BMW 318i ES, price: EUR 32,520</excerpt>
+</document_reference>
+<document_reference name="Buys a gift from the gift shop" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>Peter enters the souvenir shop. Peter gets really curious about three of the products sold in the shop, but would like to see some reviews before deciding buying one of them. Peter starts the product review application on the mobile and points his phone camera to the bar code on the products. The bar code is resolved and Peter is presented with detailed, in-depth information about the different products including reviews. Peter decides to buy the product that has the best review</excerpt>
+</document_reference>
+<document_reference name="Has a large collection of paid-for music" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>Peter asks \"what about my mp3 play-lists on the mobile, can I get them in the car? - You see, I have paid quite a lot for the accumulated 120Gb play-lists</excerpt>
+</document_reference>
+<document_reference name="Uses and contributes to online social networks" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>Peter decides to buy the product with the best [online] review....He selects Recommend in the application and the recommendation is published to his friends.....Peter therefore adds a recommendation entry for the restaurant in the restaurant guide whilst eating dinner that becomes instantly visible for other people using the guide.</excerpt>
+</document_reference>
+<document_reference name="Looks at reviews before purchasing" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>Peter gets really curious about three of the products sold in the shop, but would like to see some reviews before deciding buying one of them</excerpt>
+</document_reference>
+<document_reference name="Has other smart devices" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>As the museum guide starts, it asks Peter if he by the way also would like to add a copy of the application to his cloud service for access and installation on other personal devices in the future. Peter answers positive to this....He chooses the converge-with-personal-mobile, converge-with-passenger-mobiles, converge-with-home-media options.</excerpt>
+</document_reference>
+<document_reference name="Responds to multiple dialogue boxes asking technical questions" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>The next two questions are 1) about his mobile to automatically connect to the wireless server in the car whenever he is near the car, and 2) which local radio that is his favourite.</excerpt>
+</document_reference>
+<document_reference name="Visits the BMW museum" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>He arrives at the hotel in Munich late evening in the main street. He has planned for next day to walk to the BMW museum</excerpt>
+</document_reference>
+<document_reference name="Interested in art" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>Peter then stows the magazine away as he spots a very interesting contemporary painting on the wall next to the table.</excerpt>
+</document_reference>
+<document_reference name="Enjoys music" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>Peter asks \"what about my mp3 play-lists on the mobile, can I get them in the car? - You see, I have paid quite a lot for the accumulated 120Gb play-lists, I use the music daily whilst walking, jogging, biking, and I really would like to continue using them in the car sometimes too</excerpt>
+</document_reference>
+<document_reference name="Enjoys local radio" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>Peter chooses a package of local radios where one of his favourite local radios is listed.</excerpt>
+</document_reference>
+<document_reference name="Watches documentaries and Infotainment" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>He likes the style of it and especially that he can travel to Munich to personalise for his individual interior choice, exterior, but also for infotainment, engine, tires, and safety choices....There are several options for infotainment in the car, infotainment in car only, infotainment combined with mobile, infotainment combined with home media centre, or full infotainment package. He finds all these converged package offerings very interesting</excerpt>
+</document_reference>
+<document_reference name="Authenticates to his mobile phone before using it to purchase a car" contributor="John Lyle" document="Converging applications within and across devices Story" >
+  <excerpt>The next two questions are 1) about his mobile to automatically connect to the wireless server in the car whenever he is near the car, and 2) which local radio that is his favourite.</excerpt>
+</document_reference>
+<persona_characteristic persona="Peter" behavioural_variable="Activities" modal_qualifier="Presumably" >
+  <definition>Single and without family commitments</definition>
+  <grounds type="document" reference="Takes 3 days off to buy a car" />
+  <grounds type="document" reference="Does not live with family" />
+  <grounds type="document" reference="Dines alone" />
+</persona_characteristic>
+<persona_characteristic persona="Peter" behavioural_variable="Activities" modal_qualifier="Possibly" >
+  <definition>German</definition>
+  <grounds type="document" reference="German speaking" />
+</persona_characteristic>
+<persona_characteristic persona="Peter" behavioural_variable="Activities" modal_qualifier="Definitely" >
+  <definition>Wealthy</definition>
+  <grounds type="document" reference="Takes 3 days off to buy a car" />
+  <grounds type="document" reference="Buys a gift from the gift shop" />
+  <grounds type="document" reference="Has a large collection of paid-for music" />
+  <warrant type="document" reference="BMW 3 series costs at least 32000 euros" />
+</persona_characteristic>
+<persona_characteristic persona="Peter" behavioural_variable="Activities" modal_qualifier="Possibly" >
+  <definition>Older - towards end of career</definition>
+  <grounds type="document" reference="Buys an BMW 3-series" />
+  <grounds type="document" reference="Does not speak many other languages" />
+</persona_characteristic>
+<persona_characteristic persona="Peter" behavioural_variable="Aptitudes" modal_qualifier="Presumably" >
+  <definition>Familiar with new technology</definition>
+  <grounds type="document" reference="Has other smart devices" />
+  <grounds type="document" reference="Has a large collection of paid-for music" />
+  <grounds type="document" reference="Responds to multiple dialogue boxes asking technical questions" />
+</persona_characteristic>
+<persona_characteristic persona="Peter" behavioural_variable="Attitudes" modal_qualifier="Probably" >
+  <definition>Engages with social networks and media</definition>
+  <grounds type="document" reference="Uses and contributes to online social networks" />
+  <grounds type="document" reference="Looks at reviews before purchasing" />
+</persona_characteristic>
+<persona_characteristic persona="Peter" behavioural_variable="Attitudes" modal_qualifier="Possibly" >
+  <definition>Owns a lot of his own media</definition>
+  <grounds type="document" reference="Buys a gift from the gift shop" />
+  <grounds type="document" reference="Has a large collection of paid-for music" />
+</persona_characteristic>
+<persona_characteristic persona="Peter" behavioural_variable="Environment_Narrative" modal_qualifier="Probably" >
+  <definition>Prudent with purchases</definition>
+  <grounds type="document" reference="Looks at reviews before purchasing" />
+  <grounds type="document" reference="Authenticates to his mobile phone before using it to purchase a car" />
+  <rebuttal type="document" reference="Buys a gift from the gift shop" />
+</persona_characteristic>
+<persona_characteristic persona="Peter" behavioural_variable="Environment_Narrative" modal_qualifier="Presumably" >
+  <definition>Law abiding</definition>
+  <grounds type="document" reference="Has a large collection of paid-for music" />
+</persona_characteristic>
+<persona_characteristic persona="Peter" behavioural_variable="Motivations" modal_qualifier="Probably" >
+  <definition>Interest driven</definition>
+  <grounds type="document" reference="Visits the BMW museum" />
+  <grounds type="document" reference="Interested in art" />
+  <grounds type="document" reference="Enjoys music" />
+  <grounds type="document" reference="Enjoys local radio" />
+  <grounds type="document" reference="Watches documentaries and Infotainment" />
+</persona_characteristic>
+</usability>

@@ -1,0 +1,207 @@
+<?xml version="1.0"?>
+<!DOCTYPE usability PUBLIC "-//CAIRIS//DTD USABILITY 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/usability.dtd">
+
+
+<usability>
+<persona name="Jessica" type="Primary" assumption_persona="TRUE" image="/home/irisuser/webinos/wp2/personas/jessica.jpg" >
+  <activities>Jessica lives and works in California. She is in charge of developing a mobile application for diabetes, and a business co-founder. The diabetes application is being written for iPhone and Android platforms. The diabetes application is easy to use. Many diabetes people who are not computer-addicted are using it. It enables the planning, monitoring, and follow-up of diabetes patients via smart-phones. The application captures blood sugar and insulin measurements, and reminds the patient about when to do the measurements. All personal and medical data is also relayed and stored securely in an online application server, with a back office for diabetes research professionals. There is also a patented diet calculator included in the mobile application. The application was the winner of the "Apps for Medicare" competition at the White House, in Washington, DC, in 2010, because it has been embraced by the Diabetes community, General Practitioners, and Insurance Companies. She has based the data models on the HL7-standard as much as possible. A stringent and flexible privacy policy, in which the individual diabetes patient is in full control of who can access and use the data, has been a requirement for the patients to trust the system. In the picture above she is in the medicare technology conference where she received the "Apps for Medicare" award.
+
+She is a traditional application developer that develops software clients for two smart-phone platforms. She keeps herself up-to-date on new technologies, applies them when writing new software and she knows what the competitors are doing. She is a diligent person, and carefully implements and tests the applications and she wants to understand the technologies before applying them. As a member of HL7, she is also a privacy-aware developer. She is very committed, systematic, and organised. She helps people make informed choices about their health. She likes to structure information and data, elicit requirements, and to delegate some tasks to the user and other tasks to the system. She communicates with a variety of people working with diabetes treatment, care, and research. She is a user-conscious developer, involving users as participants in her work, and she also has a user forum. Although she is user-centred she has a preference to mix it with model-driven development techniques, too. She models tasks and domain objects. She also models the context of use - as means to understand the users' everyday activities surrounding their diabetes problem.</activities>
+  <attitudes>Creating trust, keeping her promises, and maintaining integrity are key values for Jessica. Being able to help other people means a lot for her. After her graduation she worked three years as engineer for United Nations and Save the Children in Africa to help governments and people. When she came back to the US, she realised she wanted to continue helping people with their health problems. She contacted some other like-minded through the university alumni, co-founded the company, got venture capital onboard in the round A funding, and further institutional investors from the health insurance sector onboard in round B. Integrity and customer-intimacy are key values for Jessica, and this is why the investors have been backing in her. She is very likeable and social one-on-one, but quite private and shy in larger crowds.
+
+Although technically strong, she dislikes HTML and web development. Jessica feels that making more of the system open on the web implies much less control over the UI. She also believes the system becomes more open to attackers in general so her system must be very secure, have 100% uptime, and adhere to the best privacy policies. She also needs full control over every pixel on the screen, and the connection to the insulin meter.</attitudes>
+  <aptitudes>Jessica isn't athletic, but she is naturally talented at maths. She uses her maths skills to draw 2D and 3D graphics and curves in ways that some of her colleagues are unable to grasp. She enjoys integrating with low-level sensors, visualising medical data as 3D-charts, and in encoding and decoding data. Her natural talent for plotting such data on the screen, are one of the reasons to the product success.</aptitudes>
+  <motivations>She is highly motivated by the desire to engage and interact with patients, relatives, and healthcare professionals. As a result, she goes to great lengths to ensure her customers are happy. It inspires her to be able to spend many consecutive hours per day in front of her laptops to improve the applications using Eclipse and XCode. She becomes even more committed, the closer she gets to a user forum meeting.
+
+Jessica burns to deliver the perfect, robust product. She frequently tests the applications. Being able to help each individual certainly boosts her energy level. Progress and improvement makes her happy, while misery and deterioration makes her anxious and less effective.
+
+Jessica considers reduced quality of data as a direct threat to their business. Errors and loss of data over time could lead to a court case, or media coverage, which could bring the entire company to the brink. Storing the same data at multiple locations is a solution for them. Privacy is important.</motivations>
+  <skills>Jessica is a specialist in Objective C and Java programming. She writes Objective C code in XCode for the iPhone app, and Java for Dalvik on Android. Jessica is also familiar with information visualisation and UI widget libraries associated with iPhone and Android platforms.
+
+Jessica is adept at working with many hand-sets, but is unfamiliar with Nokia and Sony Ericsson hand-set development because she has never had need to do this.</skills>
+
+  <persona_environment name="Identity" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <narrative>Jessica's diabetes application has 750000 users in which 60% are on iPhone and 40% are on Android. She is legally obliged to protect all of the personal and medical data, and to make sure that the patients, relatives, and healthcare professionals are kept up-to-date with the data from each patient.  One risk is that patients incorrectly read the insulin dosage due to visual impairment. Another risk is that the measurements on blood sugar and insulin measurements are simply incorrect or has a wrong time stamp. If this happens over a consecutive period of time, then this may trigger fake alarms, incorrect treatments, or lead to serious health issues.</narrative>
+  </persona_environment>
+  <persona_environment name="Discovery and Addressing" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <narrative>Jessica's diabetes application has 750000 users in which 60% are on iPhone and 40% are on Android. She is legally obliged to protect all of the personal and medical data, and to make sure that the patients, relatives, and healthcare professionals are kept up-to-date with the data from each patient.  One risk is that patients incorrectly read the insulin dosage due to visual impairment. Another risk is that the measurements on blood sugar and insulin measurements are simply incorrect or has a wrong time stamp. If this happens over a consecutive period of time, then this may trigger fake alarms, incorrect treatments, or lead to serious health issues.</narrative>
+  </persona_environment>
+  <persona_environment name="Remote Notifications and Messaging" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <narrative>Jessica's diabetes application has 750000 users in which 60% are on iPhone and 40% are on Android. She is legally obliged to protect all of the personal and medical data, and to make sure that the patients, relatives, and healthcare professionals are kept up-to-date with the data from each patient.  One risk is that patients incorrectly read the insulin dosage due to visual impairment. Another risk is that the measurements on blood sugar and insulin measurements are simply incorrect or has a wrong time stamp. If this happens over a consecutive period of time, then this may trigger fake alarms, incorrect treatments, or lead to serious health issues.</narrative>
+  </persona_environment>
+  <persona_environment name="Policy and Security" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <narrative>Jessica's diabetes application has 750000 users in which 60% are on iPhone and 40% are on Android. She is legally obliged to protect all of the personal and medical data, and to make sure that the patients, relatives, and healthcare professionals are kept up-to-date with the data from each patient.  One risk is that patients incorrectly read the insulin dosage due to visual impairment. Another risk is that the measurements on blood sugar and insulin measurements are simply incorrect or has a wrong time stamp. If this happens over a consecutive period of time, then this may trigger fake alarms, incorrect treatments, or lead to serious health issues.</narrative>
+  </persona_environment>
+  <persona_environment name="Negotiation and Compatibility" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <narrative>Jessica's diabetes application has 750000 users in which 60% are on iPhone and 40% are on Android. She is legally obliged to protect all of the personal and medical data, and to make sure that the patients, relatives, and healthcare professionals are kept up-to-date with the data from each patient.  One risk is that patients incorrectly read the insulin dosage due to visual impairment. Another risk is that the measurements on blood sugar and insulin measurements are simply incorrect or has a wrong time stamp. If this happens over a consecutive period of time, then this may trigger fake alarms, incorrect treatments, or lead to serious health issues.</narrative>
+  </persona_environment>
+  <persona_environment name="Lifecycle" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <narrative>Jessica's diabetes application has 750000 users in which 60% are on iPhone and 40% are on Android. She is legally obliged to protect all of the personal and medical data, and to make sure that the patients, relatives, and healthcare professionals are kept up-to-date with the data from each patient.  One risk is that patients incorrectly read the insulin dosage due to visual impairment. Another risk is that the measurements on blood sugar and insulin measurements are simply incorrect or has a wrong time stamp. If this happens over a consecutive period of time, then this may trigger fake alarms, incorrect treatments, or lead to serious health issues.</narrative>
+  </persona_environment>
+  <persona_environment name="Device and Service Functional Capability" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <narrative>Jessica's diabetes application has 750000 users in which 60% are on iPhone and 40% are on Android. She is legally obliged to protect all of the personal and medical data, and to make sure that the patients, relatives, and healthcare professionals are kept up-to-date with the data from each patient.  One risk is that patients incorrectly read the insulin dosage due to visual impairment. Another risk is that the measurements on blood sugar and insulin measurements are simply incorrect or has a wrong time stamp. If this happens over a consecutive period of time, then this may trigger fake alarms, incorrect treatments, or lead to serious health issues.</narrative>
+  </persona_environment>
+  <persona_environment name="Transfer and Management of State" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <narrative>Jessica's diabetes application has 750000 users in which 60% are on iPhone and 40% are on Android. She is legally obliged to protect all of the personal and medical data, and to make sure that the patients, relatives, and healthcare professionals are kept up-to-date with the data from each patient.  One risk is that patients incorrectly read the insulin dosage due to visual impairment. Another risk is that the measurements on blood sugar and insulin measurements are simply incorrect or has a wrong time stamp. If this happens over a consecutive period of time, then this may trigger fake alarms, incorrect treatments, or lead to serious health issues.</narrative>
+  </persona_environment>
+  <persona_environment name="Complete" is_direct="TRUE" >
+    <persona_role name="Developer of webinos Apps" />
+    <narrative>Jessica's diabetes application has 750000 users in which 60% are on iPhone and 40% are on Android. She is legally obliged to protect all of the personal and medical data, and to make sure that the patients, relatives, and healthcare professionals are kept up-to-date with the data from each patient.  One risk is that patients incorrectly read the insulin dosage due to visual impairment. Another risk is that the measurements on blood sugar and insulin measurements are simply incorrect or has a wrong time stamp. If this happens over a consecutive period of time, then this may trigger fake alarms, incorrect treatments, or lead to serious health issues.</narrative>
+  </persona_environment>
+</persona>
+<external_document name="US developer expectations" version="1.0" date="Feb 2011" authors="Hans Myrhaug" >
+  <description>Author\'s assumptions about US mobile developer expectations</description>
+</external_document>
+<document_reference name="Her market is in the US" contributor="Hans Myrhaug" document="US developer expectations" >
+  <excerpt>None</excerpt>
+</document_reference>
+<document_reference name="Jessica leads the user interface design in the company" contributor="Hans Myrhaug" document="US developer expectations" >
+  <excerpt>None</excerpt>
+</document_reference>
+<document_reference name="She has 2-4 mobile phones for testing the applications (two iPhones, one HTC, and one Samsung)" contributor="Hans Myrhaug" document="US developer expectations" >
+  <excerpt>None</excerpt>
+</document_reference>
+<document_reference name="She is on the ATandT and Verizon networks" contributor="Hans Myrhaug" document="US developer expectations" >
+  <excerpt>None</excerpt>
+</document_reference>
+<document_reference name="She has never used a Nokia or Sony Ericsson smart-phone" contributor="Hans Myrhaug" document="US developer expectations" >
+  <excerpt>None</excerpt>
+</document_reference>
+<document_reference name="She is a member of HL7" contributor="Hans Myrhaug" document="US developer expectations" >
+  <excerpt>None</excerpt>
+</document_reference>
+<document_reference name="She enjoys planning and making appointments" contributor="Hans Myrhaug" document="US developer expectations" >
+  <excerpt>None</excerpt>
+</document_reference>
+<document_reference name="Honesty and integrity are high values for her" contributor="Hans Myrhaug" document="US developer expectations" >
+  <excerpt>None</excerpt>
+</document_reference>
+<document_reference name="A cancelled appointment makes her anxious and insecure" contributor="Hans Myrhaug" document="US developer expectations" >
+  <excerpt>None</excerpt>
+</document_reference>
+<document_reference name="It is painful for her to see people suffering" contributor="Hans Myrhaug" document="US developer expectations" >
+  <excerpt>None</excerpt>
+</document_reference>
+<document_reference name="People with values different to her can surprise and upset her" contributor="Hans Myrhaug" document="US developer expectations" >
+  <excerpt>None</excerpt>
+</document_reference>
+<document_reference name="She fears the profit goals of some of the shareholders" contributor="Hans Myrhaug" document="US developer expectations" >
+  <excerpt>None</excerpt>
+</document_reference>
+<document_reference name="She wants to build business on trust" contributor="Hans Myrhaug" document="US developer expectations" >
+  <excerpt>None</excerpt>
+</document_reference>
+<document_reference name="She is very committed to the business plan" contributor="Hans Myrhaug" document="US developer expectations" >
+  <excerpt>None</excerpt>
+</document_reference>
+<document_reference name="She is not good at sports, but great at imagination" contributor="Hans Myrhaug" document="US developer expectations" >
+  <excerpt>None</excerpt>
+</document_reference>
+<document_reference name="She is very intuitive, analytical, and has a natural ability to recognise what needs improvement" contributor="Hans Myrhaug" document="US developer expectations" >
+  <excerpt>None</excerpt>
+</document_reference>
+<document_reference name="Helping and adding value to peoples lives is meaningful" contributor="Hans Myrhaug" document="US developer expectations" >
+  <excerpt>None</excerpt>
+</document_reference>
+<document_reference name="Creating new systems makes her work hard" contributor="Hans Myrhaug" document="US developer expectations" >
+  <excerpt>None</excerpt>
+</document_reference>
+<document_reference name="If she likes the purpose of the work she will commit 100% to it" contributor="Hans Myrhaug" document="US developer expectations" >
+  <excerpt>None</excerpt>
+</document_reference>
+<document_reference name="Helping others will make her forget her own needs" contributor="Hans Myrhaug" document="US developer expectations" >
+  <excerpt>None</excerpt>
+</document_reference>
+<document_reference name="A trusted person that turns her down will make her depressed and lose motivation" contributor="Hans Myrhaug" document="US developer expectations" >
+  <excerpt>None</excerpt>
+</document_reference>
+<document_reference name="Lack of inclusion and control makes her nervous" contributor="Hans Myrhaug" document="US developer expectations" >
+  <excerpt>None</excerpt>
+</document_reference>
+<document_reference name="Stores personal and medical data to make it accessible for healthcare professionals" contributor="Hans Myrhaug" document="US developer expectations" >
+  <excerpt>None</excerpt>
+</document_reference>
+<document_reference name="Takes care of satisfactory user experience" contributor="Hans Myrhaug" document="US developer expectations" >
+  <excerpt>None</excerpt>
+</document_reference>
+<document_reference name="Is interested in developing an application that can run securely on any mobile phone" contributor="Hans Myrhaug" document="US developer expectations" >
+  <excerpt>None</excerpt>
+</document_reference>
+<document_reference name="Applies recent technologies" contributor="Hans Myrhaug" document="US developer expectations" >
+  <excerpt>None</excerpt>
+</document_reference>
+<document_reference name="Knows about current products on the market" contributor="Hans Myrhaug" document="US developer expectations" >
+  <excerpt>None</excerpt>
+</document_reference>
+<document_reference name="She is developing for iPhone and Android" contributor="Hans Myrhaug" document="US developer expectations" >
+  <excerpt>None</excerpt>
+</document_reference>
+<document_reference name="Insurance companies have embraced her application" contributor="Hans Myrhaug" document="US developer expectations" >
+  <excerpt>None</excerpt>
+</document_reference>
+<persona_characteristic persona="Jessica" behavioural_variable="Activities" modal_qualifier="Presumably" >
+  <definition>Develops diabetes applications on iPhone and Android for the North American market</definition>
+  <grounds type="document" reference="Jessica leads the user interface design in the company" />
+  <grounds type="document" reference="She has 2-4 mobile phones for testing the applications (two iPhones, one HTC, and one Samsung)" />
+  <grounds type="document" reference="She is on the ATandT and Verizon networks" />
+  <grounds type="document" reference="She is a member of HL7" />
+  <grounds type="document" reference="She enjoys planning and making appointments" />
+  <grounds type="document" reference="She is developing for iPhone and Android" />
+  <warrant type="document" reference="Her market is in the US" />
+  <warrant type="document" reference="Insurance companies have embraced her application" />
+</persona_characteristic>
+<persona_characteristic persona="Jessica" behavioural_variable="Aptitudes" modal_qualifier="Definitely" >
+  <definition>Intuitive, diligent, and trustworthy</definition>
+  <grounds type="document" reference="She is not good at sports, but great at imagination" />
+  <grounds type="document" reference="She is very intuitive, analytical, and has a natural ability to recognise what needs improvement" />
+  <rebuttal type="document" reference="A trusted person that turns her down will make her depressed and lose motivation" />
+</persona_characteristic>
+<persona_characteristic persona="Jessica" behavioural_variable="Attitudes" modal_qualifier="Presumably" >
+  <definition>Helping other people with their health problems means a lot.</definition>
+  <grounds type="document" reference="A cancelled appointment makes her anxious and insecure" />
+  <grounds type="document" reference="It is painful for her to see people suffering" />
+  <grounds type="document" reference="She fears the profit goals of some of the shareholders" />
+  <grounds type="document" reference="She wants to build business on trust" />
+  <grounds type="document" reference="She is very committed to the business plan" />
+  <warrant type="document" reference="Honesty and integrity are high values for her" />
+  <rebuttal type="document" reference="People with values different to her can surprise and upset her" />
+</persona_characteristic>
+<persona_characteristic persona="Jessica" behavioural_variable="Motivations" modal_qualifier="Perhaps" >
+  <definition>Dislikes web apps</definition>
+  <grounds type="document" reference="Lack of inclusion and control makes her nervous" />
+  <grounds type="document" reference="Is interested in developing an application that can run securely on any mobile phone" />
+</persona_characteristic>
+<persona_characteristic persona="Jessica" behavioural_variable="Motivations" modal_qualifier="Definitely" >
+  <definition>Privacy-aware</definition>
+  <grounds type="document" reference="She is a member of HL7" />
+  <grounds type="document" reference="Stores personal and medical data to make it accessible for healthcare professionals" />
+  <grounds type="document" reference="Takes care of satisfactory user experience" />
+  <grounds type="document" reference="Is interested in developing an application that can run securely on any mobile phone" />
+  <grounds type="document" reference="Knows about current products on the market" />
+</persona_characteristic>
+<persona_characteristic persona="Jessica" behavioural_variable="Motivations" modal_qualifier="Definitely" >
+  <definition>Stays away from anything associated with poor quality and/or risk</definition>
+  <grounds type="document" reference="Helping and adding value to peoples lives is meaningful" />
+  <grounds type="document" reference="Creating new systems makes her work hard" />
+  <grounds type="document" reference="If she likes the purpose of the work she will commit 100% to it" />
+  <grounds type="document" reference="Helping others will make her forget her own needs" />
+  <grounds type="document" reference="A trusted person that turns her down will make her depressed and lose motivation" />
+  <grounds type="document" reference="Lack of inclusion and control makes her nervous" />
+  <warrant type="document" reference="She is a member of HL7" />
+</persona_characteristic>
+<persona_characteristic persona="Jessica" behavioural_variable="Skills" modal_qualifier="Possibly" >
+  <definition>Adept at US mobile handset technology</definition>
+  <grounds type="document" reference="She has 2-4 mobile phones for testing the applications (two iPhones, one HTC, and one Samsung)" />
+  <grounds type="document" reference="She has never used a Nokia or Sony Ericsson smart-phone" />
+  <grounds type="document" reference="Applies recent technologies" />
+  <grounds type="document" reference="She is developing for iPhone and Android" />
+</persona_characteristic>
+</usability>

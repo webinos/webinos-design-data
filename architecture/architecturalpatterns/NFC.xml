@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<!DOCTYPE architectural_pattern PUBLIC "-//CAIRIS//DTD ARCHITECTURAL PATTERN 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/architectural_pattern.dtd"> 
+
+<!-- 
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+
+<architectural_pattern name="NFC">
+<synopsis>Model illustrating the components associated with NFC</synopsis>
+
+<access_right name="trusted" value="10">
+  <description>None</description>
+  <rationale>None</rationale>
+</access_right>
+<access_right name="authenticated" value="5">
+  <description>None</description>
+  <rationale>None</rationale>
+</access_right>
+<access_right name="anonymous" value="1">
+  <description>None</description>
+  <rationale>None</rationale>
+</access_right>
+
+<protocol name="JSON-RPC" value="10">
+  <description>None</description>
+  <rationale>None</rationale>
+</protocol>
+<protocol name="RPC" value="10">
+  <description>None</description>
+  <rationale>None</rationale>
+</protocol>
+<protocol name="LLCP" value="10">
+  <description>NFC Logical Link Control Protocol</description>
+  <rationale>NFC Logical Link Control Protocol</rationale>
+</protocol>
+<protocol name="TLS" value="1">
+  <description>None</description>
+  <rationale>None</rationale>
+</protocol>
+
+<privilege name="privileged" value="10">
+  <description>None</description>
+  <rationale>None</rationale>
+</privilege>
+<privilege name="normal" value="1">
+  <description>None</description>
+  <rationale>None</rationale>
+</privilege>
+
+<surface_type name="JSON" value="10">
+  <description>None</description>
+  <rationale>None</rationale>
+</surface_type>
+<surface_type name="Unconstrained XML" value="5">
+  <description>XML document without a validating DTD or schema</description>
+  <rationale>Should not be left to a client application to validate the document on its own.</rationale>
+</surface_type>
+<surface_type name="NDEF" value="5">
+  <description>NFC Data Exchange Format</description>
+  <rationale>Should not be left to a client application to validate the data format.</rationale>
+</surface_type>
+<surface_type name="Constrained XML" value="1">
+  <description>XML document with a validating DTD or schema</description>
+  <rationale>None</rationale>
+</surface_type>
+<surface_type name="HTML" value="1">
+  <description>HTML document</description>
+  <rationale>May contain malicious embedded code or links</rationale>
+</surface_type>
+<surface_type name="Unconstrained Image" value="1">
+  <description>Image files</description>
+  <rationale>Malformed images might be used a potential attack vector.</rationale>
+</surface_type>
+<surface_type name="Client application" value="10">
+  <description>None</description>
+  <rationale>None</rationale>
+</surface_type>
+<surface_type name="Privileged application" value="1">
+  <description>None</description>
+  <rationale>None</rationale>
+</surface_type>
+
+
+<asset name="NFC Listener" short_code="NFCLIS" type="Software" surface_type="Privileged application" access_right="authenticated">
+  <description>NFC </description>
+  <significance>None</significance>
+</asset>
+<asset name="NFC Tag" short_code="NFCTAG" type="Information" surface_type="NDEF" access_right="anonymous">
+  <description>NFC Tag</description>
+  <significance>None</significance>
+</asset>
+<asset name="Event" short_code="EV" type="Information" surface_type="JSON" access_right="authenticated">
+  <description>webinos event</description>
+  <significance>None</significance>
+</asset>
+<asset name="NFC Event" short_code="NFCEV" type="Information" surface_type="JSON" access_right="authenticated">
+  <description>NFC Event</description>
+  <significance>None</significance>
+</asset>
+<asset name="NFC Message" short_code="NFCMSG" type="Information" surface_type="NDEF" access_right="authenticated">
+  <description>NFC Message</description>
+  <significance>None</significance>
+</asset>
+<asset name="NFC Record" short_code="NFCREC" type="Information" surface_type="NDEF" access_right="authenticated">
+  <description>NFC Record</description>
+  <significance>None</significance>
+</asset>
+<asset name="Webinos Service" short_code="RPCWS" type="Software" surface_type="Privileged application" access_right="authenticated">
+  <description>Webinos Service Implementation</description>
+  <significance>None</significance>
+</asset>
+<asset name="NFC Service" short_code="NFCSVC" type="Software" surface_type="Privileged application" access_right="authenticated">
+  <description>NFC Service Implementation</description>
+  <significance>None</significance>
+</asset>
+<asset name="NFC Service Proxy" short_code="NFCSVCP" type="Software" surface_type="Client application" access_right="authenticated">
+  <description>NFC Service Proxy</description>
+  <significance>None</significance>
+</asset>
+<asset name="Service Proxy" short_code="SERV" type="Software" surface_type="Client application" access_right="authenticated">
+  <description>webinos service interface</description>
+  <significance>None</significance>
+</asset>
+
+<component name="NFC Manager">
+  <description>NFC API implementation</description>
+  <interface name="shareTag" type="provided" access_right="authenticated" privilege="normal" />
+  <interface name="peer" type="required" access_right="authenticated" privilege="normal" />
+  <structure head_asset="Event" head_adornment="Inheritance" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="NFC Event" />
+  <structure head_asset="NFC Tag" head_adornment="Association" head_nav="0" head_nry="a" head_role="" tail_role="" tail_nry="a" tail_nav="0" tail_adornment="Association" tail_asset="NFC Event" />
+
+  <structure head_asset="NFC Event" head_adornment="Composition" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1..a" tail_nav="0" tail_adornment="Association" tail_asset="NFC Message" />
+  <structure head_asset="NFC Message" head_adornment="Composition" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1..a" tail_nav="0" tail_adornment="Association" tail_asset="NFC Record" />
+  <structure head_asset="Webinos Service" head_adornment="Inheritance" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="NFC Service" />
+  <structure head_asset="NFC Service" head_adornment="Composition" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="NFC Listener" />
+  <structure head_asset="NFC Listener" head_adornment="Association" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1..a" tail_nav="0" tail_adornment="Association" tail_asset="NFC Event" />
+</component>
+
+<component name="NFC Manager B">
+  <description>NFC API implementation</description>
+  <interface name="shareTag" type="provided" access_right="authenticated" privilege="normal" />
+  <interface name="peer" type="provided" access_right="authenticated" privilege="normal" />
+  <structure head_asset="Event" head_adornment="Inheritance" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="NFC Event" />
+  <structure head_asset="NFC Tag" head_adornment="Association" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1..a" tail_nav="0" tail_adornment="Association" tail_asset="NFC Event" />
+
+  <structure head_asset="NFC Event" head_adornment="Composition" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1..a" tail_nav="0" tail_adornment="Association" tail_asset="NFC Message" />
+  <structure head_asset="NFC Message" head_adornment="Composition" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1..a" tail_nav="0" tail_adornment="Association" tail_asset="NFC Record" />
+  <structure head_asset="Webinos Service" head_adornment="Inheritance" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="NFC Service" />
+  <structure head_asset="NFC Service" head_adornment="Composition" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1..a" tail_nav="0" tail_adornment="Association" tail_asset="NFC Listener" />
+  <structure head_asset="NFC Listener" head_adornment="Association" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1..a" tail_nav="0" tail_adornment="Association" tail_asset="NFC Event" />
+</component>
+
+<component name="Application Client">
+  <description>Application using webinos APIs.</description>
+  <interface name="shareTag" type="required" access_right="authenticated" privilege="normal" />
+  <structure head_asset="Service Proxy" head_adornment="Inheritance" head_nav="0" head_nry="1" head_role="" tail_role="" tail_nry="1" tail_nav="0" tail_adornment="Association" tail_asset="NFC Service Proxy" />
+  <structure head_asset="NFC Service Proxy" head_adornment="Association" head_nav="0" head_nry="1" head_role="" tail_role="invokes" tail_nry="1" tail_nav="1" tail_adornment="Association" tail_asset="NFC Service" />
+</component>
+
+<connector name="peerservices" from_component="NFC Manager" from_role="request-peerservices" from_interface="peer" to_component="NFC Manager B" to_interface="peer" to_role="provide-peerservices" protocol="LLCP" access_right="authenticated" asset_name="NFC Event"/>
+<connector name="nfcapi" from_component="Application Client" from_role="request-nfcapi" from_interface="shareTag" to_component="NFC Manager" to_interface="shareTag" to_role="provide-nfcapi" protocol="JSON-RPC" access_right="authenticated" asset_name="NFC Service"/>
+
+</architectural_pattern>

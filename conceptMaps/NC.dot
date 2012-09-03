@@ -1,0 +1,50 @@
+digraph webinosTraceability {
+  graph [rankdir="TB"];
+  node [shape=rectangle,style="rounded,filled",colorscheme="spectral3",color="1"];
+  edge [arrowhead=vee,];
+
+  subgraph cluster_NC {
+    label="NC";
+    
+    "Device independent design" [scenarios="",usecases="",backlog=""];
+    "Feature access" [color=3,scenarios="",usecases="DA1,DA2,NC2",backlog="CS-6"];
+    "Feature information" [scenarios="",usecases="",backlog="CS-6"];
+    "Feature specification" [scenarios="",usecases="",backlog=""];
+    "File format compatibility" [scenarios="",usecases="",backlog=""];
+    "File format conversion" [scenarios="",usecases="",backlog=""];
+    "GUI components" [color=2,scenarios="",usecases="NC1",backlog=""];
+    "Identifiable APIs" [scenarios="",usecases="",backlog=""];
+    "Interactive features" [color=2,scenarios="S-NC2",usecases="",backlog=""];
+    "Interface layout services" [color=2,scenarios="S-PS2",usecases="NC1",backlog=""]; 
+    "Media format information" [color=2,scenarios="S-DA1",usecases="NC1",backlog=""];
+    "Minimum version check" [scenarios="",usecases="",backlog=""];
+    "Minimum webinos version" [scenarios="",usecases="",backlog=""];
+    "OS information" [color=3,scenarios="",usecases="NC2",backlog="F658"];
+    "Policy difference checking" [scenarios="",usecases="",backlog=""];
+    "Post-upgrade performance" [scenarios="",usecases="",backlog=""];
+    "Resource preferences" [scenarios="",usecases="",backlog=""];
+    "Runtime version registration" [color=2,scenarios="",usecases="",backlog="CS-84"];
+    "Upwards compatibility" [scenarios="",usecases="",backlog=""];
+    "webinos preference access" [scenarios="S-DA3",usecases="",backlog=""];    
+  }
+  "Interface layout services" -> "GUI components" [label="organises"];
+  "GUI components" -> "Upwards compatibility" [label="conforms"];
+  "Policy difference checking" -> "Upwards compatibility" [label="enables"];
+  "File format compatibility" -> "Upwards compatibility" [label="allows"];
+  "Media format information" -> "File format compatibility" [label="checks"];
+  "Post-upgrade performance" -> "Upwards compatibility" [label="satisfies"];
+  "Interface layout services" -> "File format conversion" [label="uses"];
+  "Interface layout services" -> "Feature information" [label="accesses"];
+  "Feature access" -> "Feature information" [label="accesses"];
+  "Feature specification" -> "Feature access" [label="relies"];
+  "Resource preferences" -> "Feature specification" [label="defaults for"];
+  "webinos preference access" -> "Resource preferences"  [label="access to"];
+   "OS information" -> "Feature information" [label="relies on"];
+  "Feature information" -> "Interactive features" [label="includes"];
+  "Device independent design" -> "Interactive features" [label="needs"];
+  "Minimum version check" -> "OS information" [label="checks"];
+  "Minimum version check" -> "Runtime version registration" [label="checking"];
+  "Runtime version registration" -> "Identifiable APIs" [label="stores"];
+  "Minimum version check" -> "Minimum webinos version" [label="reads"];
+  "Feature access" -> "Policy spec" [label="subject to"];
+}

@@ -1,0 +1,55 @@
+digraph IDConceptMap {
+  graph [rankdir="LR"];
+  node [shape=rectangle,style="rounded,filled",colorscheme="spectral3",color="1"];
+  edge [arrowhead=vee,];
+
+  subgraph cluster_ID {
+    label="ID";
+  
+    "Addressable applications" [color=2,scenarios="S-DA1",usecases="",backlog=""];
+    "App instance authentication" [scenarios="",usecases="",backlog=""];
+    "App provider proof" [scenarios="",usecases="",backlog=""];
+    "Application authentication" [color=2,scenarios="",usecases="",backlog="CS-18"];
+    "Application identity" [color=2,scenarios="S-DA1",usecases="",backlog=""];
+    "Component address" [color=2,scenarios="",usecases="",backlog="CS-6,CS-10"];
+    "Component attestation" [scenarios="",usecases="",backlog=""];
+    "Developer identity proof" [scenarios="",usecases="",backlog=""];
+    "Device identity" [color=2,scenarios="",usecases="",backlog="CS-6"];
+    "Device privacy preferences" [scenarios="",usecases="",backlog=""];
+    "Disabled identity broadcast" [scenarios="",usecases="",backlog=""];
+    "Identity communication" [color=2,scenarios="",usecases="NM4",backlog="CS-6"];
+    "Identity claims" [scenarios="",usecases="",backlog=""];
+    "Mutual authentication" [color=2,scenarios="",usecases="",backlog="CS-68,CS-80"];
+    "Platform attestation" [color=2,scenarios="",usecases="",backlog="CS-6"];
+    "Remote device identity" [scenarios="",usecases="NM4",backlog=""];
+    "Runtime authentication" [color=2,scenarios="",usecases="",backlog="CS-68,CS-80"];
+    "Service identity" [color=2,scenarios="",usecases="DA1,DA2,PS1",backlog=""];
+    "Session device identity" [color=2,scenarios="",usecases="",backlog="CS-6"];
+    "Two factor authentication" [color=2,scenarios="",usecases="",backlog="CS-6"];
+    "Unlinkable user identity" [color=2,scenarios="",usecases="",backlog="CS-95"];
+    "User identity" [color=3,scenarios="",usecases="CAP2,PS2,PS3",backlog="CS-6"];    
+  }
+  
+  "Application identity" -> "Application authentication" [label="allows"];
+  "Application identity" -> "Developer identity proof" [label="connected to"];
+  "Application identity" -> "App provider proof" [label="connected to"];  
+  "Service identity" -> "Application identity" [label="incorporates"];
+  "Service identity" -> "App instance authentication" [label="allows"];
+  "Service identity" -> "Component address" [label="has"];
+  "Component address" -> "Addressable applications" [label="allows"];
+  "Service identity" -> "Mutual authentication" [label="allows"];
+  "Device privacy preferences" -> "Device identity" [label="restricts"];
+  "Session device identity" -> "Device identity" [label="contains"];
+  "Device identity" -> "Identity communication" [label="can"];
+  "Device identity" -> "Remote device identity" [label="allows"];
+  "Unlinkable user identity" -> "User identity" [label="restricts use"];
+  "Identity claims" -> "User identity" [label="grounds"];
+  "Two factor authentication" -> "User identity" [label="uses"];
+  "Disabled identity broadcast" -> "Identity communication" [label="restricts"];
+  "Two factor authentication" -> "Device identity" [label="uses"];
+  "Platform attestation" -> "Device identity" [label="relies on"];
+  "Component attestation" -> "Platform attestation" [label="relies on"];
+  "Device identity" -> "Runtime authentication" [label="allows"];
+  "Component attestation" -> "Application identity" [label="relies on"];
+
+}

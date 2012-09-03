@@ -1,0 +1,279 @@
+<?xml version="1.0"?>
+<!DOCTYPE usability PUBLIC "-//CAIRIS//DTD USABILITY 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/usability.dtd">
+
+
+<usability>
+<persona name="Richard" type="Secondary" assumption_persona="TRUE" image="/home/irisuser/webinos/wp2/personas/richard.jpg" >
+  <activities>Richard spends about half of his time at his desk; the other half is spent on duty in the community. He works and interacts with technology at set times, and is prescribed by the policies and tools employed by his station.
+Although his working hours are pre-determined, the nature of shift work means he might work on different days, and different times of day. Being a policeman is a physically demanding, and the technology accompanying him can be "put through its paces". As a result, technology is prone to breakage or loss, and subsequent replacement.</activities>
+  <attitudes>Like many security professionals, Richard is conservative by nature; he prefers the "tried and tested" over the novel and unknown. As a figure of authority, he embraces authority, and serving the community gives him a high sense of self-worth and assertiveness. However, working with the less desirable aspects of society has also made Richard cynical and suspicious of outsiders. Consequently, Richard can be quick to jump to conclusions, an attribute he chalks up to experience, but others may see as prejudicial.
+Richard's pragmatism filters through to his attitude to technology: either it does the job or not; if it works he'll use it, if it doesn't he won't.</attitudes>
+  <aptitudes>To effectively perform his duties, Richard needs to be emotionally stable, and approaching any problems with a calm and rationale manner. Some of these duties are less glamorous than others, so a low boredom threshold helps. Working with the public on a day-to-day basis also requires a certain affinity with people, intuitively empathising when required and asserting his authority when needed.</aptitudes>
+  <motivations>Like any professional, Richard wants to do well at his job, to get noticed and get the next promotions. On a day-to-day basis this means being efficient and effective. The technology that supports him does not have to be perfect, the UI does not have to be sleek; Richard will put up with a lot of "irritations" as long at the technology does the job effectively.
+Richard is burdened by the administration that plagues his working life. Anything that enables him to spend less time in the office and more time on the streets doing his job is a good thing.</motivations>
+  <skills>Richard has acquired his skills through his training and professional development. The skills of organisation, memory and observation are base skills every policeman is grounded in and Richard has these in abundance. Richard tolerates routine, and understand and values the need for clear procedure in his daily habits.
+Richard is a fast decision maker and can follow this through with the public and his work colleague, demonstrating leadership.</skills>
+
+  <persona_environment name="Identity" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Discovery and Addressing" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Remote Notifications and Messaging" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Policy and Security" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Negotiation and Compatibility" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Lifecycle" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Device and Service Functional Capability" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Transfer and Management of State" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+  <persona_environment name="Complete" is_direct="TRUE" >
+    <persona_role name="User" />
+    <narrative>None</narrative>
+  </persona_environment>
+</persona>
+<external_document name="Day in the life PA report" version="1.0" date="2001" authors="PA Consulting Group" >
+  <description>A study into what is involved in the typical shift of a police offier.  Available from http://rds.homeoffice.gov.uk/rds/prgpdfs/prs149.pdf</description>
+</external_document>
+<external_document name="West Yorkshire Case Study" version="1.0" date="2001" authors="Blackburry" >
+  <description>West Yorkshire Police Increase Visibility and Productivity with Blackberry.  Available from http://www.blackberry.com/products/pdfs/WYP_CS.pdf</description>
+</external_document>
+<external_document name="Police Personality study" version="1.0" date="2002" authors="Universidad de Oviedo" >
+  <description>Findings of psychological surveys on police officers.  Available from http://redalyc.uaemex.mx/pdf/727/72714231.pdf</description>
+</external_document>
+<external_document name="Typical Cop Study" version="1.0" date="2001" authors="Blackburry" >
+  <description>Article: Just a Typical Copy\" Does A Police Personality Exist?  Available from http://www.officer.com/web/online/Police-Life/Just-a-Typical-Cop/17$52096</description>
+</external_document>
+<external_document name="Police Officer Skills and Knowledge" version="1.0" date="2010" authors="Skills Funding Agency" >
+  <description>Article on Police Officer Skills and Knowledge.  Available from https://nextstep.direct.gov.uk/PlanningYourCareer/JobProfiles/JobProfile0170/Pages/Skills.aspx</description>
+</external_document>
+<document_reference name="Spends 50% time outside of office" contributor="Nick Allott" document="Day in the life PA report" >
+  <excerpt>If you are out of the office, you are mobile.</excerpt>
+</document_reference>
+<document_reference name="Police work requires strict clocking in and out" contributor="Nick Allott" document="Day in the life PA report" >
+  <excerpt>..Around the clock support is one requirement...</excerpt>
+</document_reference>
+<document_reference name="All active policeman do shift work" contributor="Nick Allott" document="Day in the life PA report" >
+  <excerpt>The aim of the study was to gain a full understanding of what is involved in the 'typical shift' of a police officer.</excerpt>
+</document_reference>
+<document_reference name="Police are active and in dangerous positions" contributor="Nick Allott" document="Day in the life PA report" >
+  <excerpt>A physical blow can break a device.</excerpt>
+</document_reference>
+<document_reference name="Always on the move to new locations" contributor="Nick Allott" document="Day in the life PA report" >
+  <excerpt>Probability of device loss is higher.</excerpt>
+</document_reference>
+<document_reference name="Police equipment manufactures claim robustnesss" contributor="Nick Allott" document="West Yorkshire Case Study" >
+  <excerpt>Along with ease of use, a second criteria was slecting a solution which would be robust enough to survive tough treatment in scenarios such as a street chase.</excerpt>
+</document_reference>
+<document_reference name="Conservative" contributor="Nick Allott" document="Police Personality study" >
+  <excerpt>Scientific study extrapolates to the individual</excerpt>
+</document_reference>
+<document_reference name="Conformist" contributor="Nick Allott" document="Police Personality study" >
+  <excerpt>Scientific study extrapolates to the individual</excerpt>
+</document_reference>
+<document_reference name="Sincere" contributor="Nick Allott" document="Police Personality study" >
+  <excerpt>Scientific study extrapolates to the individual</excerpt>
+</document_reference>
+<document_reference name="Self-worth" contributor="Nick Allott" document="Typical Cop Study" >
+  <excerpt>Scientific study extrapolates to the individual</excerpt>
+</document_reference>
+<document_reference name="Masculine" contributor="Nick Allott" document="Typical Cop Study" >
+  <excerpt>Scientific study extrapolates to the individual</excerpt>
+</document_reference>
+<document_reference name="Distrustful of Outsiders" contributor="Nick Allott" document="Typical Cop Study" >
+  <excerpt>Scientific study extrapolates to the individual</excerpt>
+</document_reference>
+<document_reference name="Cynical" contributor="Nick Allott" document="Typical Cop Study" >
+  <excerpt>Scientific study extrapolates to the individual</excerpt>
+</document_reference>
+<document_reference name="Suspicious" contributor="Nick Allott" document="Typical Cop Study" >
+  <excerpt>Scientific study extrapolates to the individual</excerpt>
+</document_reference>
+<document_reference name="Pessimistic" contributor="Nick Allott" document="Typical Cop Study" >
+  <excerpt>Scientific study extrapolates to the individual</excerpt>
+</document_reference>
+<document_reference name="Pragmatic" contributor="Nick Allott" document="Typical Cop Study" >
+  <excerpt>Scientific study extrapolates to the individual</excerpt>
+</document_reference>
+<document_reference name="Prejudicial" contributor="Nick Allott" document="Typical Cop Study" >
+  <excerpt>Scientific study extrapolates to the individual</excerpt>
+</document_reference>
+<document_reference name="Emotionally Stable" contributor="Nick Allott" document="Police Personality study" >
+  <excerpt>Scientific study extrapolates to the individual</excerpt>
+</document_reference>
+<document_reference name="Rational" contributor="Nick Allott" document="Police Personality study" >
+  <excerpt>Scientific study extrapolates to the individual</excerpt>
+</document_reference>
+<document_reference name="Autonomous Achievement (Responsible)" contributor="Nick Allott" document="Typical Cop Study" >
+  <excerpt>Scientific study extrapolates to the individual</excerpt>
+</document_reference>
+<document_reference name="Low Boredom" contributor="Nick Allott" document="Police Personality study" >
+  <excerpt>Scientific study extrapolates to the individual</excerpt>
+</document_reference>
+<document_reference name="Social Acuity" contributor="Nick Allott" document="Typical Cop Study" >
+  <excerpt>Scientific study extrapolates to the individual</excerpt>
+</document_reference>
+<document_reference name="Poise and Self-Confidence" contributor="Nick Allott" document="Typical Cop Study" >
+  <excerpt>Scientific study extrapolates to the individual</excerpt>
+</document_reference>
+<document_reference name="Assertive" contributor="Nick Allott" document="Typical Cop Study" >
+  <excerpt>Scientific study extrapolates to the individual</excerpt>
+</document_reference>
+<document_reference name="Functional Intelligence" contributor="Nick Allott" document="Typical Cop Study" >
+  <excerpt>Scientific study extrapolates to the individual</excerpt>
+</document_reference>
+<document_reference name="Mobile technology improves efficiency" contributor="Nick Allott" document="Day in the life PA report" >
+  <excerpt>Going further, applying new mobile technology will allow the police to complete much of their paperwork more quickly and in the community.</excerpt>
+</document_reference>
+<document_reference name="Office work considered promotion" contributor="Nick Allott" document="Day in the life PA report" >
+  <excerpt>Jobs in specialist squads are regarded as the way to career advancement, while returning to uniform from specialist service is considered a demotion.</excerpt>
+</document_reference>
+<document_reference name="Paperwork a burden" contributor="Nick Allott" document="Day in the life PA report" >
+  <excerpt>Some central initiatives particularly regarding the streamlining of the initial prosecution file have already sought to reduce the burden of unnecessary paperwork ....</excerpt>
+</document_reference>
+<document_reference name="Well Trained" contributor="Nick Allott" document="Police Officer Skills and Knowledge" >
+  <excerpt>Successful applicants are likely to have these skills</excerpt>
+</document_reference>
+<document_reference name="Organised" contributor="Nick Allott" document="Police Officer Skills and Knowledge" >
+  <excerpt>Successful applicants are likely to have these skills</excerpt>
+</document_reference>
+<document_reference name="Leadership" contributor="Nick Allott" document="Police Officer Skills and Knowledge" >
+  <excerpt>Successful applicants are likely to have these skills</excerpt>
+</document_reference>
+<document_reference name="Observation" contributor="Nick Allott" document="Police Officer Skills and Knowledge" >
+  <excerpt>Successful applicants are likely to have these skills</excerpt>
+</document_reference>
+<document_reference name="Self-Disciplined" contributor="Nick Allott" document="Typical Cop Study" >
+  <excerpt>Scientific study extrapolates to the individual</excerpt>
+</document_reference>
+<document_reference name="Socially Bold" contributor="Nick Allott" document="Typical Cop Study" >
+  <excerpt>Scientific study extrapolates to the individual</excerpt>
+</document_reference>
+<document_reference name="Fast Decision Maker" contributor="Nick Allott" document="Police Officer Skills and Knowledge" >
+  <excerpt>Successful applicants are likely to have these skills</excerpt>
+</document_reference>
+<document_reference name="Emotionally Tough" contributor="Nick Allott" document="Typical Cop Study" >
+  <excerpt>Scientific study extrapolates to the individual</excerpt>
+</document_reference>
+<document_reference name="Low Experience Anxiety" contributor="Nick Allott" document="Typical Cop Study" >
+  <excerpt>Scientific study extrapolates to the individual</excerpt>
+</document_reference>
+<persona_characteristic persona="Richard" behavioural_variable="Activities" modal_qualifier="Probably" >
+  <definition>Highly mobile</definition>
+  <grounds type="document" reference="Spends 50% time outside of office" />
+</persona_characteristic>
+<persona_characteristic persona="Richard" behavioural_variable="Activities" modal_qualifier="Likely" >
+  <definition>Works for a fixed time period</definition>
+  <grounds type="document" reference="Police work requires strict clocking in and out" />
+</persona_characteristic>
+<persona_characteristic persona="Richard" behavioural_variable="Activities" modal_qualifier="Likely" >
+  <definition>Works a different times of day</definition>
+  <grounds type="document" reference="All active policeman do shift work" />
+</persona_characteristic>
+<persona_characteristic persona="Richard" behavioural_variable="Activities" modal_qualifier="Probably" >
+  <definition>Prone to lose/break device</definition>
+  <grounds type="document" reference="Police are active and in dangerous positions" />
+  <grounds type="document" reference="Always on the move to new locations" />
+  <rebuttal type="document" reference="Police equipment manufactures claim robustnesss" />
+</persona_characteristic>
+<persona_characteristic persona="Richard" behavioural_variable="Aptitudes" modal_qualifier="Probably" >
+  <definition>Emotionally calm</definition>
+  <grounds type="document" reference="Emotionally Stable" />
+  <grounds type="document" reference="Rational" />
+  <grounds type="document" reference="Autonomous Achievement (Responsible)" />
+</persona_characteristic>
+<persona_characteristic persona="Richard" behavioural_variable="Aptitudes" modal_qualifier="Probably" >
+  <definition>Affinity with people</definition>
+  <grounds type="document" reference="Low Boredom" />
+  <grounds type="document" reference="Social Acuity" />
+  <grounds type="document" reference="Poise and Self-Confidence" />
+  <grounds type="document" reference="Assertive" />
+  <grounds type="document" reference="Functional Intelligence" />
+</persona_characteristic>
+<persona_characteristic persona="Richard" behavioural_variable="Attitudes" modal_qualifier="Probably" >
+  <definition>Conservative (not necessarily politically, but rather resistant to change)</definition>
+  <grounds type="document" reference="Conservative" />
+</persona_characteristic>
+<persona_characteristic persona="Richard" behavioural_variable="Attitudes" modal_qualifier="Probably" >
+  <definition>Is conformist</definition>
+  <grounds type="document" reference="Conformist" />
+</persona_characteristic>
+<persona_characteristic persona="Richard" behavioural_variable="Attitudes" modal_qualifier="Probably" >
+  <definition>Is sincere</definition>
+  <grounds type="document" reference="Sincere" />
+</persona_characteristic>
+<persona_characteristic persona="Richard" behavioural_variable="Attitudes" modal_qualifier="Probably" >
+  <definition>High sense of self-worth</definition>
+  <grounds type="document" reference="Self-worth" />
+</persona_characteristic>
+<persona_characteristic persona="Richard" behavioural_variable="Attitudes" modal_qualifier="Probably" >
+  <definition>Is Masculine</definition>
+  <grounds type="document" reference="Masculine" />
+</persona_characteristic>
+<persona_characteristic persona="Richard" behavioural_variable="Attitudes" modal_qualifier="Probably" >
+  <definition>Is Distrustful of outsiders</definition>
+  <grounds type="document" reference="Distrustful of Outsiders" />
+</persona_characteristic>
+<persona_characteristic persona="Richard" behavioural_variable="Attitudes" modal_qualifier="Probably" >
+  <definition>Is Cynical</definition>
+  <grounds type="document" reference="Cynical" />
+</persona_characteristic>
+<persona_characteristic persona="Richard" behavioural_variable="Attitudes" modal_qualifier="Probably" >
+  <definition>Is Suspicious</definition>
+  <grounds type="document" reference="Suspicious" />
+</persona_characteristic>
+<persona_characteristic persona="Richard" behavioural_variable="Attitudes" modal_qualifier="Probably" >
+  <definition>Is Pessimistic</definition>
+  <grounds type="document" reference="Pessimistic" />
+</persona_characteristic>
+<persona_characteristic persona="Richard" behavioural_variable="Attitudes" modal_qualifier="Probably" >
+  <definition>Is Pragmatic</definition>
+  <grounds type="document" reference="Pragmatic" />
+</persona_characteristic>
+<persona_characteristic persona="Richard" behavioural_variable="Attitudes" modal_qualifier="Probably" >
+  <definition>Is Prejudicial</definition>
+  <grounds type="document" reference="Prejudicial" />
+</persona_characteristic>
+<persona_characteristic persona="Richard" behavioural_variable="Motivations" modal_qualifier="Probably" >
+  <definition>Better technology improves promotion prospects</definition>
+  <grounds type="document" reference="Mobile technology improves efficiency" />
+  <grounds type="document" reference="Paperwork a burden" />
+  <warrant type="document" reference="Office work considered promotion" />
+</persona_characteristic>
+<persona_characteristic persona="Richard" behavioural_variable="Skills" modal_qualifier="Probably" >
+  <definition>Honed police-officer skills</definition>
+  <grounds type="document" reference="Organised" />
+  <grounds type="document" reference="Leadership" />
+  <grounds type="document" reference="Observation" />
+  <grounds type="document" reference="Self-Disciplined" />
+  <grounds type="document" reference="Socially Bold" />
+  <warrant type="document" reference="Well Trained" />
+</persona_characteristic>
+<persona_characteristic persona="Richard" behavioural_variable="Skills" modal_qualifier="Probably" >
+  <definition>Values clear procedure</definition>
+  <grounds type="document" reference="Organised" />
+  <grounds type="document" reference="Fast Decision Maker" />
+  <grounds type="document" reference="Self-Disciplined" />
+  <grounds type="document" reference="Emotionally Tough" />
+  <grounds type="document" reference="Low Experience Anxiety" />
+</persona_characteristic>
+</usability>

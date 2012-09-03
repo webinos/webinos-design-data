@@ -1,0 +1,51 @@
+h1. S-CAP1: Creating Applications for webinos
+
+Author: Victor Klos
+
+h2. Overview
+
+Jimmy wants a rapid development environment of cross platform web applications
+
+h2. Description
+
+Jimmy loves to develop programs. He has created several good-­selling apps for the iPhone. Also, his blog is well visited and he makes quite some cash with the corresponding add income. His expertise is creating well working mobile apps in the category of ‘life hacking’.
+
+He has heard of webinos and decides to take it for a spin. Luckily, it is open source as he is getting more and more frustrated with the closeness of the iStore. Better still, after download he can do a local install. After only 15 minutes he is running his own development webinos cloud.
+
+It is time to start experimenting. ‘Run webinos’ also fires up the browser and the opening page contains all the necessary stuff: webcasts, architectural overviews, design philosophy, API documentation, examples and example discussions, IRC channels, links to the forum etc. After browsing a while Jimmy dives into the examples. They run on the built-­-in web server that allows in-spot editing. Experimenting like it is supposed to be!
+
+He soon gets himself familiarized with the webinos concept and APIs and ports his latest iPhone app ZenSearch to webinos. That application searches the web for photos (in the public domain or with a certain CC licence) which are usable in Zen-­style presentations. It consists of a back-end and a front-­end. The back-­-end is a server that does the searching and ‘scoring’ of the photos. The front-­end is the aforementioned iPhone app with its excellent navigational interface. For the porting effort the server, of course, is fine as it is. The mobile app however needs to be rewritten to HTML + CSS + JavaScript. This is okay, because the website of the ZenSearch service and the mobile app will have more in common and are thus easier maintainable. Finally, because webinos bridges to the DLNA home network, his app cannot only suggest beautiful pictures but also show them on the End Users’ TV. All that for just a couple of JavaScript lines!
+
+
+h2. Issues
+
+    * Jimmy wants to learn new technology but is often overwhelmed before he begins. For example a simple experiment with a scripting language once required him to do a make and install with system administrator rights.
+    * Jimmy learns quickly. However, new paradigms he often finds hard to comprehend. (His favorite learning style is just to start experimenting.)
+    * As a professional and agile developer Jimmy likes his development, test and deployment environments clearly separated while highly manageable.
+    * Creating his first iPhone app reminded him of the old days: short nights with pizza and lots of cola. (He hopes his first webinos app will be less a hassle.)
+    * Jimmy would very much like to create apps that use the television, but he is too unfamiliar with UPnP, DLNA and what else.
+    * Being forced in a single direction usually puts off Jimmy. He has an allergy for notions like ‘the one platform that rules them all’ or ‘the mother of all platforms’. He likes to be able to make his own choice which abstraction level to design his applications on.
+    * Jimmy likes to control his own stuff. His NAS is securely reachable from the internet using public/private keys and he runs his own mail server for all his domains.
+
+
+h2. Benefits
+
+    * webinos provides a smooth installation experiencing, running out of the box on all supported platforms. (When a new technology advertises ease of use it should behave like that itself, even during installation.)
+    * webinos provides a great learning experience that caters for all learning styles. Developers that take it for a test drive are in no way hindered to choose for webinos.
+    * Having formal and separated environments for development, test and deployment is considered to be good practice.
+    * Having full access to webinos functionality using HTML + CSS + JavaScript makes the target developer audience as large as possible.
+    * Being able to access webinos functionality using native APIs attracts the more advanced developers which can in turn create more advanced solutions.
+    * Integrating with other devices, especially if they use lesser known protocols like UPnP requires a lot of work. Having webinos do the bridging to its familiar environment both scales up webinos functionality quickly and makes it easier for developers to create compelling apps.
+    * Allowing federation between (i.e. seamless interworking of independent instances of) different webinos clouds maximizes the number of people that will actually use it in their daily life.
+
+h2. Usability breakdown 
+
+| Persona |  Jimmy |
+| Duration | Hours or longer |
+| Frequency | Daily - Weekly |
+| Demands | Medium |
+| Goal Conflict | None |
+
+h2. Required Use Cases
+* NM1
+* TMS2
