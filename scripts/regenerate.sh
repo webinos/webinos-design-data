@@ -13,7 +13,6 @@ export TMP_DIR=/tmp
 export OUTPUT_DIR=/tmp/deliverable #This is where files for the D2.4 and D2.5 deliverable go
 export SOFFICE_STARTUP_SLEEP=15  #How long to wait before soffice starts up in headless model 
 
-
 export MODELS_DIR=$GIT_DIR/cairisModels
 export CM_DIR=$GIT_DIR/conceptMaps
 export REQ_DIR=$GIT_DIR/requirements
@@ -138,13 +137,13 @@ echo '*** Mitigate attack patterns where possible ***'
 $CAIRIS_SRC/cimport.py --type all $TMP_DIR/pattern_mitigation.xml --overwrite 0
 
 echo echo '*** Exporting scenarios with traceability data ***'
-echo echo $CAIRIS_SRC/cexport.py --type scenarios $OUTPUT_DIR/scenarios.txt
+$CAIRIS_SRC/cexport.py --type scenarios $OUTPUT_DIR/scenarios.txt
 
 echo echo '*** Exporting use cases ***'
-echo echo $CAIRIS_SRC/cexport.py --type usecases $OUTPUT_DIR/usecases.txt
+$CAIRIS_SRC/cexport.py --type usecases $OUTPUT_DIR/usecases.txt
 
 echo echo '*** Exporting requirements ***'
-echo echo $CAIRIS_SRC/cexport.py --type requirements $OUTPUT_DIR/requirements.txt
+$CAIRIS_SRC/cexport.py --type requirements $OUTPUT_DIR/requirements.txt
 
 echo '*** Export architectural patterns ***'
 $CAIRIS_SRC/cexport.py --type architecture $OUTPUT_DIR/D036_ArchitecturalPatterns.txt
