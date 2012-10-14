@@ -4,8 +4,52 @@
 <project_settings name="webinos" >
   <background>None</background>
   <strategic_goals>None</strategic_goals>
-  <rich_picture image="" />
+  <rich_picture image="/home/irisuser/webinos/wp2/cairisModels/webinosOverviewModel.jpg" />
   <scope>None</scope>
+  <entry name="Application installation">
+    <definition>Installation (or setup) of a program (including drivers, plugins, etc.) is the act of putting the program onto a computer system so that it can be executed. Because the requisite process varies for each program and each computer, many programs (including operating systems) come with a general-purpose or dedicated installer – a specialized program which automates most of the work required for their installation.</definition>
+  </entry>
+  <entry name="Application lifecycle">
+    <definition>A continuous process of managing the life of an application through governance, development and maintenance.</definition>
+  </entry>
+  <entry name="Application Programming Interface (API)">
+    <definition>An interface, i.e. a point of interaction between components, implemented by a software program that enables it to interact with other software. It facilitates interaction between different software programs similar to the way the user interface facilitates interaction between humans and computers.</definition>
+  </entry>
+  <entry name="Applications">
+    <definition>A complete, self-contained program that performs a specific function directly for the user. This is in contrast to system software such as the operating system kernel, server processes, libraries which exists to support application programs and utility programs. </definition>
+  </entry>
+  <entry name="Authentication">
+    <definition>Authentication is the process of confirming the correctness of the claimed identity.</definition>
+  </entry>
+  <entry name="Certificate Authority (CA)">
+    <definition>(i) A trusted third party 'clearing house' that issues digital signatures and digital certificates [ISO/IEC 27002:2005].  (ii) An infrastructure that issues certificates signed by or chained to a root certificate owned by the organization operating the CA infrastructure. CA-operating organizations typically own multiple root certificates, and apply various certification practices, e.g. level of business or domain validation required for issuing certificates signed by a particular root certificate. [Source: WAC]</definition>
+  </entry>
+  <entry name="Child application">
+    <definition>A child application is a self contained application package that is included within another application package (parent application). The are used as means for distributed application development and deployment where a parent application can export child applications to other devices in order to provide a service that can be distributed over several devices to the user.</definition>
+  </entry>
+  <entry name="Cloud">
+    <definition>Cloud computing is Web-based processing, whereby shared resources, software, and information are provided to computers and other devices (such as smartphones) on demand over the Internet.
+The Cloud can therefore refer to a range of services provided by remote infrastructures. A single instance of a Cloud is Amazon EC2, for example.</definition>
+  </entry>
+  <entry name="Content adaptation">
+    <definition>Is the action of transforming content to adapt to device capabilities. Content adaptation is usually related to mobile devices that require special handling because of their limited computational power, small screen size and constrained keyboard functionality.</definition>
+  </entry>
+  <entry name="Context">
+    <definition>Schilit et al. (1994) define context as where you are, who you are with, and what resources are nearby. This might suggest that context is more focused on the user’s surrounding as opposed to his/her inner states. A more specific definition is provided by Dey et al(2001). They defined it as any information that can be used to characterize the situation of an entity. An entity is a person, place, or object that is considered relevant to the interaction between a user and an application, including the user and applications themselves. Some examples of context types according to the actor/entity that is involved are: User context (contexts describing a user’s situation), software context (context describing a software’s situation).
+Context is more or less the set of facts or circumstances that surround a situation or event.</definition>
+  </entry>
+  <contributors>
+    <contributor first_name="Andrea" surname="Atzeni" affiliation="Polito" role="Participant" />
+    <contributor first_name="Krishna" surname="Bangalore" affiliation="TUM" role="Participant" />
+    <contributor first_name="Dieter" surname="Blomme" affiliation="IBBT" role="Participant" />
+    <contributor first_name="Cesare" surname="Cameroni" affiliation="Polito" role="Participant" />
+    <contributor first_name="Shamal" surname="Faily" affiliation="University of Oxford" role="Participant" />
+    <contributor first_name="Ivan" surname="Flechais" affiliation="University of Oxford" role="Participant" />
+    <contributor first_name="Simon" surname="Isenberg" affiliation="BMW" role="Participant" />
+    <contributor first_name="Martin" surname="Lasak" affiliation="Fraunhofer FOKUS" role="Participant" />
+    <contributor first_name="John" surname="Lyle" affiliation="University of Oxford" role="Participant" />
+    <contributor first_name="Andre" surname="Paul" affiliation="Fraunhofer FOKUS" role="Participant" />
+  </contributors>
 </project_settings>
 <environment name="Transfer and Management of State" short_code="TMS" >
   <definition>Transfer and Management of State</definition>
