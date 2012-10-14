@@ -2,10 +2,27 @@
 <!DOCTYPE cairis PUBLIC "-//CAIRIS//DTD PROJECT 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/cairis.dtd">
 <cairis>
 <project_settings name="webinos" >
-  <background>None</background>
-  <strategic_goals>None</strategic_goals>
+  <background>Increasingly, users are owning more connected devices and expecting applications to keep preferences and status information synchronised across devices in different domains. The purpose of the webinos project is to define and deliver an open source platform, which will enable web applications and services to be used and shared consistently and securely over a broad spectrum of connected devices. To achieve this, it defines and provides an architecture and infrastructure to allow applications to run not only on a single device, but also across devices and domains. This applies to device features as well. New APIs are also provided to allow access to local and remote device resources and network resources in the Cloud.
+
+webinos is a cross-domain platform for secure web application delivery. These domains include mobile, PCs, home media (TVs), and in-car units devices. It is specified as middleware installed on a selection of operating systems (OSs) on current devices to enable the consistent and secure web application user experience. At the time of writing the supported OSs and device platforms include:
+Android 2.3.x
+tested with devices: Nexus S, Asus Transformer Prime, Samsung Galaxy S2, Sonyericsson Xperia Arc, Galaxy Note
+Microsoft Windows 7 SP, Windows 7, Windows XP
+tested with laptops: Vaio z11, Dell, Asus EeePC (1215N)
+Linux: Ubuntu 10.04 LTS, Slackware 13.1, 13.37, Mint, Fedora
+tested with devices: VMWare Player, Samsung, Asus EeePC (1215N)
+TV variants of Cocom Churchill 177, Acer Revo etc.
+vehicle variant of Pandaboard Rev. A3 with Ubuntu 11.10
+Mac OS X
+The webinos platform includes not only a set of newly defined APIs to enhance current web application runtime environments, but also an overlay network architecture to enable the webinos specific features.
+</background>
+  <strategic_goals>Promoting a “single service for every device” vision, webinos will move the existing baseline of web development from installed applications to services, running consistently across a wide range of connected devices, ensuring that the technologies for describing, negotiating, securing, utilizing device functionalities and adapting to context are fit for purpose.
+
+Innovations in contextual description will be broad covering but not limited to device capabilities, network access, user identity and preferences, location, behaviourally induced properties and finally the more complex issue of the users’ social network context and social media engagement.
+
+webinos will boost the industry migration towards web-based services. webinos can back this by providing inter-operable, standardised, open source technology utilizable across domains with direct commercially exploitable value. webinos will also act as an industry catalyst to encourage collaboration and discourage fragmentation in this space. There are strong industry moves towards Internet friendly and Internet integrated offerings, and there exists a window of opportunity to place the webinos technology on a robust open foundation that will remove economic barriers to engagement, embody policy on data privacy in concrete technology and creating a centre of web centric expertise.</strategic_goals>
   <rich_picture image="/home/irisuser/webinos/wp2/cairisModels/webinosOverviewModel.jpg" />
-  <scope>None</scope>
+  <scope>Specification and architectural design of identity, discovery, notifications and messaging, policy and security, negotiation and compatibility, lifecycle, device and service capabilities, and state management and transfer functionality and software components.</scope>
   <entry name="Application installation">
     <definition>Installation (or setup) of a program (including drivers, plugins, etc.) is the act of putting the program onto a computer system so that it can be executed. Because the requisite process varies for each program and each computer, many programs (including operating systems) come with a general-purpose or dedicated installer – a specialized program which automates most of the work required for their installation.</definition>
   </entry>
@@ -37,6 +54,50 @@ The Cloud can therefore refer to a range of services provided by remote infrastr
   <entry name="Context">
     <definition>Schilit et al. (1994) define context as where you are, who you are with, and what resources are nearby. This might suggest that context is more focused on the user’s surrounding as opposed to his/her inner states. A more specific definition is provided by Dey et al(2001). They defined it as any information that can be used to characterize the situation of an entity. An entity is a person, place, or object that is considered relevant to the interaction between a user and an application, including the user and applications themselves. Some examples of context types according to the actor/entity that is involved are: User context (contexts describing a user’s situation), software context (context describing a software’s situation).
 Context is more or less the set of facts or circumstances that surround a situation or event.</definition>
+  </entry>
+  <entry name="Credential">
+    <definition>Data that is transferred or presented to establish either a claimed identity or the authorizations of a system entity. [RFC 2828]</definition>
+  </entry>
+  <entry name="Cross-Device Application">
+    <definition>A webinos application capable of running on multiple devices, such as a set-top box and smartphone, not necessarily simultaneously.</definition>
+  </entry>
+  <entry name="Device">
+    <definition>A piece of hardware such as a mobile telephone, laptop, PC, home media centre, in-car system, netbook, tablet, game console, or router. The term “terminal” may be used analogue.</definition>
+  </entry>
+  <entry name="Digital Certificate">
+    <definition>A structure that associates an identity with an entity such as a user, a product or an Application Instance where the certificate has an associated asymmetric key pair which can be used to authenticate that the entity does, indeed, possess the Private Key. [IEC 62541-2, ed. 1.0 (2010-02)]</definition>
+  </entry>
+  <entry name="Digital Signature">
+    <definition>The result of a cryptographic transformation of data which, when properly implemented, provides the services of: (i) origin authentication, (ii) data integrity, (iii) signer non-repudiation. [FIPS 140-2]</definition>
+  </entry>
+  <entry name="Event">
+    <definition>A set of structured data that is meant to be exchanged among two or more addressable entities (e.g., applications, services).</definition>
+  </entry>
+  <entry name="Feature">
+    <definition>An option or functional capability available to the user.</definition>
+  </entry>
+  <entry name="Node">
+    <definition>Most commonly, 'Node' or 'nodejs' is used to refer to the NodeJS software which is used by webinos as a programming language and framework. From the website (NODE): "Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices."</definition>
+  </entry>
+  <entry name="Personal Zone">
+    <definition>This provides the means for users to manage their personal devices and services. The zone is exposed on each device as a set of local APIs, with a shared model of context that is synchronized across all devices in the zone together with the personal zone hub. The personal zone supports a single sign on mechanism so that users authenticate to a device, the device to the zone, and the zone to applications/services. The zone further supports an overlay networking model that hides the details of addressing and interconnect technologies. This is based upon 3rd party components that enable the zone to scale in the face on a continuing evolution of networking technologies. Note that some devices (e.g. a TV or networked printer) may be shared by several people, and forms part of a shared zone.</definition>
+  </entry>
+  <entry name="Platform">
+    <definition>An operating system and software environment running on top of a device, managing the device hardware and providing common services for efficient execution of various application software.
+
+Examples: The most common operating systems used in mobile smart phones include Symbian OS, Android, iOS, RIM Black Berry OS, or Windows Mobile. Popular modern operating systems for personal computers include Microsoft Windows, Mac OS X, and GNU/Linux. MeeGo is a Linux-based open source mobile operating system project, primarily targeted at mobile devices and information appliances in the consumer electronics market.</definition>
+  </entry>
+  <entry name="Service">
+    <definition>An addressable logical functional entity that is exposed on a device or a server. The service availability varies over time depending on the device status (on/off), service status (stopped/running/installed/uninstalled) and connection status (connected/disconnected). Examples of services are: an API to get the temperature from a sensor, a web API provided by a Web Server or a remote control API provided by a TV.</definition>
+  </entry>
+  <entry name="WAC">
+    <definition>The Wholesale Applications Community (WAC) is an open global alliance formed from the world’s leading telecoms operators. It has been established to increase the overall market for mobile applications. It strives to unite a fragmented applications marketplace by providing common developer tools, a revenue share model across the entire ecosystem and common network and terminal APIs.</definition>
+  </entry>
+  <entry name="Widget">
+    <definition>An interactive application for displaying and/or updating local data or data on the Web, packaged in a way to allow a single download and installation on a user's machine or mobile device. [WAC]</definition>
+  </entry>
+  <entry name="Widget Renderer">
+    <definition>Widget Renderers are the GUI element on each device capable of displaying a widget. We differentiate a renderer from a processor as the renderer only shows the widget and supports user interaction, whereas the processor unpacks the widget and manages installation. A widget renderer may be a stand-alone application, such as a browser, or may be a webinos-defined component. It is up to the implementation to actually differentiate between these concepts.</definition>
   </entry>
   <contributors>
     <contributor first_name="Andrea" surname="Atzeni" affiliation="Polito" role="Participant" />
