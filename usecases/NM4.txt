@@ -1,7 +1,7 @@
 h1. WOS-UC-TA4-003: Proximity detection of Services
 
 Author: Anders Isberg
-Review: André Paul
+Review: Andre Paul
 
 Actors: User, Application
 

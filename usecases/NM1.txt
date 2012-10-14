@@ -1,7 +1,7 @@
 h1. WOS-UC-TA4-001: Subscribe and Publish Events
 
 Author: Anders Isberg
-Review: André Paul
+Review: Andre Paul
 
 Actors: Application
 

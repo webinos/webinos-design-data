@@ -1,7 +1,7 @@
 h1. WOS-UC-TA4-010: Data Synchronization
 
 Author: Christian Fuhrhop
-Review: André Paul
+Review: Andre Paul
 
 Actors: User, Application
 

@@ -1,6 +1,6 @@
 h1. WOS-UC-TA4-002_3: Start an application triggered by a Published Event
 
-Author: André Paul, based on WOS-UC-TA4-002
+Author: Andre Paul, based on WOS-UC-TA4-002
 
 Actors: Application,User
 
