@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<!DOCTYPE attack_pattern PUBLIC "-//CAIRIS//DTD ATTACKPATTERN 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/attack_pattern.dtd">
+
+<!-- 
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+
+
+<attack_pattern name="PZH Misidentification" likelihood="Remote" severity="Marginal"> 
+  
+  <obstacle name="Loss of credentials or data" category="Vulnerability">
+    <definition>The credentials and data used by or stored on a PZP are stolen or accesed by unwanted parties</definition>
+  </obstacle> 
+  <obstacle name="PZP Enrolled in Wrong PZH" category="Vulnerability">
+    <definition>A PZP is enrolled into a PZH which the user did not intend</definition>       
+  </obstacle>
+ 
+  <obstacle name="PZP presents credentials to PZH" category="Vulnerability">
+    <definition>A PZP upon joining a PZH presents its credentials or credentials are synchronised as part of data synchronisation</definition>
+  </obstacle>
+  <obstacle name="PZP synchronises its data with PZH" category="Vulnerability">
+    <definition>A PZP upon joining a PZH presents its credentials or credentials are synchronised as part of data synchronisation</definition>
+  </obstacle>
+  <obstacle name="PZH Uses a Different TLS Certificate" category="Vulnerability">
+    <definition>A PZH uses a different TLS certificate from that used by the web server</definition>
+    <responsibility name="Developer of webinos Platform" /> 
+  </obstacle>
+  <obstacle name="PZH Design allows disconnected TLS and web server certificates" category="Goal Support">
+    <definition>A PZH is designed to allow the web server and TLS server to operate independently so that they can use different credentials</definition>
+    <responsibility name="Developer of webinos Platform" /> 
+  </obstacle>
+  <obstacle name="Wrong Web Server Certificate" category="Vulnerability">
+    <definition>The web server uses a wrong certificate or user ignores or fails to validate the certificate</definition>  
+ <probability value="0.5">
+      <rationale>Certificate validation especially on small screens is quite hard</rationale>
+    </probability>      
+  </obstacle>
+
+  <obstacle name="Correct URl But Wrong Underlying TLS Credentials" category="Vulnerability">
+    <definition>A PZH is accessed through the correct URL but its implementation uses different TLS credentials</definition>      
+  </obstacle>
+
+  <obstacle name="Incorrect PZH URL with False Credentials" category="Vulnerability">
+    <definition>The PZH URL accessed is the wrong one but the PZH presents false credentials that make it seem as though the user is accessing the correct PZH</definition>
+  </obstacle> 
+
+  <obstacle name="PZH Credentials Compromised" category="Vulnerability">
+    <definition>Credentials stored or used by the PZH are compromised</definition>
+  </obstacle>       
+  
+  
+  <obstacle name="User Visits Wrong PZH URL" category="Vulnerability">
+    <definition>A user visits the wrong PZH URL perhaps through redirection</definition>
+    <probability value="0.5">
+      <rationale>People are notoriously bad at checking the URL in the address bar</rationale>
+    </probability>        
+  </obstacle>
+  
+  <obstacle name="User Does Not Check PZH URL" category="Vulnerability">
+    <definition>A user visits the wrong PZH URL without checking the actual address through redirection</definition>
+    <probability value="0.5">
+      <rationale>People are notoriously bad at checking the URL in the address bar</rationale>
+    </probability>        
+  </obstacle>
+
+  <obstacle name="PZH Presents False Credentials" category="Vulnerability">
+    <definition>A PZH presents credentials that seem to be correct to the user but are not genuine</definition>      
+  </obstacle>
+  <obstacle name="Automatically Redirected to URL" category="Vulnerability">
+    <definition>A user is automatically redirected to some URL which she did not intend to visit</definition>      
+  </obstacle>
+   
+  <obstacle name="PZH URL too complicated" category="Vulnerability">
+    <definition>The PZH admin URL is complicated and easy to misread</definition>
+    <responsibility name="Developer of webinos Platform" />    
+    <probability value="0.1">
+      <rationale>URLS are hard to read</rationale>
+    </probability>    
+  </obstacle>             
+
+  <obstacle name="PZH URL displayed without prominence" category="Vulnerability">
+    <definition>The PZH admin URL bar is not visible or easy to miss</definition>
+    <responsibility name="Developer of webinos Platform" />
+    <probability value="0.5">
+      <rationale>People are notoriously bad at checking the URL bar</rationale>
+    </probability>        
+  </obstacle> 
+  <obstacle name="Insufficiently Protected PZH Credentials" category="Vulnerability">
+    <definition>Credentials stored on the PZH are not adequately protected</definition>
+  </obstacle> 
+  <intent>Automatically enrol users to the wrong personal zone provider in order to capture and sell user data and credentials</intent> 
+  <motivation goal="integrity" value="Medium"> 
+    <description>Ethan sets up a PZH. Users are then invited through means such as phishing to enrol into the PZH. The PZH presents itself to the users as a genuine PZH with the intention that it be misidentified.</description>
+  </motivation>
+  <applicability environment="Complete" />
+  <structure attack="Protocol Manipulation" attack_obstacle="Loss of credentials or data" 
+  exploit="Improper Validation of Host-specific Certificate Data"/>
+  <participant name="Ethan">
+    <motive name="Money" />
+    <capability name="Technology" value="Low" />
+    <capability name="Software" value="High" />
+    <capability name="Knowledge/Methods" value="High" />
+  </participant>
+  <collaboration>
+    <target name="Personal Data" />
+    <exploit name="PZP Private Key" />
+  </collaboration>
+  <consequences>
+  This attack is based on a protocol flaw, and would be a vulnerability in all deployments. As a result, any webinos user could be susceptible and there could be widespread loss of data and credentials, affecting the security of personal information and privacy loss.
+  </consequences>    
+  <implementation>
+    <description>During enrolment of a PZP to a PZH, the user visits their PZH web interface to collect a short authentication token. This web interface is authenticated using standard web PKI and DNS. The enrolment process then allows the PZP to connect to the same provider and present the token. However, the PZP authentication process currently uses a different certificate (the PZH certificate not the PZH provider web interface). This is an opportunity for a man-in-the-middle attack. The same flaw may be present when a PZH is first instantiated.</description>
+    <obstacle_association obstacle_name="Loss of credentials or data" ref_type="and" subobstacle_name="PZP Enrolled in Wrong PZH" >
+      <rationale></rationale>
+    </obstacle_association> 
+    <obstacle_association obstacle_name="Loss of credentials or data" ref_type="and" subobstacle_name="PZP presents credentials to PZH" >
+      <rationale></rationale>
+    </obstacle_association>
+    <obstacle_association obstacle_name="Loss of credentials or data" ref_type="and" subobstacle_name="PZP synchronises its data with PZH" >
+      <rationale></rationale>
+    </obstacle_association>
+
+    <obstacle_association obstacle_name="PZP Enrolled in Wrong PZH" ref_type="or" subobstacle_name="Incorrect PZH URL with False Credentials" >
+      <rationale></rationale>
+    </obstacle_association> 
+    <obstacle_association obstacle_name="PZP Enrolled in Wrong PZH" ref_type="or" subobstacle_name="Correct URl But Wrong Underlying TLS Credentials" >
+      <rationale></rationale>
+    </obstacle_association>     
+    <obstacle_association obstacle_name="Incorrect PZH URL with False Credentials" ref_type="and" subobstacle_name="User Visits Wrong PZH URL" >
+      <rationale></rationale>
+    </obstacle_association> 
+    <obstacle_association obstacle_name="Incorrect PZH URL with False Credentials" ref_type="and" subobstacle_name="User Does Not Check PZH URL" >
+      <rationale></rationale>
+    </obstacle_association> 
+    <obstacle_association obstacle_name="Incorrect PZH URL with False Credentials" ref_type="and" subobstacle_name="PZH Presents False Credentials" >
+      <rationale></rationale>      
+    </obstacle_association> 
+    
+    <obstacle_association obstacle_name="User Visits Wrong PZH URL" ref_type="or" subobstacle_name="Mobile Phishng Threat" >
+      <rationale></rationale>      
+    </obstacle_association> 
+    <obstacle_association obstacle_name="User Visits Wrong PZH URL" ref_type="or" subobstacle_name="Automatically Redirected to URL" >
+      <rationale></rationale>      
+    </obstacle_association> 
+     
+    <obstacle_association obstacle_name="User Does Not Check PZH URL" ref_type="or" subobstacle_name="PZH URL too complicated" >
+      <rationale></rationale>
+    </obstacle_association>  
+    <obstacle_association obstacle_name="User Does Not Check PZH URL" ref_type="or" subobstacle_name="PZH URL displayed without prominence" >
+      <rationale></rationale>
+    </obstacle_association> 
+    
+     
+    <obstacle_association obstacle_name="PZH Presents False Credentials" ref_type="or" subobstacle_name="PZH Credentials Compromised" >
+      <rationale></rationale>
+    </obstacle_association> 
+    <obstacle_association obstacle_name="PZH Presents False Credentials" ref_type="or" subobstacle_name="PZH Malicious" >
+      <rationale></rationale>
+    </obstacle_association> 
+     
+    <obstacle_association obstacle_name="PZH Credentials Compromised" ref_type="or" subobstacle_name="Insufficiently Protected PZH Credentials" >
+      <rationale></rationale>
+    </obstacle_association> 
+    
+    <obstacle_association obstacle_name="Correct URl But Wrong Underlying TLS Credentials" ref_type="or" subobstacle_name="PZH Uses a Different TLS Certificate" >
+      <rationale></rationale>
+    </obstacle_association> 
+    <obstacle_association obstacle_name="PZH Uses a Different TLS Certificate" ref_type="or" subobstacle_name="PZH Design allows disconnected TLS and web server certificates" >
+      <rationale></rationale>
+    </obstacle_association> 
+    
+    
+  </implementation>
+  <known_uses>None</known_uses>
+  <related_patterns>None</related_patterns>
+</attack_pattern>
