@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<!DOCTYPE attack_pattern PUBLIC "-//CAIRIS//DTD ATTACKPATTERN 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/attack_pattern.dtd">
+
+<!-- 
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+
+
+<attack_pattern name="The webinos botnet" likelihood="Remote" severity="Marginal"> 
+  
+  <obstacle name="Personal data accessed and sold on black market" category="Vulnerability">
+    <definition>An attacker accesses personal data in a personal zone and sells i on the black market</definition>
+  </obstacle>
+  <obstacle name="Access Remote Services and arbitrary API calls" category="Vulnerability">
+    <definition>An attacker after joining a personal zone, makes API calls that allow her to get the data she needs</definition>
+  </obstacle>
+  <obstacle name="Personal Zone Enrolled in Botnet" category="Vulnerability">
+    <definition>A Personal zone is enrolled into a botnet without the consent of the owner</definition>
+  </obstacle>
+  <obstacle name="Personal Zone Hijacked" category="Vulnerability">
+    <definition>A Personal zone is hijacked and now controlled by the attacker</definition>
+  </obstacle>
+  <obstacle name="Attacker Joins Personal Zone" category="Vulnerability">
+    <definition>An attacker joins one or more personal zones</definition>
+  </obstacle>
+    <obstacle name="PZH Credentials stolen" category="Vulnerability">
+    <definition>Credentials used and/or stored on the PZH are stolen</definition>
+  </obstacle>
+  <obstacle name="PZP Credentials stolen" category="Vulnerability">
+    <definition>Credentials used to identify a PZP are stolen</definition>
+  </obstacle>       
+  
+  <obstacle name="Attacker installs malware in the Personal Zone" category="Vulnerability">
+    <definition>An attacker after joining a personal zone, installs malware on it</definition>
+  </obstacle>
+  <obstacle name="Exploit Flaw in Widget Renderer" category="Vulnerability">
+    <definition>A flaw in the renderer engine is exploited by a malicious widget</definition>
+  </obstacle>
+  <obstacle name="Insufficiently Protected PZP Credentials" category="Vulnerability">
+    <definition>Credentials stored on a PZP are not adequately protected enabling malicious applications to steal them</definition>
+  </obstacle>
+  <obstacle name="Insufficiently Protected PZH Credentials" category="Vulnerability">
+    <definition>Credentials stored on the PZH are not adequately protected</definition>
+  </obstacle>
+  <obstacle name="Malicious personal zone enrolment" category="Vulnerability">
+    <definition>An attacker after joining a personal zone, installs malware on it</definition>
+  </obstacle>
+  <obstacle name="Native Malware Running on PZP" category="Vulnerability">
+    <definition>Malware installed on the underlying system on which a PZP is installed is running</definition>
+  </obstacle>
+  <obstacle name="Native Malware Installed on PZP" category="Vulnerability">
+    <definition>Malware has been installed in the native system on which a PZP runs</definition>
+  </obstacle>
+  <obstacle name="Native Malware Running on PZH" category="Vulnerability">
+    <definition>Malware installed on the underlying system on which a PZH is installed is running</definition>
+  </obstacle>
+  <obstacle name="Native Malware Installed on PZH" category="Vulnerability">
+    <definition>An attacker after joining a personal zone, installs malware on it</definition>
+  </obstacle>
+ 
+  <obstacle name="Malicious code evaluated" category="Vulnerability">
+    <definition>Event handler evaluates malicious JSON content.</definition>
+    <concern name="JSON-RPC Handler" />
+  </obstacle>
+    <obstacle name="Automate personal zone enrolment" category="Accountability_Threat">
+    <definition>A device is enrolled into a personal zone without the use of an out-of-band channel.</definition>
+  </obstacle>
+  <obstacle name="Disable valid personal zone proxy" category="Accountability_Threat">
+    <definition>A valid device personal zone proxy is disabled</definition>
+  </obstacle>
+  <obstacle name="Run multiple personal zone proxies" category="Accountability_Threat">
+    <definition>Valid and malicious personal zone proxies run on a single device.</definition>
+  </obstacle>
+
+  <intent>Enrol personal zones into a botnet in order to mount DDOS attacks or steal data from the personal zones</intent> 
+  <motivation goal="integrity" value="Medium"> 
+    <description>Webinos is used to create a botnet. A botnet is often used to gain personal data (credit card information, for example) en masse, or perform DDoS attacks on target websites and web services</description>
+  </motivation>
+  <applicability environment="Complete" />
+  <structure attack="Buffer Overflow in an API Call" attack_obstacle="Personal data accessed and sold on black market" 
+  exploit="Failure to Sanitize Special Elements into a Different Plane (Special Element Injection)"/>
+  <participant name="Ethan">
+    <motive name="Money" />
+    <capability name="Technology" value="Low" />
+    <capability name="Software" value="High" />
+    <capability name="Knowledge/Methods" value="High" />
+  </participant>
+  <collaboration>
+    <target name="Personal Data" />
+    <exploit name="Rendering Engine" />
+  </collaboration>
+  <consequences>
+  Loss of personal or payment data, loss of availability for a website or service. Users being marked as 'malicious' by network providers identifying the rogue traffic.
+  </consequences>
+  
+    <implementation>
+    <description>Ethan creates a webinos botnet and enrols several personal zones using the following options: i) An implementation flaw is exploited in the widget renderer, which abuses its trusted relationship with the PZP to make arbitrary API requests and access remote services; ii) A method of enrolling rogue devices into personal zones is discovered which allows an attacker to join every personal zone. They can then install applications in every personal zone; iii) A PZP implementation flaw (perhaps a native API implementation) is exploited by an application in order to install native malware on the device. Because this API is commonly available, the malware spreads rapidly; iv) Native device malware (outside of webinos) steals PZP keys and credentials and is able to hijack the personal zone.</description>
+    
+      
+    <obstacle_association obstacle_name="Personal data accessed and sold on black market" ref_type="and" subobstacle_name="Access Remote Services and arbitrary API calls" >
+      <rationale></rationale>
+    </obstacle_association> 
+    <obstacle_association obstacle_name="Personal data accessed and sold on black market" ref_type="and" subobstacle_name="Personal Zone Enrolled in Botnet" >
+      <rationale></rationale>
+    </obstacle_association> 
+    
+    <obstacle_association obstacle_name="Malicious personal zone enrolment" ref_type="and" subobstacle_name="Malicious NDEF tag" >
+      <rationale></rationale>
+    </obstacle_association>
+    <obstacle_association obstacle_name="Malicious personal zone enrolment" ref_type="and" subobstacle_name="Malicious code evaluated" >
+      <rationale></rationale>
+    </obstacle_association>
+    <obstacle_association obstacle_name="Malicious personal zone enrolment" ref_type="and" subobstacle_name="Automate personal zone enrolment" >
+      <rationale>Removing additional factor of automation negates need to user intervention in the enrolment process.</rationale>
+    </obstacle_association>
+    <obstacle_association obstacle_name="Automate personal zone enrolment" ref_type="or" subobstacle_name="Disable valid personal zone proxy" >
+      <rationale>Do not want user to realise their device's webinos software has been compromised.</rationale>
+    </obstacle_association>
+    <obstacle_association obstacle_name="Malicious personal zone enrolment" ref_type="or" subobstacle_name="Run multiple personal zone proxies" >
+      <rationale></rationale>
+    </obstacle_association>
+     
+    <obstacle_association obstacle_name="Personal Zone Enrolled in Botnet" ref_type="and" subobstacle_name="Personal Zone Hijacked" >
+      <rationale></rationale>
+    </obstacle_association> 
+    <obstacle_association obstacle_name="Personal Zone Enrolled in Botnet" ref_type="and" subobstacle_name="Attacker installs malware in the Personal Zone" >
+      <rationale></rationale>
+    </obstacle_association> 
+    
+    
+    <obstacle_association obstacle_name="Attacker installs malware in the Personal Zone" ref_type="and" subobstacle_name="Attacker Joins Personal Zone">
+      <rationale></rationale>
+    </obstacle_association> 
+    <obstacle_association obstacle_name="Attacker installs malware in the Personal Zone" ref_type="and" subobstacle_name="Exploit Flaw in Widget Renderer">
+      <rationale></rationale>
+    </obstacle_association> 
+    
+    <obstacle_association obstacle_name="Attacker Joins Personal Zone" ref_type="or" subobstacle_name="PZP Credentials stolen">
+      <rationale></rationale>
+    </obstacle_association> 
+    <obstacle_association obstacle_name="Attacker Joins Personal Zone" ref_type="or" subobstacle_name="Malicious Personal Zone Enrolment">
+      <rationale></rationale>
+    </obstacle_association> 
+    
+    
+    <obstacle_association obstacle_name="PZP Credentials stolen" ref_type="or" subobstacle_name="Native Malware Running on PZP">
+      <rationale></rationale>
+    </obstacle_association> 
+    <obstacle_association obstacle_name="PZP Credentials stolen" ref_type="or" subobstacle_name="Insufficiently Protected PZP Credentials">
+      <rationale></rationale>
+    </obstacle_association> 
+ 
+       
+    <obstacle_association obstacle_name="Personal Zone Hijacked" ref_type="or" subobstacle_name="PZH Credentials stolen">
+      <rationale></rationale>
+    </obstacle_association> 
+    
+    <obstacle_association obstacle_name="PZH Credentials stolen" ref_type="or" subobstacle_name="Native Malware Running on PZH">
+      <rationale></rationale>
+    </obstacle_association> 
+    <obstacle_association obstacle_name="PZH Credentials stolen" ref_type="or" subobstacle_name="Insufficiently Protected PZH Credentials">
+      <rationale></rationale>
+    </obstacle_association> 
+   
+  </implementation>
+  <known_uses>None</known_uses>
+  <related_patterns>None</related_patterns>
+</attack_pattern>
