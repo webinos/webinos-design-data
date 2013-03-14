@@ -399,16 +399,16 @@ Along this line, at the end of the exercise, participants remarked their appreci
   <synopsis>Morals influence whether or not subjects should have access to an object.</synopsis>
 </quotation>
 <quotation code="practical concepts" type="code" artifact_type="internal_document" artifact_name="JimmyAmbiesense" section="none" start_index="2001" to_index="2183">
-  <label></label>
-  <synopsis></synopsis>
+  <label>Generalisation category tendency</label>
+  <synopsis>There is a tendency to group technical terms under general categories</synopsis>
 </quotation>
 <quotation code="role possibilities" type="code" artifact_type="internal_document" artifact_name="JimmyAmbiesense" section="none" start_index="989" to_index="1280">
-  <label></label>
-  <synopsis></synopsis>
+  <label>Preferential stakeholders</label>
+  <synopsis>Security discussions will favour one group of stakeholders over others.</synopsis>
 </quotation>
 <quotation code="role possibilities" type="code" artifact_type="internal_document" artifact_name="JimmyAmbiesense" section="none" start_index="1532" to_index="1770">
-  <label></label>
-  <synopsis></synopsis>
+  <label>Resource-driven thinking</label>
+  <synopsis>When thinking about security, thought drifts to thinking about the resources needed by stakeholders, rather than what the system can offer stakeholder</synopsis>
 </quotation>
 <quotation code="stock topics" type="code" artifact_type="internal_document" artifact_name="JimmyAmbiesense" section="none" start_index="1282" to_index="1531">
   <label>Recent recollection bias</label>
@@ -451,28 +451,28 @@ Along this line, at the end of the exercise, participants remarked their appreci
   <synopsis>Practical considerations override rational decisions about access.</synopsis>
 </quotation>
 <quotation code="policy confidence" type="code" artifact_type="internal_document" artifact_name="JimmyOxford" section="none" start_index="6853" to_index="6979">
-  <label></label>
-  <synopsis></synopsis>
+  <label>Preferential context</label>
+  <synopsis>Designers are most comfortable with what they consider a preferred context of use.</synopsis>
 </quotation>
 <quotation code="policy confidence" type="code" artifact_type="internal_document" artifact_name="JimmyOxford" section="none" start_index="7132" to_index="7324">
-  <label></label>
-  <synopsis></synopsis>
+  <label>User understanding</label>
+  <synopsis>The more users are understood, the easier it is to decide on what might be appropriate for them access-control wise.</synopsis>
 </quotation>
 <quotation code="practical concepts" type="code" artifact_type="internal_document" artifact_name="JimmyOxford" section="none" start_index="2826" to_index="3243">
-  <label></label>
-  <synopsis></synopsis>
+  <label>Invariant administration category</label>
+  <synopsis>Administrative concepts tend to be clustered under a single category, irrespective of context.</synopsis>
 </quotation>
 <quotation code="process-driven" type="code" artifact_type="internal_document" artifact_name="JimmyOxford" section="none" start_index="643" to_index="726">
   <label>Process-driven elicitation</label>
   <synopsis>Rigorous processes used to identify core information.</synopsis>
 </quotation>
 <quotation code="process-driven" type="code" artifact_type="internal_document" artifact_name="JimmyOxford" section="none" start_index="979" to_index="1106">
-  <label></label>
-  <synopsis></synopsis>
+  <label>Modelling language knowledge</label>
+  <synopsis>Designers are aware of multiple data modelling languages.</synopsis>
 </quotation>
 <quotation code="process-driven" type="code" artifact_type="internal_document" artifact_name="JimmyOxford" section="none" start_index="2550" to_index="2664">
-  <label></label>
-  <synopsis></synopsis>
+  <label>Initial coarse grained settings</label>
+  <synopsis>General concepts initially grouped by coarse grained access control settings</synopsis>
 </quotation>
 <quotation code="process-driven" type="code" artifact_type="internal_document" artifact_name="JimmyOxford" section="none" start_index="7592" to_index="7759">
   <label>Tedious context enumeration</label>
@@ -495,20 +495,20 @@ Along this line, at the end of the exercise, participants remarked their appreci
   <synopsis>Talking about users stimulates thinking about their access control needs.</synopsis>
 </quotation>
 <quotation code="practical concepts" type="code" artifact_type="internal_document" artifact_name="JimmyPolito" section="none" start_index="923" to_index="1132">
-  <label></label>
-  <synopsis></synopsis>
+  <label>Practical concepts first</label>
+  <synopsis>Discussing system functionality initially elicits practical concepts</synopsis>
 </quotation>
 <quotation code="process-driven" type="code" artifact_type="internal_document" artifact_name="JimmyPolito" section="none" start_index="2431" to_index="2767">
-  <label></label>
-  <synopsis></synopsis>
+  <label>Concept filtering</label>
+  <synopsis>There is a tendency to think about concepts before discussing them.</synopsis>
 </quotation>
 <quotation code="process-driven" type="code" artifact_type="internal_document" artifact_name="JimmyPolito" section="none" start_index="3364" to_index="3763">
-  <label></label>
-  <synopsis></synopsis>
+  <label>Visual notations</label>
+  <synopsis>Designers will seek useful visual notations for representing access control models</synopsis>
 </quotation>
 <quotation code="role possibilities" type="code" artifact_type="internal_document" artifact_name="JimmyPolito" section="none" start_index="5294" to_index="5481">
-  <label></label>
-  <synopsis></synopsis>
+  <label>Role as context</label>
+  <synopsis>Sometimes roles are considered as contexts of use.</synopsis>
 </quotation>
 <quotation code="stock topics" type="code" artifact_type="internal_document" artifact_name="JimmyPolito" section="none" start_index="1639" to_index="1967">
   <label>Hot topics consideration</label>
