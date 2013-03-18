@@ -89,6 +89,7 @@ $CAIRIS_SRC/cimport.py --type usability $PERSONA_DIR/helen.xml
 $CAIRIS_SRC/cimport.py --type usability $PERSONA_DIR/irwin.xml
 $CAIRIS_SRC/cimport.py --type usability $PERSONA_DIR/jessica.xml
 $CAIRIS_SRC/cimport.py --type usability $PERSONA_DIR/jimmy.xml
+$CAIRIS_SRC/cimport.py --type processes $PERSONA_DIR/jimmy_impliedCharacteristics.xml
 $CAIRIS_SRC/cimport.py --type usability $PERSONA_DIR/justin.xml
 $CAIRIS_SRC/cimport.py --type usability $PERSONA_DIR/peter.xml
 $CAIRIS_SRC/cimport.py --type usability $PERSONA_DIR/richard.xml
