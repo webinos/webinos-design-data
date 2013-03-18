@@ -17,6 +17,8 @@ Anna realises, however, that she does not live in a perfect world and needs to f
 
 Despite her self confidence, Anna always needs to think about what happens when things go wrong. Getting wheel-chair problems when out and about can leave her stranded because she struggles when walking more than a short distance.</motivations>
   <skills>None</skills>
+  <intrinsic>None</intrinsic>
+  <contextual>None</contextual>
   <persona_environment name="Identity" is_direct="TRUE" >
     <persona_role name="User" />
     <narrative>None</narrative>

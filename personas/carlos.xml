@@ -8,6 +8,8 @@
   <aptitudes>None</aptitudes>
   <motivations>Privacy is Carlos' driver. He strongly follows his goal which is to provide solutions for European citizens which effectively protect the privacy of the citizens. He knows that this is challenging but this challenge motivates him.</motivations>
   <skills>None</skills>
+  <intrinsic>None</intrinsic>
+  <contextual>None</contextual>
   <persona_environment name="Identity" is_direct="TRUE" >
     <persona_role name="User" />
     <narrative>None</narrative>

@@ -15,7 +15,8 @@ He has a good learning inclination.</aptitudes>
   <motivations>He wants to earn money from his company and from the competitor.
 Alternatively, he wants to get a more lucrative work at rival company.</motivations>
   <skills>He has good knowledge of organization security posture and good knowledge of computer languages.</skills>
-
+  <intrinsic>None</intrinsic>
+  <contextual>None</contextual>
   <persona_environment name="Identity" is_direct="TRUE" >
     <persona_role name="User" />
     <persona_role name="Developer of webinos Apps" />

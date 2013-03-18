@@ -19,6 +19,8 @@ Due to his careless attitude and lack of consideration for consequences, he can 
 A way to possibly collect some money more is tampering. Clever tampering! "Selective" tampering! Meaning a kind of damage that causes vehicles to develop a problem after some time, possibly in different parts. This means that he will be asked to fix a number of problems that happen at the same time, resulting in more work and even some well-paid overtime.</motivations>
   <skills>Apart car aptitudes, David also has some IT skills.
 David is quite familiar with company's communication system and with vulnerability exploitation.</skills>
+  <intrinsic>None</intrinsic>
+  <contextual>None</contextual>
   <persona_environment name="Identity" is_direct="TRUE" >
     <persona_role name="3rd Party Service Provider" />
     <narrative>David has a deranged personality, and is not fully capable of evaluating the consequences of his actions. This is true also in terms of his own personal damage. His actions can lead to devasting result for himself, as the years in prison have demonstrated.

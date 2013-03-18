@@ -9,7 +9,8 @@
   <aptitudes>None</aptitudes>
   <motivations>Her private life -- her hobbies and her interests -- is what she is living for. Everything else is centred around. She enjoys shopping and dining out. She uses mobile devices and mobile services if they improve her experience of her interests. Her hobbies are even more important than her friends. She seems to enjoy herself best when she is alone. Presumably she is a single. Her job appears to provide her with enough money to be spent on her hobbies.</motivations>
   <skills>None</skills>
-
+  <intrinsic>None</intrinsic>
+  <contextual>None</contextual>
   <persona_environment name="Identity" is_direct="TRUE" >
     <persona_role name="User" />
     <narrative>Gloria is not that computer-addicted, but she is very aware of privacy. When using online services and applications, she sets the privacy settings and she keeps separate identities for personal life and work. Her expertise on privacy is related to her job.</narrative>

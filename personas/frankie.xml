@@ -13,7 +13,8 @@ His present hobbys involve malicious computer actions, however, his knowledge of
   <aptitudes>The very early emotional trauma he suffered deprived him of his motivation to learn. He just wants attention, but no one has taught him the right way to get self-esteem. So, he learns to take the easy option and the "fast way" toward his goals, not understanding the fruitfulness of the longer ones. He is involved in a number of licit or illicit tasks (Wi-F cracking, virus spreading) but he has no more than a superficial knowledge and interest in any of them.</aptitudes>
   <motivations>He wants to damage others and gain money in order to attract attention, and achieve a fake sense of control in a otherwise unhappy and unimportant life.</motivations>
   <skills>He has an understanding of computers and Internet, but due to his lack of motivation for education and learning, his knowledge is only a little above average, especially regarding public (or almost public) domain software used to hack networks.</skills>
-
+  <intrinsic>None</intrinsic>
+  <contextual>None</contextual>
   <persona_environment name="Identity" is_direct="TRUE" >
     <persona_role name="User" />
     <narrative>He does not have any respect of the privacy of others. Essentially, due to his scarce human relationships, he does not really understand motivation of privacy and of many human rights.

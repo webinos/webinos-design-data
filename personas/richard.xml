@@ -13,7 +13,8 @@ Richard's pragmatism filters through to his attitude to technology: either it do
 Richard is burdened by the administration that plagues his working life. Anything that enables him to spend less time in the office and more time on the streets doing his job is a good thing.</motivations>
   <skills>Richard has acquired his skills through his training and professional development. The skills of organisation, memory and observation are base skills every policeman is grounded in and Richard has these in abundance. Richard tolerates routine, and understand and values the need for clear procedure in his daily habits.
 Richard is a fast decision maker and can follow this through with the public and his work colleague, demonstrating leadership.</skills>
-
+  <intrinsic>None</intrinsic>
+  <contextual>None</contextual>
   <persona_environment name="Identity" is_direct="TRUE" >
     <persona_role name="User" />
     <narrative>None</narrative>

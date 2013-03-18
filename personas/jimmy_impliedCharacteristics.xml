@@ -553,6 +553,9 @@ Along this line, at the end of the exercise, participants remarked their appreci
   <implied_characteristic name="Contextual variety leads to inappropriate use cases" qualifier="Possibly" type="Contextual">
     <from_label name="Activity location contexts" reference_type="warrant" />
     <from_label name="Milestone contexts" reference_type="warrant" />
+    <to_label name="Categorisation indifference" reference_type="grounds" />
+    <to_label name="Inappropriate behaviour easier" reference_type="grounds" />
+    <to_label name="Preference deduction" reference_type="grounds" />
   </implied_characteristic>
 </code_network>
 <code_network persona="Jimmy" relationship_type="conflict" from_code="process-driven" to_code="context possibilities">
@@ -565,16 +568,69 @@ Along this line, at the end of the exercise, participants remarked their appreci
   </implied_characteristic>
 </code_network>
 <code_network persona="Jimmy" relationship_type="implies" from_code="practical concepts" to_code="structured reuse">
+  <implied_characteristic name="General settings reused across applications" qualifier="Likely" type="Intrinsic">
+    <from_label name="Generalisation category tendency" reference_type="grounds" />
+    <from_label name="Invariant administration category" reference_type="grounds" />
+    <from_label name="Practical concepts first" reference_type="grounds" />
+    <to_label name="Pre-defined bias" reference_type="warrant" />
+    <to_label name="Reuse preference" reference_type="warrant" />
+  </implied_characteristic>
 </code_network>
 <code_network persona="Jimmy" relationship_type="implies" from_code="process-driven" to_code="policy confidence">
+  <implied_characteristic name="Known techniques and tools used to make sense of concepts" qualifier="Possibly" type="Intrinsic">
+    <from_label name="Concept filtering" reference_type="warrant" />
+    <from_label name="Initial coarse grained settings" reference_type="grounds" />
+    <from_label name="Modelling language knowledge" reference_type="grounds" />
+    <from_label name="Process-driven elicitation" reference_type="grounds" />
+    <from_label name="Tedious context enumeration" reference_type="grounds" />
+    <from_label name="Visual notations" reference_type="grounds" />
+    <to_label name="Preferential context" reference_type="grounds" />
+    <to_label name="User understanding" reference_type="warrant" />
+  </implied_characteristic>
 </code_network>
 <code_network persona="Jimmy" relationship_type="implies" from_code="context possibilities" to_code="contextualisation difficulty">
+  <implied_characteristic name="Conceptualising contexts of use is so hard that contextualising any security decisons is tough" qualifier="Probably" type="Contextual">
+    <from_label name="Activity location contexts" reference_type="grounds" />
+    <from_label name="Context-driven users" reference_type="warrant" />
+    <from_label name="Contexts overwhelming" reference_type="warrant" />
+    <from_label name="Immediacy preference" reference_type="warrant" />
+    <from_label name="Milestone contexts" reference_type="grounds" />
+    <to_label name="A priori prioritisation" reference_type="grounds" />
+    <to_label name="Categorising difficulty" reference_type="grounds" />
+    <to_label name="Context prioritisation problems" reference_type="grounds" />
+    <to_label name="Contextualisation time-consuming" reference_type="grounds" />
+    <to_label name="Stimulation by talking" reference_type="warrant" />
+    <to_label name="Structured categorisation difficult" reference_type="grounds" />
+  </implied_characteristic>
 </code_network>
 <code_network persona="Jimmy" relationship_type="associated" from_code="context possibilities" to_code="role possibilities">
+  <implied_characteristic name="Contextual variety encourages rather than discourages user-centeredness" qualifier="Probably" type="Intrinsic">
+    <from_label name="Activity location contexts" reference_type="grounds" />
+    <from_label name="Context-driven users" reference_type="grounds" />
+    <from_label name="Contexts overwhelming" reference_type="grounds" />
+    <from_label name="Immediacy preference" reference_type="warrant" />
+    <from_label name="Milestone contexts" reference_type="grounds" />
+    <to_label name="Preferential stakeholders" reference_type="warrant" />
+    <to_label name="Resource-driven thinking" reference_type="warrant" />
+    <to_label name="Role as context" reference_type="grounds" />
+  </implied_characteristic>
 </code_network>
 <code_network persona="Jimmy" relationship_type="implies" from_code="role possibilities" to_code="emergent trust">
+  <implied_characteristic name="Knowing the user increases tendency to trust them" qualifier="Perhaps" type="Intrinsic">
+    <from_label name="Preferential stakeholders" reference_type="grounds" />
+    <from_label name="Resource-driven thinking" reference_type="grounds" />
+    <from_label name="Role as context" reference_type="grounds" />
+    <to_label name="Known characteristic bias" reference_type="warrant" />
+    <to_label name="Social closeness" reference_type="warrant" />
+  </implied_characteristic>
 </code_network>
 <code_network persona="Jimmy" relationship_type="implies" from_code="stock topics" to_code="structured reuse">
+  <implied_characteristic name="Tendency to re-use concepts shaped by recency of working with them" qualifier="Possibly" type="Intrinsic">
+    <from_label name="Hot topics consideration" reference_type="warrant" />
+    <from_label name="Recent recollection bias" reference_type="warrant" />
+    <to_label name="Pre-defined bias" reference_type="grounds" />
+    <to_label name="Reuse preference" reference_type="grounds" />
+  </implied_characteristic>
 </code_network>
 <implied_process name="Thoughtful trust" persona="Jimmy" >
   <description>Developers thinking too much about what users need can lead them to place potentially unwarranted trust.</description>

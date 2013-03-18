@@ -11,6 +11,8 @@ Jimmy is a passionate and experienced professional software developer. His focus
   <aptitudes>Jimmy follows a pragmatic hands-on design and implementation approach. He is much more into trying out things rather than spending time on theory. As he is interested in new technologies and new market opportunities he always stays up-to-date in his field. Jimmy enjoys experimenting with new technology and he adapts quickly. He learns best by just trying out things. Apart from that, he knows how to make money from the applications he writes, as he sells some mobile applications on an application store.</aptitudes>
   <motivations>Jimmy is font of software-controlled gadgets which interact with other devices on his home network. He makes use of his professional knowledge to implement plug-ins and extensions for his home equipment. This allows him to let all the devices do what he needs.</motivations>
   <skills>Jimmy implements low-level functional details. Since he has deep knowledge on how things work, he can reverse-engineer software and take special features of target devices into account.</skills>
+  <intrinsic>None</intrinsic>
+  <contextual>None</contextual>
   <persona_environment name="Identity" is_direct="TRUE" >
     <persona_role name="Developer of webinos Apps" />
     <narrative>Jimmy is experienced in software security to some extent. He configures his home equipment to be accessible from the Internet, but it is protected by access control. On the other hand, he does not like to be limited by access control while using his computer and while implementing software.</narrative>

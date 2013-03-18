@@ -15,7 +15,8 @@ Peter likes using technology to further these interests. He spends considerable 
 Peter is patient with technology and is willing to explore a new interface and follow pop-up instructions before he achieves his main objectives.</aptitudes>
   <motivations>Peter is primarily interest-driven. He wants to use technology to bring his interests to his daily commute as well as letting him enjoy art and music whenever he has a spare moment, or whenever he comes across something new that he likes.</motivations>
   <skills>Peter has a reasonable amount of experience with different forms of technology, particularly in using multimedia systems.</skills>
-
+  <intrinsic>None</intrinsic>
+  <contextual>None</contextual>
   <persona_environment name="Identity" is_direct="TRUE" >
     <persona_role name="User" />
     <narrative>Peter is generally law-abiding and rule following. He is prudent with his purchases and has an expectation of some security around financial transactions.</narrative>

@@ -19,7 +19,8 @@ Jessica considers reduced quality of data as a direct threat to their business. 
   <skills>Jessica is a specialist in Objective C and Java programming. She writes Objective C code in XCode for the iPhone app, and Java for Dalvik on Android. Jessica is also familiar with information visualisation and UI widget libraries associated with iPhone and Android platforms.
 
 Jessica is adept at working with many hand-sets, but is unfamiliar with Nokia and Sony Ericsson hand-set development because she has never had need to do this.</skills>
-
+  <intrinsic>None</intrinsic>
+  <contextual>None</contextual>
   <persona_environment name="Identity" is_direct="TRUE" >
     <persona_role name="Developer of webinos Apps" />
     <narrative>Jessica's diabetes application has 750000 users in which 60% are on iPhone and 40% are on Android. She is legally obliged to protect all of the personal and medical data, and to make sure that the patients, relatives, and healthcare professionals are kept up-to-date with the data from each patient.  One risk is that patients incorrectly read the insulin dosage due to visual impairment. Another risk is that the measurements on blood sugar and insulin measurements are simply incorrect or has a wrong time stamp. If this happens over a consecutive period of time, then this may trigger fake alarms, incorrect treatments, or lead to serious health issues.</narrative>

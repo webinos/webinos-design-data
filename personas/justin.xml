@@ -17,7 +17,8 @@ He trusts technology and is happy to share data with many people through it.</at
 
 He also tries to fit a lot of activities into the day in order to keep up with his numerous interests.</motivations>
   <skills>None</skills>
-
+  <intrinsic>None</intrinsic>
+  <contextual>None</contextual>
   <persona_environment name="Identity" is_direct="TRUE" >
     <persona_role name="User" />
     <narrative>Justin doesn't care much for his own privacy or personal data; he is just happy to get new features and gadgets, and is indifferent about spending money to satiate his whims. Technology is a bit like magic for him, but perhaps he is setting himself up for a catastrophe in the future?</narrative>

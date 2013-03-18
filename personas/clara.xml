@@ -9,6 +9,8 @@
   <aptitudes>None</aptitudes>
   <motivations>None</motivations>
   <skills>None</skills>
+  <intrinsic>None</intrinsic>
+  <contextual>None</contextual>
   <persona_environment name="Identity" is_direct="TRUE" >
     <persona_role name="User" />
     <narrative>None</narrative>

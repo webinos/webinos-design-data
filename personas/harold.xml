@@ -11,7 +11,8 @@ He is also a keynote speaker at conferences and he lectured on the history of te
   <motivations>His motivation is the love of knowledge.</motivations>
   <skills>He is a hacker with lifetime experience in system and network intrusion.
 </skills>
-
+  <intrinsic>None</intrinsic>
+  <contextual>None</contextual>
   <persona_environment name="Identity" is_direct="TRUE" >
     <persona_role name="Developer of webinos Apps" />
     <persona_role name="User" />

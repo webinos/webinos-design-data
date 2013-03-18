@@ -10,6 +10,8 @@
   <motivations>Eric focuses his energies on whatever technology he has to hand, but always looks for instant gratification based on his current needs.  Although he finds tables and touch-screens intriguing, he is prone to throwing down objects he doesn't like.  Eric will tolerate things he doesn't find immediately useful only if he expects a reward as a consequence of using it.
 If Eric is going on long journeys, he takes comfort in his things which are familiar to him.  For example, Helen often gives Eric his teddy bear when travelling long distances, such as to a theme park or trips to his grandparents, and is usually unable to sleep on car journeys without this.  Although Eric doesn't hold his teddy bear all the time, he becomes distressed if unable to reach for this at any time from his seat.</motivations>
   <skills>None</skills>
+  <intrinsic>None</intrinsic>
+  <contextual>None</contextual>
   <persona_environment name="Identity" is_direct="TRUE" >
     <persona_role name="User" />
     <narrative>None</narrative>

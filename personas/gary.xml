@@ -8,7 +8,8 @@
   <aptitudes>Already fed by a good knowledge of PC and Internet, he can easily prove the obtained knowledge through many certificates related to his job. However, despite his existing achievements he still has a desire to obtain new certification as evidence of his tireless appetite for learning.</aptitudes>
   <motivations>Due to the perceived unjust treatment by his former employer, Gary first idea is to retaliate for his dismissal by deleting company data. After a second thought, the idea remains the same! It is impossible for him to forgive such insensitive behaviour by the company. Since he is able to access the computer system, a huge amount of damage is eagerly achievable.</motivations>
   <skills>Gary knows the company's internal network and his old user account is still working (the company should have disabled it promptly, but did not). He can directly access and delete relevant files or embed a malicious script in a routine program to plant a logic bomb on the company server.</skills>
-
+  <intrinsic>None</intrinsic>
+  <contextual>None</contextual>
   <persona_environment name="Identity" is_direct="TRUE" >
     <persona_role name="User" />
     <narrative>Gary knows relatively little about security. Even if the security posture of its organization is not very well shaped (his non-disabled account is the best proof of this), he still left an obvious trace of his actions in the system. As a result, his actions are destined to drive him in front of a court of justice.</narrative>
