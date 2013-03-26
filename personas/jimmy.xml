@@ -14,7 +14,9 @@ Jimmy is a passionate and experienced professional software developer. His focus
   <intrinsic>Jimmy uses his standard design and development tools and processes to model and make sense of security issues.  Sometimes he finds thinking about security tedious, and will re-use settings and designs where he thinks this is appropriate.  This seems more efficient than thinking deeply about intricate details.
 
 Although the different ways his software might be used can be overwhelming, thinking about them gets him thinking about what some of his target users might go through when setting up and running his applications.  At times, however, this appreciation can lead him to make decisions which err too much towards their freedom of action rather than the best decision given their implicit security and privacy expectations.</intrinsic>
-  <contextual>None</contextual>
+  <contextual>Thinking about the many different contexts can be taxing, particularly given the tools available to Jimmy are not a perfect fit for this job.  Unfortunately, different contexts are not Jimmy's only worry.  The problems associated with things like categorising and structuring security information, and the discussions sometimes Jimmy has to have with colleagues, means making any sort of security design decision can forever.
+
+These considerations mean that, in the cold light of day, Jimmy is forced to make decisions that might lead to inappropriate user behaviours.  This causes some angst when having to trade-off user freedom with what he considers an appropriate level of security when deciding default settings.</contextual>
   <persona_environment name="Identity" is_direct="TRUE" >
     <persona_role name="Developer of webinos Apps" />
     <narrative>Jimmy is experienced in software security to some extent. He configures his home equipment to be accessible from the Internet, but it is protected by access control. On the other hand, he does not like to be limited by access control while using his computer and while implementing software.</narrative>
