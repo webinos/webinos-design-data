@@ -13,8 +13,8 @@ The only time Helen transfers media between devices is when she is in the office
   <aptitudes>Although Helen wouldn't call herself technically literate, she has become quite adept at using the technology around her to streamline her working life. She uses a blue-tooth hands-free phone in her car, and makes sure the calendar on her phone (with both work and home calendar) is kept synchronised with her work laptop, PC, and the home media system her husband has setup.</aptitudes>
   <motivations>Helen works hard to make sure her day-to-day life is as predictable as possible. Because of this, Helen wants to rely on the context-awareness features in her applications. She wants her data to be synchronised when it needs to be, and to be prompted when she (invariably) forgets things.</motivations>
   <skills>None</skills>
-  <intrinsic>None</intrinsic>
-  <contextual>None</contextual>
+  <intrinsic>Helen's concern about her family can sometimes cloud her judgement or lead her to make access control decisions that, in the cold light of day, might not be best for her or Eric.  On a good day, however, Helen has an eye for seeing intricacies in contexts, and appreciating the sort of things that strangers might want to take advantage of.</intrinsic>
+  <contextual>Thinking explicitly about how her family interacts with technology helps Helen think about how to access control data associated with these interactions.  Also, because little details that complicate thinking, Helen uses things like sketches and abstractions to support the access control decision making process.</contextual>
   <persona_environment name="Identity" is_direct="TRUE" >
     <persona_role name="User" />
     <narrative>Helen is so keen on keeping abreast with her work and home diary that she is prepared to trade contextual data about her behavioural patterns if this facilitates making her devices more sensitive to her different work and home contexts.</narrative>
