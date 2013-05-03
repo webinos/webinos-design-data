@@ -137,7 +137,7 @@
 <step_synopsis environment="Complete" usecase="Installation and update of webinos applications" step_no="2" synopsis="Check local policy" actor_type="component" actor="Policy Manager" />
 <step_synopsis environment="Complete" usecase="Installation and update of webinos applications" step_no="3" synopsis="Display application claims" actor_type="component" actor="Discovery Client" />
 <step_synopsis environment="Complete" usecase="Installation and update of webinos applications" step_no="4" synopsis="Plan installation distribution" actor_type="role" actor="User" />
-<step_synopsis environment="Complete" usecase="Installation and update of webinos applications" step_no="5" synopsis="Distribute applications" actor_type="component" actor="Discovery Module" />
+<step_synopsis environment="Complete" usecase="Installation and update of webinos applications" step_no="5" synopsis="Distribute applications" actor_type="component" actor="Discovery Manager" />
 
 <!-- Justin contributions -->
 <reference_contribution source="Schedule diary with mobile" destination="Mobile app reliance" means_end="means" contribution="Help" />
