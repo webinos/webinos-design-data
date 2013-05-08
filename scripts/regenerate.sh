@@ -72,6 +72,9 @@ echo '*** Importing backlog lists ***'
 $CAIRIS_SRC/cimport.py --type usability $MODELS_DIR/coreBacklog.xml
 $CAIRIS_SRC/cimport.py --type usability $MODELS_DIR/platformImplementation.xml
 
+echo '*** Importing miscallaneous CSP event data ***'
+$CAIRIS_SRC/cimport.py --type processes $MODELS_DIR/installCodes.xml
+
 echo '*** Importing personas ***'
 $CAIRIS_SRC/cimport.py --type usability $PERSONA_DIR/alice.xml
 $CAIRIS_SRC/cimport.py --type usability $PERSONA_DIR/anna.xml

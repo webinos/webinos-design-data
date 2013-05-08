@@ -654,7 +654,7 @@ The LAN designer and the software designer face security-related problems in the
   </implied_characteristic>
 </code_network>
 <code_network persona="Helen" relationship_type="conflict" from_code="context confusion" to_code="consensual thinking">
-  <implied_characteristic name="Contextual nuances can cause confuse thinking about family access" qualifier="Possibly" type="Contextual">
+  <implied_characteristic name="Contextual nuances can cause confused thinking about family access" qualifier="Possibly" type="Contextual">
     <from_label name="Distinguishing context differences" reference_type="grounds" />
     <from_label name="Nuanced context problems" reference_type="grounds" />
     <from_label name="Uncertain context elements" reference_type="grounds" />
