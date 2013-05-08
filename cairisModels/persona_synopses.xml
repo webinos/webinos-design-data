@@ -64,6 +64,36 @@
 <characteristic_synopsis characteristic="Deranged personality" synopsis="" dimension="goal" actor_type="persona" actor="David" />
 <characteristic_synopsis characteristic="Careless of his own action's consequences" synopsis="" dimension="goal" actor_type="persona" actor="David" /> -->
 
+<!-- Helen characteristics -->
+<characteristic_synopsis characteristic="A Sales and Marketing manager" synopsis="Market products" dimension="goal" actor_type="persona" actor="Helen" />
+<characteristic_synopsis characteristic="A professional commuter" synopsis="Commute to work" dimension="goal" actor_type="persona" actor="Helen" />
+<characteristic_synopsis characteristic="Patterns of behaviour planned" synopsis="Plan schedule" dimension="goal" actor_type="persona" actor="Helen" />
+<characteristic_synopsis characteristic="Is Family-centered" synopsis="Center life around family" dimension="softgoal" actor_type="persona" actor="Helen" />
+<characteristic_synopsis characteristic="Maintains a Work-Life split" synopsis="Balance work and life" dimension="softgoal" actor_type="persona" actor="Helen" />
+<characteristic_synopsis characteristic="Keeps busy" synopsis="Keep active" dimension="softgoal" actor_type="persona" actor="Helen" />
+<characteristic_synopsis characteristic="Shares data to manage schedule" synopsis="Share work data" dimension="goal" actor_type="persona" actor="Helen" />
+
+
+<!-- Helen references -->
+<reference_synopsis reference="LinkedIn user" synopsis="Professionally social network" dimension="softgoal" actor_type="persona" actor="Helen" />
+<reference_synopsis reference="Works office hours" synopsis="Work 9-5" dimension="softgoal" actor_type="persona" actor="Helen" />
+<reference_synopsis reference="Receives LinkedIn notifications" synopsis="Track social network" dimension="goal" actor_type="persona" actor="Helen" />
+<reference_synopsis reference="Car owner" synopsis="Possess vehicle" dimension="goal" actor_type="persona" actor="Helen" />
+<reference_synopsis reference="SatNav driver" synopsis="Follow SatNav" dimension="goal" actor_type="persona" actor="Helen" />
+<reference_synopsis reference="Predictable behaviour" synopsis="Maintain routine schedule" dimension="softgoal" actor_type="persona" actor="Helen" />
+<reference_synopsis reference="Predictable social contexts" synopsis="Work in routine locations" dimension="softgoal" actor_type="persona" actor="Helen" />
+<reference_synopsis reference="Married" synopsis="Maintain marriage" dimension="softgoal" actor_type="persona" actor="Helen" />
+<reference_synopsis reference="Mother of toddler" synopsis="Parent toddler" dimension="softgoal" actor_type="persona" actor="Helen" />
+<reference_synopsis reference="Takes and shares photo snaps" synopsis="Share photos" dimension="goal" actor_type="persona" actor="Helen" />
+<reference_synopsis reference="Uses cloud-based photo storage" synopsis="Cloud-store photos" dimension="goal" actor_type="persona" actor="Helen" />
+<reference_synopsis reference="Frequently around contact network" synopsis="Meet friends/colleagues" dimension="softgoal" actor_type="persona" actor="Helen" />
+<reference_synopsis reference="Has several social network accounts" synopsis="Manage multiple social networks" dimension="softgoal" actor_type="persona" actor="Helen" />
+<reference_synopsis reference="Partitions social network usage" synopsis="Separate social networks" dimension="softgoal" actor_type="persona" actor="Helen" />
+<reference_synopsis reference="Selective about where media is viewed" synopsis="Restrict media viewing" dimension="softgoal" actor_type="persona" actor="Helen" />
+<reference_synopsis reference="Phones on the road" synopsis="Call on the move" dimension="goal" actor_type="persona" actor="Helen" />
+<reference_synopsis reference="Uses calendar on home media system" synopsis="Manage diary at home" dimension="goal" actor_type="persona" actor="Helen" />
+<reference_synopsis reference="Shares usage data" synopsis="Share usage data" dimension="goal" actor_type="persona" actor="Helen" />
+<reference_synopsis reference="Synchronises calendars with the cloud" synopsis="Cloud-manage calendar" dimension="goal" actor_type="persona" actor="Helen" />
 
 <!-- Justin references -->
 <reference_synopsis reference="Uses mobile phone to organise life" synopsis="Schedule diary with mobile" dimension="goal" actor_type="persona" actor="Justin" />
@@ -239,6 +269,31 @@
 <reference_contribution source="Play competitive sports" destination="Competitive sportsman" means_end="means" contribution="Make" />
 <reference_contribution source="Machinary expertise" destination="Repair vehicles" means_end="end" contribution="Help" />
 <reference_contribution source="Close contact with cars" destination="Repair vehicles" means_end="means" contribution="Help" />
+
+
+<!-- Helen contributions -->
+<reference_contribution source="Professionally social network" destination="Market products" means_end="means" contribution="Help" />
+<reference_contribution source="Work 9-5" destination="Market products" means_end="means" contribution="Help" />
+<reference_contribution source="Track social network" destination="Market products" means_end="means" contribution="Help" />
+<reference_contribution source="Possess vehicle" destination="Commute to work" means_end="means" contribution="Make" />
+<reference_contribution source="Follow SatNav" destination="Commute to work" means_end="means" contribution="Help" />
+<reference_contribution source="Maintain routine schedule" destination="Plan schedule" means_end="end" contribution="Make" />
+<reference_contribution source="Work in routine locations" destination="Plan schedule" means_end="means" contribution="SomePositive" />
+<reference_contribution source="Maintain marriage" destination="Center life around family" means_end="means" contribution="Make" />
+<reference_contribution source="Parent toddler" destination="Center life around family" means_end="means" contribution="Make" />
+<reference_contribution source="Share photos" destination="Center life around family" means_end="means" contribution="Help" />
+<reference_contribution source="Cloud-store photos" destination="Center life around family" means_end="means" contribution="Hurt" />
+<reference_contribution source="Meet friends/colleagues" destination="Balance work and life" means_end="means" contribution="Help" />
+<reference_contribution source="Manage multiple social networks" destination="Balance work and life" means_end="means" contribution="Make" />
+<reference_contribution source="Separate social networks" destination="Balance work and life" means_end="end" contribution="Help" />
+<reference_contribution source="Restrict media viewing" destination="Balance work and life" means_end="means" contribution="Help" />
+<reference_contribution source="Work 9-5" destination="Balance work and life" means_end="means" contribution="Make" />
+<reference_contribution source="Parent toddler" destination="Balance work and life" means_end="means" contribution="Help" />
+<reference_contribution source="Call on the move" destination="Keep active" means_end="end" contribution="Help" />
+<reference_contribution source="Manage diary at home" destination="Keep active" means_end="end" contribution="Help" />
+<reference_contribution source="Share usage data" destination="Share work data" means_end="means" contribution="Help" />
+<reference_contribution source="Cloud-manage calendar" destination="Share work data" means_end="means" contribution="Help" />
+<reference_contribution source="Parent toddler" destination="Share work data" means_end="means" contribution="Hurt" />
 
 
 <usecase_contribution usecase="Installation and update of webinos applications" referent="Mobile app reliance" means_end="end" contribution="SomePositive" />

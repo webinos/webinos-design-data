@@ -172,7 +172,7 @@ Pre-condition: ... the device has a wallpaper that is not suitable for displayin
   <grounds type="document" reference="Uses cloud-based photo storage " />
 </persona_characteristic>
 <persona_characteristic persona="Helen" behavioural_variable="Attitudes" modal_qualifier="Probably" >
-  <definition>Maintains a Work-Life splits</definition>
+  <definition>Maintains a Work-Life split</definition>
   <grounds type="document" reference="Frequently around contact network" />
   <grounds type="document" reference="Selective about where media is viewed" />
   <grounds type="document" reference="Has several social network accounts" />
