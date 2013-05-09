@@ -397,6 +397,10 @@ The LAN designer and the software designer face security-related problems in the
   <label>Children opinions</label>
   <synopsis>Strong opinions about what children should be allowed access to.</synopsis>
 </quotation>
+<quotation code="requested" type="code" artifact_type="internal_document" artifact_name="HelenOxford" section="none" start_index="3400" to_index="3473">
+  <label>Modest variations</label>
+  <synopsis>Permission variations for children are modest.</synopsis>
+</quotation>
 <quotation code="consensual thinking" type="code" artifact_type="internal_document" artifact_name="HelenOxford" section="none" start_index="3474" to_index="3578">
   <label>Growing child access</label>
   <synopsis>Challenging thinking about how child access should evolve</synopsis>
@@ -502,6 +506,18 @@ The LAN designer and the software designer face security-related problems in the
   <synopsis>De-scoping facilitates broader system discussion.</synopsis>
 </quotation>
 
+<code_network persona="Helen" relationship_type="implies" from_code="consensual thinking" to_code="requested">
+  <implied_characteristic name="Family permissions are more variable for distant relatives" qualifier="Maybe" type="Contextual">
+    <from_label name="Children opinions" reference_type="grounds" />
+    <from_label name="Content access control" reference_type="grounds" />
+    <from_label name="Discussion refinement" reference_type="grounds" />
+    <from_label name="Distant family access" reference_type="grounds" />
+    <from_label name="Growing child access" reference_type="grounds" />
+    <from_label name="Private data uncertainty" reference_type="warrant" />
+    <from_label name="Uncertainty-driven elicitation" reference_type="warrant" />
+    <to_label name="Modest variations" reference_type="grounds" />
+  </implied_characteristic>
+</code_network>
 <code_network persona="Helen" relationship_type="associated" from_code="consensual thinking" to_code="family rules">
   <implied_characteristic name="Personal opinion strongly influences what family members can access" qualifier="Probably" type="Intrinsic">
     <from_label name="Children opinions" reference_type="grounds" />

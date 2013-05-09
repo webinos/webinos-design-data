@@ -462,7 +462,7 @@ Along this line, at the end of the exercise, participants remarked their appreci
   <label>Invariant administration category</label>
   <synopsis>Administrative concepts tend to be clustered under a single category, irrespective of context.</synopsis>
 </quotation>
-<quotation code="process-driven" type="code" artifact_type="internal_document" artifact_name="JimmyOxford" section="none" start_index="643" to_index="726">
+<quotation code="pick" type="code" artifact_type="internal_document" artifact_name="JimmyOxford" section="none" start_index="643" to_index="726">
   <label>Process-driven elicitation</label>
   <synopsis>Rigorous processes used to identify core information.</synopsis>
 </quotation>
@@ -561,12 +561,23 @@ Along this line, at the end of the exercise, participants remarked their appreci
     <to_label name="Preference deduction" reference_type="grounds" />
   </implied_characteristic>
 </code_network>
+
+<code_network persona="Jimmy" relationship_type="implies" from_code="pick" to_code="context possibilities">
+  <implied_characteristic name="Access decision making leads to extended reflection" qualifier="Possibly" type="Intrinsic">
+    <from_label name="Process-driven elicitation" reference_type="grounds" />
+    <to_label name="Activity location contexts" reference_type="warrant" />
+    <to_label name="Context-driven users" reference_type="grounds" />
+    <to_label name="Contexts overwhelming" reference_type="grounds" />
+    <to_label name="Immediacy preference" reference_type="warrant" />
+    <to_label name="Milestone contexts" reference_type="warrant" />
+  </implied_characteristic>
+</code_network>
+
 <code_network persona="Jimmy" relationship_type="conflict" from_code="process-driven" to_code="context possibilities">
   <implied_characteristic name="Contextual thinking does not scale" qualifier="Certainly" type="Contextual">
     <from_label name="Concept filtering" reference_type="warrant" />
     <from_label name="Initial coarse grained settings" reference_type="grounds" />
     <from_label name="Modelling language knowledge" reference_type="warrant" />
-    <from_label name="Process-driven elicitation" reference_type="grounds" />
     <from_label name="Tedious context enumeration" reference_type="warrant" />
     <from_label name="Visual notations" reference_type="grounds" />
     <to_label name="Activity location contexts" reference_type="warrant" />
@@ -590,7 +601,6 @@ Along this line, at the end of the exercise, participants remarked their appreci
     <from_label name="Concept filtering" reference_type="warrant" />
     <from_label name="Initial coarse grained settings" reference_type="grounds" />
     <from_label name="Modelling language knowledge" reference_type="grounds" />
-    <from_label name="Process-driven elicitation" reference_type="grounds" />
     <from_label name="Tedious context enumeration" reference_type="grounds" />
     <from_label name="Visual notations" reference_type="grounds" />
     <to_label name="Preferential context" reference_type="grounds" />
