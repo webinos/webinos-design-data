@@ -684,7 +684,7 @@ The LAN designer and the software designer face security-related problems in the
   </implied_characteristic>
 </code_network>
 <code_network persona="Helen" relationship_type="conflict" from_code="family rules" to_code="personal security">
-  <implied_characteristic name="Thinking about family members clouds rather than clarifies security thinking" qualifier="Unknown" type="Contextual">
+  <implied_characteristic name="Thinking about family members clouds rather than clarifies security thinking" qualifier="Possibly" type="Contextual">
     <from_label name="Age factor" reference_type="grounds" />
     <from_label name="Child content restrictions" reference_type="grounds" />
     <from_label name="Child shopping restrictions" reference_type="grounds" />
