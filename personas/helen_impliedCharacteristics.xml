@@ -384,38 +384,47 @@ The LAN designer and the software designer face security-related problems in the
 <quotation code="consensual thinking" type="code" artifact_type="internal_document" artifact_name="HelenFokus" section="none" start_index="3568" to_index="3713">
   <label>Private data uncertainty</label>
   <synopsis>Unsure where content private data held by content providers.</synopsis>
+  <intention name="Identify private data source" type="goal"/>
 </quotation>
 <quotation code="consensual thinking" type="code" artifact_type="internal_document" artifact_name="HelenFokus" section="none" start_index="3825" to_index="4079">
   <label>Content access control</label>
   <synopsis>Content providers have full control over all aspects of content control.</synopsis>
+  <intention name="Determine content provider trust" type="goal"/>
 </quotation>
 <quotation code="consensual thinking" type="code" artifact_type="internal_document" artifact_name="HelenOxford" section="none" start_index="1988" to_index="2170">
   <label>Distant family access</label>
   <synopsis>Difficult to differentiate access control for distant family members</synopsis>
+  <intention name="Differentiate family member access" type="goal"/>
 </quotation>
 <quotation code="consensual thinking" type="code" artifact_type="internal_document" artifact_name="HelenOxford" section="none" start_index="2480" to_index="2563">
   <label>Children opinions</label>
   <synopsis>Strong opinions about what children should be allowed access to.</synopsis>
+  <intention name="Determine child access" type="goal"/>
 </quotation>
 <quotation code="requested" type="code" artifact_type="internal_document" artifact_name="HelenOxford" section="none" start_index="3400" to_index="3473">
   <label>Modest variations</label>
   <synopsis>Permission variations for children are modest.</synopsis>
+  <intention name="Modify child access" type="goal" />
 </quotation>
 <quotation code="consensual thinking" type="code" artifact_type="internal_document" artifact_name="HelenOxford" section="none" start_index="3474" to_index="3578">
   <label>Growing child access</label>
   <synopsis>Challenging thinking about how child access should evolve</synopsis>
+  <intention name="Project future access" type="goal"/>
 </quotation>
 <quotation code="consensual thinking" type="code" artifact_type="internal_document" artifact_name="HelenOxford" section="none" start_index="4560" to_index="4713">
   <label>Discussion refinement</label>
   <synopsis>Discussion leads to more refined access control models.</synopsis>
+  <intention name="Refine access decision" type="goal"/>
 </quotation>
 <quotation code="consensual thinking" type="code" artifact_type="internal_document" artifact_name="HelenOxford" section="none" start_index="5976" to_index="6039">
   <label>Uncertainty-driven elicitation</label>
   <synopsis>Conceptual uncertainty leads to thinking about new things to access control</synopsis>
+  <intention name="Broaden access decision" type="softgoal"/>
 </quotation>
 <quotation code="family rules" type="code" artifact_type="internal_document" artifact_name="HelenFokus" section="none" start_index="2478" to_index="2613">
   <label>Child shopping restrictions</label>
   <synopsis>Shopping features restricted for children.</synopsis>
+  <intention name="Restrict child functionality" type="goal"/>
 </quotation>
 <quotation code="family rules" type="code" artifact_type="internal_document" artifact_name="HelenFokus" section="none" start_index="2693" to_index="2791">
   <label>Parental comms restriction</label>
@@ -424,18 +433,22 @@ The LAN designer and the software designer face security-related problems in the
 <quotation code="family rules" type="code" artifact_type="internal_document" artifact_name="HelenFokus" section="none" start_index="2793" to_index="2917">
   <label>Friend interaction allowed</label>
   <synopsis>Children are allowed to access features that allow interaction with their friends.</synopsis>
+  <intention name="Facilitate friend access" type="task"/>
 </quotation>
 <quotation code="family rules" type="code" artifact_type="internal_document" artifact_name="HelenFokus" section="none" start_index="5193" to_index="5254">
   <label>Child content restrictions</label>
   <synopsis>Devices and content is restricted for children.</synopsis>
+  <intention name="Restrict child content" type="goal"/>
 </quotation>
 <quotation code="family rules" type="code" artifact_type="internal_document" artifact_name="HelenOxford" section="none" start_index="3399" to_index="3472">
   <label>Age factor</label>
   <synopsis>Age of children a factor in deciding whether access should be granted.</synopsis>
+  <intention name="Map age to allowable access" type="goal"/>
 </quotation>
 <quotation code="family rules" type="code" artifact_type="internal_document" artifact_name="HelenOxford" section="none" start_index="4417" to_index="4548">
   <label>Family-based refinement</label>
   <synopsis>Access control is refined based on family relationship.</synopsis>
+  <intention name="Map relationship to allowable access" type="goal"/>
 </quotation>
 <quotation code="disallowed disinterest" type="code" artifact_type="internal_document" artifact_name="HelenOxford" section="none" start_index="2645" to_index="2835">
   <label>Deny disinterest</label>
@@ -508,31 +521,73 @@ The LAN designer and the software designer face security-related problems in the
 
 <code_network persona="Helen" relationship_type="implies" from_code="consensual thinking" to_code="requested">
   <implied_characteristic name="Family permissions are more variable for distant relatives" qualifier="Maybe" type="Contextual">
-    <from_label name="Children opinions" reference_type="grounds" />
-    <from_label name="Content access control" reference_type="grounds" />
-    <from_label name="Discussion refinement" reference_type="grounds" />
-    <from_label name="Distant family access" reference_type="grounds" />
-    <from_label name="Growing child access" reference_type="grounds" />
-    <from_label name="Private data uncertainty" reference_type="warrant" />
-    <from_label name="Uncertainty-driven elicitation" reference_type="warrant" />
-    <to_label name="Modest variations" reference_type="grounds" />
+    <intention name="Modify family member access" type="goal" />
+    <from_label name="Children opinions" reference_type="grounds">
+      <contribution means_end="means" value="SomePositive" />
+    </from_label>
+    <from_label name="Content access control" reference_type="grounds">
+      <contribution means_end="means" value="SomePositive" />
+    </from_label>
+    <from_label name="Discussion refinement" reference_type="grounds">
+      <contribution means_end="end" value="Help" />
+    </from_label>
+    <from_label name="Distant family access" reference_type="grounds">
+      <contribution means_end="means" value="Make" />
+    </from_label>
+    <from_label name="Growing child access" reference_type="grounds">
+      <contribution means_end="means" value="SomePositive" />
+    </from_label>
+    <from_label name="Private data uncertainty" reference_type="warrant">
+      <contribution means_end="means" value="SomePositive" />
+    </from_label>
+    <from_label name="Uncertainty-driven elicitation" reference_type="warrant">
+      <contribution means_end="end" value="Help" />
+    </from_label>
+    <to_label name="Modest variations" reference_type="grounds">
+      <contribution means_end="means" value="SomePositive" />
+    </to_label>
   </implied_characteristic>
 </code_network>
 <code_network persona="Helen" relationship_type="associated" from_code="consensual thinking" to_code="family rules">
   <implied_characteristic name="Personal opinion strongly influences what family members can access" qualifier="Probably" type="Intrinsic">
-    <from_label name="Children opinions" reference_type="grounds" />
-    <from_label name="Content access control" reference_type="warrant" />
-    <from_label name="Discussion refinement" reference_type="grounds" />
-    <from_label name="Distant family access" reference_type="grounds" />
-    <from_label name="Growing child access" reference_type="grounds" />
-    <from_label name="Private data uncertainty" reference_type="warrant" />
-    <from_label name="Uncertainty-driven elicitation" reference_type="warrant" />
-    <to_label name="Age factor" reference_type="grounds" />
-    <to_label name="Child content restrictions" reference_type="grounds" />
-    <to_label name="Child shopping restrictions" reference_type="grounds" />
-    <to_label name="Family-based refinement" reference_type="warrant" />
-    <to_label name="Friend interaction allowed" reference_type="grounds" />
-    <to_label name="Parental comms restriction" reference_type="grounds" />
+    <intention name="Determine family member access" type="goal" />
+    <from_label name="Children opinions" reference_type="grounds" >
+      <contribution means_end="end" value="Make" />
+    </from_label>
+    <from_label name="Content access control" reference_type="warrant">
+      <contribution means_end="means" value="Help" />
+    </from_label>
+    <from_label name="Discussion refinement" reference_type="grounds">
+      <contribution means_end="end" value="SomePositive" />
+    </from_label>
+    <from_label name="Distant family access" reference_type="grounds">
+      <contribution means_end="means" value="Make" />
+    </from_label>
+    <from_label name="Growing child access" reference_type="grounds">
+      <contribution means_end="means" value="Make" />
+    </from_label>
+    <from_label name="Private data uncertainty" reference_type="warrant">
+      <contribution means_end="means" value="Help" />
+    </from_label>
+    <from_label name="Uncertainty-driven elicitation" reference_type="warrant">
+      <contribution means_end="end" value="SomePositive" />
+    </from_label>
+    <to_label name="Age factor" reference_type="grounds">
+      <contribution means_end="means" value="Help" />
+    </to_label>
+    <to_label name="Child content restrictions" reference_type="grounds">
+      <contribution means_end="end" value="SomePositive" />
+    </to_label>
+    <to_label name="Child shopping restrictions" reference_type="grounds">
+      <contribution means_end="end" value="SomePositive" />
+    </to_label>
+    <to_label name="Family-based refinement" reference_type="warrant">
+      <contribution means_end="means" value="Help" />
+    </to_label>
+    <to_label name="Friend interaction allowed" reference_type="grounds">
+      <contribution means_end="end" value="Help" />
+    </to_label>
+    <to_label name="Parental comms restriction" reference_type="grounds"/>
   </implied_characteristic>
 </code_network>
 <code_network persona="Helen" relationship_type="associated" from_code="system model" to_code="disallowed disinterest">

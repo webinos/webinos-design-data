@@ -365,10 +365,12 @@ Along this line, at the end of the exercise, participants remarked their appreci
 <quotation code="context possibilities" type="code" artifact_type="internal_document" artifact_name="JimmyAmbiesense" section="none" start_index="804" to_index="989">
   <label>Immediacy preference</label>
   <synopsis>Initial security thinking is driven by the needs of immediate stakeholders.</synopsis>
+  <intention name="Respond to user need" type="softgoal"/>
 </quotation>
 <quotation code="context possibilities" type="code" artifact_type="internal_document" artifact_name="JimmyAmbiesense" section="none" start_index="6940" to_index="7047">
   <label>Context-driven users</label>
   <synopsis>Thinking about contexts of use stimulates thinking about users.</synopsis>
+  <intention name="Respond to user context" type="softgoal"/>
 </quotation>
 <quotation code="contextualisation difficulty" type="code" artifact_type="internal_document" artifact_name="JimmyAmbiesense" section="none" start_index="1772" to_index="1892">
   <label>Categorising difficulty</label>
@@ -385,6 +387,7 @@ Along this line, at the end of the exercise, participants remarked their appreci
 <quotation code="emergent trust" type="code" artifact_type="internal_document" artifact_name="JimmyAmbiesense" section="none" start_index="9431" to_index="9699">
   <label>Social closeness</label>
   <synopsis>Access control decisions influenced by subject's closeness to context.</synopsis>
+  <intention name="Determine user capabilities" type="goal"/>
 </quotation>
 <quotation code="facilitating insecurity" type="code" artifact_type="internal_document" artifact_name="JimmyAmbiesense" section="none" start_index="3228" to_index="3406">
   <label>Preference deduction</label>
@@ -405,10 +408,12 @@ Along this line, at the end of the exercise, participants remarked their appreci
 <quotation code="role possibilities" type="code" artifact_type="internal_document" artifact_name="JimmyAmbiesense" section="none" start_index="989" to_index="1280">
   <label>Preferential stakeholders</label>
   <synopsis>Security discussions will favour one group of stakeholders over others.</synopsis>
+  <intention name="Favour user" type="softgoal"/>
 </quotation>
 <quotation code="role possibilities" type="code" artifact_type="internal_document" artifact_name="JimmyAmbiesense" section="none" start_index="1532" to_index="1770">
   <label>Resource-driven thinking</label>
   <synopsis>When thinking about security, thought drifts to thinking about the resources needed by stakeholders, rather than what the system can offer stakeholder</synopsis>
+  <intention name="Determine user resources" type="goal"/>
 </quotation>
 <quotation code="stock topics" type="code" artifact_type="internal_document" artifact_name="JimmyAmbiesense" section="none" start_index="1282" to_index="1531">
   <label>Recent recollection bias</label>
@@ -421,10 +426,12 @@ Along this line, at the end of the exercise, participants remarked their appreci
 <quotation code="context possibilities" type="code" artifact_type="internal_document" artifact_name="JimmyOxford" section="none" start_index="5335" to_index="5461">
   <label>Activity location contexts</label>
   <synopsis>Context of use situated around physical location of activity.</synopsis>
+  <intention name="Ponder user activities" type="softgoal"/>
 </quotation>
 <quotation code="context possibilities" type="code" artifact_type="internal_document" artifact_name="JimmyOxford" section="none" start_index="7760" to_index="7851">
   <label>Contexts overwhelming</label>
   <synopsis>Nuances makes contexts overwhelming</synopsis>
+  <intention name="Ponder contextual differences" type="softgoal"/>
 </quotation>
 <quotation code="contextualisation difficulty" type="code" artifact_type="internal_document" artifact_name="JimmyOxford" section="none" start_index="1408" to_index="1583">
   <label>Contextualisation time-consuming</label>
@@ -465,6 +472,7 @@ Along this line, at the end of the exercise, participants remarked their appreci
 <quotation code="pick" type="code" artifact_type="internal_document" artifact_name="JimmyOxford" section="none" start_index="643" to_index="726">
   <label>Process-driven elicitation</label>
   <synopsis>Rigorous processes used to identify core information.</synopsis>
+  <intention name="Apply access heuristic" type="task"/>
 </quotation>
 <quotation code="process-driven" type="code" artifact_type="internal_document" artifact_name="JimmyOxford" section="none" start_index="979" to_index="1106">
   <label>Modelling language knowledge</label>
@@ -509,6 +517,7 @@ Along this line, at the end of the exercise, participants remarked their appreci
 <quotation code="role possibilities" type="code" artifact_type="internal_document" artifact_name="JimmyPolito" section="none" start_index="5294" to_index="5481">
   <label>Role as context</label>
   <synopsis>Sometimes roles are considered as contexts of use.</synopsis>
+  <intention name="Determine role activities" type="goal"/>
 </quotation>
 <quotation code="stock topics" type="code" artifact_type="internal_document" artifact_name="JimmyPolito" section="none" start_index="1639" to_index="1967">
   <label>Hot topics consideration</label>
@@ -564,11 +573,22 @@ Along this line, at the end of the exercise, participants remarked their appreci
 
 <code_network persona="Jimmy" relationship_type="implies" from_code="pick" to_code="context possibilities">
   <implied_characteristic name="Access decision making leads to extended reflection" qualifier="Possibly" type="Intrinsic">
-    <from_label name="Process-driven elicitation" reference_type="grounds" />
-    <to_label name="Activity location contexts" reference_type="warrant" />
-    <to_label name="Context-driven users" reference_type="grounds" />
-    <to_label name="Contexts overwhelming" reference_type="grounds" />
-    <to_label name="Immediacy preference" reference_type="warrant" />
+    <intention name="Ponder access control" type="softgoal"/>
+    <from_label name="Process-driven elicitation" reference_type="grounds">
+      <contribution means_end="means" value="Make" />
+    </from_label>
+    <to_label name="Activity location contexts" reference_type="warrant">
+      <contribution means_end="end" value="SomePositive" />
+    </to_label>
+    <to_label name="Context-driven users" reference_type="grounds">
+      <contribution means_end="end" value="SomePositive" />
+    </to_label>
+    <to_label name="Contexts overwhelming" reference_type="grounds">
+      <contribution means_end="end" value="SomePositive" />
+    </to_label>
+    <to_label name="Immediacy preference" reference_type="warrant">
+      <contribution means_end="end" value="SomePositive" />
+    </to_label>
     <to_label name="Milestone contexts" reference_type="warrant" />
   </implied_characteristic>
 </code_network>
@@ -636,11 +656,20 @@ Along this line, at the end of the exercise, participants remarked their appreci
 </code_network>
 <code_network persona="Jimmy" relationship_type="implies" from_code="role possibilities" to_code="emergent trust">
   <implied_characteristic name="Knowing the user increases tendency to trust them" qualifier="Perhaps" type="Intrinsic">
-    <from_label name="Preferential stakeholders" reference_type="grounds" />
-    <from_label name="Resource-driven thinking" reference_type="grounds" />
-    <from_label name="Role as context" reference_type="grounds" />
-    <to_label name="Known characteristic bias" reference_type="warrant" />
-    <to_label name="Social closeness" reference_type="warrant" />
+    <intention name="Trust known users" type="softgoal"/>
+    <from_label name="Preferential stakeholders" reference_type="grounds">
+      <contribution means_end="means" value="SomePositive" />
+    </from_label>
+    <from_label name="Resource-driven thinking" reference_type="grounds">
+      <contribution means_end="end" value="Help" />
+    </from_label>
+    <from_label name="Role as context" reference_type="grounds">
+      <contribution means_end="end" value="Help" />
+    </from_label>
+    <to_label name="Known characteristic bias" reference_type="warrant"/>
+    <to_label name="Social closeness" reference_type="warrant">
+      <contribution means_end="end" value="Help" />
+    </to_label>
   </implied_characteristic>
 </code_network>
 <code_network persona="Jimmy" relationship_type="implies" from_code="stock topics" to_code="structured reuse">
