@@ -541,7 +541,7 @@ The LAN designer and the software designer face security-related problems in the
       <contribution means_end="means" value="SomePositive" />
     </from_label>
     <from_label name="Uncertainty-driven elicitation" reference_type="warrant">
-      <contribution means_end="end" value="Help" />
+      <contribution means_end="end" value="Make" />
     </from_label>
     <to_label name="Modest variations" reference_type="grounds">
       <contribution means_end="means" value="SomePositive" />
