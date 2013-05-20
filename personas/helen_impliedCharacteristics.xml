@@ -755,6 +755,7 @@ The LAN designer and the software designer face security-related problems in the
 <implied_process name="Family access decisions" persona="Helen" >
   <description>Helen appears to have a propensity to drop/ignore steps if she is making access control decisions for multiple family members at the same time.</description>
   <relationship from_code="consensual thinking" to_code="requested" relationship_type="implies" />
+  <relationship from_code="consensual thinking" to_code="family rules" relationship_type="associated" />
   <channel name="pick" data_type="User.App.Device" />
   <channel name="requested" data_type="User.App.Device.Permission" />
   <channel name="run" data_type="User.App.Device.Permission" />
