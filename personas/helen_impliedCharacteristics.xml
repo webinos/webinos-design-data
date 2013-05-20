@@ -751,4 +751,34 @@ The LAN designer and the software designer face security-related problems in the
     <to_label name="value-authority mismatch" reference_type="warrant" />
   </implied_characteristic>
 </code_network>
+
+<implied_process name="Family access decisions" persona="Helen" >
+  <description>Helen appears to have a propensity to drop/ignore steps if she is making access control decisions for multiple family members at the same time.</description>
+  <relationship from_code="consensual thinking" to_code="requested" relationship_type="implies" />
+  <channel name="pick" data_type="User.App.Device" />
+  <channel name="requested" data_type="User.App.Device.Permission" />
+  <channel name="run" data_type="User.App.Device.Permission" />
+  <channel name="res" data_type="User.App.Device.Result" />
+  <channel name="verify" data_type="User.App.Device.Response" />
+  <specification>HELEN = let
+  SELECT = ERICS_TABLET |~| PETERS_TV |~| HELENS_LAPTOP
+
+  ERICS_TABLET = ( [] a : App @ ( pick.helen.a.ericsTablet ->
+                                ( ( verify.helen.a.ericsTablet.yes -> requested.helen.a.ericsTablet?p ->
+                                    run.helen.a.ericsTablet.tooLittle -> res.helen.a.ericsTablet?r -> SELECT ) []
+                                ( verify.helen.a.ericsTablet.no -> SELECT ) ) ) )
+
+  PETERS_TV = ( [] a : App @ ( pick.helen.a.petersTV ->
+                                ( ( verify.helen.a.petersTV.yes -> requested.helen.a.petersTV?p ->
+                                    run.helen.a.petersTV.justRight -> res.helen.a.petersTV?r -> SELECT ) []
+                                ( verify.helen.a.petersTV.no -> SELECT ) ) ) )
+
+  HELENS_LAPTOP = ( [] a : App @ ( pick.helen.a.helensLaptop ->
+                                ( ( verify.helen.a.helensLaptop.yes -> requested.helen.a.helensLaptop?p ->
+                                    run.helen.a.helensLaptop.p -> res.helen.a.helensLaptop?r -> SELECT ) []
+                                ( verify.helen.a.helensLaptop.no -> SELECT ) ) ) )
+within
+  SELECT</specification>
+</implied_process>
+
 </processes>

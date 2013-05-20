@@ -680,9 +680,16 @@ Along this line, at the end of the exercise, participants remarked their appreci
     <to_label name="Reuse preference" reference_type="grounds" />
   </implied_characteristic>
 </code_network>
-<implied_process name="Thoughtful trust" persona="Jimmy" >
-  <description>Developers thinking too much about what users need can lead them to place potentially unwarranted trust.</description>
-  <relationship from_code="need to know" to_code="emergent trust" relationship_type="implies" />
-  <specification>a -> b -> SKIP</specification>
+<implied_process name="Contextual freedom" persona="Jimmy" >
+  <description>Jimmy might make spurious/unpredictable access control decisions because he can't deal with contextual variants, e.g. thinking about apps and devices might confuse Jimmy and lead to an access control decision resulting in a random result.  Moreover, Jimmy also prefers, where possible, to afford users freedom of action rather than constraining their use.</description>
+  <relationship from_code="pick" to_code="context possibilities" relationship_type="implies" />
+  <relationship from_code="context possibilities" to_code="contextualisation difficulty" relationship_type="implies" />
+  <channel name="pick" data_type="User.App.Device" />
+  <channel name="requested" data_type="User.App.Device.Permission" />
+  <channel name="run" data_type="User.App.Device.Permission" />
+  <channel name="res" data_type="User.App.Device.Result" />
+  <specification>JIMMY = ( [] d : Device , u : User @ ( ( pick.u.jimmyApp.d -> requested.u.jimmyApp.d?p -> JIMMY ) []
+                                                        ( run.u.jimmyApp.d.tooLittle -> res.u.jimmyApp.d.crash -> JIMMY ) []
+                                                        ( run.u.jimmyApp.d.justRight -> res.u.jimmyApp.d.full -> JIMMY ) []                                                                                     ( run.u.jimmyApp.d.tooMuch -> res.u.jimmyApp.d.breach -> JIMMY ) ) )</specification>
 </implied_process>
 </processes>
