@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!DOCTYPE cairis PUBLIC "-//CAIRIS//DTD PROJECT 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/cairis.dtd">
+<!DOCTYPE cairis PUBLIC "-//CAIRIS//DTD PROJECT 1.0//EN" "http://cairis.org/dtd/cairis.dtd">
 <cairis>
 <project_settings name="webinos" >
   <background>Increasingly, users are owning more connected devices and expecting applications to keep preferences and status information synchronised across devices in different domains. The purpose of the webinos project is to define and deliver an open source platform, which will enable web applications and services to be used and shared consistently and securely over a broad spectrum of connected devices. To achieve this, it defines and provides an architecture and infrastructure to allow applications to run not only on a single device, but also across devices and domains. This applies to device features as well. New APIs are also provided to allow access to local and remote device resources and network resources in the Cloud.

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!DOCTYPE riskanalysis PUBLIC "-//CAIRIS//DTD RISKANALYSIS 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/riskanalysis.dtd">
+<!DOCTYPE riskanalysis PUBLIC "-//CAIRIS//DTD RISKANALYSIS 1.0//EN" "http://cairis.org/dtd/riskanalysis.dtd">
 
 <riskanalysis>
 <role name="Application" type="Stakeholder" short_code="APP" >

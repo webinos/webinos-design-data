@@ -1,10 +1,10 @@
 #!/bin/bash -x
 
 # You'll want to change the below values based on your own local installation 
-export CAIRIS_SRC=/home/irisuser/CAIRIS/cairis/cairis
+export CAIRIS_SRC=/home/cairisuser/CAIRIS/cairis/cairis
 export PYTHONPATH=$CAIRIS_SRC
 export CAIRIS_SQL=$CAIRIS_SRC/sql
-export GIT_DIR=/home/irisuser/webinos/wp2
+export GIT_DIR=/home/cairisuser/webinos-design-data
 export DBHOST=localhost
 export DBUSER=irisuser
 export DBPASSWORD=""

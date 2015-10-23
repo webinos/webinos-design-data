@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!DOCTYPE template_assets PUBLIC "-//CAIRIS//DTD ASSETS 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/template_assets.dtd">
+<!DOCTYPE template_assets PUBLIC "-//CAIRIS//DTD ASSETS 1.0//EN" "http://cairis.org/dtd/template_assets.dtd">
 
 <!-- These are externally visible assets or interfaces that both webinos and external agents interact with.  Based on data from D2.8 -->
 
