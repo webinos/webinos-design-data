@@ -9,7 +9,7 @@ if __name__ == '__main__':
   
   outputDir = os.environ['TMP_DIR']
   cmDir = os.environ['CM_DIR']
-  xmlBuf = '<?xml version="1.0"?>\n<!DOCTYPE associations PUBLIC "-//University of Oxford//DTD CAIRIS ASSOCIATIONS 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/associations.dtd">\n\n<associations>\n\n'
+  xmlBuf = '<?xml version="1.0"?>\n<!DOCTYPE associations PUBLIC "-//CAIRIS//DTD CAIRIS ASSOCIATIONS 1.0//EN" "http://cairis.org/dtd/associations.dtd">\n\n<associations>\n\n'
 
 
   assocSet = set([])
