@@ -3,7 +3,7 @@
 
 
 <usability>
-<persona name="Justin" type="Primary" assumption_persona="TRUE" image="/home/irisuser/webinos/wp2/personas/justin.jpg" >
+<persona name="Justin" type="Primary" assumption_persona="TRUE" image="justin.jpg" >
   <activities>Justin is a young, hip trendsetter who is constantly active and loves using cutting edge technology. He has a lucrative job (a trader in the city) and plenty of spare cash. He's always busy and uses his mobile (and many applications) to schedule his life. his interests are in cars, technology, music and fashion.
 
 Justin commutes frequently and is also a keen runner, cyclist and does plenty of exercise.</activities>
