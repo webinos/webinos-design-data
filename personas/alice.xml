@@ -2,7 +2,7 @@
 <!DOCTYPE usability PUBLIC "-//CAIRIS//DTD USABILITY 1.0//EN" "http://cairis.org/dtd/usability.dtd">
 
 <usability>
-<persona name="Alice" type="Primary" assumption_persona="TRUE" image="/home/irisuser/webinos/wp2/personas/alice.jpg" >
+<persona name="Alice" type="Primary" assumption_persona="TRUE" image="alice.jpg" >
   <activities>TV rocks Alice's world. Alice loves watching national and international TV, and, after work each day, enjoys nothing more than browsing some of the more esoteric TV channels from around the world, from Japanese Sci-Fi to Angus Buchan sermons in South Africa.
 
 At home, her TV home entertainment system takes central stage in her social life, to the extent that her primary means of web-surfing and viewing photographs is the TV.
