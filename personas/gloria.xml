@@ -3,7 +3,7 @@
 
 
 <usability>
-<persona name="Gloria" type="Primary" assumption_persona="TRUE" image="/home/irisuser/webinos/wp2/personas/gloria.jpg" >
+<persona name="Gloria" type="Primary" assumption_persona="TRUE" image="gloria.jpg" >
   <activities>Gloria likes using personalised services which help her organising her tasks. This holds for Internet-based services as well as for services offered by shops, restaurants and others. To ease her life with her allergies, she uses her mobile phone and related services to find food she can eat. Her profession is policy decision maker. She is an employee of an e-book store, deciding and implementing access and distribution policies for e-books.</activities>
   <attitudes>In order to extract interesting offers she likes filtering the vast amount of offers by subscribing for information about promotions and special deals of her favourite shops. She also participates in providing useful information by writing recommendations for restaurants. On her job, it is important for her to provide attractive products. She wants her customers to enjoy reading their e-books. In her policies she allows them to read their books on any of their devices.</attitudes>
   <aptitudes>None</aptitudes>
