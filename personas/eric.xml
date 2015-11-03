@@ -3,7 +3,7 @@
 
 
 <usability>
-<persona name="Eric" type="Primary" assumption_persona="FALSE" image="/home/irisuser/webinos/wp2/personas/eric.jpg">
+<persona name="Eric" type="Primary" assumption_persona="FALSE" image="eric.jpg">
   <activities>Eric is Helen's 5 year old son.  Although not a webinos user as such, he does use sometimes use his mother's webinos-enabled tablet device when going on journeys.  Although Helen usually thinks about what Eric might do for long journeys, he is usually left to his own devices on short-duration trips like school-runs or shopping trips.</activities>
   <attitudes>Eric enjoys activities which draw the attention of others, and likes to involve other people in the games that he plays.  For this reason, Eric is particularly fond of playing simple games with his parents, such as I Spy.</attitudes>
   <aptitudes>As Eric has grown older, he has also developed an interest in activities which absorb his interest.  Card and memory games have been known to keep Eric distracted on long journeys.  Similarly, Eric is happy to watch films and take a snooze when feels a little tired.</aptitudes>
