@@ -3,7 +3,7 @@
 
 
 <usability>
-<persona name="Irwin" type="Primary" assumption_persona="TRUE" image="/home/irisuser/webinos/wp2/personas/irwin.jpg" >
+<persona name="Irwin" type="Primary" assumption_persona="TRUE" image="irwin.jpg" >
   <activities>Irwin is employed by a company that manufactures aircraft hardware and turbine engine components.
 He has access to trade secrets information.
 He has the help of his colleagues who consider him a trustworthy person.</activities>
