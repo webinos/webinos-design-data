@@ -3,7 +3,7 @@
 
 
 <usability>
-<persona name="Frankie" type="Primary" assumption_persona="TRUE" image="/home/irisuser/webinos/wp2/personas/frankie.jpg" >
+<persona name="Frankie" type="Primary" assumption_persona="TRUE" image="frankie.jpg" >
   <activities>Frankie is an alienated computer addict. He started using computer at the age of six, when he was troubled by the separation of his parents, and all his life has been centered on computers ever since. Up to now, he has had a quite normal student career, without any notable brilliance or related achievements.</activities>
   <attitudes>He never established strong friendships and can only express himself through computers. Since computers have been his main friends, he has failed to pick up some society norms and values, including commonly known laws and rules.
 
