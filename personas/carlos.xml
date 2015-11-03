@@ -2,7 +2,7 @@
 <!DOCTYPE usability PUBLIC "-//CAIRIS//DTD USABILITY 1.0//EN" "http://cairis.org/dtd/usability.dtd">
 
 <usability>
-<persona name="Carlos" type="Secondary" assumption_persona="TRUE" image="/home/irisuser/webinos/wp2/personas/carlos.jpg" >
+<persona name="Carlos" type="Secondary" assumption_persona="TRUE" image="carlos.jpg" >
   <activities>Carlos works at the European Commission as regulator. He works together with various companies on usable and efficient privacy solutions for citizens.</activities>
   <attitudes>He is a strong believer in privacy. He knows the field very well: Carlos is up-to-date with various research activities and solutions. He knows that privacy is complex and he sometimes feels he has to surrender from the enormous amount of privacy-related projects which are not brought to solutions. He is disappointed from the fact that there is no usable solution on the market yet.</attitudes>
   <aptitudes>None</aptitudes>
