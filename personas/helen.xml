@@ -3,7 +3,7 @@
 
 
 <usability>
-<persona name="Helen" type="Primary" assumption_persona="TRUE" image="/home/irisuser/webinos/wp2/personas/helen.jpg" >
+<persona name="Helen" type="Primary" assumption_persona="TRUE" image="helen.jpg" >
   <activities>Helen is a 32 year old marketing manager for a publishing house in Brighton.
 
 Helen has a 3 year old toddler, Eric, which she drops off at the nursery on the way to work each morning, and picks up at a fixed time on her way home. This is something Helen has to do because Scott, her husband, works in the City, so catches a train to and from work.</activities>
