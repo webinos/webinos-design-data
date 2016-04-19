@@ -14,19 +14,23 @@ The content of this repository is was created to work with [cairis](https://gith
 Getting started
 --
 
-* Download the CAIRIS tool from https://github.com/failys/CAIRIS and install it as per the instructions
+* Install CAIRIS.  You can find instructions on how to install it at http://cairis.org
 * Download the contents of this repository
 * Modify the beginning of the file 'scripts/regenerate.sh' :
+
 <pre>
-export CAIRIS_SRC= ... # This should be the caris directory, ending in "/CAIRIS/cairis/cairis"
-export PYTHONPATH=$CAIRIS_SRC
+export CAIRIS_ROOT=/home/cairisuser/cairis # the top-level directory 
+export CAIRIS_SRC=$CAIRIS_ROOT/cairis # the location of the CAIRIS source code and other configuration data
+export PYTHONPATH=$CAIRIS_ROOT 
 export CAIRIS_SQL=$CAIRIS_SRC/sql
-export GIT_DIR=  ...# This is the directory of this repository
-export DBHOST= ... # Your database host 
-export DBUSER= ... # Your database user name
-export DBPASSWORD= ... # Your database password
-export DBNAME= ... # The database name, usually set to 'arm'
+export CAIRIS_CFG=/home/cairisuser/cairis.cnf # Your personalised version of the cairis.cnf template in $CAIRIS_SRC/config
+export GIT_DIR=/home/cairisuser/webinos-design-data # This is the directory of this repository
+export DBHOST=localhost # Your database host 
+export DBUSER=irisuser # Your database user name
+export DBPASSWORD=""  # Your database password
+export DBNAME=arm # The database name
 </pre>
+
 * run the regenerate script.  This will import all of the data into the CAIRIS database
 * start CAIRIS
 
