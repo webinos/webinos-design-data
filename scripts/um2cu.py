@@ -20,7 +20,7 @@ if __name__ == '__main__':
   ucmFiles = os.listdir(ucmDir)
 #  ucmFiles = ['DA1.jucm','DA2.jucm','DA3.jucm','DA4.jucm','DA5.jucm','DA5.jucm','DA6.jucm']
   outputDir = '/tmp'
-  xmlBuf = '<?xml version="1.0"?>\n<!DOCTYPE associations PUBLIC "-//CAIRIS//DTD ASSOCIATIONS 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/associations.dtd">\n\n<associations>\n'
+  xmlBuf = '<?xml version="1.0"?>\n<!DOCTYPE associations PUBLIC "-//CAIRIS//DTD ASSOCIATIONS 1.0//EN" "http://cairis.org/dtd/associations.dtd">\n\n<associations>\n'
  
 
   for ucmFile in ucmFiles:

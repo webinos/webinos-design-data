@@ -30,7 +30,7 @@ if __name__ == "__main__":
       converter.convert(reqDir + '/' + fileName,outputDir + '/' + tmpFile)
       print 'Created ' + tmpFile
 
-    xmlBuf = '<?xml version="1.0"?>\n<!DOCTYPE goals PUBLIC "-//University of Oxford//DTD GOALS USABILITY 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/goals.dtd">\n\n<goals>\n\n'
+    xmlBuf = '<?xml version="1.0"?>\n<!DOCTYPE goals PUBLIC "-//CAIRIS//DTD GOALS USABILITY 1.0//EN" "http://cairis.org/dtd/goals.dtd">\n\n<goals>\n\n'
 
     priorityLookup = {}
     priorityLookup['Low'] = '3'

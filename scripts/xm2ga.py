@@ -28,7 +28,7 @@ if __name__ == "__main__":
     csvFile = apMitFile.split('.')[0] + '.csv'
     converter.convert(archDir + '/' + apMitFile,outputDir + '/' + csvFile)
 
-    xmlBuf = '<?xml version="1.0"?>\n<!DOCTYPE cairis_model PUBLIC "-//University of Oxford//DTD MODEL 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/cairis_model.dtd">\n\n<cairis_model>\n\n'
+    xmlBuf = '<?xml version="1.0"?>\n<!DOCTYPE cairis_model PUBLIC "-//CAIRIS//DTD MODEL 1.0//EN" "http://cairis.org/dtd/cairis_model.dtd">\n\n<cairis_model>\n\n'
 
     dpBuf = ''
     gaBuf = ''

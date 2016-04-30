@@ -13,7 +13,7 @@ if __name__ == '__main__':
   envLookup = {'ID':'Identity','DA':'Discovery and Addressing','NM':'Remote Notifications and Messaging','PS':'Policy and Security','NC':'Negotiation and Compatibility','LC':'Lifecycle','CAP':'Device and Service Functional Capability','TMS':'Transfer and Management of State'}
 
 
-  xmlBuf = '<?xml version="1.0"?>\n<!DOCTYPE usability PUBLIC "-//University of Oxford//DTD CAIRIS USABILITY 1.0//EN" "http://www.cs.ox.ac.uk/cairis/dtd/usability.dtd">\n\n<usability>\n\n'
+  xmlBuf = '<?xml version="1.0"?>\n<!DOCTYPE usability PUBLIC "-//CAIRIS//DTD CAIRIS USABILITY 1.0//EN" "http://cairis.org/dtd/usability.dtd">\n\n<usability>\n\n'
   for ucFile in ucFiles:
      fileMode = os.stat(ucDir + '/' + ucFile).st_mode
      if S_ISDIR(fileMode):

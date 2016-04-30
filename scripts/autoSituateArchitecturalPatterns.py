@@ -1,11 +1,11 @@
 #!/usr/bin/python
 
-import BorgFactory
-from Borg import Borg
-import AssetParametersFactory
+import cairis.core.BorgFactory
+from cairis.core.Borg import Borg
+from cairis.core.AssetParametersFactory import AssetParametersFactory
 
 if __name__ == '__main__':
-  BorgFactory.initialise()
+  cairis.core.BorgFactory.initialise()
   b = Borg()
   envName = 'Complete'
 

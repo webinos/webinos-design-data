@@ -56,9 +56,9 @@ echo '*** Creating CAIRIS database ***'
 
 echo '*** Importing threat and vulnerability types and template threats and vulnerabilities from OWASP, CWE, and CAPEC***'
 $CAIRIS_SRC/bin/cimport.py --type tvtypes $MODELS_DIR/OWASPTypes.xml 
-$CAIRIS_SRC/bin/cimport.py --type tvtypes $CAIRIS_SQL/cwecapec_tv_types.xml --overwrite 0
-$CAIRIS_SRC/bin/cimport.py --type directory $CAIRIS_SQL/owasp_directory.xml 
-$CAIRIS_SRC/bin/cimport.py --type directory $CAIRIS_SQL/cwecapec_directory.xml --overwrite 0
+$CAIRIS_SRC/bin/cimport.py --type tvtypes $CAIRIS_ROOT/examples/threat_vulnerability_types/cwecapec_tv_types.xml --overwrite 0
+$CAIRIS_SRC/bin/cimport.py --type directory $CAIRIS_ROOT/examples/directories/owasp_directory.xml 
+$CAIRIS_SRC/bin/cimport.py --type directory $CAIRIS_ROOT/examples/directories/cwecapec_directory.xml --overwrite 0
 $CAIRIS_SRC/bin/cimport.py --type directory $MODELS_DIR/D28TV.xml --overwrite 0
 
 echo '*** Importing environments ***'
@@ -72,10 +72,10 @@ $CAIRIS_SRC/bin/cimport.py --type assets $MODELS_DIR/externalAssets.xml
 
 echo '*** Importing backlog lists ***'
 $CAIRIS_SRC/bin/cimport.py --type usability $MODELS_DIR/coreBacklog.xml
-$CAIRIS_SRC/cimport.py --type usability $MODELS_DIR/platformImplementation.xml
+$CAIRIS_SRC/bin/cimport.py --type usability $MODELS_DIR/platformImplementation.xml
 
 echo '*** Importing miscallaneous CSP event data ***'
-$CAIRIS_SRC/cimport.py --type processes $MODELS_DIR/installCodes.xml
+$CAIRIS_SRC/bin/cimport.py --type processes $MODELS_DIR/installCodes.xml
 
 echo '*** Importing personas ***'
 $CAIRIS_SRC/bin/cimport.py --type usability $PERSONA_DIR/alice.xml
