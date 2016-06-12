@@ -2,7 +2,7 @@
 
 import cairis.core.BorgFactory
 from cairis.core.Borg import Borg
-from cairis.core.AssetParametersFactory import AssetParametersFactory
+import cairis.core.AssetParametersFactory
 
 if __name__ == '__main__':
   cairis.core.BorgFactory.initialise()
@@ -14,7 +14,7 @@ if __name__ == '__main__':
     acDict = {}
     assetParametersList = []
     for assetName,componentName in componentAssets:
-      assetParametersList.append(AssetParametersFactory.buildFromTemplate(assetName,[envName]))
+      assetParametersList.append(cairis.core.AssetParametersFactory.buildFromTemplate(assetName,[envName]))
       if assetName not in acDict:
         acDict[assetName] = []
       acDict[assetName].append(componentName)
