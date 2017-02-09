@@ -3,83 +3,74 @@
 # Converts XLS  obstacle mitigation sheets to a cairis model of domain properties and goal associations
 
 import os
-from DocumentConverter import *
-import csv
-
-csvFiles = ['attackPatternMitigation.csv']
-
-def removeTempFiles():
-  for fileName in csvFiles:
-    try:
-      os.unlink(fileName)
-    except OSError:
-      pass
-  print 'temp files removed'
+from openpyxl import load_workbook
 
 if __name__ == "__main__":
  
   outputDir = os.environ['TMP_DIR']
   archDir = os.environ['ARCHITECTURE_DIR']
 
-  removeTempFiles()
-  try: 
-    converter = DocumentConverter()
-    apMitFile = 'attackPatternMitigations.xls'
-    csvFile = apMitFile.split('.')[0] + '.csv'
-    converter.convert(archDir + '/' + apMitFile,outputDir + '/' + csvFile)
 
-    xmlBuf = '<?xml version="1.0"?>\n<!DOCTYPE cairis_model PUBLIC "-//CAIRIS//DTD MODEL 1.0//EN" "http://cairis.org/dtd/cairis_model.dtd">\n\n<cairis_model>\n\n'
+  cellDict = {}
+  cellDict[1] = 'Obstacle'
+  cellDict[2] = 'Goal'
+  cellDict[3] = 'Definition'
+  cellDict[4] = 'Affected Components'
+  cellDict[5] = 'Satisfied'
+  cellDict[6] = 'Rationale'
 
-    dpBuf = ''
-    gaBuf = ''
-    aaBuf = '|_.Obstacle|_.Mitigating Requirement Name|_.Mitigating Requirement Definition|_.Affected Components|_.Satisfied (Y/N)|_.Rationale|\n'
+  xmlBuf = '<?xml version="1.0"?>\n<!DOCTYPE cairis_model PUBLIC "-//CAIRIS//DTD MODEL 1.0//EN" "http://cairis.org/dtd/cairis_model.dtd">\n\n<cairis_model>\n\n'
+  dpBuf = ''
+  gBuf = ''
+  gaBuf = ''
+  aaBuf = '|_.Obstacle|_.Mitigating Requirement Name|_.Mitigating Requirement Definition|_.Affected Components|_.Satisfied (Y/N)|_.Rationale|\n'
 
-    print 'Converting ' + csvFile
-    r = csv.reader(open(outputDir + '/' + csvFile,'rU'))
-    r.next() # skip the headers
-    reqLabel = 1
-    for cells in r:
-      obsNames = cells[0]
-      gdpName = cells[1]
-      gdpDef = cells[2]
-      cNames = cells[3]
-      isSatisfied = cells[4]
-      dpDef = cells[5]
-  
+  apMitFile = 'attackPatternMitigations.xlsx'
+  wb = load_workbook(archDir + '/' + apMitFile)
+  ws = wb.get_sheet_by_name('Goals')
 
-      if isSatisfied == 'N':
-        dpBuf += '<domainproperty name=\"' + gdpName + '\" type="Invariant" originator="WP 3 workshop - August 2012">\n  <definition>' + dpDef + '</definition>\n</domainproperty>\n'
+  for row in ws.iter_rows(min_row = 2):
+    rowDict = {}
+    for cell in row:
+      if cell.col_idx < 7:
+        reqAttribute = cellDict[cell.col_idx]
+        rowDict[reqAttribute] = cell.value
 
-      for obsName in obsNames.split('#'):
-        gaBuf += '<goal_association environment="Complete" goal_name=\"' + obsName + '\" goal_dim="obstacle" ref_type="resolve" subgoal_name=\"' + gdpName + '\" subgoal_dim=\"'
-        if isSatisfied == 'Y':
-          gaBuf += 'goal'
-        else:
-          gaBuf += 'domainproperty'
-        gaBuf += '\" alternative_id="0">\n  <rationale>' + dpDef + '</rationale>\n</goal_association>\n'
-        aaBuf += '| ' + obsName + ' | ' + gdpName + ' | ' + gdpDef + ' | ' + cNames + ' | ' + isSatisfied + ' | ' + dpDef + ' |\n'
+    obsNames = rowDict['Obstacle']
+    gdpName = rowDict['Goal']
+    gdpDef = rowDict['Definition']
+    cNames = rowDict['Affected Components']
+    isSatisfied = rowDict['Satisfied']
+    dpDef = rowDict['Rationale']
 
+    if isSatisfied == 'N':
+      dpBuf += '<domainproperty name=\"' + gdpName + '\" type="Invariant" originator="WP 3 workshop - August 2012">\n  <definition>' + dpDef + '</definition>\n</domainproperty>\n'
+    else:
+      gBuf += '<goal name=\"' + gdpName + '\" originator="WP 3 workshop - August 2012">\n  <goal_environment name="Complete" category="Maintain" priority="Medium">\n    <definition>' + gdpDef + '</definition>\n    <fit_criterion>None</fit_criterion>\n    <issue>None</issue>\n  </goal_environment>\n</goal>\n'
 
-    if len(dpBuf) > 0:
-      xmlBuf += '<goals>\n' + dpBuf + '</goals>\n\n'
-    if len(gaBuf) > 0:
-      xmlBuf += '<associations>\n' + gaBuf + '</associations>\n\n'
-    xmlBuf += '</cairis_model>'
+    for obsName in obsNames.split('#'):
+      gaBuf += '<goal_association environment="Complete" goal_name=\"' + obsName + '\" goal_dim="obstacle" ref_type="resolve" subgoal_name=\"' + gdpName + '\" subgoal_dim=\"'
+      if isSatisfied == 'Y':
+        gaBuf += 'goal'
+      else:
+        gaBuf += 'domainproperty'
+      gaBuf += '\" alternative_id="0">\n  <rationale>' + rowDict['Rationale'] + '</rationale>\n</goal_association>\n'
+      aaBuf += '| ' + obsName + ' | ' + gdpName + ' | ' + gdpDef + ' | ' + cNames + ' | ' + isSatisfied + ' | ' + dpDef + ' |\n'
 
-    outputFile = outputDir + '/pattern_mitigation.xml'
-    f = open(outputFile,'w')
-    f.write(xmlBuf)
-    f.close() 
+  if len(dpBuf) > 0:
+    xmlBuf += '<goals>\n' + dpBuf + gBuf + '</goals>\n\n'
+  if len(gaBuf) > 0:
+    xmlBuf += '<associations>\n' + gaBuf + '</associations>\n\n'
+  xmlBuf += '</cairis_model>'
 
-    aaFile = outputDir + '/ambiguityAnalysis.txt'
-    f = open(aaFile,'w')
-    f.write(aaBuf)
-    f.close() 
+  outputFile = outputDir + '/pattern_mitigation.xml'
+  f = open(outputFile,'w')
+  f.write(xmlBuf)
+  f.close() 
 
-    print 'Exported pattern mitigation details to XML'
-  except DocumentConversionException, e:
-    print 'Error: ' + str(e)
-    exit(-1)
-  except ErrorCodeIOException, e:
-    print 'ErrorCodeIOException: ' + str(exception.ErrCode)
-    exit(-1)
+  aaFile = outputDir + '/ambiguityAnalysis.txt'
+  f = open(aaFile,'w')
+  f.write(aaBuf)
+  f.close() 
+
+  print 'Exported pattern mitigation details to XML'

@@ -1,68 +1,43 @@
 #!/usr/bin/python
 
-# Converts XLS sheets to .csv using pyodtcoverter
-
 import os
-from DocumentConverter import *
-import csv
+from openpyxl import load_workbook
 
-csvFiles = ['TMS.csv','PS.csv','NM.csv','NC.csv','LC.csv','ID.csv','DA.csv','CAP.csv']
-
-def removeTempFiles():
-  for fileName in csvFiles:
-    try:
-      os.unlink(fileName)
-    except OSError:
-      pass
-  print 'temp files removed'
 
 if __name__ == "__main__":
  
   outputDir = os.environ['TMP_DIR']
   reqDir = os.environ['REQ_DIR']
+  priorityLookup = {}
+  priorityLookup['Low'] = '3'
+  priorityLookup['Medium'] = '2'
+  priorityLookup['High'] = '1'
 
-  removeTempFiles()
-  try: 
-    converter = DocumentConverter()
-    print 'converting spreadsheets to CSV' 
-    for fileName in ['TMS.xls','PS.xlsx','NM.xlsx','NC.xlsx','LC.xlsx','ID.xlsx','DA.xls','CAP.xlsx']:
-      tmpFile = fileName.split('.')[0] + '.csv'
-      converter.convert(reqDir + '/' + fileName,outputDir + '/' + tmpFile)
-      print 'Created ' + tmpFile
+  cellDict = {}
+  cellDict[1] = 'Name'
+  cellDict[2] = 'Originator'
+  cellDict[3] = 'Functional area'
+  cellDict[4] = 'Priority'
+  cellDict[5] = 'Description'
+  cellDict[6] = 'Fit Criterion'
+  cellDict[7] = 'Comments'
 
-    xmlBuf = '<?xml version="1.0"?>\n<!DOCTYPE goals PUBLIC "-//CAIRIS//DTD GOALS USABILITY 1.0//EN" "http://cairis.org/dtd/goals.dtd">\n\n<goals>\n\n'
+  xmlBuf = '<?xml version="1.0"?>\n<!DOCTYPE goals PUBLIC "-//CAIRIS//DTD GOALS USABILITY 1.0//EN" "http://cairis.org/dtd/goals.dtd">\n\n<goals>\n\n'
+  for fileName in ['TMS.xlsx','PS.xlsx','NM.xlsx','NC.xlsx','LC.xlsx','ID.xlsx','DA.xlsx','CAP.xlsx']:
+    wb = load_workbook(reqDir + '/' + fileName)
+    ws = wb.get_sheet_by_name('In scope')
+    reqLabel = 1
+    for row in ws.iter_rows(min_row = 2):
+      rowDict = {}
+      for cell in row:
+        if cell.col_idx < 8:
+          reqAttribute = cellDict[cell.col_idx]
+          rowDict[reqAttribute] = cell.value
+      xmlBuf += '<requirement name=\"' + rowDict['Name'] + '\" reference=\"' + rowDict['Functional area'] + '\" reference_type=\"environment\" label=\"' + str(reqLabel) + '\" type=\"Functional\" priority=\"' + priorityLookup[rowDict['Priority']] + '\">\n  <description>' + rowDict['Description'] + '</description>\n  <rationale>' + rowDict['Comments'] + '</rationale>\n  <fit_criterion>' + rowDict['Fit Criterion'] + '</fit_criterion>\n  <originator>' + rowDict['Originator'] + '</originator>\n</requirement>\n'
+      reqLabel += 1
+  xmlBuf += '</goals>'
 
-    priorityLookup = {}
-    priorityLookup['Low'] = '3'
-    priorityLookup['Medium'] = '2'
-    priorityLookup['High'] = '1'
-
-    for csvFile in csvFiles:
-      print 'Converting ' + csvFile
-      r = csv.reader(open(outputDir + '/' + csvFile,'rU'))
-      r.next() # skip the headers
-      reqLabel = 1
-      for cells in r:
-        reqName = cells[0]
-        originator = cells[1]
-        envName = cells[2]
-        reqPri = priorityLookup[cells[3]]
-        reqDesc = cells[4]
-        reqFC = cells[5]
-        reqComments = cells[6]  
-        xmlBuf += '<requirement name=\"' + reqName + '\" reference=\"' + envName + '\" reference_type=\"environment\" label=\"' + str(reqLabel) + '\" type=\"Functional\" priority=\"' + reqPri + '\">\n  <description>' + reqDesc + '</description>\n  <rationale>' + reqComments + '</rationale>\n  <fit_criterion>' + reqFC + '</fit_criterion>\n  <originator>' + originator + '</originator>\n</requirement>\n'
-        reqLabel += 1
-    xmlBuf += '</goals>'
-
-    outputFile = outputDir + '/requirements.xml'
-    f = open(outputFile,'w')
-    f.write(xmlBuf)
-    f.close() 
-
-    print 'Exported requirements to XML'
-  except DocumentConversionException, e:
-    print 'Error: ' + str(e)
-    exit(-1)
-  except ErrorCodeIOException, e:
-    print 'ErrorCodeIOException: ' + str(exception.ErrCode)
-    exit(-1)
+  outputFile = outputDir + '/requirements.xml'
+  f = open(outputFile,'w')
+  f.write(xmlBuf)
+  f.close() 

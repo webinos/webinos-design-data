@@ -13,7 +13,6 @@ export DBPASSWORD=""
 export DBNAME=arm
 export TMP_DIR=/tmp
 export OUTPUT_DIR=/tmp/deliverable #This is where files for the D2.4 and D2.5 deliverable go
-export SOFFICE_STARTUP_SLEEP=15  #How long to wait before soffice starts up in headless model 
 
 export MODELS_DIR=$GIT_DIR/cairisModels
 export CM_DIR=$GIT_DIR/conceptMaps
@@ -40,8 +39,6 @@ echo '*** Building use cases ***'
 $WP2_SCRIPT_DIR/ru2cu.py 
 
 echo '*** Building requirements ***'
-soffice -headless -accept="socket,host=127.0.0.1,port=2002;urp;" -nofirststartwizard &
-sleep $SOFFICE_STARTUP_SLEEP
 $WP2_SCRIPT_DIR/xr2cr.py 
 
 echo '*** Building traceability model ***'

@@ -15,7 +15,7 @@ if __name__ == '__main__':
   assocSet = set([])
   for fnCat in ['TMS','PS','NM','NC','LC','ID','DA','CAP']:
     dotFile = cmDir + '/' + fnCat + '.dot'
-    dotInstance = pydot.graph_from_dot_file(dotFile)
+    dotInstance = (pydot.graph_from_dot_file(dotFile))[0]
   
     for e in dotInstance.get_edge_list():
       fromName = e.get_source()
