@@ -162,16 +162,16 @@ Jimmy’s mistake was to assume that his ZenSearch client application cannot be 
   <description>Creating Applications for webinos Story</description>
 </external_document>
 <concept_reference name="Acknowledge target device" concept="usecase" object="Installation and update of webinos applications" contributor="Shamal Faily" >
-  <excerpt>4. The user is asked whether the application should be made available to all their devices.
-5.  The user selects yes and installs the application to his devices.</excerpt>
+  <description>4. The user is asked whether the application should be made available to all their devices.
+5.  The user selects yes and installs the application to his devices.</description>
 </concept_reference>
 
 <concept_reference name="API throw errors when access control request denied" concept="requirement" object="Request denial error" contributor="Shamal Faily" >
-  <excerpt>webinos APIs shall provide error results when an access control request is denied.</excerpt>
+  <description>webinos APIs shall provide error results when an access control request is denied.</description>
 </concept_reference>
 
 <concept_reference name="Applications are up-to-date before execution" concept="usecase" object="Removal of applications" contributor="Shamal Faily" >
-  <excerpt>Precondition:  An application is already installed.  This strongly suggests that applications must be installed not only before administration of the app, but before running it.</excerpt>
+  <description>Precondition:  An application is already installed.  This strongly suggests that applications must be installed not only before administration of the app, but before running it.</description>
 </concept_reference>
 
 <document_reference name="Applications contain nested applications" contributor="Shamal Faily" document="webinos phase 1 architecture and components" >
@@ -187,35 +187,35 @@ Jimmy’s mistake was to assume that his ZenSearch client application cannot be 
 </document_reference>
 
 <concept_reference name="Applications launched via events" concept="usecase" object="Background execution" contributor="Shamal Faily" >
-  <excerpt>4. The Webinos Runtime informs the User about the occurrence of a certain event that triggers launching an Application.</excerpt>
+  <description>4. The Webinos Runtime informs the User about the occurrence of a certain event that triggers launching an Application.</description>
 </concept_reference>
 
 <concept_reference name="Autostart programmatically controlled" concept="requirement" object="Automatic background start-up" contributor="Shamal Faily" >
-  <excerpt>It shall be possible to register a background application for automatic execution at device start-up.</excerpt>
+  <description>It shall be possible to register a background application for automatic execution at device start-up.</description>
 </concept_reference>
 
 <concept_reference name="Editors support fine and coarse grained policy editing" concept="requirement" object="Policy view/edit level" contributor="Shamal Faily" >
-  <excerpt>Policies shall be viewable and editable by users at both a fine-grained and coarse-grained level.</excerpt>
+  <description>Policies shall be viewable and editable by users at both a fine-grained and coarse-grained level.</description>
 </concept_reference>
 
 <concept_reference name="Policies contain fine-grained rules" concept="requirement" object="Application identity" contributor="Shamal Faily" >
-  <excerpt>webinos shall identify a currently running application.</excerpt>
+  <description>webinos shall identify a currently running application.</description>
 </concept_reference>
 
 <concept_reference name="Sophisticated policy editing tools" concept="requirement" object="Asset-based policy" contributor="Shamal Faily" >
-  <excerpt>The webinos policy editor shall allow asset-based policy specification, including objects, subjects, signing authorities and APIs.</excerpt>
+  <description>The webinos policy editor shall allow asset-based policy specification, including objects, subjects, signing authorities and APIs.</description>
 </concept_reference>
 
 <concept_reference name="Policy impact is described textually" concept="requirement" object="Policy impact" contributor="Shamal Faily" >
-  <excerpt>The webinos policy editor shall incorporate example textual descriptions of how particular policy changes affect system behaviour.</excerpt>
+  <description>The webinos policy editor shall incorporate example textual descriptions of how particular policy changes affect system behaviour.</description>
 </concept_reference>
 
 <concept_reference name="webinos explains policy setting refusals" concept="requirement" object="Policy refusal reason" contributor="Shamal Faily" >
-  <excerpt>Users shall be presented with a rationale for preventing the modification of some policy settings.</excerpt>
+  <description>Users shall be presented with a rationale for preventing the modification of some policy settings.</description>
 </concept_reference>
 
 <concept_reference name="User alerted on policy warning" concept="requirement" object="Policy refusal reason" contributor="Shamal Faily" >
-  <excerpt>The webinos runtime shall be able to alert the user at runtime.</excerpt>
+  <description>The webinos runtime shall be able to alert the user at runtime.</description>
 </concept_reference>
 
 <task_characteristic task="Policy conflict" modal_qualifier="Definitely" >
