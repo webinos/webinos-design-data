@@ -10,7 +10,7 @@ export GIT_DIR=/home/cairisuser/webinos-design-data
 export DBHOST=localhost
 export DBUSER=irisuser
 export DBPASSWORD=""
-export DBNAME=arm
+export DBNAME=cairis_default
 export TMP_DIR=/tmp
 export OUTPUT_DIR=/tmp/deliverable #This is where files for the D2.4 and D2.5 deliverable go
 
