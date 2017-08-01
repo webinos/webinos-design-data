@@ -145,34 +145,9 @@ Jimmy’s mistake was to assume that his ZenSearch client application cannot be 
   </task_environment>
 </task>
 
-<!--<task name="" author="" code="" assumption_task="FALSE">
-  <objective></objective>
-  <task_environment name="">
-    <dependencies>None</dependencies>
-    <task_persona persona="Jimmy" duration="Minutes" frequency="Monthly_or_less" demands="Low" goal_conflict="Medium" />
-    <task_persona persona="Ethan" duration="Minutes" frequency="Monthly_or_less" demands="Low" goal_conflict="Medium" />
-    <narrative></narrative>
-    <consequences></consequences>
-    <benefits></benefits>
-  </task_environment>
-</task> -->
-    
-
 <external_document name="webinos phase 1 architecture and components" version="1" date="June 2011" authors="webinos consortium" >
   <description>Creating Applications for webinos Story</description>
 </external_document>
-<concept_reference name="Acknowledge target device" concept="usecase" object="Installation and update of webinos applications" contributor="Shamal Faily" >
-  <description>4. The user is asked whether the application should be made available to all their devices.
-5.  The user selects yes and installs the application to his devices.</description>
-</concept_reference>
-
-<concept_reference name="API throw errors when access control request denied" concept="requirement" object="Request denial error" contributor="Shamal Faily" >
-  <description>webinos APIs shall provide error results when an access control request is denied.</description>
-</concept_reference>
-
-<concept_reference name="Applications are up-to-date before execution" concept="usecase" object="Removal of applications" contributor="Shamal Faily" >
-  <description>Precondition:  An application is already installed.  This strongly suggests that applications must be installed not only before administration of the app, but before running it.</description>
-</concept_reference>
 
 <document_reference name="Applications contain nested applications" contributor="Shamal Faily" document="webinos phase 1 architecture and components" >
   <excerpt>Child application: A child application is a self contained application package that is included within another application package....</excerpt>
@@ -185,6 +160,21 @@ Jimmy’s mistake was to assume that his ZenSearch client application cannot be 
 <document_reference name="Application instances spread across devices" contributor="Shamal Faily" document="webinos phase 1 architecture and components" >
   <excerpt>Child application: A child application is a self contained application package that is included within another application package..... are used as means for distributed application development and deployment where a parent application can export child applications to other devices....</excerpt>
 </document_reference>
+</usability>
+
+<misusability>
+<concept_reference name="Acknowledge target device" concept="usecase" object="Installation and update of webinos applications" contributor="Shamal Faily" >
+  <description>4. The user is asked whether the application should be made available to all their devices.
+5.  The user selects yes and installs the application to his devices.</description>
+</concept_reference>
+
+<concept_reference name="API throw errors when access control request denied" concept="requirement" object="Request denial error" contributor="Shamal Faily" >
+  <description>webinos APIs shall provide error results when an access control request is denied.</description>
+</concept_reference>
+
+<concept_reference name="Applications are up-to-date before execution" concept="usecase" object="Removal of applications" contributor="Shamal Faily" >
+  <description>Precondition:  An application is already installed.  This strongly suggests that applications must be installed not only before administration of the app, but before running it.</description>
+</concept_reference>
 
 <concept_reference name="Applications launched via events" concept="usecase" object="Background execution" contributor="Shamal Faily" >
   <description>4. The Webinos Runtime informs the User about the occurrence of a certain event that triggers launching an Application.</description>
@@ -253,7 +243,7 @@ Jimmy’s mistake was to assume that his ZenSearch client application cannot be 
   <warrant type="requirement" reference="API throw errors when access control request denied" />
 </task_characteristic>
 
-</usability>
+</misusability>
 <associations>
   <manual_association from_name="Installation and update of webinos applications" from_dim="usecase" to_name="S-LC2" to_dim="task" />
   <manual_association from_name="Subscribe and Publish Events" from_dim="usecase" to_name="S-LC3" to_dim="task" />

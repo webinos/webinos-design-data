@@ -191,7 +191,7 @@ Richard is a fast decision maker and can follow this through with the public and
   <grounds type="document" reference="All active policeman do shift work" />
 </persona_characteristic>
 <persona_characteristic persona="Richard" behavioural_variable="Activities" modal_qualifier="Probably" >
-  <definition>Prone to lose/break device</definition>
+  <definition>Prone to break device</definition>
   <grounds type="document" reference="Police are active and in dangerous positions" />
   <grounds type="document" reference="Always on the move to new locations" />
   <rebuttal type="document" reference="Police equipment manufactures claim robustnesss" />

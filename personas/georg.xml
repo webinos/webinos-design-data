@@ -92,7 +92,7 @@
   <grounds type="document" reference="Lives with his family" />
 </persona_characteristic>
 <persona_characteristic persona="Georg" behavioural_variable="Activities" modal_qualifier="Definitely" >
-  <definition>Uses modern technology</definition>
+  <definition>Use modern technology</definition>
   <grounds type="document" reference="Has a personal mobile internet device" />
   <grounds type="document" reference="Has a Facebook account" />
   <grounds type="document" reference="Has a tablet computer" />

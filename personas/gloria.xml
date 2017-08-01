@@ -148,7 +148,7 @@
   <warrant type="document" reference="Works on implementing policies (data access, privacy)" />
 </persona_characteristic>
 <persona_characteristic persona="Gloria" behavioural_variable="Motivations" modal_qualifier="Definitely" >
-  <definition>Uses modern technology if it supports her interests</definition>
+  <definition>Uses modern technology to support her interests</definition>
   <grounds type="document" reference="User of a recent mobile phone" />
   <grounds type="document" reference="User of a recent car" />
   <grounds type="document" reference="Has accounts with several social network sites" />

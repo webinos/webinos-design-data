@@ -189,7 +189,7 @@ Jessica is adept at working with many hand-sets, but is unfamiliar with Nokia an
   <grounds type="document" reference="Knows about current products on the market" />
 </persona_characteristic>
 <persona_characteristic persona="Jessica" behavioural_variable="Motivations" modal_qualifier="Definitely" >
-  <definition>Stays away from anything associated with poor quality and/or risk</definition>
+  <definition>Stays away from anything associated with poor quality or risk</definition>
   <grounds type="document" reference="Helping and adding value to peoples lives is meaningful" />
   <grounds type="document" reference="Creating new systems makes her work hard" />
   <grounds type="document" reference="If she likes the purpose of the work she will commit 100% to it" />

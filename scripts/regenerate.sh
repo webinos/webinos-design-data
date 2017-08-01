@@ -133,7 +133,6 @@ echo '*** Importing component traceability ***'
 $WP2_SCRIPT_DIR/um2cu.py
 $CAIRIS_SRC/bin/cimport.py --type associations $TMP_DIR/componentAssociations.xml
 
-
 echo '*** Automatically situate architectural patterns ***'
 $WP2_SCRIPT_DIR/autoSituateArchitecturalPatterns.py
 
