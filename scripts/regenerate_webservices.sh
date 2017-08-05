@@ -1,10 +1,10 @@
 #!/bin/bash -x
 
 # You'll want to change the below values based on your own local installation 
-export CAIRIS_ROOT=/home/cairisuser/cairis
+export CAIRIS_ROOT=/tmp/cairis
 export CAIRIS_SRC=$CAIRIS_ROOT/cairis
-export GIT_DIR=/home/cairisuser/webinos-design-data
-export URL=http://localhost:7071
+export GIT_DIR=/tmp/webinos-design-data
+export URL=http://localhost
 export DBNAME=webinos
 export TMP_DIR=/tmp
 
