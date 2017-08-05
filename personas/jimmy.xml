@@ -3,7 +3,7 @@
 
 
 <usability>
-<persona name="Jimmy" type="Primary" assumption_persona="TRUE" image="jimmy.jpg" >
+<persona name="Jimmy" type="Primary" assumption_persona="TRUE" image="Jimmy.jpg" >
   <activities>Jimmy's life is software development and Internet services. He is a self-employed professional software developer for mobile applications but he also spends his leisure time on writing plug-ins for his home equipment.
 
 Jimmy is a passionate and experienced professional software developer. His focus is on mobile applications and Web applications. His experience covers the iPhone, Android and further technologies. He writes new applications and ports them to different platforms. He does software development for quite some years. Apart from that, he is a passionate and successful blogger.</activities>

@@ -3,7 +3,7 @@
 
 
 <usability>
-<persona name="Clara" type="Primary" assumption_persona="TRUE" image="clara.jpg" >
+<persona name="Clara" type="Primary" assumption_persona="TRUE" image="Clara.jpg" >
   <activities>Clara is a teenager who lives with her family. Clara has diabetes and in order to live a good life, she actively manages her diabetes by herself. For this purpose, she uses modern technology, such as a laptop and a smartphone. Together with her blood glucose meter she collects and stores the measured data on a cloud service which is accessible by her physician.</activities>
   <attitudes>Like most of the teenagers of her age, Clara wants to enjoy her life and have fun. She goes out with friends, eats unhealthy things and has an irregular daily routine. Being distracted by all the interesting things around her, she often forgets to measure her blood glucose level. As a result, her glucose level is too high on average. This is dangerous to her health. Even though her physician emphasises the importance of a good glucose level and the risks of a high glucose level, she is not caring enough. In fact, Clara is willing to manage her disease but she also does not want to give up the fun part of her life. Currently, she tends more to the fun part than to healthcare. She did not find her balance yet, but she is in the process of learning to cope with her disease.</attitudes>
   <aptitudes>None</aptitudes>

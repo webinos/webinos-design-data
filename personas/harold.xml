@@ -3,7 +3,7 @@
 
 
 <usability>
-<persona name="Harold" type="Primary" assumption_persona="TRUE" image="harold.jpg" >
+<persona name="Harold" type="Primary" assumption_persona="TRUE" image="Harold.jpg" >
   <activities>He is a security expert and an entrepreneur in the security field.
 He is also a keynote speaker at conferences and he lectured on the history of technology at several universities.</activities>
   <attitudes>He has his own personal ethic. He is law unattentive and too much self confident. This led him to be engaged in borderline activities.</attitudes>

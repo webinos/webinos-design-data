@@ -7,7 +7,6 @@ export GIT_DIR=/home/cairisuser/webinos-design-data
 export URL=http://localhost:7071
 export DBNAME=webinos
 export TMP_DIR=/tmp
-export OUTPUT_DIR=/tmp/deliverable #This is where files for the D2.4 and D2.5 deliverable go
 
 export MODELS_DIR=$GIT_DIR/cairisModels
 export CM_DIR=$GIT_DIR/conceptMaps
@@ -19,13 +18,6 @@ export ARCHITECTURE_DIR=$GIT_DIR/architecture
 export VIEWS_DIR=$ARCHITECTURE_DIR/architecturalpatterns
 export AP_DIR=$ARCHITECTURE_DIR/attackpatterns
 export WP2_SCRIPT_DIR=$GIT_DIR/scripts
-
-echo '*** Creating output directory ***'
-if [ -d $OUTPUT_DIR ]
-then
-  rm -rf $OUTPUT_DIR
-fi
-mkdir $OUTPUT_DIR
 
 echo '*** Building scenarios ***'
 $WP2_SCRIPT_DIR/rs2ct.py 
@@ -88,6 +80,9 @@ $CAIRIS_SRC/bin/web_cimport.py --url $URL --database $DBNAME --type usability $P
 $CAIRIS_SRC/bin/web_cimport.py --url $URL --database $DBNAME --type usability $PERSONA_DIR/peter.xml
 $CAIRIS_SRC/bin/web_cimport.py --url $URL --database $DBNAME --type usability $PERSONA_DIR/richard.xml
 
+echo '*** Importing persona images ***'
+$WP2_SCRIPT_DIR/importObjectImages.py --url $URL --database $DBNAME --image_dir $PERSONA_DIR --type persona
+
 echo '*** Importing scenarios ***'
 $CAIRIS_SRC/bin/web_cimport.py --url $URL --database $DBNAME --type usability $TMP_DIR/scenarios.xml
 
@@ -102,6 +97,7 @@ $CAIRIS_SRC/bin/web_cimport.py --url $URL --database $DBNAME --type associations
 $CAIRIS_SRC/bin/web_cimport.py --url $URL --database $DBNAME --type associations $TMP_DIR/scenarioTraceability.xml
 
 echo '*** Importing architectural patterns ***'
+$WP2_SCRIPT_DIR/autoSituateArchitecturalPatterns_webservices.py --url $URL --database $DBNAME --environment Complete
 
 for CCVIEW in $(ls $VIEWS_DIR/*.xml)
 do
@@ -114,6 +110,9 @@ do
   $CAIRIS_SRC/bin/web_cimport.py --url $URL --database $DBNAME --type attackpattern $APATTERN
 done
 
+echo '*** Importing persona images ***'
+$WP2_SCRIPT_DIR/importObjectImages.py --url $URL --database $DBNAME --image_dir $PERSONA_DIR --type attacker
+
 echo '*** Import misusability cases ***'
 $CAIRIS_SRC/bin/web_cimport.py --url $URL --database $DBNAME --type all $MODELS_DIR/misusability.xml
 
@@ -123,6 +122,9 @@ $CAIRIS_SRC/bin/web_cimport.py --url $URL --database $DBNAME --type synopses $MO
 echo '*** Importing component traceability ***'
 $WP2_SCRIPT_DIR/um2cu.py
 $CAIRIS_SRC/bin/web_cimport.py --url $URL --database $DBNAME --type associations $TMP_DIR/componentAssociations.xml
+
+echo '*** Automatically situate architectural patterns ***'
+$WP2_SCRIPT_DIR/autoSituateArchitecturalPatterns_webservices.py --url $URL --database $DBNAME --environment Complete
 
 echo '*** Mitigate attack patterns where possible ***'
 $CAIRIS_SRC/bin/web_cimport.py --url $URL --database $DBNAME --type all $TMP_DIR/pattern_mitigation.xml 

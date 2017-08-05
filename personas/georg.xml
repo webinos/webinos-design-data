@@ -3,7 +3,7 @@
 
 
 <usability>
-<persona name="Georg" type="Primary" assumption_persona="TRUE" image="georg.jpg" >
+<persona name="Georg" type="Primary" assumption_persona="TRUE" image="Georg.jpg" >
   <activities>Georg is a family father who lives with his family. He lives a routine life. Every morning he uses his mobile devices for reading news and for managing his Facebook account while having breakfast. Thereafter, he goes to work by car. He has a daytime job with regular working ours. He always has his personal mobile Internet device with him.</activities>
   <attitudes>He uses his mobile internet device (MID) as authentication token. He likes single-sign-on. He only authenticates to his MID and uses other devices which inherit his authentication towards the MID when being used.</attitudes>
   <aptitudes>None</aptitudes>

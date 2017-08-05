@@ -2,7 +2,7 @@
 <!DOCTYPE usability PUBLIC "-//CAIRIS//DTD USABILITY 1.0//EN" "http://cairis.org/dtd/usability.dtd">
 
 <usability>
-<persona name="Gary" type="Primary" assumption_persona="TRUE" image="gary.jpg" >
+<persona name="Gary" type="Primary" assumption_persona="TRUE" image="Gary.jpg" >
   <activities>Presently unemployed, recently fired, not in a very happy mood. Gary angrily remembers his former career as task leader of the information technology unit, working for over 25 years in desktop and networking support, and building a professional websites for more than 10 years. Until he was discharged without consideration of his long-serving loyalty to the company's work.</activities>
   <attitudes>An experienced PC user, who happily uses a PC for everyday tasks. His always demands new challenges capable of stimulating his natural curiosity and matching his desire for personal improvement. In particular, he enjoys improving his knowledge of computers and the Internet every day.</attitudes>
   <aptitudes>Already fed by a good knowledge of PC and Internet, he can easily prove the obtained knowledge through many certificates related to his job. However, despite his existing achievements he still has a desire to obtain new certification as evidence of his tireless appetite for learning.</aptitudes>
