@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-# Convert a Redmine marked-up use case file into a CAIRIS usability model
+# Convert a Redmine marked-up use case file into a CAIRIS requirements model
 
 import os
 

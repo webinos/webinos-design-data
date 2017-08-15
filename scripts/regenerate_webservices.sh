@@ -87,7 +87,7 @@ echo '*** Importing scenarios ***'
 $CAIRIS_SRC/bin/web_cimport.py --url $URL --database $DBNAME --type usability $TMP_DIR/scenarios.xml
 
 echo '*** Importing use cases ***'
-$CAIRIS_SRC/bin/web_cimport.py --url $URL --database $DBNAME --type usability $TMP_DIR/usecases.xml
+$CAIRIS_SRC/bin/web_cimport.py --url $URL --database $DBNAME --type requirements $TMP_DIR/usecases.xml
 
 echo '*** Importing requirements ***'
 $CAIRIS_SRC/bin/web_cimport.py --url $URL --database $DBNAME --type requirements $TMP_DIR/requirements.xml

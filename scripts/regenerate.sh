@@ -8,8 +8,8 @@ export CAIRIS_SQL=$CAIRIS_SRC/sql
 export CAIRIS_CFG=/home/cairisuser/cairis.cnf 
 export GIT_DIR=/home/cairisuser/webinos-design-data
 export DBHOST=localhost
-export DBUSER=irisuser
-export DBPASSWORD=""
+export DBUSER=cairisuser
+export DBPASSWORD=cairisuser
 export DBNAME=cairis_default
 export TMP_DIR=/tmp
 export OUTPUT_DIR=/tmp/deliverable #This is where files for the D2.4 and D2.5 deliverable go
@@ -101,7 +101,7 @@ echo '*** Importing scenarios ***'
 $CAIRIS_SRC/bin/cimport.py --type usability $TMP_DIR/scenarios.xml
 
 echo '*** Importing use cases ***'
-$CAIRIS_SRC/bin/cimport.py --type usability $TMP_DIR/usecases.xml
+$CAIRIS_SRC/bin/cimport.py --type requirements $TMP_DIR/usecases.xml
 
 echo '*** Importing requirements ***'
 $CAIRIS_SRC/bin/cimport.py --type requirements $TMP_DIR/requirements.xml
