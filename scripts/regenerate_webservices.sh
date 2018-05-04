@@ -3,9 +3,9 @@
 # You'll want to change the below values based on your own local installation 
 export CAIRIS_ROOT=/tmp/cairis
 export CAIRIS_SRC=$CAIRIS_ROOT/cairis
-export GIT_DIR=/tmp/webinos-design-data
+export GIT_DIR=/home/cairisuser/webinos-design-data
 export URL=http://localhost
-export DBNAME=webinos
+export DBNAME=test_default
 export TMP_DIR=/tmp
 
 export MODELS_DIR=$GIT_DIR/cairisModels

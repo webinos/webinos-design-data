@@ -3,9 +3,10 @@
 import cairis.core.BorgFactory
 from cairis.core.Borg import Borg
 import cairis.core.AssetParametersFactory
+import sys
 
 if __name__ == '__main__':
-  cairis.core.BorgFactory.initialise()
+  cairis.core.BorgFactory.initialise(sys.argv[1],sys.argv[2])
   b = Borg()
   envName = 'Complete'
 
