@@ -138,18 +138,3 @@ $WP2_SCRIPT_DIR/autoSituateArchitecturalPatterns.py $DBUSER $DBNAME
 
 echo '*** Mitigate attack patterns where possible ***'
 $CAIRIS_SRC/bin/cimport.py --user=$DBUSER --database=$DBNAME --type all $TMP_DIR/pattern_mitigation.xml --overwrite 0
-
-echo echo '*** Exporting scenarios with traceability data ***'
-$CAIRIS_SRC/bin/cexport.py --user=$DBUSER --database=$DBNAME --type scenarios $OUTPUT_DIR/scenarios.txt
-
-echo echo '*** Exporting use cases ***'
-$CAIRIS_SRC/bin/cexport.py --user=$DBUSER --database=$DBNAME --type usecases $OUTPUT_DIR/usecases.txt
-
-echo echo '*** Exporting requirements ***'
-$CAIRIS_SRC/bin/cexport.py --user=$DBUSER --database=$DBNAME --type requirements $OUTPUT_DIR/requirements.txt
-
-echo '*** Export architectural patterns ***'
-$CAIRIS_SRC/bin/cexport.py --user=$DBUSER --database=$DBNAME --type architecture $OUTPUT_DIR/D036_ArchitecturalPatterns.txt
-
-echo '*** Export attack patterns ***'
-$CAIRIS_SRC/bin/cexport.py --user=$DBUSER --database=$DBNAME --type attackpatterns $OUTPUT_DIR/D036_AttackPatterns.txt
