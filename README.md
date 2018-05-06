@@ -8,13 +8,13 @@ The data in this repository includes use cases, scenarios, personas, requirement
 CAIRIS
 --
 
-The content of this repository is was created to work with [cairis](https://github.com/failys/CAIRIS "CAIRIS").  CAIRIS is a Requirements Management tool for specifying secure and usable systems.
+The content of this repository is was created to work with [cairis](https://github.com/failys/cairis "CAIRIS").  CAIRIS is a platform for specifying secure and usable systems.
 
 
 Getting started
 --
 
-* Install CAIRIS.  You can find instructions on how to install it at http://cairis.org
+* Install CAIRIS.  You can find instructions on how to install it at https://cairis.org
 * Download the contents of this repository
 * Modify the beginning of the file 'scripts/regenerate.sh' :
 
@@ -26,19 +26,10 @@ export CAIRIS_SQL=$CAIRIS_SRC/sql
 export CAIRIS_CFG=/home/cairisuser/cairis.cnf # Your personalised version of the cairis.cnf template in $CAIRIS_SRC/config
 export GIT_DIR=/home/cairisuser/webinos-design-data # This is the directory of this repository
 export DBHOST=localhost # Your database host 
-export DBUSER=irisuser # Your database user name
-export DBPASSWORD=""  # Your database password
-export DBNAME=arm # The database name
+export DBUSER=test # Your database user name
+export DBPASSWORD=  # Your database password; this will typically be blank
+export DBNAME=test_default # The database name.  Each account with have a default database, i.e. test_default for test
 </pre>
 
-* run the regenerate script.  This will import all of the data into the CAIRIS database
+* Run the regenerate script.  This will import all of the data into the target CAIRIS database.
 * start CAIRIS
-
-
-
-
-
-
-
-
-
